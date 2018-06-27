@@ -1,0 +1,934 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<link rel="stylesheet" type="text/css" href="../../Themes/carbonate202b/css/index-fin20.css" />
+	<link rel="stylesheet" type="text/css" href="../../Themes/carbonate202b/css/index_carbon-fin20.css" />
+	<script type="text/javascript" src="../../Themes/default/scripts/script-fin20.js"></script>
+	<script type="text/javascript" src="../../Themes/carbonate202b/scripts/theme-fin20.js"></script>
+	<script type="text/javascript"><!-- // --><![CDATA[
+		var smf_theme_url = "http://forum.carbontechsoftware.com/Themes/carbonate202b";
+		var smf_default_theme_url = "http://forum.carbontechsoftware.com/Themes/default";
+		var smf_images_url = "http://forum.carbontechsoftware.com/Themes/carbonate202b/images";
+		var smf_scripturl = "http://forum.carbontechsoftware.com/index.php";
+		var smf_iso_case_folding = false;
+		var smf_charset = "UTF-8";
+		var ajax_notification_text = "Loading...";
+		var ajax_notification_cancel_text = "Cancel";
+	// ]]></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="description" content="What Should Be in the New Update" />
+	<title>What Should Be in the New Update</title><link rel="shortcut icon" type="image/x-icon" href="http://lh3.googleusercontent.com/-GOPf21qQXSY/TzawG0qVPlI/AAAAAAAAAoA/-VQrE780LzQ/s16/CCLogoRound.png" /><link rel="icon" href="http://lh3.googleusercontent.com/-GOPf21qQXSY/TzawG0qVPlI/AAAAAAAAAoA/-VQrE780LzQ/s16/CCLogoRound.png" type="image/x-icon" />
+	<meta name="robots" content="noindex" />
+	<link rel="canonical" href="../what-should-be-in-the-new-update/index.html" />
+	<link rel="help" href="../../help/index.html" />
+	<link rel="search" href="../../search/index.html" />
+	<link rel="contents" href="../../index.php.html" />
+	<link rel="alternate" type="application/rss+xml" title="Carbon Combat - RSS" href="../../.xml/index-type=rss.html" />
+	<link rel="prev" href="../what-should-be-in-the-new-update/index-prev_next=prev.html" />
+	<link rel="next" href="../what-should-be-in-the-new-update/index-prev_next=next.html" />
+	<link rel="index" href="../index.html" /><!-- nCode Image Resizer -->
+	<script type="text/javascript" src="../../Themes/default/ncode_imageresizer.js"></script>
+	<script language="JavaScript" type="text/javascript"><!-- // -->
+	NcodeImageResizer.BBURL = "http://forum.carbontechsoftware.com/Themes/carbonate202b/images";
+	NcodeImageResizer.MODE = "enlarge";
+	NcodeImageResizer.MAXWIDTH = "720";
+	NcodeImageResizer.MAXHEIGHT = "400";
+	vbphrase = new Array();
+	vbphrase['ncode_imageresizer_warning_small'] = 'Click this bar to view the full image.';
+	vbphrase['ncode_imageresizer_warning_filesize'] = 'This image has been resized. Click this bar to view the full image. The original image is sized %1$sx%2$s and weighs %3$sKB.';
+	vbphrase['ncode_imageresizer_warning_no_filesize'] = 'This image has been resized. Click this bar to view the full image. The original image is sized %1$sx%2$s.';
+	vbphrase['ncode_imageresizer_warning_fullsize'] = 'Click this bar to view the small image.';
+	// ]]></script>
+	<link rel="stylesheet" type="text/css" id="editor_css" href="../../Themes/default/css/editor.css" />
+		<script type="text/javascript"><!-- // --><![CDATA[
+			var smf_smileys_url = 'http://forum.carbontechsoftware.com/Smileys/akyhne';
+			var oEditorStrings= {
+				wont_work: 'Your browser does not support Rich Text editing.',
+				func_disabled: 'Your browser does not support this function.',
+				prompt_text_email: 'Please enter the email address.',
+				prompt_text_ftp: 'Please enter the ftp address.',
+				prompt_text_url: 'Please enter the URL you wish to link to.',
+				prompt_text_img: 'Enter image location'
+			}
+		// ]]></script>
+		<script type="text/javascript" src="../../Themes/default/scripts/editor-fin20.js"></script>
+		<script type="text/javascript" src="../../Themes/default/scripts/spellcheck.js"></script>
+		<script type="text/javascript"><!-- // --><![CDATA[
+		function spellCheckDone()
+		{
+			for (i = 0; i < smf_editorArray.length; i++)
+				setTimeout("smf_editorArray[" + i + "].spellCheckEnd()", 150);
+		}
+		// ]]></script>
+		<script type="text/javascript" src="../../Themes/default/scripts/captcha.js"></script>
+	<style type="text/css">#main_menu,
+		#admin_menu
+		{
+			width: 985px
+		}
+	</style>
+	
+	
+	<script language="javascript" type="text/javascript">
+	<!--
+	
+	// MOD Title: Simple Image Upload
+	// MOD Author: Sium < admin@postimage.org > (N/A) http://www.postimage.org/
+	// MOD Version: 1.3.0
+	
+	var postimage_lang="english";
+	var postimage_add_text="Upload and insert an image";
+	var postimage_textarea_ignore_name=/username_list|search/i;
+	
+	function imgFunction() {
+		alert("After uploading you can...\n\n• Drag & drop the image into the post editor\n• Copy the direct link & add an image\n• Copy & paste the HTML code\n• Copy & paste the BBCode");
+	}
+	
+	function postimage_insert()
+	{
+		var postimage_area=document.getElementsByTagName("TEXTAREA");
+
+		for(var postimage_i=0;postimage_i<postimage_area.length;postimage_i++)
+		{
+			if(!postimage_area[postimage_i].name.match(postimage_textarea_ignore_name))
+			{
+				var postimage_new_div=document.createElement("div");
+				postimage_new_div.id = "smileyBox_message";
+				postimage_new_div.style.marginBottom = "5px";
+				postimage_new_div.style.display = "block";
+				postimage_new_div.innerHTML="<a href=\"javascript:void(0);\" onclick=\"imgFunction();imgWindow=window.open('http://imgur.com/?noFlash', 'imgWindow', 'resizable=no,width=1015,height=550,scrollbars=no');\"><b>>> "+postimage_add_text+"</b></a>";
+				postimage_area[postimage_i].parentNode.insertBefore(postimage_new_div,postimage_area[postimage_i]);
+			}
+		}
+	}
+	
+	window.onload=postimage_insert;
+	//-->
+	</script>
+	
+	
+	
+</head>
+<body>
+<div id="wrapper"><div id="headerlogo"></div>
+	<div id="subheader"><div style="width: 985px; margin:auto;background-color:#000">
+	<div id="uppertop">
+		<div class="middletext" style="float:right;height:auto;line-height:16px">Almost half past 8:00 pm, June 16th, 2015</div>
+		<script type="text/javascript" src="../../Themes/default/scripts/sha1.js"></script>
+		<form id="guest_form" action="http://forum.carbontechsoftware.com/login2/" method="post" accept-charset="UTF-8"  onsubmit="hashLoginPassword(this, '477e586f5a9953a0dd3608a1ea7e9270');">
+			Welcome, <strong>Guest</strong>. Please <a href="../../login/index.html">login</a> or <a href="../../register/index.html">register</a>.&nbsp;
+	</div>
+	<div id="top_section" style="clear: both;">
+		<div id="main_menu">
+			<div class="menuback">
+			<div class="menuback2">
+			<ul class="dropmenu" id="menu_nav">
+				<li id="button_home" class="toplevel">
+					<a class="active firstlevel" href="../../index.php.html">
+						<span class="last firstlevel">Home</span>
+					</a>
+				</li>
+				<li id="button_search" class="toplevel">
+					<a class="firstlevel" href="../../search/index.html">
+						<span class="firstlevel">Search</span>
+					</a>
+					<ul>
+						<li>
+							<a href="../../search/index.html">
+								<span>Search Forum Topics</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li id="button_login" class="toplevel">
+					<a class="firstlevel" href="../../login/index.html">
+						<span class="firstlevel">Login</span>
+					</a>
+				</li>
+				<li id="button_register" class="toplevel">
+					<a class="firstlevel" href="../../register/index.html">
+						<span class="firstlevel">Register</span>
+					</a>
+				</li>
+				<li id="button_chat" class="toplevel">
+					<a class="firstlevel" href="javascript:void(0)"onclick="window.open('/chatRoom.html','POPUP','width=700,height=720,location=0,menubar=0,toolbar=0,scrollbars=0,status=0,');">
+						<span class="firstlevel">Chat</span>
+					</a>
+				</li>
+				<li id="button_play" class="toplevel">
+					<a class="firstlevel" href="http://play.carbontechsoftware.com/"target="_blank');">
+						<span class="last firstlevel"><div style="color:#FFEFAE">Play</div></span>
+					</a>
+				</li>
+			</ul>
+			</div>
+			</div>
+		</div><script src="../../adjustMenubar.js"></script>
+		<br class="clear" />
+		</div>
+	</div></div>
+	<div id="mainsection"><div style="width: 985px;margin: auto;margin-bottom:0;padding:15px 0">
+		<div id="innermain">	
+	<div class="navigate_section">
+		<ul>
+			<li>
+				<a href="../../index.php.html"><span>Carbon Combat</span></a> &#187;
+			</li>
+			<li>
+				<a href="../../index.php.html#c1"><span>General</span></a> &#187;
+			</li>
+			<li>
+				<a href="../index.html"><span>Feedback &amp; Ideas</span></a> &#187;
+			</li>
+			<li class="last">
+				<a href="../what-should-be-in-the-new-update/index.html"><span>What Should Be in the New Update</span></a>
+			</li>
+		</ul>
+	</div>
+			<a id="top"></a>
+			<a id="msg5776"></a>
+			<div class="pagesection">
+				<div class="nextlinks"><a href="../what-should-be-in-the-new-update/index-prev_next=prev.html#new">&laquo; previous</a> <a href="../what-should-be-in-the-new-update/index-prev_next=next.html#new">next &raquo;</a></div>
+				<div class="pagelinks floatleft"><span style="margin-right:20px;color:#747474">Page 1 of 1</span><span class="selectedPage">1</span> </div>
+			</div>
+			<div id="forumposts">
+				<div class="cat_bar">
+					<h3 class="catbg">
+						<img src="../../Themes/carbonate202b/images/topic/normal_post.gif.png" align="bottom" alt="" />
+						<span id="author">Author</span>
+						Topic: What Should Be in the New Update &nbsp;(Read 801 times)
+					</h3>
+				</div>
+				<form action="http://forum.carbontechsoftware.com/feedback-ideas/what-should-be-in-the-new-update/?action=quickmod2" method="post" accept-charset="UTF-8" name="quickModForm" id="quickModForm" style="margin: 0;" onsubmit="return oQuickModify.bInEditMode ? oQuickModify.modifySave('477e586f5a9953a0dd3608a1ea7e9270', 'f432f3090a') : false">
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../profile/U2M/index.html" title="View the profile of U2M">U2M</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_5776_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../profile/U2M/index.html">
+										<img class="avatar" src="../../avatar_24_1356310894-action=dlattach-attach=425-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 630</li>
+								<li class="karma" style="margin-top:15px">Karma: 32</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_5776">
+										<a href="../what-should-be-in-the-new-update/msg5776/index.html#msg5776" rel="nofollow">What Should Be in the New Update</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 25, 2013, 12:59:08 pm" style="cursor:default">Late May, 2013</span></div>
+									<div id="msg_5776_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_5776">Hello Carbon Combat Community! <br /><br />I we have seen some pretty Awsome ideas and additions that CT could ad to Carbon Combat.<br /><br />I believe that those aide as are to be listed here:<br />Tesla Ray<br />Battle-tread Bodykit<br />Crossbow <br /><br />If there are other items, weapons,or adjustments we would like&nbsp; to add, put it down here!</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_5776">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_5776_signature">&quot;We are made wise not by the recollection of our past, but by the responsibility for our future.&quot;</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg5779"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../profile/speeddemon/index.html" title="View the profile of speeddemon">speeddemon</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_5779_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../profile/speeddemon/index.html">
+										<img class="avatar" src="http://blog.flashissue.com/wp-content/uploads/2012/04/speeddemon.png" width="100" height="100" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 654</li>
+								<li class="karma" style="margin-top:15px">Karma: 31</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_5779">
+										<a href="../what-should-be-in-the-new-update/msg5779/index.html#msg5779" rel="nofollow">Re: What Should Be in the New Update</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 25, 2013, 01:17:46 pm" style="cursor:default">Late May, 2013</span></div>
+									<div id="msg_5779_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_5779">Shock armour upgrade<br />Electric armour, with some tweaks<br />Laser shockwave<br />Upgraded flamethrower<br />Shotgun - either scrapped completely or make the spread a lot bigger and more random<br />Improved maps section<br />Power drain<br />Teleport</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_5779">
+								<em>Last edited  <span title=" 26, 2013, 01:38:30 pm" style="cursor:default">Late May, 2013</span> by speeddemon</em>
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg5780"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../profile/tarcor/index.html" title="View the profile of tarcor">tarcor</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_5780_extra_info">
+								<li class="postgroup" style="display:none">Full Member</li>
+								<li class="stars" style="display:none"><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 102</li>
+								<li class="karma" style="margin-top:15px">Karma: 15</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_5780">
+										<a href="../what-should-be-in-the-new-update/msg5780/index.html#msg5780" rel="nofollow">Re: What Should Be in the New Update</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 25, 2013, 02:04:45 pm" style="cursor:default">Late May, 2013</span></div>
+									<div id="msg_5780_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_5780">Quick question: what happend to the &quot;abandoned shipwreck&quot; map? <br />And I would like a better crosshair option: the current ones leave much to be desired. when scoping long distances there is either too much space or too large of pieces in the center that you cant see the target anymore. I might provide a pic later of desired crosshair.<br /><br />[EDIT] Wait, what? Scrap the shotgun or make the spread bigger? Are you kidding me?<br />I&#039;d say the oppisite. narrow the spread and redesign it! Unless I dont understand what you mean.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_5780">
+								<em>Last edited  <span title=" 25, 2013, 02:16:32 pm" style="cursor:default">Late May, 2013</span> by tarcor</em>
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_5780_signature">Plain sight snipers. We always win.<br /><img src="http://i42.tinypic.com/2vmiq6q.jpg" alt="" width="150" height="100" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg5783"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_5783_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_5783">
+										<a href="../what-should-be-in-the-new-update/msg5783/index.html#msg5783" rel="nofollow">Re: What Should Be in the New Update</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 25, 2013, 05:39:34 pm" style="cursor:default">Late May, 2013</span></div>
+									<div id="msg_5783_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_5783"><div class="quoteheader"><div class="topslice_quote"><a href="../what-should-be-in-the-new-update/msg5779/index.html#msg5779">Quote from: speeddemon on <span title=" 25, 2013, 01:17:46 pm" style="cursor:default">Late May, 2013</span></a></div></div><blockquote class="bbc_standard_quote">Shock armour upgrade<br />Electric armour, with some tweaks<br />Laser shockwave<br />Upgraded flamethrower<br />Shotgun - either scrapped completely or make the spread a lot bigger and more random<br />Improved maps section<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>Speed, we already agreed the shotgun would be moved to the androids as a permanent secondary weapon.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_5783">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_5783_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg5796"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../profile/U2M/index.html" title="View the profile of U2M">U2M</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_5796_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../profile/U2M/index.html">
+										<img class="avatar" src="../../avatar_24_1356310894-action=dlattach-attach=425-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 630</li>
+								<li class="karma" style="margin-top:15px">Karma: 32</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_5796">
+										<a href="../what-should-be-in-the-new-update/msg5796/index.html#msg5796" rel="nofollow">Re: What Should Be in the New Update</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 25, 2013, 09:54:11 pm" style="cursor:default">Late May, 2013</span></div>
+									<div id="msg_5796_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_5796">By @we&quot; do you mean you and I? <img src="../../Smileys/akyhne/tongue.gif" alt="&#58;P" title="Tongue" class="smiley" /><br /><br />Anyhow, tarcor the shotgun is currently to OP for CC. That is why we will widen the spread if fire so that it is harder to hit a target. </div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_5796">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_5796_signature">&quot;We are made wise not by the recollection of our past, but by the responsibility for our future.&quot;</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg5798"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../profile/speeddemon/index.html" title="View the profile of speeddemon">speeddemon</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_5798_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../profile/speeddemon/index.html">
+										<img class="avatar" src="http://blog.flashissue.com/wp-content/uploads/2012/04/speeddemon.png" width="100" height="100" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 654</li>
+								<li class="karma" style="margin-top:15px">Karma: 31</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_5798">
+										<a href="../what-should-be-in-the-new-update/msg5798/index.html#msg5798" rel="nofollow">Re: What Should Be in the New Update</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 26, 2013, 07:10:48 am" style="cursor:default">Late May, 2013</span></div>
+									<div id="msg_5798_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_5798"><div class="quoteheader"><div class="topslice_quote"><a href="../what-should-be-in-the-new-update/msg5783/index.html#msg5783">Quote from: cremyjr on <span title=" 25, 2013, 05:39:34 pm" style="cursor:default">Late May, 2013</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../what-should-be-in-the-new-update/msg5779/index.html#msg5779">Quote from: speeddemon on <span title=" 25, 2013, 01:17:46 pm" style="cursor:default">Late May, 2013</span></a></div></div><blockquote class="bbc_alternate_quote">Shock armour upgrade<br />Electric armour, with some tweaks<br />Laser shockwave<br />Upgraded flamethrower<br />Shotgun - either scrapped completely or make the spread a lot bigger and more random<br />Improved maps section<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>Speed, we already agreed the shotgun would be moved to the androids as a permanent secondary weapon.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br />Scrapped for cars only, @U2M yeah, currently all other close range weapons are UP as well, that&#039;s why the flamethrower really needs improvement, the range and velocity of it sucks.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_5798">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg5803"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_5803_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_5803">
+										<a href="../what-should-be-in-the-new-update/msg5803/index.html#msg5803" rel="nofollow">Re: What Should Be in the New Update</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 26, 2013, 09:30:26 am" style="cursor:default">Late May, 2013</span></div>
+									<div id="msg_5803_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_5803"><div class="quoteheader"><div class="topslice_quote"><a href="../what-should-be-in-the-new-update/msg5798/index.html#msg5798">Quote from: speeddemon on <span title=" 26, 2013, 07:10:48 am" style="cursor:default">Late May, 2013</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../what-should-be-in-the-new-update/msg5783/index.html#msg5783">Quote from: cremyjr on <span title=" 25, 2013, 05:39:34 pm" style="cursor:default">Late May, 2013</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../what-should-be-in-the-new-update/msg5779/index.html#msg5779">Quote from: speeddemon on <span title=" 25, 2013, 01:17:46 pm" style="cursor:default">Late May, 2013</span></a></div></div><blockquote class="bbc_standard_quote">Shock armour upgrade<br />Electric armour, with some tweaks<br />Laser shockwave<br />Upgraded flamethrower<br />Shotgun - either scrapped completely or make the spread a lot bigger and more random<br />Improved maps section<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>Speed, we already agreed the shotgun would be moved to the androids as a permanent secondary weapon.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br />Scrapped for cars only, @U2M yeah, currently all other close range weapons are UP as well, that&#039;s why the flamethrower really needs improvement, the range and velocity of it sucks.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>Lol, yes U2M. But nobody on the forum obliged to it so I assumed everybody was ok with it.<br />And speed, if you would like, maybe I can redesign the close- close/mid weapons.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_5803">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_5803_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg5808"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../profile/speeddemon/index.html" title="View the profile of speeddemon">speeddemon</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_5808_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../profile/speeddemon/index.html">
+										<img class="avatar" src="http://blog.flashissue.com/wp-content/uploads/2012/04/speeddemon.png" width="100" height="100" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 654</li>
+								<li class="karma" style="margin-top:15px">Karma: 31</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_5808">
+										<a href="../what-should-be-in-the-new-update/msg5808/index.html#msg5808" rel="nofollow">Re: What Should Be in the New Update</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 26, 2013, 09:57:49 am" style="cursor:default">Late May, 2013</span></div>
+									<div id="msg_5808_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_5808">The mid range weapons seem kinda okay, maybe they need a bit of improvement, maybe. As for short range I can&#039;t remember any apart from the flamethrower so there&#039;s probably not even any other close range weapons. All the flamethrower needs is what I just said: increase in velocity (how fast the flames travel) and the distance it travels, this would be increased quite a lot to make it more like the heavy weapon it is. You should also be able to burn yourself if you are going really fast like of a ramp or something, not at normal speed though.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_5808">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg5818"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_5818_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_5818">
+										<a href="../what-should-be-in-the-new-update/msg5818/index.html#msg5818" rel="nofollow">Re: What Should Be in the New Update</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 26, 2013, 10:26:17 am" style="cursor:default">Late May, 2013</span></div>
+									<div id="msg_5818_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_5818"><div class="quoteheader"><div class="topslice_quote"><a href="../what-should-be-in-the-new-update/msg5808/index.html#msg5808">Quote from: speeddemon on <span title=" 26, 2013, 09:57:49 am" style="cursor:default">Late May, 2013</span></a></div></div><blockquote class="bbc_standard_quote">The mid range weapons seem kinda okay, maybe they need a bit of improvement, maybe. As for short range I can&#039;t remember any apart from the flamethrower so there&#039;s probably not even any other close range weapons. All the flamethrower needs is what I just said: increase in velocity (how fast the flames travel) and the distance it travels, this would be increased quite a lot to make it more like the heavy weapon it is. You should also be able to burn yourself if you are going really fast like of a ramp or something, not at normal speed though.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>The velocity is already pretty high. It spreads out to max range in less than a second.&nbsp; And I made a redesign of it already. If I didn&#039;t put the extended range, that will be included. And it doesn&#039;t have area damage, so why should you burn yourself?</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_5818">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_5818_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg5819"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../profile/speeddemon/index.html" title="View the profile of speeddemon">speeddemon</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_5819_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../profile/speeddemon/index.html">
+										<img class="avatar" src="http://blog.flashissue.com/wp-content/uploads/2012/04/speeddemon.png" width="100" height="100" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 654</li>
+								<li class="karma" style="margin-top:15px">Karma: 31</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_5819">
+										<a href="../what-should-be-in-the-new-update/msg5819/index.html#msg5819" rel="nofollow">Re: What Should Be in the New Update</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 26, 2013, 10:30:38 am" style="cursor:default">Late May, 2013</span></div>
+									<div id="msg_5819_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_5819">Because if you aim in front of you (in the direction you are going) and move fast enough you can go right into your own flames. Also the minigun has a lot of recoil, it shouldn&#039;t be as much because the cars <em>are</em> meant to be really heavy. Maybe 1/2 or 1/3 of how much it currently is.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_5819">
+								<em>Last edited  <span title=" 26, 2013, 10:32:25 am" style="cursor:default">Late May, 2013</span> by speeddemon</em>
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg5823"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_5823_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_5823">
+										<a href="../what-should-be-in-the-new-update/msg5823/index.html#msg5823" rel="nofollow">Re: What Should Be in the New Update</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 26, 2013, 11:27:42 am" style="cursor:default">Late May, 2013</span></div>
+									<div id="msg_5823_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_5823"><div class="quoteheader"><div class="topslice_quote"><a href="../what-should-be-in-the-new-update/msg5819/index.html#msg5819">Quote from: speeddemon on <span title=" 26, 2013, 10:30:38 am" style="cursor:default">Late May, 2013</span></a></div></div><blockquote class="bbc_standard_quote">Because if you aim in front of you (in the direction you are going) and move fast enough you can go right into your own flames. Also the minigun has a lot of recoil, it shouldn&#039;t be as much because the cars <em>are</em> meant to be really heavy. Maybe 1/2 or 1/3 of how much it currently is.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>So? You can get hit by your own weapon regardless. But unless it has area damage, it doesn&#039;t hurt you. Why should this one be special?</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_5823">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_5823_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg5824"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../profile/speeddemon/index.html" title="View the profile of speeddemon">speeddemon</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_5824_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../profile/speeddemon/index.html">
+										<img class="avatar" src="http://blog.flashissue.com/wp-content/uploads/2012/04/speeddemon.png" width="100" height="100" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 654</li>
+								<li class="karma" style="margin-top:15px">Karma: 31</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_5824">
+										<a href="../what-should-be-in-the-new-update/msg5824/index.html#msg5824" rel="nofollow">Re: What Should Be in the New Update</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 26, 2013, 11:35:43 am" style="cursor:default">Late May, 2013</span></div>
+									<div id="msg_5824_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_5824">This would only be in special cases when you are going really fast and your flames happen to be in front of you.<br />We should move these posts to a new thread about the flamethrower.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_5824">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg5825"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../profile/XD/index.html" title="View the profile of XD">XD</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_5825_extra_info">
+								<li class="postgroup" style="display:none">Sr. Member</li>
+								<li class="stars" style="display:none"><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../profile/XD/index.html">
+										<img class="avatar" src="../../off-topic/awesome-ninja-stars/index-action=dlattach-attach=195-image.html" width="100" height="100" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 304</li>
+								<li class="karma" style="margin-top:15px">Karma: 27</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_5825">
+										<a href="../what-should-be-in-the-new-update/msg5825/index.html#msg5825" rel="nofollow">Re: What Should Be in the New Update</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 26, 2013, 11:56:16 am" style="cursor:default">Late May, 2013</span></div>
+									<div id="msg_5825_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_5825"><div class="quoteheader"><div class="topslice_quote"><a href="../what-should-be-in-the-new-update/msg5824/index.html#msg5824">Quote from: speeddemon on <span title=" 26, 2013, 11:35:43 am" style="cursor:default">Late May, 2013</span></a></div></div><blockquote class="bbc_standard_quote">This would only be in special cases when you are going really fast and your flames happen to be in front of you.<br />We should move these posts to a new thread about the flamethrower.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>If you drive while aiming the flamethrower in front of you it already damages yourself. You can see a bunch of 0&#039;s popping up indicating damage, but the damage is very little so it doesn&#039;t really matter.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_5825">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg5826"></a><a id="new"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../profile/speeddemon/index.html" title="View the profile of speeddemon">speeddemon</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_5826_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../profile/speeddemon/index.html">
+										<img class="avatar" src="http://blog.flashissue.com/wp-content/uploads/2012/04/speeddemon.png" width="100" height="100" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 654</li>
+								<li class="karma" style="margin-top:15px">Karma: 31</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_5826">
+										<a href="../what-should-be-in-the-new-update/msg5826/index.html#msg5826" rel="nofollow">Re: What Should Be in the New Update</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 26, 2013, 01:30:41 pm" style="cursor:default">Late May, 2013</span></div>
+									<div id="msg_5826_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_5826">Nope, tried and it didn&#039;t happen, for some reason you can continue... Firing? The flamethrower after the round... Also I was two car widths away from someone and it still didn&#039;t do any damage, it&#039;s impossible to get that close during proper combat. Also I added the power drain and teleport to my list.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_5826">
+								<em>Last edited  <span title=" 26, 2013, 01:38:11 pm" style="cursor:default">Late May, 2013</span> by speeddemon</em>
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				</form>
+			</div>
+			<a id="lastPost"></a>
+			<div class="pagesection">
+				
+				<div class="pagelinks floatleft"><span style="margin-right:20px;color:#747474">Page 1 of 1</span><span class="selectedPage">1</span> </div>
+				<div class="nextlinks_bottom"><a href="../what-should-be-in-the-new-update/index-prev_next=prev.html#new">&laquo; previous</a> <a href="../what-should-be-in-the-new-update/index-prev_next=next.html#new">next &raquo;</a></div>
+			</div>
+			<div id="moderationbuttons"></div>
+			<div class="plainbox" id="display_jump_to">&nbsp;</div>
+		<br class="clear" />
+			<form action="http://forum.carbontechsoftware.com/spellcheck/" method="post" accept-charset="UTF-8" name="spell_form" id="spell_form" target="spellWindow"><input type="hidden" name="spellstring" value="" /></form>
+				<script type="text/javascript" src="../../Themes/default/scripts/spellcheck.js"></script>
+				<script type="text/javascript" src="../../Themes/default/scripts/topic.js"></script>
+				<script type="text/javascript"><!-- // --><![CDATA[
+					if ('XMLHttpRequest' in window)
+					{
+						var oQuickModify = new QuickModify({
+							sScriptUrl: smf_scripturl,
+							bShowModify: true,
+							iTopicId: 482,
+							sTemplateBodyEdit: '\n\t\t\t\t\t\t\t\t<div id="quick_edit_body_container" style="width: 90%">\n\t\t\t\t\t\t\t\t\t<div id="error_box" style="padding: 4px;" class="error"><' + '/div>\n\t\t\t\t\t\t\t\t\t<textarea class="editor" name="message" rows="12" style="width: 100%; margin-bottom: 10px;" tabindex="1">%body%<' + '/textarea><br />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="f432f3090a" value="477e586f5a9953a0dd3608a1ea7e9270" />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="topic" value="482" />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="msg" value="%msg_id%" />\n\t\t\t\t\t\t\t\t\t<div class="righttext">\n\t\t\t\t\t\t\t\t\t\t<input type="submit" name="post" value="Save" tabindex="2" onclick="return oQuickModify.modifySave(\'477e586f5a9953a0dd3608a1ea7e9270\', \'f432f3090a\');" accesskey="s" class="button_submit" />&nbsp;&nbsp;<input type="button" value="Spell Check (popups must be enabled)" tabindex="3" onclick="oEditorHandle_message.spellCheckStart();" class="button_submit" />&nbsp;&nbsp;<input type="submit" name="cancel" value="Cancel" tabindex="4" onclick="return oQuickModify.modifyCancel();" class="button_submit" />\n\t\t\t\t\t\t\t\t\t<' + '/div>\n\t\t\t\t\t\t\t\t<' + '/div>',
+							sTemplateSubjectEdit: '<input type="text" style="width: 90%;" name="subject" value="%subject%" size="80" maxlength="80" tabindex="5" class="input_text" />',
+							sTemplateBodyNormal: '%body%',
+							sTemplateSubjectNormal: '<a hr'+'ef="http://forum.carbontechsoftware.com/index.php'+'?topic=482.msg%msg_id%#msg%msg_id%" rel="nofollow">%subject%<' + '/a>',
+							sTemplateTopSubject: 'Topic: %subject% &nbsp;(Read 801 times)',
+							sErrorBorderStyle: '1px solid red'
+						});
+
+						aJumpTo[aJumpTo.length] = new JumpTo({
+							sContainerId: "display_jump_to",
+							sJumpToTemplate: "<label class=\"smalltext\" for=\"%select_id%\">Jump to:<" + "/label> %dropdown_list%",
+							iCurBoardId: 3,
+							iCurBoardChildLevel: 0,
+							sCurBoardName: "Feedback &amp; Ideas",
+							sBoardChildLevelIndicator: "==",
+							sBoardPrefix: "=> ",
+							sCatSeparator: "-----------------------------",
+							sCatPrefix: "",
+							sGoButtonLabel: "go"
+						});
+
+						aIconLists[aIconLists.length] = new IconList({
+							sBackReference: "aIconLists[" + aIconLists.length + "]",
+							sIconIdPrefix: "msg_icon_",
+							sScriptUrl: smf_scripturl,
+							bShowModify: true,
+							iBoardId: 3,
+							iTopicId: 482,
+							sSessionId: "477e586f5a9953a0dd3608a1ea7e9270",
+							sSessionVar: "f432f3090a",
+							sLabelIconList: "Message icon",
+							sBoxBackground: "transparent",
+							sBoxBackgroundHover: "#ffffff",
+							iBoxBorderWidthHover: 1,
+							sBoxBorderColorHover: "#adadad" ,
+							sContainerBackground: "#ffffff",
+							sContainerBorder: "1px solid #adadad",
+							sItemBorder: "1px solid #ffffff",
+							sItemBorderHover: "1px dotted gray",
+							sItemBackground: "transparent",
+							sItemBackgroundHover: "#e0e0f0"
+						});
+					}
+				// ]]></script>
+		<form name="spell_form" id="spell_form" method="post" accept-charset="UTF-8" target="spellWindow" action="http://forum.carbontechsoftware.com/spellcheck/">
+			<input type="hidden" name="spellstring" value="" />
+		</form>
+			<script type="text/javascript"><!-- // --><![CDATA[
+				var verificationpostHandle = new smfCaptcha("http://forum.carbontechsoftware.com/index.php?action=verificationcode;vid=post;rand=cba982032b3804ee6ca891ef23ec6e09", "post", 1);
+			// ]]></script>
+	</div>
+	</div></div>
+	<div id="footersection"><div style="width: 985px;margin: auto;">
+			<span class="floatright"><a href="http://www.simplemachines.org/">© Simple Machines (SMF 2.0.2)</a> - Forum designed by CarbonTech & <a href="http://www.blocweb.net">Bloc</a>
+			</span></div>
+	</div></div></div><script type="text/javascript">
+var sc_project=6755287; 
+var sc_invisible=1; 
+var sc_security="c689b4fd"; 
+</script>
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script>
+<noscript><div class="statcounter"><a title="tumblr page
+counter" href="http://statcounter.com/tumblr/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/6755287/0/c689b4fd/1/"
+alt="tumblr page counter"></a></div></noscript>
+</body></html>

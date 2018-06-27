@@ -1,0 +1,1221 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<link rel="stylesheet" type="text/css" href="../../../Themes/carbonate202b/css/index-fin20.css" />
+	<link rel="stylesheet" type="text/css" href="../../../Themes/carbonate202b/css/index_carbon-fin20.css" />
+	<script type="text/javascript" src="../../../Themes/default/scripts/script-fin20.js"></script>
+	<script type="text/javascript" src="../../../Themes/carbonate202b/scripts/theme-fin20.js"></script>
+	<script type="text/javascript"><!-- // --><![CDATA[
+		var smf_theme_url = "http://forum.carbontechsoftware.com/Themes/carbonate202b";
+		var smf_default_theme_url = "http://forum.carbontechsoftware.com/Themes/default";
+		var smf_images_url = "http://forum.carbontechsoftware.com/Themes/carbonate202b/images";
+		var smf_scripturl = "http://forum.carbontechsoftware.com/index.php";
+		var smf_iso_case_folding = false;
+		var smf_charset = "UTF-8";
+		var ajax_notification_text = "Loading...";
+		var ajax_notification_cancel_text = "Cancel";
+	// ]]></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="description" content="Password Protected Servers" />
+	<title>Password Protected Servers</title><link rel="shortcut icon" type="image/x-icon" href="http://lh3.googleusercontent.com/-GOPf21qQXSY/TzawG0qVPlI/AAAAAAAAAoA/-VQrE780LzQ/s16/CCLogoRound.png" /><link rel="icon" href="http://lh3.googleusercontent.com/-GOPf21qQXSY/TzawG0qVPlI/AAAAAAAAAoA/-VQrE780LzQ/s16/CCLogoRound.png" type="image/x-icon" />
+	<meta name="robots" content="noindex" />
+	<link rel="canonical" href="../index.html" />
+	<link rel="help" href="../../../help/index.html" />
+	<link rel="search" href="../../../search/index.html" />
+	<link rel="contents" href="../../../index.php.html" />
+	<link rel="alternate" type="application/rss+xml" title="Carbon Combat - RSS" href="../../../.xml/index-type=rss.html" />
+	<link rel="prev" href="../index-prev_next=prev.html" />
+	<link rel="next" href="../index-prev_next=next.html" />
+	<link rel="index" href="../../index.html" /><!-- nCode Image Resizer -->
+	<script type="text/javascript" src="../../../Themes/default/ncode_imageresizer.js"></script>
+	<script language="JavaScript" type="text/javascript"><!-- // -->
+	NcodeImageResizer.BBURL = "http://forum.carbontechsoftware.com/Themes/carbonate202b/images";
+	NcodeImageResizer.MODE = "enlarge";
+	NcodeImageResizer.MAXWIDTH = "720";
+	NcodeImageResizer.MAXHEIGHT = "400";
+	vbphrase = new Array();
+	vbphrase['ncode_imageresizer_warning_small'] = 'Click this bar to view the full image.';
+	vbphrase['ncode_imageresizer_warning_filesize'] = 'This image has been resized. Click this bar to view the full image. The original image is sized %1$sx%2$s and weighs %3$sKB.';
+	vbphrase['ncode_imageresizer_warning_no_filesize'] = 'This image has been resized. Click this bar to view the full image. The original image is sized %1$sx%2$s.';
+	vbphrase['ncode_imageresizer_warning_fullsize'] = 'Click this bar to view the small image.';
+	// ]]></script>
+	<link rel="stylesheet" type="text/css" id="editor_css" href="../../../Themes/default/css/editor.css" />
+		<script type="text/javascript"><!-- // --><![CDATA[
+			var smf_smileys_url = 'http://forum.carbontechsoftware.com/Smileys/akyhne';
+			var oEditorStrings= {
+				wont_work: 'Your browser does not support Rich Text editing.',
+				func_disabled: 'Your browser does not support this function.',
+				prompt_text_email: 'Please enter the email address.',
+				prompt_text_ftp: 'Please enter the ftp address.',
+				prompt_text_url: 'Please enter the URL you wish to link to.',
+				prompt_text_img: 'Enter image location'
+			}
+		// ]]></script>
+		<script type="text/javascript" src="../../../Themes/default/scripts/editor-fin20.js"></script>
+		<script type="text/javascript" src="../../../Themes/default/scripts/spellcheck.js"></script>
+		<script type="text/javascript"><!-- // --><![CDATA[
+		function spellCheckDone()
+		{
+			for (i = 0; i < smf_editorArray.length; i++)
+				setTimeout("smf_editorArray[" + i + "].spellCheckEnd()", 150);
+		}
+		// ]]></script>
+		<script type="text/javascript" src="../../../Themes/default/scripts/captcha.js"></script>
+	<style type="text/css">#main_menu,
+		#admin_menu
+		{
+			width: 985px
+		}
+	</style>
+	
+	
+	<script language="javascript" type="text/javascript">
+	<!--
+	
+	// MOD Title: Simple Image Upload
+	// MOD Author: Sium < admin@postimage.org > (N/A) http://www.postimage.org/
+	// MOD Version: 1.3.0
+	
+	var postimage_lang="english";
+	var postimage_add_text="Upload and insert an image";
+	var postimage_textarea_ignore_name=/username_list|search/i;
+	
+	function imgFunction() {
+		alert("After uploading you can...\n\n• Drag & drop the image into the post editor\n• Copy the direct link & add an image\n• Copy & paste the HTML code\n• Copy & paste the BBCode");
+	}
+	
+	function postimage_insert()
+	{
+		var postimage_area=document.getElementsByTagName("TEXTAREA");
+
+		for(var postimage_i=0;postimage_i<postimage_area.length;postimage_i++)
+		{
+			if(!postimage_area[postimage_i].name.match(postimage_textarea_ignore_name))
+			{
+				var postimage_new_div=document.createElement("div");
+				postimage_new_div.id = "smileyBox_message";
+				postimage_new_div.style.marginBottom = "5px";
+				postimage_new_div.style.display = "block";
+				postimage_new_div.innerHTML="<a href=\"javascript:void(0);\" onclick=\"imgFunction();imgWindow=window.open('http://imgur.com/?noFlash', 'imgWindow', 'resizable=no,width=1015,height=550,scrollbars=no');\"><b>>> "+postimage_add_text+"</b></a>";
+				postimage_area[postimage_i].parentNode.insertBefore(postimage_new_div,postimage_area[postimage_i]);
+			}
+		}
+	}
+	
+	window.onload=postimage_insert;
+	//-->
+	</script>
+	
+	
+	
+</head>
+<body>
+<div id="wrapper"><div id="headerlogo"></div>
+	<div id="subheader"><div style="width: 985px; margin:auto;background-color:#000">
+	<div id="uppertop">
+		<div class="middletext" style="float:right;height:auto;line-height:16px">Half past 8:00 pm, June 16th, 2015</div>
+		<script type="text/javascript" src="../../../Themes/default/scripts/sha1.js"></script>
+		<form id="guest_form" action="http://forum.carbontechsoftware.com/login2/" method="post" accept-charset="UTF-8"  onsubmit="hashLoginPassword(this, '477e586f5a9953a0dd3608a1ea7e9270');">
+			Welcome, <strong>Guest</strong>. Please <a href="../../../login/index.html">login</a> or <a href="../../../register/index.html">register</a>.&nbsp;
+	</div>
+	<div id="top_section" style="clear: both;">
+		<div id="main_menu">
+			<div class="menuback">
+			<div class="menuback2">
+			<ul class="dropmenu" id="menu_nav">
+				<li id="button_home" class="toplevel">
+					<a class="active firstlevel" href="../../../index.php.html">
+						<span class="last firstlevel">Home</span>
+					</a>
+				</li>
+				<li id="button_search" class="toplevel">
+					<a class="firstlevel" href="../../../search/index.html">
+						<span class="firstlevel">Search</span>
+					</a>
+					<ul>
+						<li>
+							<a href="../../../search/index.html">
+								<span>Search Forum Topics</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li id="button_login" class="toplevel">
+					<a class="firstlevel" href="../../../login/index.html">
+						<span class="firstlevel">Login</span>
+					</a>
+				</li>
+				<li id="button_register" class="toplevel">
+					<a class="firstlevel" href="../../../register/index.html">
+						<span class="firstlevel">Register</span>
+					</a>
+				</li>
+				<li id="button_chat" class="toplevel">
+					<a class="firstlevel" href="javascript:void(0)"onclick="window.open('/chatRoom.html','POPUP','width=700,height=720,location=0,menubar=0,toolbar=0,scrollbars=0,status=0,');">
+						<span class="firstlevel">Chat</span>
+					</a>
+				</li>
+				<li id="button_play" class="toplevel">
+					<a class="firstlevel" href="http://play.carbontechsoftware.com/"target="_blank');">
+						<span class="last firstlevel"><div style="color:#FFEFAE">Play</div></span>
+					</a>
+				</li>
+			</ul>
+			</div>
+			</div>
+		</div><script src="../../../adjustMenubar.js"></script>
+		<br class="clear" />
+		</div>
+	</div></div>
+	<div id="mainsection"><div style="width: 985px;margin: auto;margin-bottom:0;padding:15px 0">
+		<div id="innermain">	
+	<div class="navigate_section">
+		<ul>
+			<li>
+				<a href="../../../index.php.html"><span>Carbon Combat</span></a> &#187;
+			</li>
+			<li>
+				<a href="../../../index.php.html#c1"><span>General</span></a> &#187;
+			</li>
+			<li>
+				<a href="../../index.html"><span>Feedback &amp; Ideas</span></a> &#187;
+			</li>
+			<li class="last">
+				<a href="../index.html"><span>Password Protected Servers</span></a>
+			</li>
+		</ul>
+	</div>
+			<a id="top"></a>
+			<a id="msg6180"></a>
+			<div id="poll">
+				<div class="cat_bar">
+					<h3 class="catbg">
+						<span class="ie6_header floatleft"><img src="../../../Themes/carbonate202b/images/topic/normal_poll.gif.png" alt="" class="icon" /> Poll</span>
+					</h3>
+				</div>
+				<div class="windowbg">
+					<span class="topslice"><span></span></span>
+					<div class="content" id="poll_options">
+						<h4 id="pollquestion">
+							Do you want this in game?
+						</h4>
+					<dl class="options">
+						<dt class="middletext">Yes</dt>
+						<dd class="middletext statsbar">
+							<div class="bar" style="width: 237.45px;"><div style="width: 233.45px;"></div></div>
+							<span class="percentage">4 (66.7%)</span>
+						</dd>
+						<dt class="middletext">No</dt>
+						<dd class="middletext statsbar">
+							<div class="bar" style="width: 120.55px;"><div style="width: 116.55px;"></div></div>
+							<span class="percentage">2 (33.3%)</span>
+						</dd>
+					</dl>
+						<p><strong>Total Members Voted:</strong> 6</p>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+			</div>
+			<div id="pollmoderation">
+			</div>
+			<div class="pagesection">
+				<div class="nextlinks"><a href="../index-prev_next=prev.html#new">&laquo; previous</a> <a href="../index-prev_next=next.html#new">next &raquo;</a></div>
+				<div class="pagelinks floatleft"><span style="margin-right:20px;color:#747474">Page 1 of 2</span><span class="selectedPage">1</span> <span class="nonselectedPage"><a class="navPages" href="../20/index.html">2</a> </span><span class="nonselectedPage"><a class="navPages" href="../20/index.html">>></a> </span></div>
+			</div>
+			<div id="forumposts">
+				<div class="cat_bar">
+					<h3 class="catbg">
+						<img src="../../../Themes/carbonate202b/images/topic/hot_post.gif.png" align="bottom" alt="" />
+						<span id="author">Author</span>
+						Topic: Password Protected Servers &nbsp;(Read 1482 times)
+					</h3>
+				</div>
+				<form action="http://forum.carbontechsoftware.com/feedback-ideas/password-protected-servers/?action=quickmod2" method="post" accept-charset="UTF-8" name="quickModForm" id="quickModForm" style="margin: 0;" onsubmit="return oQuickModify.bInEditMode ? oQuickModify.modifySave('477e586f5a9953a0dd3608a1ea7e9270', 'f432f3090a') : false">
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/Kemalakkus/index.html" title="View the profile of Kemalakkus">Kemalakkus</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_6180_extra_info">
+								<li class="postgroup" style="display:none">Full Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/Kemalakkus/index.html">
+										<img class="avatar" src="../../../avatar_185_1371312484-action=dlattach-attach=494-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 103</li>
+								<li class="karma" style="margin-top:15px">Karma: 5</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_6180">
+										<a href="../msg6180/index.html#msg6180" rel="nofollow">Password Protected Servers</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 14, 2013, 09:56:25 am" style="cursor:default">Mid-June, 2013</span></div>
+									<div id="msg_6180_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_6180"><span style="font-family: comic sans ms;" class="bbc_font"><span style="font-size: x-large;" class="bbc_size">Sometimes we want to be with only the people we want. But very often, someone comes to our server and we be annoyed. So, I wanted to open this topic.</span></span><br /><span style="font-family: comic sans ms;" class="bbc_font"></span><br /><span style="font-family: comic sans ms;" class="bbc_font"><span style="font-size: 2.65em;" class="bbc_size"><span style="color: #0000ff;" class="bbc_color"><strong>Waiting for your comments.</strong></span></span></span></div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_6180">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_6180_signature">&quot;To finish first, you must first finish.&quot;<br /><br /><img src="http://i.imgur.com/8GZgMM8.png" alt="" width="250" height="100" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg6181"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/tarcor/index.html" title="View the profile of tarcor">tarcor</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_6181_extra_info">
+								<li class="postgroup" style="display:none">Full Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 102</li>
+								<li class="karma" style="margin-top:15px">Karma: 15</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_6181">
+										<a href="../msg6181/index.html#msg6181" rel="nofollow">Re: Password Protected Servers</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 14, 2013, 11:50:32 am" style="cursor:default">Mid-June, 2013</span></div>
+									<div id="msg_6181_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_6181">Yes, I think this a great idea. Just like in mars. It might be over-used though.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_6181">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_6181_signature">Plain sight snipers. We always win.<br /><img src="http://i42.tinypic.com/2vmiq6q.jpg" alt="" width="150" height="100" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg6182"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_6182_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_6182">
+										<a href="../msg6182/index.html#msg6182" rel="nofollow">Re: Password Protected Servers</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 14, 2013, 01:13:16 pm" style="cursor:default">Mid-June, 2013</span></div>
+									<div id="msg_6182_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_6182">This was already suggested and discussed. And no it won&#039;t be just like mars, Mars doesn&#039;t have intense combat nor the same controls like we do.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_6182">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_6182_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg6183"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/tarcor/index.html" title="View the profile of tarcor">tarcor</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_6183_extra_info">
+								<li class="postgroup" style="display:none">Full Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 102</li>
+								<li class="karma" style="margin-top:15px">Karma: 15</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_6183">
+										<a href="../msg6183/index.html#msg6183" rel="nofollow">Re: Password Protected Servers</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 14, 2013, 01:16:59 pm" style="cursor:default">Mid-June, 2013</span></div>
+									<div id="msg_6183_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_6183">I mean &quot;just like mars&quot; in the sense that they too have password protected servers. And how do the controls matter?</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_6183">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_6183_signature">Plain sight snipers. We always win.<br /><img src="http://i42.tinypic.com/2vmiq6q.jpg" alt="" width="150" height="100" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg6184"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_6184_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_6184">
+										<a href="../msg6184/index.html#msg6184" rel="nofollow">Re: Password Protected Servers</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 14, 2013, 05:17:42 pm" style="cursor:default">Mid-June, 2013</span></div>
+									<div id="msg_6184_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_6184"><div class="quoteheader"><div class="topslice_quote"><a href="../msg6183/index.html#msg6183">Quote from: tarcor on <span title=" 14, 2013, 01:16:59 pm" style="cursor:default">Mid-June, 2013</span></a></div></div><blockquote class="bbc_standard_quote">I mean &quot;just like mars&quot; in the sense that they too have password protected servers. And how do the controls matter?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>Well if they&#039;re PW protected, how will people know the password? Not everybody has a chat they can talk to their friends to (for IE I could be playing from the main page which has no chat, see U2Ms game and want to join). So for THAT there would be a feature that lets the host directly let somebody join, and I say that because you can&#039;t simply stop playing just to let somebody join dude! You&#039;ll get mauled.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_6184">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_6184_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg6185"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/U2M/index.html" title="View the profile of U2M">U2M</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_6185_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/U2M/index.html">
+										<img class="avatar" src="../../../avatar_24_1356310894-action=dlattach-attach=425-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 630</li>
+								<li class="karma" style="margin-top:15px">Karma: 32</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_6185">
+										<a href="../msg6185/index.html#msg6185" rel="nofollow">Re: Password Protected Servers</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 14, 2013, 11:13:31 pm" style="cursor:default">Mid-June, 2013</span></div>
+									<div id="msg_6185_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_6185">I like the idea, but cremy is right. We need a way to communicate. I suggest maybe being able to send a password via &quot;your friends&quot; and give them a password. I know it isn&#039;t there now <img src="../../../Smileys/akyhne/tongue.gif" alt="&#58;P" title="Tongue" class="smiley" /> It would need to be implemented. <br />Also, in reply to cremy&#039;s post, lets say I saw somebody (e.g. cremyjr) hosting and I wanted to join, but I couldn&#039;t because their server has a password. But what if you don&#039;t want me there? <img src="../../../Smileys/akyhne/tongue.gif" alt="&#58;P" title="Tongue" class="smiley" /> It&#039;s the whole point of &quot;Password&quot; Protected Servers <img src="../../../Smileys/akyhne/tongue.gif" alt="&#58;P" title="Tongue" class="smiley" /><br />&nbsp;<br />I say yes <img src="../../../Smileys/akyhne/cheesy.gif" alt="&#58;D" title="Cheesy" class="smiley" /></div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_6185">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_6185_signature">&quot;We are made wise not by the recollection of our past, but by the responsibility for our future.&quot;</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg6189"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/Kemalakkus/index.html" title="View the profile of Kemalakkus">Kemalakkus</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_6189_extra_info">
+								<li class="postgroup" style="display:none">Full Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/Kemalakkus/index.html">
+										<img class="avatar" src="../../../avatar_185_1371312484-action=dlattach-attach=494-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 103</li>
+								<li class="karma" style="margin-top:15px">Karma: 5</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_6189">
+										<a href="../msg6189/index.html#msg6189" rel="nofollow">Re: Password Protected Servers</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 15, 2013, 02:20:16 am" style="cursor:default">Mid-June, 2013</span></div>
+									<div id="msg_6189_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_6189"><div class="quoteheader"><div class="topslice_quote"><a href="../msg6184/index.html#msg6184">Quote from: cremyjr on <span title=" 14, 2013, 05:17:42 pm" style="cursor:default">Mid-June, 2013</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg6183/index.html#msg6183">Quote from: tarcor on <span title=" 14, 2013, 01:16:59 pm" style="cursor:default">Mid-June, 2013</span></a></div></div><blockquote class="bbc_alternate_quote">I mean &quot;just like mars&quot; in the sense that they too have password protected servers. And how do the controls matter?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>Well if they&#039;re PW protected, how will people know the password? Not everybody has a chat they can talk to their friends to (for IE I could be playing from the main page which has no chat, see U2Ms game and want to join). So for THAT there would be a feature that lets the host directly let somebody join, and I say that because you can&#039;t simply stop playing just to let somebody join dude! You&#039;ll get mauled.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>We can say the password to our friends with in - game PM.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_6189">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_6189_signature">&quot;To finish first, you must first finish.&quot;<br /><br /><img src="http://i.imgur.com/8GZgMM8.png" alt="" width="250" height="100" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg6191"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_6191_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_6191">
+										<a href="../msg6191/index.html#msg6191" rel="nofollow">Re: Password Protected Servers</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 15, 2013, 07:44:27 am" style="cursor:default">Mid-June, 2013</span></div>
+									<div id="msg_6191_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_6191"><div class="quoteheader"><div class="topslice_quote"><a href="../msg6189/index.html#msg6189">Quote from: Kemalakkus on <span title=" 15, 2013, 02:20:16 am" style="cursor:default">Mid-June, 2013</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg6184/index.html#msg6184">Quote from: cremyjr on <span title=" 14, 2013, 05:17:42 pm" style="cursor:default">Mid-June, 2013</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg6183/index.html#msg6183">Quote from: tarcor on <span title=" 14, 2013, 01:16:59 pm" style="cursor:default">Mid-June, 2013</span></a></div></div><blockquote class="bbc_standard_quote">I mean &quot;just like mars&quot; in the sense that they too have password protected servers. And how do the controls matter?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>Well if they&#039;re PW protected, how will people know the password? Not everybody has a chat they can talk to their friends to (for IE I could be playing from the main page which has no chat, see U2Ms game and want to join). So for THAT there would be a feature that lets the host directly let somebody join, and I say that because you can&#039;t simply stop playing just to let somebody join dude! You&#039;ll get mauled.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>We can say the password to our friends with in - game PM.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>Dude, there *is* no in-game PM. Even if there was, that would be way too complicated. For 1. not everybody is on at the same time. 2. not everybody will check their inbox or even see it (in game). 3. do you REALLY want to send messages to people you don&#039;t even know will be on today to tell them a PW to a game they might not even play?</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_6191">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_6191_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg6192"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/Kemalakkus/index.html" title="View the profile of Kemalakkus">Kemalakkus</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_6192_extra_info">
+								<li class="postgroup" style="display:none">Full Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/Kemalakkus/index.html">
+										<img class="avatar" src="../../../avatar_185_1371312484-action=dlattach-attach=494-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 103</li>
+								<li class="karma" style="margin-top:15px">Karma: 5</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_6192">
+										<a href="../msg6192/index.html#msg6192" rel="nofollow">Re: Password Protected Servers</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 15, 2013, 08:31:44 am" style="cursor:default">Mid-June, 2013</span></div>
+									<div id="msg_6192_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_6192"><div class="quoteheader"><div class="topslice_quote"><a href="../msg6191/index.html#msg6191">Quote from: cremyjr on <span title=" 15, 2013, 07:44:27 am" style="cursor:default">Mid-June, 2013</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg6189/index.html#msg6189">Quote from: Kemalakkus on <span title=" 15, 2013, 02:20:16 am" style="cursor:default">Mid-June, 2013</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg6184/index.html#msg6184">Quote from: cremyjr on <span title=" 14, 2013, 05:17:42 pm" style="cursor:default">Mid-June, 2013</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg6183/index.html#msg6183">Quote from: tarcor on <span title=" 14, 2013, 01:16:59 pm" style="cursor:default">Mid-June, 2013</span></a></div></div><blockquote class="bbc_alternate_quote">I mean &quot;just like mars&quot; in the sense that they too have password protected servers. And how do the controls matter?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>Well if they&#039;re PW protected, how will people know the password? Not everybody has a chat they can talk to their friends to (for IE I could be playing from the main page which has no chat, see U2Ms game and want to join). So for THAT there would be a feature that lets the host directly let somebody join, and I say that because you can&#039;t simply stop playing just to let somebody join dude! You&#039;ll get mauled.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>We can say the password to our friends with in - game PM.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>Dude, there *is* no in-game PM. Even if there was, that would be way too complicated. For 1. not everybody is on at the same time. 2. not everybody will check their inbox or even see it (in game). 3. do you REALLY want to send messages to people you don&#039;t even know will be on today to tell them a PW to a game they might not even play?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>There is. /username message</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_6192">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_6192_signature">&quot;To finish first, you must first finish.&quot;<br /><br /><img src="http://i.imgur.com/8GZgMM8.png" alt="" width="250" height="100" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg6193"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_6193_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_6193">
+										<a href="../msg6193/index.html#msg6193" rel="nofollow">Re: Password Protected Servers</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 15, 2013, 08:43:43 am" style="cursor:default">Mid-June, 2013</span></div>
+									<div id="msg_6193_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_6193"><div class="quoteheader"><div class="topslice_quote"><a href="../msg6192/index.html#msg6192">Quote from: Kemalakkus on <span title=" 15, 2013, 08:31:44 am" style="cursor:default">Mid-June, 2013</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg6191/index.html#msg6191">Quote from: cremyjr on <span title=" 15, 2013, 07:44:27 am" style="cursor:default">Mid-June, 2013</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg6189/index.html#msg6189">Quote from: Kemalakkus on <span title=" 15, 2013, 02:20:16 am" style="cursor:default">Mid-June, 2013</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg6184/index.html#msg6184">Quote from: cremyjr on <span title=" 14, 2013, 05:17:42 pm" style="cursor:default">Mid-June, 2013</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg6183/index.html#msg6183">Quote from: tarcor on <span title=" 14, 2013, 01:16:59 pm" style="cursor:default">Mid-June, 2013</span></a></div></div><blockquote class="bbc_standard_quote">I mean &quot;just like mars&quot; in the sense that they too have password protected servers. And how do the controls matter?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>Well if they&#039;re PW protected, how will people know the password? Not everybody has a chat they can talk to their friends to (for IE I could be playing from the main page which has no chat, see U2Ms game and want to join). So for THAT there would be a feature that lets the host directly let somebody join, and I say that because you can&#039;t simply stop playing just to let somebody join dude! You&#039;ll get mauled.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>We can say the password to our friends with in - game PM.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>Dude, there *is* no in-game PM. Even if there was, that would be way too complicated. For 1. not everybody is on at the same time. 2. not everybody will check their inbox or even see it (in game). 3. do you REALLY want to send messages to people you don&#039;t even know will be on today to tell them a PW to a game they might not even play?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>There is. /username message<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>Dude... How the actual fluff can they be in the game,when they need a PW first? -__- That&#039;s impossible.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_6193">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_6193_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg6196"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/U2M/index.html" title="View the profile of U2M">U2M</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_6196_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/U2M/index.html">
+										<img class="avatar" src="../../../avatar_24_1356310894-action=dlattach-attach=425-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 630</li>
+								<li class="karma" style="margin-top:15px">Karma: 32</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_6196">
+										<a href="../msg6196/index.html#msg6196" rel="nofollow">Re: Password Protected Servers</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 15, 2013, 11:42:23 am" style="cursor:default">Mid-June, 2013</span></div>
+									<div id="msg_6196_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_6196">Ugh, you make things to complicated, cremy. <img src="../../../Smileys/akyhne/tongue.gif" alt="&#58;P" title="Tongue" class="smiley" /></div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_6196">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_6196_signature">&quot;We are made wise not by the recollection of our past, but by the responsibility for our future.&quot;</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg6197"></a><a id="new"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_6197_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_6197">
+										<a href="index.html#msg6197" rel="nofollow">Re: Password Protected Servers</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 15, 2013, 12:42:16 pm" style="cursor:default">Mid-June, 2013</span></div>
+									<div id="msg_6197_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_6197"><div class="quoteheader"><div class="topslice_quote"><a href="../msg6196/index.html#msg6196">Quote from: U2M on <span title=" 15, 2013, 11:42:23 am" style="cursor:default">Mid-June, 2013</span></a></div></div><blockquote class="bbc_standard_quote">Ugh, you make things to complicated, cremy. <img src="../../../Smileys/akyhne/tongue.gif" alt="&#58;P" title="Tongue" class="smiley" /> <br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>How is it complicated? It&#039;s just common sense. How can you join a PW protected server to GET a PW, without it in the first place?!</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_6197">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_6197_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg6198"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/U2M/index.html" title="View the profile of U2M">U2M</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_6198_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/U2M/index.html">
+										<img class="avatar" src="../../../avatar_24_1356310894-action=dlattach-attach=425-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 630</li>
+								<li class="karma" style="margin-top:15px">Karma: 32</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_6198">
+										<a href="../msg6198/index.html#msg6198" rel="nofollow">Re: Password Protected Servers</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 15, 2013, 12:44:33 pm" style="cursor:default">Mid-June, 2013</span></div>
+									<div id="msg_6198_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_6198">Heh, I never said that, kema did. Your always so negative about an idea <img src="../../../Smileys/akyhne/tongue.gif" alt="&#58;P" title="Tongue" class="smiley" /></div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_6198">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_6198_signature">&quot;We are made wise not by the recollection of our past, but by the responsibility for our future.&quot;</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg6199"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_6199_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_6199">
+										<a href="../msg6199/index.html#msg6199" rel="nofollow">Re: Password Protected Servers</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 15, 2013, 01:30:15 pm" style="cursor:default">Mid-June, 2013</span></div>
+									<div id="msg_6199_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_6199"><div class="quoteheader"><div class="topslice_quote"><a href="../msg6198/index.html#msg6198">Quote from: U2M on <span title=" 15, 2013, 12:44:33 pm" style="cursor:default">Mid-June, 2013</span></a></div></div><blockquote class="bbc_standard_quote">Heh, I never said that, kema did. Your always so negative about an idea <img src="../../../Smileys/akyhne/tongue.gif" alt="&#58;P" title="Tongue" class="smiley" /> <br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>I never said anything about me like or dis-liking it. I said it&#039;s already been suggested. <img src="../../../Smileys/akyhne/tongue.gif" alt="&#58;P" title="Tongue" class="smiley" /></div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_6199">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_6199_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg6200"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/tarcor/index.html" title="View the profile of tarcor">tarcor</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_6200_extra_info">
+								<li class="postgroup" style="display:none">Full Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 102</li>
+								<li class="karma" style="margin-top:15px">Karma: 15</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_6200">
+										<a href="../msg6200/index.html#msg6200" rel="nofollow">Re: Password Protected Servers</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 15, 2013, 01:40:21 pm" style="cursor:default">Mid-June, 2013</span></div>
+									<div id="msg_6200_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_6200">And what was the end result of that suggestion?</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_6200">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_6200_signature">Plain sight snipers. We always win.<br /><img src="http://i42.tinypic.com/2vmiq6q.jpg" alt="" width="150" height="100" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg6201"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/U2M/index.html" title="View the profile of U2M">U2M</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_6201_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/U2M/index.html">
+										<img class="avatar" src="../../../avatar_24_1356310894-action=dlattach-attach=425-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 630</li>
+								<li class="karma" style="margin-top:15px">Karma: 32</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_6201">
+										<a href="../msg6201/index.html#msg6201" rel="nofollow">Re: Password Protected Servers</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 15, 2013, 09:21:57 pm" style="cursor:default">Mid-June, 2013</span></div>
+									<div id="msg_6201_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_6201">Yes, cremy <img src="../../../Smileys/akyhne/tongue.gif" alt="&#58;P" title="Tongue" class="smiley" /> What was the final answer? Why can&#039;t it be a yes if a no? XD<br />&nbsp;<br />ANYHOW, the PM system doesn&#039;t need to be in-game. It could just be made through the main menu. Another tab that people can click on to see if they have a code. If you didn&#039;t get the code it&#039;s because you were not wanted in that sever. <img src="../../../Smileys/akyhne/tongue.gif" alt="&#58;P" title="Tongue" class="smiley" /> <br />&nbsp;<br />AND on top of that, who said all servers needed to be password protected? <img src="../../../Smileys/akyhne/tongue.gif" alt="&#58;P" title="Tongue" class="smiley" /></div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_6201">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_6201_signature">&quot;We are made wise not by the recollection of our past, but by the responsibility for our future.&quot;</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg6203"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/tarcor/index.html" title="View the profile of tarcor">tarcor</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_6203_extra_info">
+								<li class="postgroup" style="display:none">Full Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 102</li>
+								<li class="karma" style="margin-top:15px">Karma: 15</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_6203">
+										<a href="../msg6203/index.html#msg6203" rel="nofollow">Re: Password Protected Servers</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 15, 2013, 10:06:28 pm" style="cursor:default">Mid-June, 2013</span></div>
+									<div id="msg_6203_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_6203">Yes. any server that was created by a guest/bot server should no be allowed to have a password.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_6203">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_6203_signature">Plain sight snipers. We always win.<br /><img src="http://i42.tinypic.com/2vmiq6q.jpg" alt="" width="150" height="100" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg6206"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_6206_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_6206">
+										<a href="../msg6206/index.html#msg6206" rel="nofollow">Re: Password Protected Servers</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 16, 2013, 05:00:06 am" style="cursor:default">Mid-June, 2013</span></div>
+									<div id="msg_6206_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_6206"><div class="quoteheader"><div class="topslice_quote"><a href="../msg6200/index.html#msg6200">Quote from: tarcor on <span title=" 15, 2013, 01:40:21 pm" style="cursor:default">Mid-June, 2013</span></a></div></div><blockquote class="bbc_standard_quote">And what was the end result of that suggestion?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>There are no end results to suggestions. If it&#039;s already been discussed- Why should we talk about it again, without any modification, when you could simply look it up on the forum and see the answer you&#039;re looking for. Is there something special about this topic than the others? We&#039;ve had threads that&#039;s already been made yet this one seems to be like it&#039;s a new idea nobody&#039;s ever had before.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_6206">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_6206_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg6207"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/U2M/index.html" title="View the profile of U2M">U2M</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_6207_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/U2M/index.html">
+										<img class="avatar" src="../../../avatar_24_1356310894-action=dlattach-attach=425-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 630</li>
+								<li class="karma" style="margin-top:15px">Karma: 32</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_6207">
+										<a href="../msg6207/index.html#msg6207" rel="nofollow">Re: Password Protected Servers</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 16, 2013, 09:32:51 am" style="cursor:default">Mid-June, 2013</span></div>
+									<div id="msg_6207_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_6207">We are just trying to compromise <img src="../../../Smileys/akyhne/tongue.gif" alt="&#58;P" title="Tongue" class="smiley" /> There is nothing special about this, but your just making it hard to make something simple <img src="../../../Smileys/akyhne/tongue.gif" alt="&#58;P" title="Tongue" class="smiley" /></div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_6207">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_6207_signature">&quot;We are made wise not by the recollection of our past, but by the responsibility for our future.&quot;</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg6209"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_6209_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_6209">
+										<a href="../msg6209/index.html#msg6209" rel="nofollow">Re: Password Protected Servers</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 16, 2013, 11:29:34 am" style="cursor:default">Mid-June, 2013</span></div>
+									<div id="msg_6209_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_6209"><div class="quoteheader"><div class="topslice_quote"><a href="../msg6201/index.html#msg6201">Quote from: U2M on <span title=" 15, 2013, 09:21:57 pm" style="cursor:default">Mid-June, 2013</span></a></div></div><blockquote class="bbc_standard_quote">Yes, cremy <img src="../../../Smileys/akyhne/tongue.gif" alt="&#58;P" title="Tongue" class="smiley" /> What was the final answer? Why can&#039;t it be a yes if a no? XD<br />&nbsp;<br />ANYHOW, the PM system doesn&#039;t need to be in-game. It could just be made through the main menu. Another tab that people can click on to see if they have a code. If you didn&#039;t get the code it&#039;s because you were not wanted in that sever. <img src="../../../Smileys/akyhne/tongue.gif" alt="&#58;P" title="Tongue" class="smiley" /> <br />&nbsp;<br />AND on top of that, who said all servers needed to be password protected? <img src="../../../Smileys/akyhne/tongue.gif" alt="&#58;P" title="Tongue" class="smiley" /> <br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>Nobody ever said all servers would be PW protected dude.<br />That&#039;s how it was first suggested. But my point is nobody&#039;s going to go through the trouble of doing all that just to join a server. The only time that would be useful is if you planned it, which in that case would make no sense since you could only do that on Skype, the forum, or even in game.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_6209">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_6209_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				</form>
+			</div>
+			<a id="lastPost"></a>
+			<div class="pagesection">
+				
+				<div class="pagelinks floatleft"><span style="margin-right:20px;color:#747474">Page 1 of 2</span><span class="selectedPage">1</span> <span class="nonselectedPage"><a class="navPages" href="../20/index.html">2</a> </span><span class="nonselectedPage"><a class="navPages" href="../20/index.html">>></a> </span></div>
+				<div class="nextlinks_bottom"><a href="../index-prev_next=prev.html#new">&laquo; previous</a> <a href="../index-prev_next=next.html#new">next &raquo;</a></div>
+			</div>
+			<div id="moderationbuttons"></div>
+			<div class="plainbox" id="display_jump_to">&nbsp;</div>
+		<br class="clear" />
+			<form action="http://forum.carbontechsoftware.com/spellcheck/" method="post" accept-charset="UTF-8" name="spell_form" id="spell_form" target="spellWindow"><input type="hidden" name="spellstring" value="" /></form>
+				<script type="text/javascript" src="../../../Themes/default/scripts/spellcheck.js"></script>
+				<script type="text/javascript" src="../../../Themes/default/scripts/topic.js"></script>
+				<script type="text/javascript"><!-- // --><![CDATA[
+					if ('XMLHttpRequest' in window)
+					{
+						var oQuickModify = new QuickModify({
+							sScriptUrl: smf_scripturl,
+							bShowModify: true,
+							iTopicId: 509,
+							sTemplateBodyEdit: '\n\t\t\t\t\t\t\t\t<div id="quick_edit_body_container" style="width: 90%">\n\t\t\t\t\t\t\t\t\t<div id="error_box" style="padding: 4px;" class="error"><' + '/div>\n\t\t\t\t\t\t\t\t\t<textarea class="editor" name="message" rows="12" style="width: 100%; margin-bottom: 10px;" tabindex="1">%body%<' + '/textarea><br />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="f432f3090a" value="477e586f5a9953a0dd3608a1ea7e9270" />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="topic" value="509" />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="msg" value="%msg_id%" />\n\t\t\t\t\t\t\t\t\t<div class="righttext">\n\t\t\t\t\t\t\t\t\t\t<input type="submit" name="post" value="Save" tabindex="2" onclick="return oQuickModify.modifySave(\'477e586f5a9953a0dd3608a1ea7e9270\', \'f432f3090a\');" accesskey="s" class="button_submit" />&nbsp;&nbsp;<input type="button" value="Spell Check (popups must be enabled)" tabindex="3" onclick="oEditorHandle_message.spellCheckStart();" class="button_submit" />&nbsp;&nbsp;<input type="submit" name="cancel" value="Cancel" tabindex="4" onclick="return oQuickModify.modifyCancel();" class="button_submit" />\n\t\t\t\t\t\t\t\t\t<' + '/div>\n\t\t\t\t\t\t\t\t<' + '/div>',
+							sTemplateSubjectEdit: '<input type="text" style="width: 90%;" name="subject" value="%subject%" size="80" maxlength="80" tabindex="5" class="input_text" />',
+							sTemplateBodyNormal: '%body%',
+							sTemplateSubjectNormal: '<a hr'+'ef="http://forum.carbontechsoftware.com/index.php'+'?topic=509.msg%msg_id%#msg%msg_id%" rel="nofollow">%subject%<' + '/a>',
+							sTemplateTopSubject: 'Topic: %subject% &nbsp;(Read 1482 times)',
+							sErrorBorderStyle: '1px solid red'
+						});
+
+						aJumpTo[aJumpTo.length] = new JumpTo({
+							sContainerId: "display_jump_to",
+							sJumpToTemplate: "<label class=\"smalltext\" for=\"%select_id%\">Jump to:<" + "/label> %dropdown_list%",
+							iCurBoardId: 3,
+							iCurBoardChildLevel: 0,
+							sCurBoardName: "Feedback &amp; Ideas",
+							sBoardChildLevelIndicator: "==",
+							sBoardPrefix: "=> ",
+							sCatSeparator: "-----------------------------",
+							sCatPrefix: "",
+							sGoButtonLabel: "go"
+						});
+
+						aIconLists[aIconLists.length] = new IconList({
+							sBackReference: "aIconLists[" + aIconLists.length + "]",
+							sIconIdPrefix: "msg_icon_",
+							sScriptUrl: smf_scripturl,
+							bShowModify: true,
+							iBoardId: 3,
+							iTopicId: 509,
+							sSessionId: "477e586f5a9953a0dd3608a1ea7e9270",
+							sSessionVar: "f432f3090a",
+							sLabelIconList: "Message icon",
+							sBoxBackground: "transparent",
+							sBoxBackgroundHover: "#ffffff",
+							iBoxBorderWidthHover: 1,
+							sBoxBorderColorHover: "#adadad" ,
+							sContainerBackground: "#ffffff",
+							sContainerBorder: "1px solid #adadad",
+							sItemBorder: "1px solid #ffffff",
+							sItemBorderHover: "1px dotted gray",
+							sItemBackground: "transparent",
+							sItemBackgroundHover: "#e0e0f0"
+						});
+					}
+				// ]]></script>
+		<form name="spell_form" id="spell_form" method="post" accept-charset="UTF-8" target="spellWindow" action="http://forum.carbontechsoftware.com/spellcheck/">
+			<input type="hidden" name="spellstring" value="" />
+		</form>
+			<script type="text/javascript"><!-- // --><![CDATA[
+				var verificationpostHandle = new smfCaptcha("http://forum.carbontechsoftware.com/index.php?action=verificationcode;vid=post;rand=9586f42eecf45ddb9cc7bff098a58671", "post", 1);
+			// ]]></script>
+	</div>
+	</div></div>
+	<div id="footersection"><div style="width: 985px;margin: auto;">
+			<span class="floatright"><a href="http://www.simplemachines.org/">© Simple Machines (SMF 2.0.2)</a> - Forum designed by CarbonTech & <a href="http://www.blocweb.net">Bloc</a>
+			</span></div>
+	</div></div></div><script type="text/javascript">
+var sc_project=6755287; 
+var sc_invisible=1; 
+var sc_security="c689b4fd"; 
+</script>
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script>
+<noscript><div class="statcounter"><a title="tumblr page
+counter" href="http://statcounter.com/tumblr/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/6755287/0/c689b4fd/1/"
+alt="tumblr page counter"></a></div></noscript>
+</body></html>

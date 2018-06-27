@@ -1,0 +1,1236 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<link rel="stylesheet" type="text/css" href="../../../Themes/carbonate202b/css/index-fin20.css" />
+	<link rel="stylesheet" type="text/css" href="../../../Themes/carbonate202b/css/index_carbon-fin20.css" />
+	<script type="text/javascript" src="../../../Themes/default/scripts/script-fin20.js"></script>
+	<script type="text/javascript" src="../../../Themes/carbonate202b/scripts/theme-fin20.js"></script>
+	<script type="text/javascript"><!-- // --><![CDATA[
+		var smf_theme_url = "http://forum.carbontechsoftware.com/Themes/carbonate202b";
+		var smf_default_theme_url = "http://forum.carbontechsoftware.com/Themes/default";
+		var smf_images_url = "http://forum.carbontechsoftware.com/Themes/carbonate202b/images";
+		var smf_scripturl = "http://forum.carbontechsoftware.com/index.php";
+		var smf_iso_case_folding = false;
+		var smf_charset = "UTF-8";
+		var ajax_notification_text = "Loading...";
+		var ajax_notification_cancel_text = "Cancel";
+	// ]]></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="description" content="New Death Animation/Graphic" />
+	<title>New Death Animation/Graphic</title><link rel="shortcut icon" type="image/x-icon" href="http://lh3.googleusercontent.com/-GOPf21qQXSY/TzawG0qVPlI/AAAAAAAAAoA/-VQrE780LzQ/s16/CCLogoRound.png" /><link rel="icon" href="http://lh3.googleusercontent.com/-GOPf21qQXSY/TzawG0qVPlI/AAAAAAAAAoA/-VQrE780LzQ/s16/CCLogoRound.png" type="image/x-icon" />
+	<meta name="robots" content="noindex" />
+	<link rel="canonical" href="../index.html" />
+	<link rel="help" href="../../../help/index.html" />
+	<link rel="search" href="../../../search/index.html" />
+	<link rel="contents" href="../../../index.php.html" />
+	<link rel="alternate" type="application/rss+xml" title="Carbon Combat - RSS" href="../../../.xml/index-type=rss.html" />
+	<link rel="prev" href="../index-prev_next=prev.html" />
+	<link rel="next" href="../index-prev_next=next.html" />
+	<link rel="index" href="../../index.html" /><!-- nCode Image Resizer -->
+	<script type="text/javascript" src="../../../Themes/default/ncode_imageresizer.js"></script>
+	<script language="JavaScript" type="text/javascript"><!-- // -->
+	NcodeImageResizer.BBURL = "http://forum.carbontechsoftware.com/Themes/carbonate202b/images";
+	NcodeImageResizer.MODE = "enlarge";
+	NcodeImageResizer.MAXWIDTH = "720";
+	NcodeImageResizer.MAXHEIGHT = "400";
+	vbphrase = new Array();
+	vbphrase['ncode_imageresizer_warning_small'] = 'Click this bar to view the full image.';
+	vbphrase['ncode_imageresizer_warning_filesize'] = 'This image has been resized. Click this bar to view the full image. The original image is sized %1$sx%2$s and weighs %3$sKB.';
+	vbphrase['ncode_imageresizer_warning_no_filesize'] = 'This image has been resized. Click this bar to view the full image. The original image is sized %1$sx%2$s.';
+	vbphrase['ncode_imageresizer_warning_fullsize'] = 'Click this bar to view the small image.';
+	// ]]></script>
+	<link rel="stylesheet" type="text/css" id="editor_css" href="../../../Themes/default/css/editor.css" />
+		<script type="text/javascript"><!-- // --><![CDATA[
+			var smf_smileys_url = 'http://forum.carbontechsoftware.com/Smileys/akyhne';
+			var oEditorStrings= {
+				wont_work: 'Your browser does not support Rich Text editing.',
+				func_disabled: 'Your browser does not support this function.',
+				prompt_text_email: 'Please enter the email address.',
+				prompt_text_ftp: 'Please enter the ftp address.',
+				prompt_text_url: 'Please enter the URL you wish to link to.',
+				prompt_text_img: 'Enter image location'
+			}
+		// ]]></script>
+		<script type="text/javascript" src="../../../Themes/default/scripts/editor-fin20.js"></script>
+		<script type="text/javascript" src="../../../Themes/default/scripts/spellcheck.js"></script>
+		<script type="text/javascript"><!-- // --><![CDATA[
+		function spellCheckDone()
+		{
+			for (i = 0; i < smf_editorArray.length; i++)
+				setTimeout("smf_editorArray[" + i + "].spellCheckEnd()", 150);
+		}
+		// ]]></script>
+		<script type="text/javascript" src="../../../Themes/default/scripts/captcha.js"></script>
+	<style type="text/css">#main_menu,
+		#admin_menu
+		{
+			width: 985px
+		}
+	</style>
+	
+	
+	<script language="javascript" type="text/javascript">
+	<!--
+	
+	// MOD Title: Simple Image Upload
+	// MOD Author: Sium < admin@postimage.org > (N/A) http://www.postimage.org/
+	// MOD Version: 1.3.0
+	
+	var postimage_lang="english";
+	var postimage_add_text="Upload and insert an image";
+	var postimage_textarea_ignore_name=/username_list|search/i;
+	
+	function imgFunction() {
+		alert("After uploading you can...\n\n• Drag & drop the image into the post editor\n• Copy the direct link & add an image\n• Copy & paste the HTML code\n• Copy & paste the BBCode");
+	}
+	
+	function postimage_insert()
+	{
+		var postimage_area=document.getElementsByTagName("TEXTAREA");
+
+		for(var postimage_i=0;postimage_i<postimage_area.length;postimage_i++)
+		{
+			if(!postimage_area[postimage_i].name.match(postimage_textarea_ignore_name))
+			{
+				var postimage_new_div=document.createElement("div");
+				postimage_new_div.id = "smileyBox_message";
+				postimage_new_div.style.marginBottom = "5px";
+				postimage_new_div.style.display = "block";
+				postimage_new_div.innerHTML="<a href=\"javascript:void(0);\" onclick=\"imgFunction();imgWindow=window.open('http://imgur.com/?noFlash', 'imgWindow', 'resizable=no,width=1015,height=550,scrollbars=no');\"><b>>> "+postimage_add_text+"</b></a>";
+				postimage_area[postimage_i].parentNode.insertBefore(postimage_new_div,postimage_area[postimage_i]);
+			}
+		}
+	}
+	
+	window.onload=postimage_insert;
+	//-->
+	</script>
+	
+	
+	
+</head>
+<body>
+<div id="wrapper"><div id="headerlogo"></div>
+	<div id="subheader"><div style="width: 985px; margin:auto;background-color:#000">
+	<div id="uppertop">
+		<div class="middletext" style="float:right;height:auto;line-height:16px">Around 8:00 pm, June 16th, 2015</div>
+		<script type="text/javascript" src="../../../Themes/default/scripts/sha1.js"></script>
+		<form id="guest_form" action="http://forum.carbontechsoftware.com/login2/" method="post" accept-charset="UTF-8"  onsubmit="hashLoginPassword(this, '477e586f5a9953a0dd3608a1ea7e9270');">
+			Welcome, <strong>Guest</strong>. Please <a href="../../../login/index.html">login</a> or <a href="../../../register/index.html">register</a>.&nbsp;
+	</div>
+	<div id="top_section" style="clear: both;">
+		<div id="main_menu">
+			<div class="menuback">
+			<div class="menuback2">
+			<ul class="dropmenu" id="menu_nav">
+				<li id="button_home" class="toplevel">
+					<a class="active firstlevel" href="../../../index.php.html">
+						<span class="last firstlevel">Home</span>
+					</a>
+				</li>
+				<li id="button_search" class="toplevel">
+					<a class="firstlevel" href="../../../search/index.html">
+						<span class="firstlevel">Search</span>
+					</a>
+					<ul>
+						<li>
+							<a href="../../../search/index.html">
+								<span>Search Forum Topics</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li id="button_login" class="toplevel">
+					<a class="firstlevel" href="../../../login/index.html">
+						<span class="firstlevel">Login</span>
+					</a>
+				</li>
+				<li id="button_register" class="toplevel">
+					<a class="firstlevel" href="../../../register/index.html">
+						<span class="firstlevel">Register</span>
+					</a>
+				</li>
+				<li id="button_chat" class="toplevel">
+					<a class="firstlevel" href="javascript:void(0)"onclick="window.open('/chatRoom.html','POPUP','width=700,height=720,location=0,menubar=0,toolbar=0,scrollbars=0,status=0,');">
+						<span class="firstlevel">Chat</span>
+					</a>
+				</li>
+				<li id="button_play" class="toplevel">
+					<a class="firstlevel" href="http://play.carbontechsoftware.com/"target="_blank');">
+						<span class="last firstlevel"><div style="color:#FFEFAE">Play</div></span>
+					</a>
+				</li>
+			</ul>
+			</div>
+			</div>
+		</div><script src="../../../adjustMenubar.js"></script>
+		<br class="clear" />
+		</div>
+	</div></div>
+	<div id="mainsection"><div style="width: 985px;margin: auto;margin-bottom:0;padding:15px 0">
+		<div id="innermain">	
+	<div class="navigate_section">
+		<ul>
+			<li>
+				<a href="../../../index.php.html"><span>Carbon Combat</span></a> &#187;
+			</li>
+			<li>
+				<a href="../../../index.php.html#c1"><span>General</span></a> &#187;
+			</li>
+			<li>
+				<a href="../../index.html"><span>Feedback &amp; Ideas</span></a> &#187;
+			</li>
+			<li class="last">
+				<a href="../index.html"><span>New Death Animation/Graphic</span></a>
+			</li>
+		</ul>
+	</div>
+			<a id="top"></a>
+			<a id="msg5433"></a>
+			<div id="poll">
+				<div class="cat_bar">
+					<h3 class="catbg">
+						<span class="ie6_header floatleft"><img src="../../../Themes/carbonate202b/images/topic/normal_poll.gif.png" alt="" class="icon" /> Poll</span>
+					</h3>
+				</div>
+				<div class="windowbg">
+					<span class="topslice"><span></span></span>
+					<div class="content" id="poll_options">
+						<h4 id="pollquestion">
+							Should we have a new way for our cars (us) to die?
+						</h4>
+					<dl class="options">
+						<dt class="middletext">Yes</dt>
+						<dd class="middletext statsbar">
+						</dd>
+						<dt class="middletext">No</dt>
+						<dd class="middletext statsbar">
+						</dd>
+						<dt class="middletext">Maybe so</dt>
+						<dd class="middletext statsbar">
+						</dd>
+					</dl>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+			</div>
+			<div id="pollmoderation">
+			</div>
+			<div class="pagesection">
+				<div class="nextlinks"><a href="../index-prev_next=prev.html#new">&laquo; previous</a> <a href="../index-prev_next=next.html#new">next &raquo;</a></div>
+				<div class="pagelinks floatleft"><span style="margin-right:20px;color:#747474">Page 1 of 1</span><span class="selectedPage">1</span> </div>
+			</div>
+			<div id="forumposts">
+				<div class="cat_bar">
+					<h3 class="catbg">
+						<img src="../../../Themes/carbonate202b/images/topic/hot_post.gif.png" align="bottom" alt="" />
+						<span id="author">Author</span>
+						Topic: New Death Animation/Graphic &nbsp;(Read 2006 times)
+					</h3>
+				</div>
+				<form action="http://forum.carbontechsoftware.com/feedback-ideas/new-death-animationgraphic/?action=quickmod2" method="post" accept-charset="UTF-8" name="quickModForm" id="quickModForm" style="margin: 0;" onsubmit="return oQuickModify.bInEditMode ? oQuickModify.modifySave('477e586f5a9953a0dd3608a1ea7e9270', 'f432f3090a') : false">
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/U2M/index.html" title="View the profile of U2M">U2M</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_5433_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/U2M/index.html">
+										<img class="avatar" src="../../../avatar_24_1356310894-action=dlattach-attach=425-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 630</li>
+								<li class="karma" style="margin-top:15px">Karma: 32</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_5433">
+										<a href="../msg5433/index.html#msg5433" rel="nofollow">New Death Animation/Graphic</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 22, 2013, 06:48:49 pm" style="cursor:default">Late April, 2013</span></div>
+									<div id="msg_5433_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_5433">Currently, when our health had reached zero, we BLOW UP *KA-BOOM*<br /><br />And I see it happen every time I shoot somebody out of the air. Shoot &#039;em with a Grenade out of the air, and they are gone. But we see the same explosion EVERY SINGLE TIME. My idea is to simply make a graphic or new way for our cars to die. I have no problem if you die while you are on the ground, our animation for the current explosion should stay. <br /><br />BUT, what about if your shot down out of the air? What SHOULD happen is our engines die, we spin out of control in the last 1-2 directional keys we used and fall until we hit the ground. Then blow up.<br /><br />Example, You have 10% health, get shot with a missile, and you fall to your car loses stability, NO WAY OUT OF IT, until you hit the ground. <strong><span class="bbc_u">You cannot even get out of the car while you are falling. </span></strong>That would be just W-A-C-K. <br /><br />In conclusion, we are simply adding a new way of dying. no extra, life or extra damage. You just die differently. <br /><br />Whatcha think, fellas?</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_5433">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_5433_signature">&quot;We are made wise not by the recollection of our past, but by the responsibility for our future.&quot;</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg5434"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_5434_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_5434">
+										<a href="../msg5434/index.html#msg5434" rel="nofollow">Re: New Death Animation/Graphic</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 22, 2013, 07:34:51 pm" style="cursor:default">Late April, 2013</span></div>
+									<div id="msg_5434_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_5434">It&#039;s good. But it&#039;s instant blow-up for a reason. It takes time to sit through an animation, whereas more people could be playing longer/faster if they respawn quicker.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_5434">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_5434_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg5435"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/U2M/index.html" title="View the profile of U2M">U2M</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_5435_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/U2M/index.html">
+										<img class="avatar" src="../../../avatar_24_1356310894-action=dlattach-attach=425-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 630</li>
+								<li class="karma" style="margin-top:15px">Karma: 32</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_5435">
+										<a href="../msg5435/index.html#msg5435" rel="nofollow">Re: New Death Animation/Graphic</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 22, 2013, 09:28:22 pm" style="cursor:default">Late April, 2013</span></div>
+									<div id="msg_5435_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_5435">I see your point, but what your saying is irrelevant. It like speeding to a stop light. Whats the point of speeding to a stop light when your just going to stop there anyway? Spawning faster does not effect you killing another player. And besides that, the new &quot;dying&quot; idea will last literally at the most five seconds. Much like the usual spawning time; we could even set it so that, since you &quot;died&quot; technically, the timer is put up as you fall. Tomorrow, I am going to host a little example of the fall. 5:00 pacific time. I am sure, once you see an example, you will like the idea. <br /><br />Please come and see the example. It will better help you fully decide on your decision. </div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_5435">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_5435_signature">&quot;We are made wise not by the recollection of our past, but by the responsibility for our future.&quot;</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg5436"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/celo753/index.html" title="View the profile of celo753">celo753</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_5436_extra_info">
+								<li class="postgroup" style="display:none">Newbie</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1</li>
+								<li class="karma" style="margin-top:15px">Karma: 0</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_5436">
+										<a href="../msg5436/index.html#msg5436" rel="nofollow">Re: New Death Animation/Graphic</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 23, 2013, 10:21:18 am" style="cursor:default">Late April, 2013</span></div>
+									<div id="msg_5436_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_5436">What if we end up falling in water? I think it wouldn&#039;t be very realistic then.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_5436">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg5438"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/speeddemon/index.html" title="View the profile of speeddemon">speeddemon</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_5438_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/speeddemon/index.html">
+										<img class="avatar" src="http://blog.flashissue.com/wp-content/uploads/2012/04/speeddemon.png" width="100" height="100" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 654</li>
+								<li class="karma" style="margin-top:15px">Karma: 31</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_5438">
+										<a href="../msg5438/index.html#msg5438" rel="nofollow">Re: New Death Animation/Graphic</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 23, 2013, 10:30:49 am" style="cursor:default">Late April, 2013</span></div>
+									<div id="msg_5438_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_5438">^ lol pwned u2m, anyway, again, it&#039;s not important, it doesn&#039;t improve gameplay at all, which is the main (only?) point of this game.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_5438">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg5440"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/XD/index.html" title="View the profile of XD">XD</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_5440_extra_info">
+								<li class="postgroup" style="display:none">Sr. Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/XD/index.html">
+										<img class="avatar" src="../../../off-topic/awesome-ninja-stars/index-action=dlattach-attach=195-image.html" width="100" height="100" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 304</li>
+								<li class="karma" style="margin-top:15px">Karma: 27</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_5440">
+										<a href="../msg5440/index.html#msg5440" rel="nofollow">Re: New Death Animation/Graphic</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 23, 2013, 12:40:57 pm" style="cursor:default">Late April, 2013</span></div>
+									<div id="msg_5440_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_5440">Graphics are still an important point of this game. The new death would help a bit but isn&#039;t really important. I always though that the fuel tank ruptured so the car exploded.<br /><br />Examples where graphics are important: What if instead of exploding, we just disappeared, just poof when we die. Or the rockets would just disappear too. Or maybe even if instead of cars, all players were just black rectangles on the screen.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_5440">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg5441"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/speeddemon/index.html" title="View the profile of speeddemon">speeddemon</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_5441_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/speeddemon/index.html">
+										<img class="avatar" src="http://blog.flashissue.com/wp-content/uploads/2012/04/speeddemon.png" width="100" height="100" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 654</li>
+								<li class="karma" style="margin-top:15px">Karma: 31</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_5441">
+										<a href="../msg5441/index.html#msg5441" rel="nofollow">Re: New Death Animation/Graphic</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 23, 2013, 12:49:21 pm" style="cursor:default">Late April, 2013</span></div>
+									<div id="msg_5441_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_5441">XD you know what I mean.<br /><br /></div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_5441">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg5442"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_5442_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_5442">
+										<a href="../msg5442/index.html#msg5442" rel="nofollow">Re: New Death Animation/Graphic</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 23, 2013, 01:58:24 pm" style="cursor:default">Late April, 2013</span></div>
+									<div id="msg_5442_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_5442">I&#039;m not saying anything. Once whatever you&#039;re implying doesn&#039;t interfere with the respawn time (longer or shorter respawn).</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_5442">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_5442_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg5443"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/XD/index.html" title="View the profile of XD">XD</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_5443_extra_info">
+								<li class="postgroup" style="display:none">Sr. Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/XD/index.html">
+										<img class="avatar" src="../../../off-topic/awesome-ninja-stars/index-action=dlattach-attach=195-image.html" width="100" height="100" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 304</li>
+								<li class="karma" style="margin-top:15px">Karma: 27</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_5443">
+										<a href="../msg5443/index.html#msg5443" rel="nofollow">Re: New Death Animation/Graphic</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 23, 2013, 02:53:20 pm" style="cursor:default">Late April, 2013</span></div>
+									<div id="msg_5443_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_5443">Was exaggerating.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_5443">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg5445"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/speeddemon/index.html" title="View the profile of speeddemon">speeddemon</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_5445_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/speeddemon/index.html">
+										<img class="avatar" src="http://blog.flashissue.com/wp-content/uploads/2012/04/speeddemon.png" width="100" height="100" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 654</li>
+								<li class="karma" style="margin-top:15px">Karma: 31</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_5445">
+										<a href="../msg5445/index.html#msg5445" rel="nofollow">Re: New Death Animation/Graphic</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 24, 2013, 07:35:19 am" style="cursor:default">Late April, 2013</span></div>
+									<div id="msg_5445_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_5445">I had this idea yesterday, instead of the work of this animation stuff, how about a simple kill cam behind the respawn message, the area that is currently a black screen. All it would take is changing the position and angle of the camera. It could be fixed looking at where you died from above or it could follow your killer. Another alternative is it rotates 360&#039; around where you died.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_5445">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg5446"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_5446_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_5446">
+										<a href="../msg5446/index.html#msg5446" rel="nofollow">Re: New Death Animation/Graphic</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 24, 2013, 01:36:29 pm" style="cursor:default">Late April, 2013</span></div>
+									<div id="msg_5446_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_5446">Hey! I had the idea for it to follow your killer. :|</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_5446">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_5446_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg5447"></a><a id="new"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/speeddemon/index.html" title="View the profile of speeddemon">speeddemon</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_5447_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/speeddemon/index.html">
+										<img class="avatar" src="http://blog.flashissue.com/wp-content/uploads/2012/04/speeddemon.png" width="100" height="100" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 654</li>
+								<li class="karma" style="margin-top:15px">Karma: 31</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_5447">
+										<a href="index.html#msg5447" rel="nofollow">Re: New Death Animation/Graphic</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 24, 2013, 01:59:57 pm" style="cursor:default">Late April, 2013</span></div>
+									<div id="msg_5447_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_5447">lol yeah you did, I forgot to put that.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_5447">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg6660"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_6660_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_6660">
+										<a href="../msg6660/index.html#msg6660" rel="nofollow">Re: New Death Animation/Graphic</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 29, 2013, 07:29:17 pm" style="cursor:default">Late August, 2013</span></div>
+									<div id="msg_6660_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_6660">This. <img src="../../../Smileys/akyhne/tongue.gif" alt="&#58;P" title="Tongue" class="smiley" /> Lol.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_6660">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_6660_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg6682"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/U2M/index.html" title="View the profile of U2M">U2M</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_6682_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/U2M/index.html">
+										<img class="avatar" src="../../../avatar_24_1356310894-action=dlattach-attach=425-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 630</li>
+								<li class="karma" style="margin-top:15px">Karma: 32</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_6682">
+										<a href="../msg6682/index.html#msg6682" rel="nofollow">Re: New Death Animation/Graphic</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 01, 2013, 09:23:10 am" style="cursor:default">Early September, 2013</span></div>
+									<div id="msg_6682_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_6682">It was a good idea. I ask (what&#039;s left) of the CC Community to please rethink this idea. I can see it in my head, it will work so perfectly, but I want to know why you, if at all, don&#039;t really like it. Yes, there are reasons above, but opinions change from time to time. <br /><br />Please Comment. <br /></div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_6682">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_6682_signature">&quot;We are made wise not by the recollection of our past, but by the responsibility for our future.&quot;</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg6684"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_6684_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_6684">
+										<a href="../msg6684/index.html#msg6684" rel="nofollow">Re: New Death Animation/Graphic</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 01, 2013, 11:30:31 am" style="cursor:default">Early September, 2013</span></div>
+									<div id="msg_6684_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_6684">My &quot;maybe so&quot; vote has not changed. <img src="../../../Smileys/akyhne/tongue.gif" alt="&#58;P" title="Tongue" class="smiley" /></div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_6684">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_6684_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg6687"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/U2M/index.html" title="View the profile of U2M">U2M</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_6687_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/U2M/index.html">
+										<img class="avatar" src="../../../avatar_24_1356310894-action=dlattach-attach=425-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 630</li>
+								<li class="karma" style="margin-top:15px">Karma: 32</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_6687">
+										<a href="../msg6687/index.html#msg6687" rel="nofollow">Re: New Death Animation/Graphic</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 01, 2013, 09:30:35 pm" style="cursor:default">Early September, 2013</span></div>
+									<div id="msg_6687_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_6687">That&#039;s just you. <img src="../../../Smileys/akyhne/smiley.gif" alt="&#58;&#41;" title="Smiley" class="smiley" /></div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_6687">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_6687_signature">&quot;We are made wise not by the recollection of our past, but by the responsibility for our future.&quot;</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg6704"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/jdc151/index.html" title="View the profile of jdc151">jdc151</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_6704_extra_info">
+								<li class="postgroup" style="display:none">Jr. Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/jdc151/index.html">
+										<img class="avatar" src="../../../avatar_290_1394377993-action=dlattach-attach=530-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 59</li>
+								<li class="karma" style="margin-top:15px">Karma: 3</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_6704">
+										<a href="../msg6704/index.html#msg6704" rel="nofollow">Re: New Death Animation/Graphic</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 03, 2013, 08:55:56 am" style="cursor:default">Early September, 2013</span></div>
+									<div id="msg_6704_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_6704">I love it! And maybe you could have different angles of being destroyed, like a rocket below you blowing your car up would explode upwards, or you would start smoking...or how about from the side? You could have graphic dents, maybe burn marks from energy projectiles...etc. Perhaps you might even try having a death spiral, or a camera zoom out to watch the action(the perspective of the guy getting blown up)...or maybe a death playback when you die...wait for about 5 seconds, watch the death kill, and respawn. And maybe the leftovers of the car could remain...or there could be ammunition marks around the area, different signs from different weapons...or....lol you get the point. It&#039;s could really improve the graphic visuals in the game!</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_6704">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_6704_signature">It&#039;s better for people to believe you are a fool, then open your mouth and remove all doubt.<br />Public Service Announcement:<br />Ugly, there is no I in it, but there is a u.<br />Just kidding! <img src="../../../Smileys/akyhne/smiley.gif" alt="&#58;&#41;" title="Smiley" class="smiley" /></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg6708"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_6708_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_6708">
+										<a href="../msg6708/index.html#msg6708" rel="nofollow">Re: New Death Animation/Graphic</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 03, 2013, 03:31:37 pm" style="cursor:default">Early September, 2013</span></div>
+									<div id="msg_6708_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_6708"><div class="quoteheader"><div class="topslice_quote"><a href="../msg6704/index.html#msg6704">Quote from: jdc151 on <span title=" 03, 2013, 08:55:56 am" style="cursor:default">Early September, 2013</span></a></div></div><blockquote class="bbc_standard_quote">I love it! And maybe you could have different angles of being destroyed, like a rocket below you blowing your car up would explode upwards, or you would start smoking...or how about from the side? You could have graphic dents, maybe burn marks from energy projectiles...etc. Perhaps you might even try having a death spiral, or a camera zoom out to watch the action(the perspective of the guy getting blown up)...or maybe a death playback when you die...wait for about 5 seconds, watch the death kill, and respawn. And maybe the leftovers of the car could remain...or there could be ammunition marks around the area, different signs from different weapons...or....lol you get the point. It&#039;s could really improve the graphic visuals in the game!<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>Hmm... Actually, new visuals to let you know you&#039;ve been shot would be nice. Other than tiny @$$ bullet holes and flames, you could have scorch marks after the flames die out. Maybe even stay that way? So if you get burned it will take some of your camo off? (whatever color you have on you kit, armor, ect)<br />An instant replay doesn&#039;t sound bad either, just remember what I said about these. They shouldn&#039;t interfere with, or prolong the respawn time.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_6708">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_6708_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg6811"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/jdc151/index.html" title="View the profile of jdc151">jdc151</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_6811_extra_info">
+								<li class="postgroup" style="display:none">Jr. Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/jdc151/index.html">
+										<img class="avatar" src="../../../avatar_290_1394377993-action=dlattach-attach=530-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 59</li>
+								<li class="karma" style="margin-top:15px">Karma: 3</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_6811">
+										<a href="../msg6811/index.html#msg6811" rel="nofollow">Re: New Death Animation/Graphic</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 29, 2013, 01:13:45 pm" style="cursor:default">Late September, 2013</span></div>
+									<div id="msg_6811_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_6811">Awesome. Now the only thing left to do is to compile a list of stuff to show ct when he gets back, and cross fingers.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_6811">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_6811_signature">It&#039;s better for people to believe you are a fool, then open your mouth and remove all doubt.<br />Public Service Announcement:<br />Ugly, there is no I in it, but there is a u.<br />Just kidding! <img src="../../../Smileys/akyhne/smiley.gif" alt="&#58;&#41;" title="Smiley" class="smiley" /></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg6842"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/BlazingBird/index.html" title="View the profile of BlazingBird">BlazingBird</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_6842_extra_info">
+								<li class="postgroup" style="display:none">Full Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/BlazingBird/index.html">
+										<img class="avatar" src="../../../avatar_68_1346524374-action=dlattach-attach=126-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 226</li>
+								<li class="karma" style="margin-top:15px">Karma: 10</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_6842">
+										<a href="../msg6842/index.html#msg6842" rel="nofollow">Re: New Death Animation/Graphic</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 03, 2013, 12:11:41 pm" style="cursor:default">Early October, 2013</span></div>
+									<div id="msg_6842_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_6842"><div class="quoteheader"><div class="topslice_quote"><a href="../msg6811/index.html#msg6811">Quote from: jdc151 on <span title=" 29, 2013, 01:13:45 pm" style="cursor:default">Late September, 2013</span></a></div></div><blockquote class="bbc_standard_quote">Awesome. Now the only thing left to do is to compile a list of stuff to show ct <strong>when</strong> he gets back, and cross <br />fingers.<br /><span style="font-size: 1.35em;" class="bbc_size"><strong>when</strong></span><br /><strong><span style="font-size: 2.65em;" class="bbc_size">When</span></strong><br /><strong><span style="font-size: 3.95em;" class="bbc_size">When</span><br /></strong></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>This was suggested a month after he left.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_6842">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				</form>
+			</div>
+			<a id="lastPost"></a>
+			<div class="pagesection">
+				
+				<div class="pagelinks floatleft"><span style="margin-right:20px;color:#747474">Page 1 of 1</span><span class="selectedPage">1</span> </div>
+				<div class="nextlinks_bottom"><a href="../index-prev_next=prev.html#new">&laquo; previous</a> <a href="../index-prev_next=next.html#new">next &raquo;</a></div>
+			</div>
+			<div id="moderationbuttons"></div>
+			<div class="plainbox" id="display_jump_to">&nbsp;</div>
+		<br class="clear" />
+			<form action="http://forum.carbontechsoftware.com/spellcheck/" method="post" accept-charset="UTF-8" name="spell_form" id="spell_form" target="spellWindow"><input type="hidden" name="spellstring" value="" /></form>
+				<script type="text/javascript" src="../../../Themes/default/scripts/spellcheck.js"></script>
+				<script type="text/javascript" src="../../../Themes/default/scripts/topic.js"></script>
+				<script type="text/javascript"><!-- // --><![CDATA[
+					if ('XMLHttpRequest' in window)
+					{
+						var oQuickModify = new QuickModify({
+							sScriptUrl: smf_scripturl,
+							bShowModify: true,
+							iTopicId: 465,
+							sTemplateBodyEdit: '\n\t\t\t\t\t\t\t\t<div id="quick_edit_body_container" style="width: 90%">\n\t\t\t\t\t\t\t\t\t<div id="error_box" style="padding: 4px;" class="error"><' + '/div>\n\t\t\t\t\t\t\t\t\t<textarea class="editor" name="message" rows="12" style="width: 100%; margin-bottom: 10px;" tabindex="1">%body%<' + '/textarea><br />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="f432f3090a" value="477e586f5a9953a0dd3608a1ea7e9270" />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="topic" value="465" />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="msg" value="%msg_id%" />\n\t\t\t\t\t\t\t\t\t<div class="righttext">\n\t\t\t\t\t\t\t\t\t\t<input type="submit" name="post" value="Save" tabindex="2" onclick="return oQuickModify.modifySave(\'477e586f5a9953a0dd3608a1ea7e9270\', \'f432f3090a\');" accesskey="s" class="button_submit" />&nbsp;&nbsp;<input type="button" value="Spell Check (popups must be enabled)" tabindex="3" onclick="oEditorHandle_message.spellCheckStart();" class="button_submit" />&nbsp;&nbsp;<input type="submit" name="cancel" value="Cancel" tabindex="4" onclick="return oQuickModify.modifyCancel();" class="button_submit" />\n\t\t\t\t\t\t\t\t\t<' + '/div>\n\t\t\t\t\t\t\t\t<' + '/div>',
+							sTemplateSubjectEdit: '<input type="text" style="width: 90%;" name="subject" value="%subject%" size="80" maxlength="80" tabindex="5" class="input_text" />',
+							sTemplateBodyNormal: '%body%',
+							sTemplateSubjectNormal: '<a hr'+'ef="http://forum.carbontechsoftware.com/index.php'+'?topic=465.msg%msg_id%#msg%msg_id%" rel="nofollow">%subject%<' + '/a>',
+							sTemplateTopSubject: 'Topic: %subject% &nbsp;(Read 2006 times)',
+							sErrorBorderStyle: '1px solid red'
+						});
+
+						aJumpTo[aJumpTo.length] = new JumpTo({
+							sContainerId: "display_jump_to",
+							sJumpToTemplate: "<label class=\"smalltext\" for=\"%select_id%\">Jump to:<" + "/label> %dropdown_list%",
+							iCurBoardId: 3,
+							iCurBoardChildLevel: 0,
+							sCurBoardName: "Feedback &amp; Ideas",
+							sBoardChildLevelIndicator: "==",
+							sBoardPrefix: "=> ",
+							sCatSeparator: "-----------------------------",
+							sCatPrefix: "",
+							sGoButtonLabel: "go"
+						});
+
+						aIconLists[aIconLists.length] = new IconList({
+							sBackReference: "aIconLists[" + aIconLists.length + "]",
+							sIconIdPrefix: "msg_icon_",
+							sScriptUrl: smf_scripturl,
+							bShowModify: true,
+							iBoardId: 3,
+							iTopicId: 465,
+							sSessionId: "477e586f5a9953a0dd3608a1ea7e9270",
+							sSessionVar: "f432f3090a",
+							sLabelIconList: "Message icon",
+							sBoxBackground: "transparent",
+							sBoxBackgroundHover: "#ffffff",
+							iBoxBorderWidthHover: 1,
+							sBoxBorderColorHover: "#adadad" ,
+							sContainerBackground: "#ffffff",
+							sContainerBorder: "1px solid #adadad",
+							sItemBorder: "1px solid #ffffff",
+							sItemBorderHover: "1px dotted gray",
+							sItemBackground: "transparent",
+							sItemBackgroundHover: "#e0e0f0"
+						});
+					}
+				// ]]></script>
+		<form name="spell_form" id="spell_form" method="post" accept-charset="UTF-8" target="spellWindow" action="http://forum.carbontechsoftware.com/spellcheck/">
+			<input type="hidden" name="spellstring" value="" />
+		</form>
+			<script type="text/javascript"><!-- // --><![CDATA[
+				var verificationpostHandle = new smfCaptcha("http://forum.carbontechsoftware.com/index.php?action=verificationcode;vid=post;rand=e082bc3f0ecd67a8388ee7e5f8ba2b16", "post", 1);
+			// ]]></script>
+	</div>
+	</div></div>
+	<div id="footersection"><div style="width: 985px;margin: auto;">
+			<span class="floatright"><a href="http://www.simplemachines.org/">© Simple Machines (SMF 2.0.2)</a> - Forum designed by CarbonTech & <a href="http://www.blocweb.net">Bloc</a>
+			</span></div>
+	</div></div></div><script type="text/javascript">
+var sc_project=6755287; 
+var sc_invisible=1; 
+var sc_security="c689b4fd"; 
+</script>
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script>
+<noscript><div class="statcounter"><a title="tumblr page
+counter" href="http://statcounter.com/tumblr/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/6755287/0/c689b4fd/1/"
+alt="tumblr page counter"></a></div></noscript>
+</body></html>

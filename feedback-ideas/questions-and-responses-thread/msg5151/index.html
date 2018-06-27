@@ -1,0 +1,1191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<link rel="stylesheet" type="text/css" href="../../../Themes/carbonate202b/css/index-fin20.css" />
+	<link rel="stylesheet" type="text/css" href="../../../Themes/carbonate202b/css/index_carbon-fin20.css" />
+	<script type="text/javascript" src="../../../Themes/default/scripts/script-fin20.js"></script>
+	<script type="text/javascript" src="../../../Themes/carbonate202b/scripts/theme-fin20.js"></script>
+	<script type="text/javascript"><!-- // --><![CDATA[
+		var smf_theme_url = "http://forum.carbontechsoftware.com/Themes/carbonate202b";
+		var smf_default_theme_url = "http://forum.carbontechsoftware.com/Themes/default";
+		var smf_images_url = "http://forum.carbontechsoftware.com/Themes/carbonate202b/images";
+		var smf_scripturl = "http://forum.carbontechsoftware.com/index.php";
+		var smf_iso_case_folding = false;
+		var smf_charset = "UTF-8";
+		var ajax_notification_text = "Loading...";
+		var ajax_notification_cancel_text = "Cancel";
+	// ]]></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="description" content="Questions and Responses Thread" />
+	<title>Questions and Responses Thread</title><link rel="shortcut icon" type="image/x-icon" href="http://lh3.googleusercontent.com/-GOPf21qQXSY/TzawG0qVPlI/AAAAAAAAAoA/-VQrE780LzQ/s16/CCLogoRound.png" /><link rel="icon" href="http://lh3.googleusercontent.com/-GOPf21qQXSY/TzawG0qVPlI/AAAAAAAAAoA/-VQrE780LzQ/s16/CCLogoRound.png" type="image/x-icon" />
+	<meta name="robots" content="noindex" />
+	<link rel="canonical" href="../index.html" />
+	<link rel="help" href="../../../help/index.html" />
+	<link rel="search" href="../../../search/index.html" />
+	<link rel="contents" href="../../../index.php.html" />
+	<link rel="alternate" type="application/rss+xml" title="Carbon Combat - RSS" href="../../../.xml/index-type=rss.html" />
+	<link rel="prev" href="../index-prev_next=prev.html" />
+	<link rel="next" href="../index-prev_next=next.html" />
+	<link rel="index" href="../../index.html" /><!-- nCode Image Resizer -->
+	<script type="text/javascript" src="../../../Themes/default/ncode_imageresizer.js"></script>
+	<script language="JavaScript" type="text/javascript"><!-- // -->
+	NcodeImageResizer.BBURL = "http://forum.carbontechsoftware.com/Themes/carbonate202b/images";
+	NcodeImageResizer.MODE = "enlarge";
+	NcodeImageResizer.MAXWIDTH = "720";
+	NcodeImageResizer.MAXHEIGHT = "400";
+	vbphrase = new Array();
+	vbphrase['ncode_imageresizer_warning_small'] = 'Click this bar to view the full image.';
+	vbphrase['ncode_imageresizer_warning_filesize'] = 'This image has been resized. Click this bar to view the full image. The original image is sized %1$sx%2$s and weighs %3$sKB.';
+	vbphrase['ncode_imageresizer_warning_no_filesize'] = 'This image has been resized. Click this bar to view the full image. The original image is sized %1$sx%2$s.';
+	vbphrase['ncode_imageresizer_warning_fullsize'] = 'Click this bar to view the small image.';
+	// ]]></script>
+	<link rel="stylesheet" type="text/css" id="editor_css" href="../../../Themes/default/css/editor.css" />
+		<script type="text/javascript"><!-- // --><![CDATA[
+			var smf_smileys_url = 'http://forum.carbontechsoftware.com/Smileys/akyhne';
+			var oEditorStrings= {
+				wont_work: 'Your browser does not support Rich Text editing.',
+				func_disabled: 'Your browser does not support this function.',
+				prompt_text_email: 'Please enter the email address.',
+				prompt_text_ftp: 'Please enter the ftp address.',
+				prompt_text_url: 'Please enter the URL you wish to link to.',
+				prompt_text_img: 'Enter image location'
+			}
+		// ]]></script>
+		<script type="text/javascript" src="../../../Themes/default/scripts/editor-fin20.js"></script>
+		<script type="text/javascript" src="../../../Themes/default/scripts/spellcheck.js"></script>
+		<script type="text/javascript"><!-- // --><![CDATA[
+		function spellCheckDone()
+		{
+			for (i = 0; i < smf_editorArray.length; i++)
+				setTimeout("smf_editorArray[" + i + "].spellCheckEnd()", 150);
+		}
+		// ]]></script>
+		<script type="text/javascript" src="../../../Themes/default/scripts/captcha.js"></script>
+	<style type="text/css">#main_menu,
+		#admin_menu
+		{
+			width: 985px
+		}
+	</style>
+	
+	
+	<script language="javascript" type="text/javascript">
+	<!--
+	
+	// MOD Title: Simple Image Upload
+	// MOD Author: Sium < admin@postimage.org > (N/A) http://www.postimage.org/
+	// MOD Version: 1.3.0
+	
+	var postimage_lang="english";
+	var postimage_add_text="Upload and insert an image";
+	var postimage_textarea_ignore_name=/username_list|search/i;
+	
+	function imgFunction() {
+		alert("After uploading you can...\n\n• Drag & drop the image into the post editor\n• Copy the direct link & add an image\n• Copy & paste the HTML code\n• Copy & paste the BBCode");
+	}
+	
+	function postimage_insert()
+	{
+		var postimage_area=document.getElementsByTagName("TEXTAREA");
+
+		for(var postimage_i=0;postimage_i<postimage_area.length;postimage_i++)
+		{
+			if(!postimage_area[postimage_i].name.match(postimage_textarea_ignore_name))
+			{
+				var postimage_new_div=document.createElement("div");
+				postimage_new_div.id = "smileyBox_message";
+				postimage_new_div.style.marginBottom = "5px";
+				postimage_new_div.style.display = "block";
+				postimage_new_div.innerHTML="<a href=\"javascript:void(0);\" onclick=\"imgFunction();imgWindow=window.open('http://imgur.com/?noFlash', 'imgWindow', 'resizable=no,width=1015,height=550,scrollbars=no');\"><b>>> "+postimage_add_text+"</b></a>";
+				postimage_area[postimage_i].parentNode.insertBefore(postimage_new_div,postimage_area[postimage_i]);
+			}
+		}
+	}
+	
+	window.onload=postimage_insert;
+	//-->
+	</script>
+	
+	
+	
+</head>
+<body>
+<div id="wrapper"><div id="headerlogo"></div>
+	<div id="subheader"><div style="width: 985px; margin:auto;background-color:#000">
+	<div id="uppertop">
+		<div class="middletext" style="float:right;height:auto;line-height:16px">Almost 8:00 pm, June 16th, 2015</div>
+		<script type="text/javascript" src="../../../Themes/default/scripts/sha1.js"></script>
+		<form id="guest_form" action="http://forum.carbontechsoftware.com/login2/" method="post" accept-charset="UTF-8"  onsubmit="hashLoginPassword(this, '477e586f5a9953a0dd3608a1ea7e9270');">
+			Welcome, <strong>Guest</strong>. Please <a href="../../../login/index.html">login</a> or <a href="../../../register/index.html">register</a>.&nbsp;
+	</div>
+	<div id="top_section" style="clear: both;">
+		<div id="main_menu">
+			<div class="menuback">
+			<div class="menuback2">
+			<ul class="dropmenu" id="menu_nav">
+				<li id="button_home" class="toplevel">
+					<a class="active firstlevel" href="../../../index.php.html">
+						<span class="last firstlevel">Home</span>
+					</a>
+				</li>
+				<li id="button_search" class="toplevel">
+					<a class="firstlevel" href="../../../search/index.html">
+						<span class="firstlevel">Search</span>
+					</a>
+					<ul>
+						<li>
+							<a href="../../../search/index.html">
+								<span>Search Forum Topics</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li id="button_login" class="toplevel">
+					<a class="firstlevel" href="../../../login/index.html">
+						<span class="firstlevel">Login</span>
+					</a>
+				</li>
+				<li id="button_register" class="toplevel">
+					<a class="firstlevel" href="../../../register/index.html">
+						<span class="firstlevel">Register</span>
+					</a>
+				</li>
+				<li id="button_chat" class="toplevel">
+					<a class="firstlevel" href="javascript:void(0)"onclick="window.open('/chatRoom.html','POPUP','width=700,height=720,location=0,menubar=0,toolbar=0,scrollbars=0,status=0,');">
+						<span class="firstlevel">Chat</span>
+					</a>
+				</li>
+				<li id="button_play" class="toplevel">
+					<a class="firstlevel" href="http://play.carbontechsoftware.com/"target="_blank');">
+						<span class="last firstlevel"><div style="color:#FFEFAE">Play</div></span>
+					</a>
+				</li>
+			</ul>
+			</div>
+			</div>
+		</div><script src="../../../adjustMenubar.js"></script>
+		<br class="clear" />
+		</div>
+	</div></div>
+	<div id="mainsection"><div style="width: 985px;margin: auto;margin-bottom:0;padding:15px 0">
+		<div id="innermain">	
+	<div class="navigate_section">
+		<ul>
+			<li>
+				<a href="../../../index.php.html"><span>Carbon Combat</span></a> &#187;
+			</li>
+			<li>
+				<a href="../../../index.php.html#c1"><span>General</span></a> &#187;
+			</li>
+			<li>
+				<a href="../../index.html"><span>Feedback &amp; Ideas</span></a> &#187;
+			</li>
+			<li class="last">
+				<a href="../index.html"><span>Questions and Responses Thread</span></a>
+			</li>
+		</ul>
+	</div>
+			<a id="top"></a>
+			<a id="msg31"></a>
+			<div class="pagesection">
+				<div class="nextlinks"><a href="../index-prev_next=prev.html#new">&laquo; previous</a> <a href="../index-prev_next=next.html#new">next &raquo;</a></div>
+				<div class="pagelinks floatleft"><span style="margin-right:20px;color:#747474">Page 1 of 2</span><span class="selectedPage">1</span> <span class="nonselectedPage"><a class="navPages" href="../20/index.html">2</a> </span><span class="nonselectedPage"><a class="navPages" href="../20/index.html">>></a> </span></div>
+			</div>
+			<div id="forumposts">
+				<div class="cat_bar">
+					<h3 class="catbg">
+						<img src="../../../Themes/carbonate202b/images/topic/hot_post.gif.png" align="bottom" alt="" />
+						<span id="author">Author</span>
+						Topic: Questions and Responses Thread &nbsp;(Read 2778 times)
+					</h3>
+				</div>
+				<form action="http://forum.carbontechsoftware.com/feedback-ideas/questions-and-responses-thread/?action=quickmod2" method="post" accept-charset="UTF-8" name="quickModForm" id="quickModForm" style="margin: 0;" onsubmit="return oQuickModify.bInEditMode ? oQuickModify.modifySave('477e586f5a9953a0dd3608a1ea7e9270', 'f432f3090a') : false">
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/THEpancakes/index.html" title="View the profile of THEpancakes">THEpancakes</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_31_extra_info">
+								<li class="postgroup" style="display:none">Newbie</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/THEpancakes/index.html">
+										<img class="avatar" src="http://marvinhawkins.files.wordpress.com/2011/04/unity-3d-logo.jpg" width="100" height="100" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 25</li>
+								<li class="karma" style="margin-top:15px">Karma: 7</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_31">
+										<a href="../msg31/index.html#msg31" rel="nofollow">Questions and Responses Thread</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 06, 2012, 05:45:51 am" style="cursor:default">Early July, 2012</span></div>
+									<div id="msg_31_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_31">Hey everyone,<br /><br />Since we now have a new forum, I&#039;m just re-posting a few things that were regularly used on the other one, including my once stickied Questions and Responses thread.<br /><br />Here it is!<br />Here you can ask any question you might have, whether it is a simple, or complicated question, or possibly state a concern, and hopefully, the community will answer it!<br />This will also be an excellent resource before asking your own question. So if you have any concerns or are wondering about anything, I encourage you to take a look here before asking a question.<br />So for the sake of not clogging up the forum, I encourage you all to post any questions or concerns you have on this thread!</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_31">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg36"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/FatCatAttack/index.html" title="View the profile of FatCatAttack">FatCatAttack</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_36_extra_info">
+								<li class="postgroup" style="display:none">Sr. Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 254</li>
+								<li class="karma" style="margin-top:15px">Karma: 30</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_36">
+										<a href="../msg36/index.html#msg36" rel="nofollow">Re: Questions and Responses Thread</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 06, 2012, 11:12:31 am" style="cursor:default">Early July, 2012</span></div>
+									<div id="msg_36_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_36">Hello everybody, FatCat here. Just wondering, how exactly should we transition all our discussions onto this forum? For instance, a few people are still using the old forum until the discussions are wrapped up, should everyone else too, or should we move these discussions to the new forum?</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_36">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_36_signature"><span style="text-shadow: orange 1px 1px 1px">Fan Fic Project</span><br /><br /><a href="../../../off-topic/fatcatattack's-fan-fic-project/msg2020/index-topicseen.html#new" class="bbc_link" target="_blank">http://forum.carbontechsoftware.com/off-topic/fatcatattack%27s-fan-fic-project/msg2020/?topicseen#new</a><br /><br />Please, come visit.</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg39"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/TheCyberMan/index.html" title="View the profile of TheCyberMan">TheCyberMan</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_39_extra_info">
+								<li class="membergroup">Global Moderator</li>
+								<li class="postgroup" style="display:none">Jr. Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /></li>
+								<li class="postcount">Posts: 91</li>
+								<li class="karma" style="margin-top:15px">Karma: 18</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_39">
+										<a href="../msg39/index.html#msg39" rel="nofollow">Re: Questions and Responses Thread</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 06, 2012, 01:29:48 pm" style="cursor:default">Early July, 2012</span></div>
+									<div id="msg_39_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_39">For threads that are still active, continue the discussions on this forum. Do not worry about transitioning dead threads.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_39">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg49"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_49_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_49">
+										<a href="../msg49/index.html#msg49" rel="nofollow">Re: Questions and Responses Thread</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 06, 2012, 05:45:31 pm" style="cursor:default">Early July, 2012</span></div>
+									<div id="msg_49_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_49">uhm... hey guys. on profiles (click members to see the whole list) what are positions? and is there anyway u can move up? i dont exactly think i&#039;m a &quot;newb&quot;</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_49">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_49_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg50"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/TheCyberMan/index.html" title="View the profile of TheCyberMan">TheCyberMan</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_50_extra_info">
+								<li class="membergroup">Global Moderator</li>
+								<li class="postgroup" style="display:none">Jr. Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /></li>
+								<li class="postcount">Posts: 91</li>
+								<li class="karma" style="margin-top:15px">Karma: 18</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_50">
+										<a href="../msg50/index.html#msg50" rel="nofollow">Re: Questions and Responses Thread</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 06, 2012, 06:00:17 pm" style="cursor:default">Early July, 2012</span></div>
+									<div id="msg_50_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_50"><div class="quoteheader"><div class="topslice_quote"><a href="../msg49/index.html#msg49">Quote from: cremyjr on <span title=" 06, 2012, 05:45:31 pm" style="cursor:default">Early July, 2012</span></a></div></div><blockquote class="bbc_standard_quote">uhm... hey guys. on profiles (click members to see the whole list) what are positions? and is there anyway u can move up? i dont exactly think i&#039;m a &quot;newb&quot;<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>Your position is calculated based on your post count. Since we&#039;re all new here, we will all start as newbs. But remember, <strong>quality</strong> not <strong>quantity</strong> <img src="../../../Smileys/akyhne/wink.gif" alt=";&#41;" title="Wink" class="smiley" /></div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_50">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg53"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/FatCatAttack/index.html" title="View the profile of FatCatAttack">FatCatAttack</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_53_extra_info">
+								<li class="postgroup" style="display:none">Sr. Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 254</li>
+								<li class="karma" style="margin-top:15px">Karma: 30</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_53">
+										<a href="../msg53/index.html#msg53" rel="nofollow">Re: Questions and Responses Thread</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 06, 2012, 06:39:58 pm" style="cursor:default">Early July, 2012</span></div>
+									<div id="msg_53_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_53"><div class="quoteheader"><div class="topslice_quote"><a href="../msg49/index.html#msg49">Quote from: cremyjr on <span title=" 06, 2012, 05:45:31 pm" style="cursor:default">Early July, 2012</span></a></div></div><blockquote class="bbc_standard_quote">uhm... hey guys. on profiles (click members to see the whole list) what are positions? and is there anyway u can move up? i dont exactly think i&#039;m a &quot;newb&quot;<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br />Don&#039;t worry, we will all end up being veterans. We just need to give it a week or two. In the meantime, we&#039;re all n00bs so it doesn&#039;t really matter.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_53">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_53_signature"><span style="text-shadow: orange 1px 1px 1px">Fan Fic Project</span><br /><br /><a href="../../../off-topic/fatcatattack's-fan-fic-project/msg2020/index-topicseen.html#new" class="bbc_link" target="_blank">http://forum.carbontechsoftware.com/off-topic/fatcatattack%27s-fan-fic-project/msg2020/?topicseen#new</a><br /><br />Please, come visit.</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg5146"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/Ratchet/index.html" title="View the profile of Ratchet">Ratchet</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_5146_extra_info">
+								<li class="postgroup" style="display:none">Jr. Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/Ratchet/index.html">
+										<img class="avatar" src="../../../avatar_31_1341878227-action=dlattach-attach=15-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 56</li>
+								<li class="karma" style="margin-top:15px">Karma: 4</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_5146">
+										<a href="../msg5146/index.html#msg5146" rel="nofollow">Re: Questions and Responses Thread</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 01, 2013, 02:48:08 pm" style="cursor:default">Early March, 2013</span></div>
+									<div id="msg_5146_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_5146">(Sorry for the bump... x.x)<br />But what is the newest Carbon Combat version with a standalone? I searched through the old posts (I went down to 2.3) and I can&#039;t find any links. And when I run the one I have auto-update pops up but the link is broken... ._.<br />Please help so I can play this game again.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_5146">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg5147"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/XD/index.html" title="View the profile of XD">XD</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_5147_extra_info">
+								<li class="postgroup" style="display:none">Sr. Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/XD/index.html">
+										<img class="avatar" src="../../../off-topic/awesome-ninja-stars/index-action=dlattach-attach=195-image.html" width="100" height="100" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 304</li>
+								<li class="karma" style="margin-top:15px">Karma: 27</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_5147">
+										<a href="../msg5147/index.html#msg5147" rel="nofollow">Re: Questions and Responses Thread</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 04, 2013, 06:56:02 pm" style="cursor:default">Early March, 2013</span></div>
+									<div id="msg_5147_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_5147">There ISN&#039;T a Standalone. &gt;_&lt;</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_5147">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg5148"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_5148_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_5148">
+										<a href="../msg5148/index.html#msg5148" rel="nofollow">Re: Questions and Responses Thread</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 05, 2013, 01:59:10 pm" style="cursor:default">Early March, 2013</span></div>
+									<div id="msg_5148_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_5148"><div class="quoteheader"><div class="topslice_quote"><a href="../msg5147/index.html#msg5147">Quote from: XD on <span title=" 04, 2013, 06:56:02 pm" style="cursor:default">Early March, 2013</span></a></div></div><blockquote class="bbc_standard_quote">There ISN&#039;T a Standalone. &gt;_&lt;<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>Yes there is &gt;.&gt; It&#039;s just not updated (which is what he was talking about)<br />I think the last updated one was about 2-3 versions ago.<br />If people play from an outdated standalone, would we still be able to see them in game?</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_5148">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_5148_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg5149"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/U2M/index.html" title="View the profile of U2M">U2M</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_5149_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/U2M/index.html">
+										<img class="avatar" src="../../../avatar_24_1356310894-action=dlattach-attach=425-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 630</li>
+								<li class="karma" style="margin-top:15px">Karma: 32</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_5149">
+										<a href="../msg5149/index.html#msg5149" rel="nofollow">Re: Questions and Responses Thread</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 05, 2013, 04:49:17 pm" style="cursor:default">Early March, 2013</span></div>
+									<div id="msg_5149_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_5149">I am not sure. And even if that was the case, how could we really tell unless we actually tested it?</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_5149">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_5149_signature">&quot;We are made wise not by the recollection of our past, but by the responsibility for our future.&quot;</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg5150"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_5150_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_5150">
+										<a href="../msg5150/index.html#msg5150" rel="nofollow">Re: Questions and Responses Thread</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 05, 2013, 05:39:29 pm" style="cursor:default">Early March, 2013</span></div>
+									<div id="msg_5150_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_5150"><div class="quoteheader"><div class="topslice_quote"><a href="../msg5149/index.html#msg5149">Quote from: U2M on <span title=" 05, 2013, 04:49:17 pm" style="cursor:default">Early March, 2013</span></a></div></div><blockquote class="bbc_standard_quote">I am not sure. And even if that was the case, how could we really tell unless we actually tested it?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>Just a question, since zangstawill and some others played from the standalones and a crapload of people suddenly didn&#039;t show up anymore.. all at once.. just asking &gt;.&gt;</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_5150">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_5150_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg5151"></a><a id="new"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/U2M/index.html" title="View the profile of U2M">U2M</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_5151_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/U2M/index.html">
+										<img class="avatar" src="../../../avatar_24_1356310894-action=dlattach-attach=425-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 630</li>
+								<li class="karma" style="margin-top:15px">Karma: 32</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_5151">
+										<a href="index.html#msg5151" rel="nofollow">Re: Questions and Responses Thread</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 05, 2013, 05:47:46 pm" style="cursor:default">Early March, 2013</span></div>
+									<div id="msg_5151_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_5151">Wait what&#039;s the question? Are you saying &quot;It is just a question&quot; referring to my question?</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_5151">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_5151_signature">&quot;We are made wise not by the recollection of our past, but by the responsibility for our future.&quot;</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg5152"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_5152_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_5152">
+										<a href="../msg5152/index.html#msg5152" rel="nofollow">Re: Questions and Responses Thread</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 05, 2013, 06:30:01 pm" style="cursor:default">Early March, 2013</span></div>
+									<div id="msg_5152_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_5152"><div class="quoteheader"><div class="topslice_quote"><a href="index.html#msg5151">Quote from: U2M on <span title=" 05, 2013, 05:47:46 pm" style="cursor:default">Early March, 2013</span></a></div></div><blockquote class="bbc_standard_quote">Wait what&#039;s the question? Are you saying &quot;It is just a question&quot; referring to my question?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>No, I&#039;m not <img src="../../../Smileys/akyhne/tongue.gif" alt="&#58;P" title="Tongue" class="smiley" /> I was talking about what I said.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_5152">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_5152_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg5153"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/U2M/index.html" title="View the profile of U2M">U2M</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_5153_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/U2M/index.html">
+										<img class="avatar" src="../../../avatar_24_1356310894-action=dlattach-attach=425-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 630</li>
+								<li class="karma" style="margin-top:15px">Karma: 32</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_5153">
+										<a href="../msg5153/index.html#msg5153" rel="nofollow">Re: Questions and Responses Thread</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 05, 2013, 07:59:43 pm" style="cursor:default">Early March, 2013</span></div>
+									<div id="msg_5153_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_5153">Ok, so could you re-explain that?<br />&nbsp;<br />@cremy &quot;lwal&quot;</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_5153">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_5153_signature">&quot;We are made wise not by the recollection of our past, but by the responsibility for our future.&quot;</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg5154"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_5154_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_5154">
+										<a href="../msg5154/index.html#msg5154" rel="nofollow">Re: Questions and Responses Thread</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 05, 2013, 08:38:05 pm" style="cursor:default">Early March, 2013</span></div>
+									<div id="msg_5154_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_5154"><div class="quoteheader"><div class="topslice_quote"><a href="../msg5153/index.html#msg5153">Quote from: U2M on <span title=" 05, 2013, 07:59:43 pm" style="cursor:default">Early March, 2013</span></a></div></div><blockquote class="bbc_standard_quote">Ok, so could you re-explain that?<br />&nbsp;<br />@cremy &quot;lwal&quot;<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><span style="color: rgb(116, 114, 114);" class="bbc_color"><span style="font-family: Trebuchet MS;" class="bbc_font">&quot;</span></span><span style="color: rgb(116, 114, 114);" class="bbc_color"><span style="font-family: Trebuchet MS;" class="bbc_font">since zangstawill and some others played from the standalones and a crapload of people suddenly didn&#039;t show up anymore.. all at once.. just asking &gt;.&gt;&quot;</span></span></div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_5154">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_5154_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg5155"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/U2M/index.html" title="View the profile of U2M">U2M</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_5155_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/U2M/index.html">
+										<img class="avatar" src="../../../avatar_24_1356310894-action=dlattach-attach=425-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 630</li>
+								<li class="karma" style="margin-top:15px">Karma: 32</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_5155">
+										<a href="../msg5155/index.html#msg5155" rel="nofollow">Re: Questions and Responses Thread</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 05, 2013, 08:41:51 pm" style="cursor:default">Early March, 2013</span></div>
+									<div id="msg_5155_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_5155">What are you asking lol. You are kinda confusing me. </div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_5155">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_5155_signature">&quot;We are made wise not by the recollection of our past, but by the responsibility for our future.&quot;</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg5156"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_5156_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_5156">
+										<a href="../msg5156/index.html#msg5156" rel="nofollow">Re: Questions and Responses Thread</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 05, 2013, 09:31:59 pm" style="cursor:default">Early March, 2013</span></div>
+									<div id="msg_5156_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_5156"><div class="quoteheader"><div class="topslice_quote"><a href="../msg5155/index.html#msg5155">Quote from: U2M on <span title=" 05, 2013, 08:41:51 pm" style="cursor:default">Early March, 2013</span></a></div></div><blockquote class="bbc_standard_quote">What are you asking lol. You are kinda confusing me.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>if the standalone would work with the current version <img src="../../../Smileys/akyhne/tongue.gif" alt="&#58;P" title="Tongue" class="smiley" /></div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_5156">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_5156_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg5157"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/U2M/index.html" title="View the profile of U2M">U2M</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_5157_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/U2M/index.html">
+										<img class="avatar" src="../../../avatar_24_1356310894-action=dlattach-attach=425-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 630</li>
+								<li class="karma" style="margin-top:15px">Karma: 32</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_5157">
+										<a href="../msg5157/index.html#msg5157" rel="nofollow">Re: Questions and Responses Thread</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 05, 2013, 09:39:04 pm" style="cursor:default">Early March, 2013</span></div>
+									<div id="msg_5157_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_5157">I knew that....<br />&nbsp;<br />&lt;.&lt;<br />&nbsp;<br />&gt;.&gt;<br />&nbsp;<br />&gt;.&lt;</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_5157">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_5157_signature">&quot;We are made wise not by the recollection of our past, but by the responsibility for our future.&quot;</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg5158"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_5158_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_5158">
+										<a href="../msg5158/index.html#msg5158" rel="nofollow">Re: Questions and Responses Thread</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 05, 2013, 09:51:31 pm" style="cursor:default">Early March, 2013</span></div>
+									<div id="msg_5158_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_5158"><div class="quoteheader"><div class="topslice_quote"><a href="../msg5157/index.html#msg5157">Quote from: U2M on <span title=" 05, 2013, 09:39:04 pm" style="cursor:default">Early March, 2013</span></a></div></div><blockquote class="bbc_standard_quote">I knew that....<br />&nbsp;<br />&lt;.&lt;<br />&nbsp;<br />&gt;.&gt;<br />&nbsp;<br />&gt;.&lt;<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>lol</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_5158">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_5158_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg5329"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/laviathon/index.html" title="View the profile of laviathon">laviathon</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_5329_extra_info">
+								<li class="postgroup" style="display:none">Newbie</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/laviathon/index.html">
+										<img class="avatar" src="../../../avatar_200_1366007193-action=dlattach-attach=481-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 8</li>
+								<li class="karma" style="margin-top:15px">Karma: 1</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_5329">
+										<a href="../msg5329/index.html#msg5329" rel="nofollow">Re: Questions and Responses Thread</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 14, 2013, 11:03:14 pm" style="cursor:default">Mid-April, 2013</span></div>
+									<div id="msg_5329_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_5329">Why is the store not loading?Why cant I access my cars,weapons,maps?</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_5329">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				</form>
+			</div>
+			<a id="lastPost"></a>
+			<div class="pagesection">
+				
+				<div class="pagelinks floatleft"><span style="margin-right:20px;color:#747474">Page 1 of 2</span><span class="selectedPage">1</span> <span class="nonselectedPage"><a class="navPages" href="../20/index.html">2</a> </span><span class="nonselectedPage"><a class="navPages" href="../20/index.html">>></a> </span></div>
+				<div class="nextlinks_bottom"><a href="../index-prev_next=prev.html#new">&laquo; previous</a> <a href="../index-prev_next=next.html#new">next &raquo;</a></div>
+			</div>
+			<div id="moderationbuttons"></div>
+			<div class="plainbox" id="display_jump_to">&nbsp;</div>
+		<br class="clear" />
+			<form action="http://forum.carbontechsoftware.com/spellcheck/" method="post" accept-charset="UTF-8" name="spell_form" id="spell_form" target="spellWindow"><input type="hidden" name="spellstring" value="" /></form>
+				<script type="text/javascript" src="../../../Themes/default/scripts/spellcheck.js"></script>
+				<script type="text/javascript" src="../../../Themes/default/scripts/topic.js"></script>
+				<script type="text/javascript"><!-- // --><![CDATA[
+					if ('XMLHttpRequest' in window)
+					{
+						var oQuickModify = new QuickModify({
+							sScriptUrl: smf_scripturl,
+							bShowModify: true,
+							iTopicId: 6,
+							sTemplateBodyEdit: '\n\t\t\t\t\t\t\t\t<div id="quick_edit_body_container" style="width: 90%">\n\t\t\t\t\t\t\t\t\t<div id="error_box" style="padding: 4px;" class="error"><' + '/div>\n\t\t\t\t\t\t\t\t\t<textarea class="editor" name="message" rows="12" style="width: 100%; margin-bottom: 10px;" tabindex="1">%body%<' + '/textarea><br />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="f432f3090a" value="477e586f5a9953a0dd3608a1ea7e9270" />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="topic" value="6" />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="msg" value="%msg_id%" />\n\t\t\t\t\t\t\t\t\t<div class="righttext">\n\t\t\t\t\t\t\t\t\t\t<input type="submit" name="post" value="Save" tabindex="2" onclick="return oQuickModify.modifySave(\'477e586f5a9953a0dd3608a1ea7e9270\', \'f432f3090a\');" accesskey="s" class="button_submit" />&nbsp;&nbsp;<input type="button" value="Spell Check (popups must be enabled)" tabindex="3" onclick="oEditorHandle_message.spellCheckStart();" class="button_submit" />&nbsp;&nbsp;<input type="submit" name="cancel" value="Cancel" tabindex="4" onclick="return oQuickModify.modifyCancel();" class="button_submit" />\n\t\t\t\t\t\t\t\t\t<' + '/div>\n\t\t\t\t\t\t\t\t<' + '/div>',
+							sTemplateSubjectEdit: '<input type="text" style="width: 90%;" name="subject" value="%subject%" size="80" maxlength="80" tabindex="5" class="input_text" />',
+							sTemplateBodyNormal: '%body%',
+							sTemplateSubjectNormal: '<a hr'+'ef="http://forum.carbontechsoftware.com/index.php'+'?topic=6.msg%msg_id%#msg%msg_id%" rel="nofollow">%subject%<' + '/a>',
+							sTemplateTopSubject: 'Topic: %subject% &nbsp;(Read 2778 times)',
+							sErrorBorderStyle: '1px solid red'
+						});
+
+						aJumpTo[aJumpTo.length] = new JumpTo({
+							sContainerId: "display_jump_to",
+							sJumpToTemplate: "<label class=\"smalltext\" for=\"%select_id%\">Jump to:<" + "/label> %dropdown_list%",
+							iCurBoardId: 3,
+							iCurBoardChildLevel: 0,
+							sCurBoardName: "Feedback &amp; Ideas",
+							sBoardChildLevelIndicator: "==",
+							sBoardPrefix: "=> ",
+							sCatSeparator: "-----------------------------",
+							sCatPrefix: "",
+							sGoButtonLabel: "go"
+						});
+
+						aIconLists[aIconLists.length] = new IconList({
+							sBackReference: "aIconLists[" + aIconLists.length + "]",
+							sIconIdPrefix: "msg_icon_",
+							sScriptUrl: smf_scripturl,
+							bShowModify: true,
+							iBoardId: 3,
+							iTopicId: 6,
+							sSessionId: "477e586f5a9953a0dd3608a1ea7e9270",
+							sSessionVar: "f432f3090a",
+							sLabelIconList: "Message icon",
+							sBoxBackground: "transparent",
+							sBoxBackgroundHover: "#ffffff",
+							iBoxBorderWidthHover: 1,
+							sBoxBorderColorHover: "#adadad" ,
+							sContainerBackground: "#ffffff",
+							sContainerBorder: "1px solid #adadad",
+							sItemBorder: "1px solid #ffffff",
+							sItemBorderHover: "1px dotted gray",
+							sItemBackground: "transparent",
+							sItemBackgroundHover: "#e0e0f0"
+						});
+					}
+				// ]]></script>
+		<form name="spell_form" id="spell_form" method="post" accept-charset="UTF-8" target="spellWindow" action="http://forum.carbontechsoftware.com/spellcheck/">
+			<input type="hidden" name="spellstring" value="" />
+		</form>
+			<script type="text/javascript"><!-- // --><![CDATA[
+				var verificationpostHandle = new smfCaptcha("http://forum.carbontechsoftware.com/index.php?action=verificationcode;vid=post;rand=5d522fd44dfaeba3adfced90293ad3a9", "post", 1);
+			// ]]></script>
+	</div>
+	</div></div>
+	<div id="footersection"><div style="width: 985px;margin: auto;">
+			<span class="floatright"><a href="http://www.simplemachines.org/">© Simple Machines (SMF 2.0.2)</a> - Forum designed by CarbonTech & <a href="http://www.blocweb.net">Bloc</a>
+			</span></div>
+	</div></div></div><script type="text/javascript">
+var sc_project=6755287; 
+var sc_invisible=1; 
+var sc_security="c689b4fd"; 
+</script>
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script>
+<noscript><div class="statcounter"><a title="tumblr page
+counter" href="http://statcounter.com/tumblr/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/6755287/0/c689b4fd/1/"
+alt="tumblr page counter"></a></div></noscript>
+</body></html>

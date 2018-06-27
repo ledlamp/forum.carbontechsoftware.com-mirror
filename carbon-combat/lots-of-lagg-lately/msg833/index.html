@@ -1,0 +1,1222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<link rel="stylesheet" type="text/css" href="../../../Themes/carbonate202b/css/index-fin20.css" />
+	<link rel="stylesheet" type="text/css" href="../../../Themes/carbonate202b/css/index_carbon-fin20.css" />
+	<script type="text/javascript" src="../../../Themes/default/scripts/script-fin20.js"></script>
+	<script type="text/javascript" src="../../../Themes/carbonate202b/scripts/theme-fin20.js"></script>
+	<script type="text/javascript"><!-- // --><![CDATA[
+		var smf_theme_url = "http://forum.carbontechsoftware.com/Themes/carbonate202b";
+		var smf_default_theme_url = "http://forum.carbontechsoftware.com/Themes/default";
+		var smf_images_url = "http://forum.carbontechsoftware.com/Themes/carbonate202b/images";
+		var smf_scripturl = "http://forum.carbontechsoftware.com/index.php";
+		var smf_iso_case_folding = false;
+		var smf_charset = "UTF-8";
+		var ajax_notification_text = "Loading...";
+		var ajax_notification_cancel_text = "Cancel";
+	// ]]></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="description" content="Lots of lagg lately " />
+	<title>Lots of lagg lately </title><link rel="shortcut icon" type="image/x-icon" href="http://lh3.googleusercontent.com/-GOPf21qQXSY/TzawG0qVPlI/AAAAAAAAAoA/-VQrE780LzQ/s16/CCLogoRound.png" /><link rel="icon" href="http://lh3.googleusercontent.com/-GOPf21qQXSY/TzawG0qVPlI/AAAAAAAAAoA/-VQrE780LzQ/s16/CCLogoRound.png" type="image/x-icon" />
+	<meta name="robots" content="noindex" />
+	<link rel="canonical" href="../index.html" />
+	<link rel="help" href="../../../help/index.html" />
+	<link rel="search" href="../../../search/index.html" />
+	<link rel="contents" href="../../../index.php.html" />
+	<link rel="alternate" type="application/rss+xml" title="Carbon Combat - RSS" href="../../../.xml/index-type=rss.html" />
+	<link rel="prev" href="../index-prev_next=prev.html" />
+	<link rel="next" href="../index-prev_next=next.html" />
+	<link rel="index" href="../../index.html" /><!-- nCode Image Resizer -->
+	<script type="text/javascript" src="../../../Themes/default/ncode_imageresizer.js"></script>
+	<script language="JavaScript" type="text/javascript"><!-- // -->
+	NcodeImageResizer.BBURL = "http://forum.carbontechsoftware.com/Themes/carbonate202b/images";
+	NcodeImageResizer.MODE = "enlarge";
+	NcodeImageResizer.MAXWIDTH = "720";
+	NcodeImageResizer.MAXHEIGHT = "400";
+	vbphrase = new Array();
+	vbphrase['ncode_imageresizer_warning_small'] = 'Click this bar to view the full image.';
+	vbphrase['ncode_imageresizer_warning_filesize'] = 'This image has been resized. Click this bar to view the full image. The original image is sized %1$sx%2$s and weighs %3$sKB.';
+	vbphrase['ncode_imageresizer_warning_no_filesize'] = 'This image has been resized. Click this bar to view the full image. The original image is sized %1$sx%2$s.';
+	vbphrase['ncode_imageresizer_warning_fullsize'] = 'Click this bar to view the small image.';
+	// ]]></script>
+	<link rel="stylesheet" type="text/css" id="editor_css" href="../../../Themes/default/css/editor.css" />
+		<script type="text/javascript"><!-- // --><![CDATA[
+			var smf_smileys_url = 'http://forum.carbontechsoftware.com/Smileys/akyhne';
+			var oEditorStrings= {
+				wont_work: 'Your browser does not support Rich Text editing.',
+				func_disabled: 'Your browser does not support this function.',
+				prompt_text_email: 'Please enter the email address.',
+				prompt_text_ftp: 'Please enter the ftp address.',
+				prompt_text_url: 'Please enter the URL you wish to link to.',
+				prompt_text_img: 'Enter image location'
+			}
+		// ]]></script>
+		<script type="text/javascript" src="../../../Themes/default/scripts/editor-fin20.js"></script>
+		<script type="text/javascript" src="../../../Themes/default/scripts/spellcheck.js"></script>
+		<script type="text/javascript"><!-- // --><![CDATA[
+		function spellCheckDone()
+		{
+			for (i = 0; i < smf_editorArray.length; i++)
+				setTimeout("smf_editorArray[" + i + "].spellCheckEnd()", 150);
+		}
+		// ]]></script>
+		<script type="text/javascript" src="../../../Themes/default/scripts/captcha.js"></script>
+	<style type="text/css">#main_menu,
+		#admin_menu
+		{
+			width: 985px
+		}
+	</style>
+	
+	
+	<script language="javascript" type="text/javascript">
+	<!--
+	
+	// MOD Title: Simple Image Upload
+	// MOD Author: Sium < admin@postimage.org > (N/A) http://www.postimage.org/
+	// MOD Version: 1.3.0
+	
+	var postimage_lang="english";
+	var postimage_add_text="Upload and insert an image";
+	var postimage_textarea_ignore_name=/username_list|search/i;
+	
+	function imgFunction() {
+		alert("After uploading you can...\n\n• Drag & drop the image into the post editor\n• Copy the direct link & add an image\n• Copy & paste the HTML code\n• Copy & paste the BBCode");
+	}
+	
+	function postimage_insert()
+	{
+		var postimage_area=document.getElementsByTagName("TEXTAREA");
+
+		for(var postimage_i=0;postimage_i<postimage_area.length;postimage_i++)
+		{
+			if(!postimage_area[postimage_i].name.match(postimage_textarea_ignore_name))
+			{
+				var postimage_new_div=document.createElement("div");
+				postimage_new_div.id = "smileyBox_message";
+				postimage_new_div.style.marginBottom = "5px";
+				postimage_new_div.style.display = "block";
+				postimage_new_div.innerHTML="<a href=\"javascript:void(0);\" onclick=\"imgFunction();imgWindow=window.open('http://imgur.com/?noFlash', 'imgWindow', 'resizable=no,width=1015,height=550,scrollbars=no');\"><b>>> "+postimage_add_text+"</b></a>";
+				postimage_area[postimage_i].parentNode.insertBefore(postimage_new_div,postimage_area[postimage_i]);
+			}
+		}
+	}
+	
+	window.onload=postimage_insert;
+	//-->
+	</script>
+	
+	
+	
+</head>
+<body>
+<div id="wrapper"><div id="headerlogo"></div>
+	<div id="subheader"><div style="width: 985px; margin:auto;background-color:#000">
+	<div id="uppertop">
+		<div class="middletext" style="float:right;height:auto;line-height:16px">A little after 8:00 pm, June 16th, 2015</div>
+		<script type="text/javascript" src="../../../Themes/default/scripts/sha1.js"></script>
+		<form id="guest_form" action="http://forum.carbontechsoftware.com/login2/" method="post" accept-charset="UTF-8"  onsubmit="hashLoginPassword(this, '477e586f5a9953a0dd3608a1ea7e9270');">
+			Welcome, <strong>Guest</strong>. Please <a href="../../../login/index.html">login</a> or <a href="../../../register/index.html">register</a>.&nbsp;
+	</div>
+	<div id="top_section" style="clear: both;">
+		<div id="main_menu">
+			<div class="menuback">
+			<div class="menuback2">
+			<ul class="dropmenu" id="menu_nav">
+				<li id="button_home" class="toplevel">
+					<a class="active firstlevel" href="../../../index.php.html">
+						<span class="last firstlevel">Home</span>
+					</a>
+				</li>
+				<li id="button_search" class="toplevel">
+					<a class="firstlevel" href="../../../search/index.html">
+						<span class="firstlevel">Search</span>
+					</a>
+					<ul>
+						<li>
+							<a href="../../../search/index.html">
+								<span>Search Forum Topics</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li id="button_login" class="toplevel">
+					<a class="firstlevel" href="../../../login/index.html">
+						<span class="firstlevel">Login</span>
+					</a>
+				</li>
+				<li id="button_register" class="toplevel">
+					<a class="firstlevel" href="../../../register/index.html">
+						<span class="firstlevel">Register</span>
+					</a>
+				</li>
+				<li id="button_chat" class="toplevel">
+					<a class="firstlevel" href="javascript:void(0)"onclick="window.open('/chatRoom.html','POPUP','width=700,height=720,location=0,menubar=0,toolbar=0,scrollbars=0,status=0,');">
+						<span class="firstlevel">Chat</span>
+					</a>
+				</li>
+				<li id="button_play" class="toplevel">
+					<a class="firstlevel" href="http://play.carbontechsoftware.com/"target="_blank');">
+						<span class="last firstlevel"><div style="color:#FFEFAE">Play</div></span>
+					</a>
+				</li>
+			</ul>
+			</div>
+			</div>
+		</div><script src="../../../adjustMenubar.js"></script>
+		<br class="clear" />
+		</div>
+	</div></div>
+	<div id="mainsection"><div style="width: 985px;margin: auto;margin-bottom:0;padding:15px 0">
+		<div id="innermain">	
+	<div class="navigate_section">
+		<ul>
+			<li>
+				<a href="../../../index.php.html"><span>Carbon Combat</span></a> &#187;
+			</li>
+			<li>
+				<a href="../../../index.php.html#c1"><span>General</span></a> &#187;
+			</li>
+			<li>
+				<a href="../../index.html"><span>Carbon Combat</span></a> &#187;
+			</li>
+			<li class="last">
+				<a href="../index.html"><span>Lots of lagg lately </span></a>
+			</li>
+		</ul>
+	</div>
+			<a id="top"></a>
+			<a id="msg728"></a>
+			<div class="pagesection">
+				<div class="nextlinks"><a href="../index-prev_next=prev.html#new">&laquo; previous</a> <a href="../index-prev_next=next.html#new">next &raquo;</a></div>
+				<div class="pagelinks floatleft"><span style="margin-right:20px;color:#747474">Page 1 of 2</span><span class="selectedPage">1</span> <span class="nonselectedPage"><a class="navPages" href="../20/index.html">2</a> </span><span class="nonselectedPage"><a class="navPages" href="../20/index.html">>></a> </span></div>
+			</div>
+			<div id="forumposts">
+				<div class="cat_bar">
+					<h3 class="catbg">
+						<img src="../../../Themes/carbonate202b/images/topic/hot_post.gif.png" align="bottom" alt="" />
+						<span id="author">Author</span>
+						Topic: Lots of lagg lately  &nbsp;(Read 3450 times)
+					</h3>
+				</div>
+				<form action="http://forum.carbontechsoftware.com/carbon-combat/lots-of-lagg-lately/?action=quickmod2" method="post" accept-charset="UTF-8" name="quickModForm" id="quickModForm" style="margin: 0;" onsubmit="return oQuickModify.bInEditMode ? oQuickModify.modifySave('477e586f5a9953a0dd3608a1ea7e9270', 'f432f3090a') : false">
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/monthygreg/index.html" title="View the profile of monthygreg">monthygreg</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_728_extra_info">
+								<li class="postgroup" style="display:none">Sr. Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/monthygreg/index.html">
+										<img class="avatar" src="../../../avatar_11_1352158351-action=dlattach-attach=264-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 265</li>
+								<li class="karma" style="margin-top:15px">Karma: 12</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_728">
+										<a href="../msg728/index.html#msg728" rel="nofollow">Lots of lagg lately </a>
+									</h5>
+									<div class="smalltext">posted <span title=" 27, 2012, 08:42:39 am" style="cursor:default">Late July, 2012</span></div>
+									<div id="msg_728_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_728">Well the lagg i get is pretty bad, iv went from 5 fps,3fps,11fps, and thats only when im vsing 4 other people in a small server.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_728">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_728_signature">Sincerely, Mod of nothing&nbsp; Monthygreg<br /><br />Have a nice day!</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg732"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/Lamp/index.html" title="View the profile of Lamp">Lamp</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_732_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/Lamp/index.html">
+										<img class="avatar" src="http://i.imgur.com/Qp9OniQ.png" width="100" height="100" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 956</li>
+								<li class="karma" style="margin-top:15px">Karma: 22</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_732">
+										<a href="../msg732/index.html#msg732" rel="nofollow">Re: Lots of lagg lately </a>
+									</h5>
+									<div class="smalltext">posted <span title=" 27, 2012, 11:08:51 am" style="cursor:default">Late July, 2012</span></div>
+									<div id="msg_732_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_732">I get pretty good, but last night (Jul 26, 12) it was good, then froze for a little moment, then good....<br /><br /><br />It was choppy, so every few seconds it gets stuck for a moment.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_732">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_732_signature"><img src="http://bit.do/4u2h" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg805"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/fancyheadphones/index.html" title="View the profile of fancyheadphones">fancyheadphones</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_805_extra_info">
+								<li class="postgroup" style="display:none">Newbie</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/fancyheadphones/index.html">
+										<img class="avatar" src="../../../avatar_51_1343687086-action=dlattach-attach=76-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 3</li>
+								<li class="karma" style="margin-top:15px">Karma: 1</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_805">
+										<a href="../msg805/index.html#msg805" rel="nofollow">Re: Lots of lagg lately </a>
+									</h5>
+									<div class="smalltext">posted <span title=" 29, 2012, 01:02:07 pm" style="cursor:default">Late July, 2012</span></div>
+									<div id="msg_805_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_805">I often get lots of lag i usually leave big servers a couple minutes into playing on it<div class="quoteheader"><div class="topslice_quote"><a href="../msg728/index.html#msg728">Quote from: monthygreg on <span title=" 27, 2012, 08:42:39 am" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_standard_quote">Well the lagg i get is pretty bad, iv went from 5 fps,3fps,11fps, and thats only when im vsing 4 other people in a small server.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div></div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_805">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_805_signature">-fancyheadphones</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg818"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_818_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_818">
+										<a href="../msg818/index.html#msg818" rel="nofollow">Re: Lots of lagg lately </a>
+									</h5>
+									<div class="smalltext">posted <span title=" 29, 2012, 09:32:39 pm" style="cursor:default">Late July, 2012</span></div>
+									<div id="msg_818_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_818"><div class="quoteheader"><div class="topslice_quote"><a href="../msg817/index.html#msg817">Quote from: Lamp on <span title=" 29, 2012, 09:30:34 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg805/index.html#msg805">Quote from: fancyheadphones on <span title=" 29, 2012, 01:02:07 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_alternate_quote">I often get lots of lag i usually leave big servers a couple minutes into playing on it<div class="quoteheader"><div class="topslice_quote"><a href="../msg728/index.html#msg728">Quote from: monthygreg on <span title=" 27, 2012, 08:42:39 am" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_standard_quote">Well the lagg i get is pretty bad, iv went from 5 fps,3fps,11fps, and thats only when im vsing 4 other people in a small server.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />Hi <span style="text-shadow: red 1px 1px 1px">fancyheadphones</span>, Welcome to the forum!<br /><br /><br /><img src="http://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=5057922" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /><br />Fancy Head Phones<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>yeh dude. just becuz it has gold colouring doesnt mean anything. those headphones look weak. if u want some good headphones, go look at ifrogz</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_818">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_818_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg831"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/Nattyfrank/index.html" title="View the profile of Nattyfrank">Nattyfrank</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_831_extra_info">
+								<li class="title" style="display:none">Sir</li>
+								<li class="membergroup">Global Moderator</li>
+								<li class="postgroup" style="display:none">Full Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /></li>
+								<li class="postcount">Posts: 245</li>
+								<li class="karma" style="margin-top:15px">Karma: 33</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_831">
+										<a href="../msg831/index.html#msg831" rel="nofollow">Re: Lots of lagg lately </a>
+									</h5>
+									<div class="smalltext">posted <span title=" 30, 2012, 11:51:01 am" style="cursor:default">Late July, 2012</span></div>
+									<div id="msg_831_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_831">@Monthly, Cremy was the one who replied to Lamp.&nbsp; Fancy hasn&#039;t responded since the greeting.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_831">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_831_signature">Respectfully,<br />[Mod] Nattyfrank<br /><br />Please check out the forum rules, it makes everything sooo much nicer for all of us!&nbsp; <br /><br /><br /><a href="../../../announcements/global-forum-rules-and-etiquette/index.html" class="bbc_link" target="_blank">http://forum.carbontechsoftware.com/announcements/global-forum-rules-and-etiquette/</a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg833"></a><a id="new"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/fancyheadphones/index.html" title="View the profile of fancyheadphones">fancyheadphones</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_833_extra_info">
+								<li class="postgroup" style="display:none">Newbie</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/fancyheadphones/index.html">
+										<img class="avatar" src="../../../avatar_51_1343687086-action=dlattach-attach=76-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 3</li>
+								<li class="karma" style="margin-top:15px">Karma: 1</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_833">
+										<a href="index.html#msg833" rel="nofollow">Re: Lots of lagg lately </a>
+									</h5>
+									<div class="smalltext">posted <span title=" 30, 2012, 01:58:37 pm" style="cursor:default">Late July, 2012</span></div>
+									<div id="msg_833_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_833">OMG thank you so much for greeting me buddy nice headphones i love skull candy<div class="quoteheader"><div class="topslice_quote"><a href="../msg817/index.html#msg817">Quote from: Lamp on <span title=" 29, 2012, 09:30:34 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg805/index.html#msg805">Quote from: fancyheadphones on <span title=" 29, 2012, 01:02:07 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_alternate_quote">I often get lots of lag i usually leave big servers a couple minutes into playing on it<div class="quoteheader"><div class="topslice_quote"><a href="../msg728/index.html#msg728">Quote from: monthygreg on <span title=" 27, 2012, 08:42:39 am" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_standard_quote">Well the lagg i get is pretty bad, iv went from 5 fps,3fps,11fps, and thats only when im vsing 4 other people in a small server.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />Hi <span style="text-shadow: red 1px 1px 1px">fancyheadphones</span>, Welcome to the forum!<br /><br /><br /><img src="http://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=5057922" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /><br />Fancy Head Phones<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div></div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_833">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_833_signature">-fancyheadphones</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg837"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/fancyheadphones/index.html" title="View the profile of fancyheadphones">fancyheadphones</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_837_extra_info">
+								<li class="postgroup" style="display:none">Newbie</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/fancyheadphones/index.html">
+										<img class="avatar" src="../../../avatar_51_1343687086-action=dlattach-attach=76-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 3</li>
+								<li class="karma" style="margin-top:15px">Karma: 1</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_837">
+										<a href="../msg837/index.html#msg837" rel="nofollow">Re: Lots of lagg lately </a>
+									</h5>
+									<div class="smalltext">posted <span title=" 30, 2012, 02:44:34 pm" style="cursor:default">Late July, 2012</span></div>
+									<div id="msg_837_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_837"><div class="quoteheader"><div class="topslice_quote"><a href="../msg836/index.html#msg836">Quote from: Lamp on <span title=" 30, 2012, 02:42:37 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="index.html#msg833">Quote from: fancyheadphones on <span title=" 30, 2012, 01:58:37 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_alternate_quote">OMG thank you so much for greeting me buddy nice headphones i love skull candy<div class="quoteheader"><div class="topslice_quote"><a href="../msg817/index.html#msg817">Quote from: Lamp on <span title=" 29, 2012, 09:30:34 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg805/index.html#msg805">Quote from: fancyheadphones on <span title=" 29, 2012, 01:02:07 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_alternate_quote">I often get lots of lag i usually leave big servers a couple minutes into playing on it<div class="quoteheader"><div class="topslice_quote"><a href="../msg728/index.html#msg728">Quote from: monthygreg on <span title=" 27, 2012, 08:42:39 am" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_standard_quote">Well the lagg i get is pretty bad, iv went from 5 fps,3fps,11fps, and thats only when im vsing 4 other people in a small server.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />Hi <span style="text-shadow: red 1px 1px 1px">fancyheadphones</span>, Welcome to the forum!<br /><br /><br /><img src="http://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=5057922" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /><br />Fancy Head Phones<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />I just found it on the Internet.<br /><br /><br />Ps, you should put your text under the quote, not above.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>sorry im new and i didnt know how to do many things on here</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_837">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_837_signature">-fancyheadphones</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg847"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/monthygreg/index.html" title="View the profile of monthygreg">monthygreg</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_847_extra_info">
+								<li class="postgroup" style="display:none">Sr. Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/monthygreg/index.html">
+										<img class="avatar" src="../../../avatar_11_1352158351-action=dlattach-attach=264-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 265</li>
+								<li class="karma" style="margin-top:15px">Karma: 12</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_847">
+										<a href="../msg847/index.html#msg847" rel="nofollow">Re: Lots of lagg lately </a>
+									</h5>
+									<div class="smalltext">posted <span title=" 30, 2012, 10:25:35 pm" style="cursor:default">Late July, 2012</span></div>
+									<div id="msg_847_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_847">This topic is going no were, can one of the mods remove it?</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_847">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_847_signature">Sincerely, Mod of nothing&nbsp; Monthygreg<br /><br />Have a nice day!</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg857"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_857_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_857">
+										<a href="../msg857/index.html#msg857" rel="nofollow">Re: Lots of lagg lately </a>
+									</h5>
+									<div class="smalltext">posted <span title=" 31, 2012, 11:18:46 am" style="cursor:default">Late July, 2012</span></div>
+									<div id="msg_857_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_857"><div class="quoteheader"><div class="topslice_quote"><a href="../msg847/index.html#msg847">Quote from: monthygreg on <span title=" 30, 2012, 10:25:35 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_standard_quote">This topic is going no were, can one of the mods remove it?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>yes, this has nothing to do with lag.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_857">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_857_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg867"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_867_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_867">
+										<a href="../msg867/index.html#msg867" rel="nofollow">Re: Lots of lagg lately </a>
+									</h5>
+									<div class="smalltext">posted <span title=" 31, 2012, 12:43:22 pm" style="cursor:default">Late July, 2012</span></div>
+									<div id="msg_867_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_867"><div class="quoteheader"><div class="topslice_quote"><a href="../msg862/index.html#msg862">Quote from: Lamp on <span title=" 31, 2012, 11:46:33 am" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg857/index.html#msg857">Quote from: cremyjr on <span title=" 31, 2012, 11:18:46 am" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg847/index.html#msg847">Quote from: monthygreg on <span title=" 30, 2012, 10:25:35 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_standard_quote">This topic is going no were, can one of the mods remove it?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>yes, this has nothing to do with lag.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />Not remove, split it!!!<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>there&#039;s really no reason. its usless. all this post is, is saying hi, a greeting to a new user. we already know he&#039;s here, no need to make it a post</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_867">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_867_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg883"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_883_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_883">
+										<a href="../msg883/index.html#msg883" rel="nofollow">Re: Lots of lagg lately </a>
+									</h5>
+									<div class="smalltext">posted <span title=" 31, 2012, 03:16:02 pm" style="cursor:default">Late July, 2012</span></div>
+									<div id="msg_883_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_883"><div class="quoteheader"><div class="topslice_quote"><a href="../msg878/index.html#msg878">Quote from: Lamp on <span title=" 31, 2012, 02:17:11 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg867/index.html#msg867">Quote from: cremyjr on <span title=" 31, 2012, 12:43:22 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg862/index.html#msg862">Quote from: Lamp on <span title=" 31, 2012, 11:46:33 am" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg857/index.html#msg857">Quote from: cremyjr on <span title=" 31, 2012, 11:18:46 am" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg847/index.html#msg847">Quote from: monthygreg on <span title=" 30, 2012, 10:25:35 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_standard_quote">This topic is going no were, can one of the mods remove it?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>yes, this has nothing to do with lag.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />Not remove, split it!!!<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>there&#039;s really no reason. its usless. all this post is, is saying hi, a greeting to a new user. we already know he&#039;s here, no need to make it a post<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />But I put a picture!!!<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>its no different. it has nothing to do with this.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_883">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_883_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg905"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/lagging/index.html" title="View the profile of lagging">lagging</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_905_extra_info">
+								<li class="postgroup" style="display:none">Jr. Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/lagging/index.html">
+										<img class="avatar" src="http://i150.photobucket.com/albums/s102/3_pinky_3/cat_gun_ani.gif" width="100" height="100" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 71</li>
+								<li class="karma" style="margin-top:15px">Karma: 16</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_905">
+										<a href="../msg905/index.html#msg905" rel="nofollow">Re: Lots of lagg lately </a>
+									</h5>
+									<div class="smalltext">posted <span title=" 01, 2012, 07:09:30 am" style="cursor:default">Early August, 2012</span></div>
+									<div id="msg_905_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_905">back on topic:<br /><br />i think the lag gets worse with &quot;spawning&quot; of objects:<br />explosions, cars, androids, people logging on and starting to play on the server... all of that makes the lag worse.<br /></div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_905">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_905_signature">CC Rocks!</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg910"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/Lamp/index.html" title="View the profile of Lamp">Lamp</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_910_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/Lamp/index.html">
+										<img class="avatar" src="http://i.imgur.com/Qp9OniQ.png" width="100" height="100" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 956</li>
+								<li class="karma" style="margin-top:15px">Karma: 22</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_910">
+										<a href="../msg910/index.html#msg910" rel="nofollow">Re: Lots of lagg lately </a>
+									</h5>
+									<div class="smalltext">posted <span title=" 01, 2012, 07:58:55 am" style="cursor:default">Early August, 2012</span></div>
+									<div id="msg_910_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_910"><div class="quoteheader"><div class="topslice_quote"><a href="../msg883/index.html#msg883">Quote from: cremyjr on <span title=" 31, 2012, 03:16:02 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg878/index.html#msg878">Quote from: Lamp on <span title=" 31, 2012, 02:17:11 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg867/index.html#msg867">Quote from: cremyjr on <span title=" 31, 2012, 12:43:22 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg862/index.html#msg862">Quote from: Lamp on <span title=" 31, 2012, 11:46:33 am" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg857/index.html#msg857">Quote from: cremyjr on <span title=" 31, 2012, 11:18:46 am" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg847/index.html#msg847">Quote from: monthygreg on <span title=" 30, 2012, 10:25:35 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_alternate_quote">This topic is going no were, can one of the mods remove it?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>yes, this has nothing to do with lag.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />Not remove, split it!!!<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>there&#039;s really no reason. its usless. all this post is, is saying hi, a greeting to a new user. we already know he&#039;s here, no need to make it a post<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />But I put a picture!!!<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>its no different. it has nothing to do with this.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>I&#039;m removing my off topic posts. You remove yours, Ok.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_910">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_910_signature"><img src="http://bit.do/4u2h" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg914"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_914_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_914">
+										<a href="../msg914/index.html#msg914" rel="nofollow">Re: Lots of lagg lately </a>
+									</h5>
+									<div class="smalltext">posted <span title=" 01, 2012, 12:32:58 pm" style="cursor:default">Early August, 2012</span></div>
+									<div id="msg_914_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_914"><div class="quoteheader"><div class="topslice_quote"><a href="../msg910/index.html#msg910">Quote from: Lamp on <span title=" 01, 2012, 07:58:55 am" style="cursor:default">Early August, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg883/index.html#msg883">Quote from: cremyjr on <span title=" 31, 2012, 03:16:02 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg878/index.html#msg878">Quote from: Lamp on <span title=" 31, 2012, 02:17:11 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg867/index.html#msg867">Quote from: cremyjr on <span title=" 31, 2012, 12:43:22 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg862/index.html#msg862">Quote from: Lamp on <span title=" 31, 2012, 11:46:33 am" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg857/index.html#msg857">Quote from: cremyjr on <span title=" 31, 2012, 11:18:46 am" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg847/index.html#msg847">Quote from: monthygreg on <span title=" 30, 2012, 10:25:35 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_standard_quote">This topic is going no were, can one of the mods remove it?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>yes, this has nothing to do with lag.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />Not remove, split it!!!<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>there&#039;s really no reason. its usless. all this post is, is saying hi, a greeting to a new user. we already know he&#039;s here, no need to make it a post<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />But I put a picture!!!<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>its no different. it has nothing to do with this.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>I&#039;m removing my off topic posts. You remove yours, Ok.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>ugh.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_914">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_914_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg915"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/Lamp/index.html" title="View the profile of Lamp">Lamp</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_915_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/Lamp/index.html">
+										<img class="avatar" src="http://i.imgur.com/Qp9OniQ.png" width="100" height="100" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 956</li>
+								<li class="karma" style="margin-top:15px">Karma: 22</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_915">
+										<a href="../msg915/index.html#msg915" rel="nofollow">Re: Lots of lagg lately </a>
+									</h5>
+									<div class="smalltext">posted <span title=" 01, 2012, 04:09:29 pm" style="cursor:default">Early August, 2012</span></div>
+									<div id="msg_915_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_915"><div class="quoteheader"><div class="topslice_quote"><a href="../msg914/index.html#msg914">Quote from: cremyjr on <span title=" 01, 2012, 12:32:58 pm" style="cursor:default">Early August, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg910/index.html#msg910">Quote from: Lamp on <span title=" 01, 2012, 07:58:55 am" style="cursor:default">Early August, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg883/index.html#msg883">Quote from: cremyjr on <span title=" 31, 2012, 03:16:02 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg878/index.html#msg878">Quote from: Lamp on <span title=" 31, 2012, 02:17:11 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg867/index.html#msg867">Quote from: cremyjr on <span title=" 31, 2012, 12:43:22 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg862/index.html#msg862">Quote from: Lamp on <span title=" 31, 2012, 11:46:33 am" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg857/index.html#msg857">Quote from: cremyjr on <span title=" 31, 2012, 11:18:46 am" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg847/index.html#msg847">Quote from: monthygreg on <span title=" 30, 2012, 10:25:35 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_alternate_quote">This topic is going no were, can one of the mods remove it?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>yes, this has nothing to do with lag.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />Not remove, split it!!!<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>there&#039;s really no reason. its usless. all this post is, is saying hi, a greeting to a new user. we already know he&#039;s here, no need to make it a post<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />But I put a picture!!!<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>its no different. it has nothing to do with this.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>I&#039;m removing my off topic posts. You remove yours, Ok.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>ugh.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />Cremy, your not suppost to talk to me.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_915">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_915_signature"><img src="http://bit.do/4u2h" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg916"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/monthygreg/index.html" title="View the profile of monthygreg">monthygreg</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_916_extra_info">
+								<li class="postgroup" style="display:none">Sr. Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/monthygreg/index.html">
+										<img class="avatar" src="../../../avatar_11_1352158351-action=dlattach-attach=264-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 265</li>
+								<li class="karma" style="margin-top:15px">Karma: 12</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_916">
+										<a href="../msg916/index.html#msg916" rel="nofollow">Re: Lots of lagg lately </a>
+									</h5>
+									<div class="smalltext">posted <span title=" 01, 2012, 04:30:59 pm" style="cursor:default">Early August, 2012</span></div>
+									<div id="msg_916_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_916">-_- same goes for you lamp.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_916">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_916_signature">Sincerely, Mod of nothing&nbsp; Monthygreg<br /><br />Have a nice day!</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg919"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/monthygreg/index.html" title="View the profile of monthygreg">monthygreg</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_919_extra_info">
+								<li class="postgroup" style="display:none">Sr. Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/monthygreg/index.html">
+										<img class="avatar" src="../../../avatar_11_1352158351-action=dlattach-attach=264-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 265</li>
+								<li class="karma" style="margin-top:15px">Karma: 12</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_919">
+										<a href="../msg919/index.html#msg919" rel="nofollow">Re: Lots of lagg lately </a>
+									</h5>
+									<div class="smalltext">posted <span title=" 01, 2012, 06:26:03 pm" style="cursor:default">Early August, 2012</span></div>
+									<div id="msg_919_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_919">This is not funny, lagg is horrible.<br />Like always it all started when i hosted a server, i got in drove around battle island then i shot my shotgun and it took 2-3 seconds to shoot, then some guest joined now its a 2 player server, i shot him and 5 seconds later it said i blasted him, and it was still at 15 fps, when normaly for me its 99.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_919">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_919_signature">Sincerely, Mod of nothing&nbsp; Monthygreg<br /><br />Have a nice day!</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg920"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/Lamp/index.html" title="View the profile of Lamp">Lamp</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_920_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/Lamp/index.html">
+										<img class="avatar" src="http://i.imgur.com/Qp9OniQ.png" width="100" height="100" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 956</li>
+								<li class="karma" style="margin-top:15px">Karma: 22</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_920">
+										<a href="../msg920/index.html#msg920" rel="nofollow">Re: Lots of lagg lately </a>
+									</h5>
+									<div class="smalltext">posted <span title=" 01, 2012, 06:36:41 pm" style="cursor:default">Early August, 2012</span></div>
+									<div id="msg_920_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_920"><div class="quoteheader"><div class="topslice_quote"><a href="../msg919/index.html#msg919">Quote from: monthygreg on <span title=" 01, 2012, 06:26:03 pm" style="cursor:default">Early August, 2012</span></a></div></div><blockquote class="bbc_standard_quote">This is not funny, lagg is horrible.<br />Like always it all started when i hosted a server, i got in drove around battle island then i shot my shotgun and it took 2-3 seconds to shoot, then some guest joined now its a 2 player server, i shot him and 5 seconds later it said i blasted him, and it was still at 15 fps, when normaly for me its 99.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />What kinda computer you got?</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_920">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_920_signature"><img src="http://bit.do/4u2h" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg922"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/monthygreg/index.html" title="View the profile of monthygreg">monthygreg</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_922_extra_info">
+								<li class="postgroup" style="display:none">Sr. Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/monthygreg/index.html">
+										<img class="avatar" src="../../../avatar_11_1352158351-action=dlattach-attach=264-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 265</li>
+								<li class="karma" style="margin-top:15px">Karma: 12</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_922">
+										<a href="../msg922/index.html#msg922" rel="nofollow">Re: Lots of lagg lately </a>
+									</h5>
+									<div class="smalltext">posted <span title=" 01, 2012, 07:16:33 pm" style="cursor:default">Early August, 2012</span></div>
+									<div id="msg_922_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_922">well its new and its really powerful, it not that.<br />could it be crappy windows vista causing it?</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_922">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_922_signature">Sincerely, Mod of nothing&nbsp; Monthygreg<br /><br />Have a nice day!</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg924"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/Lamp/index.html" title="View the profile of Lamp">Lamp</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_924_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/Lamp/index.html">
+										<img class="avatar" src="http://i.imgur.com/Qp9OniQ.png" width="100" height="100" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 956</li>
+								<li class="karma" style="margin-top:15px">Karma: 22</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_924">
+										<a href="../msg924/index.html#msg924" rel="nofollow">Re: Lots of lagg lately </a>
+									</h5>
+									<div class="smalltext">posted <span title=" 01, 2012, 07:31:37 pm" style="cursor:default">Early August, 2012</span></div>
+									<div id="msg_924_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_924"><div class="quoteheader"><div class="topslice_quote"><a href="../msg922/index.html#msg922">Quote from: monthygreg on <span title=" 01, 2012, 07:16:33 pm" style="cursor:default">Early August, 2012</span></a></div></div><blockquote class="bbc_standard_quote">well its new and its really powerful, it not that.<br />could it be crappy windows vista causing it?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />Do you have any background programs running? Do you have any malware? Programs and viruses and malware will slow down your computer.<br />Vista is a heavy and bulky OS, so it could be that.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_924">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_924_signature"><img src="http://bit.do/4u2h" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				</form>
+			</div>
+			<a id="lastPost"></a>
+			<div class="pagesection">
+				
+				<div class="pagelinks floatleft"><span style="margin-right:20px;color:#747474">Page 1 of 2</span><span class="selectedPage">1</span> <span class="nonselectedPage"><a class="navPages" href="../20/index.html">2</a> </span><span class="nonselectedPage"><a class="navPages" href="../20/index.html">>></a> </span></div>
+				<div class="nextlinks_bottom"><a href="../index-prev_next=prev.html#new">&laquo; previous</a> <a href="../index-prev_next=next.html#new">next &raquo;</a></div>
+			</div>
+			<div id="moderationbuttons"></div>
+			<div class="plainbox" id="display_jump_to">&nbsp;</div>
+		<br class="clear" />
+			<form action="http://forum.carbontechsoftware.com/spellcheck/" method="post" accept-charset="UTF-8" name="spell_form" id="spell_form" target="spellWindow"><input type="hidden" name="spellstring" value="" /></form>
+				<script type="text/javascript" src="../../../Themes/default/scripts/spellcheck.js"></script>
+				<script type="text/javascript" src="../../../Themes/default/scripts/topic.js"></script>
+				<script type="text/javascript"><!-- // --><![CDATA[
+					if ('XMLHttpRequest' in window)
+					{
+						var oQuickModify = new QuickModify({
+							sScriptUrl: smf_scripturl,
+							bShowModify: true,
+							iTopicId: 77,
+							sTemplateBodyEdit: '\n\t\t\t\t\t\t\t\t<div id="quick_edit_body_container" style="width: 90%">\n\t\t\t\t\t\t\t\t\t<div id="error_box" style="padding: 4px;" class="error"><' + '/div>\n\t\t\t\t\t\t\t\t\t<textarea class="editor" name="message" rows="12" style="width: 100%; margin-bottom: 10px;" tabindex="1">%body%<' + '/textarea><br />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="f432f3090a" value="477e586f5a9953a0dd3608a1ea7e9270" />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="topic" value="77" />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="msg" value="%msg_id%" />\n\t\t\t\t\t\t\t\t\t<div class="righttext">\n\t\t\t\t\t\t\t\t\t\t<input type="submit" name="post" value="Save" tabindex="2" onclick="return oQuickModify.modifySave(\'477e586f5a9953a0dd3608a1ea7e9270\', \'f432f3090a\');" accesskey="s" class="button_submit" />&nbsp;&nbsp;<input type="button" value="Spell Check (popups must be enabled)" tabindex="3" onclick="oEditorHandle_message.spellCheckStart();" class="button_submit" />&nbsp;&nbsp;<input type="submit" name="cancel" value="Cancel" tabindex="4" onclick="return oQuickModify.modifyCancel();" class="button_submit" />\n\t\t\t\t\t\t\t\t\t<' + '/div>\n\t\t\t\t\t\t\t\t<' + '/div>',
+							sTemplateSubjectEdit: '<input type="text" style="width: 90%;" name="subject" value="%subject%" size="80" maxlength="80" tabindex="5" class="input_text" />',
+							sTemplateBodyNormal: '%body%',
+							sTemplateSubjectNormal: '<a hr'+'ef="http://forum.carbontechsoftware.com/index.php'+'?topic=77.msg%msg_id%#msg%msg_id%" rel="nofollow">%subject%<' + '/a>',
+							sTemplateTopSubject: 'Topic: %subject% &nbsp;(Read 3450 times)',
+							sErrorBorderStyle: '1px solid red'
+						});
+
+						aJumpTo[aJumpTo.length] = new JumpTo({
+							sContainerId: "display_jump_to",
+							sJumpToTemplate: "<label class=\"smalltext\" for=\"%select_id%\">Jump to:<" + "/label> %dropdown_list%",
+							iCurBoardId: 5,
+							iCurBoardChildLevel: 0,
+							sCurBoardName: "Carbon Combat",
+							sBoardChildLevelIndicator: "==",
+							sBoardPrefix: "=> ",
+							sCatSeparator: "-----------------------------",
+							sCatPrefix: "",
+							sGoButtonLabel: "go"
+						});
+
+						aIconLists[aIconLists.length] = new IconList({
+							sBackReference: "aIconLists[" + aIconLists.length + "]",
+							sIconIdPrefix: "msg_icon_",
+							sScriptUrl: smf_scripturl,
+							bShowModify: true,
+							iBoardId: 5,
+							iTopicId: 77,
+							sSessionId: "477e586f5a9953a0dd3608a1ea7e9270",
+							sSessionVar: "f432f3090a",
+							sLabelIconList: "Message icon",
+							sBoxBackground: "transparent",
+							sBoxBackgroundHover: "#ffffff",
+							iBoxBorderWidthHover: 1,
+							sBoxBorderColorHover: "#adadad" ,
+							sContainerBackground: "#ffffff",
+							sContainerBorder: "1px solid #adadad",
+							sItemBorder: "1px solid #ffffff",
+							sItemBorderHover: "1px dotted gray",
+							sItemBackground: "transparent",
+							sItemBackgroundHover: "#e0e0f0"
+						});
+					}
+				// ]]></script>
+		<form name="spell_form" id="spell_form" method="post" accept-charset="UTF-8" target="spellWindow" action="http://forum.carbontechsoftware.com/spellcheck/">
+			<input type="hidden" name="spellstring" value="" />
+		</form>
+			<script type="text/javascript"><!-- // --><![CDATA[
+				var verificationpostHandle = new smfCaptcha("http://forum.carbontechsoftware.com/index.php?action=verificationcode;vid=post;rand=288cb4aac5b11317a0dbc452ced94ead", "post", 1);
+			// ]]></script>
+	</div>
+	</div></div>
+	<div id="footersection"><div style="width: 985px;margin: auto;">
+			<span class="floatright"><a href="http://www.simplemachines.org/">© Simple Machines (SMF 2.0.2)</a> - Forum designed by CarbonTech & <a href="http://www.blocweb.net">Bloc</a>
+			</span></div>
+	</div></div></div><script type="text/javascript">
+var sc_project=6755287; 
+var sc_invisible=1; 
+var sc_security="c689b4fd"; 
+</script>
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script>
+<noscript><div class="statcounter"><a title="tumblr page
+counter" href="http://statcounter.com/tumblr/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/6755287/0/c689b4fd/1/"
+alt="tumblr page counter"></a></div></noscript>
+</body></html>

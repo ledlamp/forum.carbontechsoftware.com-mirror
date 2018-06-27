@@ -1,0 +1,1180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<link rel="stylesheet" type="text/css" href="../../../Themes/carbonate202b/css/index-fin20.css" />
+	<link rel="stylesheet" type="text/css" href="../../../Themes/carbonate202b/css/index_carbon-fin20.css" />
+	<script type="text/javascript" src="../../../Themes/default/scripts/script-fin20.js"></script>
+	<script type="text/javascript" src="../../../Themes/carbonate202b/scripts/theme-fin20.js"></script>
+	<script type="text/javascript"><!-- // --><![CDATA[
+		var smf_theme_url = "http://forum.carbontechsoftware.com/Themes/carbonate202b";
+		var smf_default_theme_url = "http://forum.carbontechsoftware.com/Themes/default";
+		var smf_images_url = "http://forum.carbontechsoftware.com/Themes/carbonate202b/images";
+		var smf_scripturl = "http://forum.carbontechsoftware.com/index.php";
+		var smf_iso_case_folding = false;
+		var smf_charset = "UTF-8";
+		var ajax_notification_text = "Loading...";
+		var ajax_notification_cancel_text = "Cancel";
+	// ]]></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="description" content="Ideas and Suggestions" />
+	<title>Ideas and Suggestions</title><link rel="shortcut icon" type="image/x-icon" href="http://lh3.googleusercontent.com/-GOPf21qQXSY/TzawG0qVPlI/AAAAAAAAAoA/-VQrE780LzQ/s16/CCLogoRound.png" /><link rel="icon" href="http://lh3.googleusercontent.com/-GOPf21qQXSY/TzawG0qVPlI/AAAAAAAAAoA/-VQrE780LzQ/s16/CCLogoRound.png" type="image/x-icon" />
+	<meta name="robots" content="noindex" />
+	<link rel="canonical" href="../20/index.html" />
+	<link rel="help" href="../../../help/index.html" />
+	<link rel="search" href="../../../search/index.html" />
+	<link rel="contents" href="../../../index.php.html" />
+	<link rel="alternate" type="application/rss+xml" title="Carbon Combat - RSS" href="../../../.xml/index-type=rss.html" />
+	<link rel="prev" href="../index-prev_next=prev.html" />
+	<link rel="next" href="../index-prev_next=next.html" />
+	<link rel="index" href="../../index.html" /><!-- nCode Image Resizer -->
+	<script type="text/javascript" src="../../../Themes/default/ncode_imageresizer.js"></script>
+	<script language="JavaScript" type="text/javascript"><!-- // -->
+	NcodeImageResizer.BBURL = "http://forum.carbontechsoftware.com/Themes/carbonate202b/images";
+	NcodeImageResizer.MODE = "enlarge";
+	NcodeImageResizer.MAXWIDTH = "720";
+	NcodeImageResizer.MAXHEIGHT = "400";
+	vbphrase = new Array();
+	vbphrase['ncode_imageresizer_warning_small'] = 'Click this bar to view the full image.';
+	vbphrase['ncode_imageresizer_warning_filesize'] = 'This image has been resized. Click this bar to view the full image. The original image is sized %1$sx%2$s and weighs %3$sKB.';
+	vbphrase['ncode_imageresizer_warning_no_filesize'] = 'This image has been resized. Click this bar to view the full image. The original image is sized %1$sx%2$s.';
+	vbphrase['ncode_imageresizer_warning_fullsize'] = 'Click this bar to view the small image.';
+	// ]]></script>
+	<link rel="stylesheet" type="text/css" id="editor_css" href="../../../Themes/default/css/editor.css" />
+		<script type="text/javascript"><!-- // --><![CDATA[
+			var smf_smileys_url = 'http://forum.carbontechsoftware.com/Smileys/akyhne';
+			var oEditorStrings= {
+				wont_work: 'Your browser does not support Rich Text editing.',
+				func_disabled: 'Your browser does not support this function.',
+				prompt_text_email: 'Please enter the email address.',
+				prompt_text_ftp: 'Please enter the ftp address.',
+				prompt_text_url: 'Please enter the URL you wish to link to.',
+				prompt_text_img: 'Enter image location'
+			}
+		// ]]></script>
+		<script type="text/javascript" src="../../../Themes/default/scripts/editor-fin20.js"></script>
+		<script type="text/javascript" src="../../../Themes/default/scripts/spellcheck.js"></script>
+		<script type="text/javascript"><!-- // --><![CDATA[
+		function spellCheckDone()
+		{
+			for (i = 0; i < smf_editorArray.length; i++)
+				setTimeout("smf_editorArray[" + i + "].spellCheckEnd()", 150);
+		}
+		// ]]></script>
+		<script type="text/javascript" src="../../../Themes/default/scripts/captcha.js"></script>
+	<style type="text/css">#main_menu,
+		#admin_menu
+		{
+			width: 985px
+		}
+	</style>
+	
+	
+	<script language="javascript" type="text/javascript">
+	<!--
+	
+	// MOD Title: Simple Image Upload
+	// MOD Author: Sium < admin@postimage.org > (N/A) http://www.postimage.org/
+	// MOD Version: 1.3.0
+	
+	var postimage_lang="english";
+	var postimage_add_text="Upload and insert an image";
+	var postimage_textarea_ignore_name=/username_list|search/i;
+	
+	function imgFunction() {
+		alert("After uploading you can...\n\n• Drag & drop the image into the post editor\n• Copy the direct link & add an image\n• Copy & paste the HTML code\n• Copy & paste the BBCode");
+	}
+	
+	function postimage_insert()
+	{
+		var postimage_area=document.getElementsByTagName("TEXTAREA");
+
+		for(var postimage_i=0;postimage_i<postimage_area.length;postimage_i++)
+		{
+			if(!postimage_area[postimage_i].name.match(postimage_textarea_ignore_name))
+			{
+				var postimage_new_div=document.createElement("div");
+				postimage_new_div.id = "smileyBox_message";
+				postimage_new_div.style.marginBottom = "5px";
+				postimage_new_div.style.display = "block";
+				postimage_new_div.innerHTML="<a href=\"javascript:void(0);\" onclick=\"imgFunction();imgWindow=window.open('http://imgur.com/?noFlash', 'imgWindow', 'resizable=no,width=1015,height=550,scrollbars=no');\"><b>>> "+postimage_add_text+"</b></a>";
+				postimage_area[postimage_i].parentNode.insertBefore(postimage_new_div,postimage_area[postimage_i]);
+			}
+		}
+	}
+	
+	window.onload=postimage_insert;
+	//-->
+	</script>
+	
+	
+	
+</head>
+<body>
+<div id="wrapper"><div id="headerlogo"></div>
+	<div id="subheader"><div style="width: 985px; margin:auto;background-color:#000">
+	<div id="uppertop">
+		<div class="middletext" style="float:right;height:auto;line-height:16px">Ten after 8:00 pm, June 16th, 2015</div>
+		<script type="text/javascript" src="../../../Themes/default/scripts/sha1.js"></script>
+		<form id="guest_form" action="http://forum.carbontechsoftware.com/login2/" method="post" accept-charset="UTF-8"  onsubmit="hashLoginPassword(this, '477e586f5a9953a0dd3608a1ea7e9270');">
+			Welcome, <strong>Guest</strong>. Please <a href="../../../login/index.html">login</a> or <a href="../../../register/index.html">register</a>.&nbsp;
+	</div>
+	<div id="top_section" style="clear: both;">
+		<div id="main_menu">
+			<div class="menuback">
+			<div class="menuback2">
+			<ul class="dropmenu" id="menu_nav">
+				<li id="button_home" class="toplevel">
+					<a class="active firstlevel" href="../../../index.php.html">
+						<span class="last firstlevel">Home</span>
+					</a>
+				</li>
+				<li id="button_search" class="toplevel">
+					<a class="firstlevel" href="../../../search/index.html">
+						<span class="firstlevel">Search</span>
+					</a>
+					<ul>
+						<li>
+							<a href="../../../search/index.html">
+								<span>Search Forum Topics</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li id="button_login" class="toplevel">
+					<a class="firstlevel" href="../../../login/index.html">
+						<span class="firstlevel">Login</span>
+					</a>
+				</li>
+				<li id="button_register" class="toplevel">
+					<a class="firstlevel" href="../../../register/index.html">
+						<span class="firstlevel">Register</span>
+					</a>
+				</li>
+				<li id="button_chat" class="toplevel">
+					<a class="firstlevel" href="javascript:void(0)"onclick="window.open('/chatRoom.html','POPUP','width=700,height=720,location=0,menubar=0,toolbar=0,scrollbars=0,status=0,');">
+						<span class="firstlevel">Chat</span>
+					</a>
+				</li>
+				<li id="button_play" class="toplevel">
+					<a class="firstlevel" href="http://play.carbontechsoftware.com/"target="_blank');">
+						<span class="last firstlevel"><div style="color:#FFEFAE">Play</div></span>
+					</a>
+				</li>
+			</ul>
+			</div>
+			</div>
+		</div><script src="../../../adjustMenubar.js"></script>
+		<br class="clear" />
+		</div>
+	</div></div>
+	<div id="mainsection"><div style="width: 985px;margin: auto;margin-bottom:0;padding:15px 0">
+		<div id="innermain">	
+	<div class="navigate_section">
+		<ul>
+			<li>
+				<a href="../../../index.php.html"><span>Carbon Combat</span></a> &#187;
+			</li>
+			<li>
+				<a href="../../../index.php.html#c1"><span>General</span></a> &#187;
+			</li>
+			<li>
+				<a href="../../index.html"><span>Feedback &amp; Ideas</span></a> &#187;
+			</li>
+			<li class="last">
+				<a href="../index.html"><span>Ideas and Suggestions</span></a>
+			</li>
+		</ul>
+	</div>
+			<a id="top"></a>
+			<a id="msg768"></a>
+			<div class="pagesection">
+				<div class="nextlinks"><a href="../index-prev_next=prev.html#new">&laquo; previous</a> <a href="../index-prev_next=next.html#new">next &raquo;</a></div>
+				<div class="pagelinks floatleft"><span style="margin-right:20px;color:#747474">Page 2 of 5</span><span class="nonselectedPage"><a class="navPages" href="../index.html"><<</a> </span><span class="nonselectedPage"><a class="navPages" href="../index.html">1</a> </span><span class="selectedPage">2</span> <span class="nonselectedPage"><a class="navPages" href="../40/index.html">3</a> </span><span style="font-weight: bold;" onclick="expandPages(this, 'http://forum.carbontechsoftware.com/index.php?topic=33.%1$d', 60, 80, 20);" onmouseover="this.style.cursor='pointer';"> ... </span><span class="nonselectedPage"><a class="navPages" href="../80/index.html">5</a> </span><span class="nonselectedPage"><a class="navPages" href="../40/index.html">>></a> </span></div>
+			</div>
+			<div id="forumposts">
+				<div class="cat_bar">
+					<h3 class="catbg">
+						<img src="../../../Themes/carbonate202b/images/topic/veryhot_post_locked.gif.png" align="bottom" alt="" />
+						<span id="author">Author</span>
+						Topic: Ideas and Suggestions &nbsp;(Read 8314 times)
+					</h3>
+				</div>
+				<form action="http://forum.carbontechsoftware.com/feedback-ideas/ideas-and-suggestions/20/?action=quickmod2" method="post" accept-charset="UTF-8" name="quickModForm" id="quickModForm" style="margin: 0;" onsubmit="return oQuickModify.bInEditMode ? oQuickModify.modifySave('477e586f5a9953a0dd3608a1ea7e9270', 'f432f3090a') : false">
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_768_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_768">
+										<a href="../msg768/index.html#msg768" rel="nofollow">Re: Ideas and Suggestions</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 27, 2012, 10:55:28 pm" style="cursor:default">Late July, 2012</span></div>
+									<div id="msg_768_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_768"><div class="quoteheader"><div class="topslice_quote"><a href="../msg767/index.html#msg767">Quote from: Lamp on <span title=" 27, 2012, 10:53:41 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg754/index.html#msg754">Quote from: Mahenny on <span title=" 27, 2012, 08:46:37 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><span style="color: blue;" class="bbc_color">I like the android idea.. super cool! You gotta make him with some weird android speech. maybe an emote button to do some electronic speech or something. there should be android specific powerup&#039;s- well, since he is machine mainly. maybe has a electronic replica of a human brain.</span><br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />I think its a human.<br /><br /><br />Look here:<br /><br /><br /><a href="../../../carbon-combat/inside-the-'android'/index.html" class="bbc_link" target="_blank">http://forum.carbontechsoftware.com/carbon-combat/inside-the-&#039;android&#039;/</a><br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>well arnt they hlaf human half machine? or is that cyborg?... or is it the same thing but dif. terms?...</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_768">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_768_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg769"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/Lamp/index.html" title="View the profile of Lamp">Lamp</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_769_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/Lamp/index.html">
+										<img class="avatar" src="http://i.imgur.com/Qp9OniQ.png" width="100" height="100" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 956</li>
+								<li class="karma" style="margin-top:15px">Karma: 22</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_769">
+										<a href="../msg769/index.html#msg769" rel="nofollow">Re: Ideas and Suggestions</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 27, 2012, 10:56:41 pm" style="cursor:default">Late July, 2012</span></div>
+									<div id="msg_769_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_769"><div class="quoteheader"><div class="topslice_quote"><a href="../msg768/index.html#msg768">Quote from: cremyjr on <span title=" 27, 2012, 10:55:28 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg767/index.html#msg767">Quote from: Lamp on <span title=" 27, 2012, 10:53:41 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg754/index.html#msg754">Quote from: Mahenny on <span title=" 27, 2012, 08:46:37 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><span style="color: blue;" class="bbc_color">I like the android idea.. super cool! You gotta make him with some weird android speech. maybe an emote button to do some electronic speech or something. there should be android specific powerup&#039;s- well, since he is machine mainly. maybe has a electronic replica of a human brain.</span><br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />I think its a human.<br /><br /><br />Look here:<br /><br /><br /><a href="../../../carbon-combat/inside-the-'android'/index.html" class="bbc_link" target="_blank">http://forum.carbontechsoftware.com/carbon-combat/inside-the-&#039;android&#039;/</a><br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>well arnt they hlaf human half machine? or is that cyborg?... or is it the same thing but dif. terms?...<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />Maybe its a human in a suit.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_769">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_769_signature"><img src="http://bit.do/4u2h" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg770"></a><a id="new"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_770_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_770">
+										<a href="index.html#msg770" rel="nofollow">Re: Ideas and Suggestions</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 27, 2012, 11:01:11 pm" style="cursor:default">Late July, 2012</span></div>
+									<div id="msg_770_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_770"><div class="quoteheader"><div class="topslice_quote"><a href="../msg764/index.html#msg764">Quote from: Mahenny on <span title=" 27, 2012, 10:35:45 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><br /><br /><br />&nbsp;With the Hover Bike idea you would have two ways to kill them. One, -Snipe the driver or two,- destroy the bike. Even if they bailed out they would already be damaged(more than likely). I don&#039;t see how driving a hover bike would be that much different than a car except the higher speed/less armor &amp; guns. we can scrap the sidecar idea if it unbalances things.<br /><br />&nbsp;Hover craft might be good as well.. maybe not as fast as a car but bigger with varied weapon layouts.<br /><br />&nbsp;DeathRace would be a one way track with random &amp; preset traps that can maim or kill the drivers. The winner or top 3 players lets say get bonus cash + prestige of some sort. Anything would go. Ram players into traps. Lay &amp; wait with a missile barrage or block them with a movable object while they get attacked by bots but no bailing out of your car or flying on these maps. Perhaps low ceiling 30 feet or so.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>well let&#039;s leave the hover craft for right now. i dont think we should put another task in the schedule already right now. but anyway, thats my point. technically that&#039;s like 2 or 3 diff lives right there. not everybody has railgun, plus it&#039;s hard to shot them. and now they&#039;ll be going even faster? right before they die (by shooting the bike) they would eject and go on foot. just like we do now with the cars... when you say one way, do u mean like one giant strip? that would be drag racing. mabye i liiil bit higher ceiling? it would be cool to bounce off nades on stuff</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_770">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_770_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg772"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/Mahenny/index.html" title="View the profile of Mahenny">Mahenny</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_772_extra_info">
+								<li class="postgroup" style="display:none">Newbie</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 16</li>
+								<li class="karma" style="margin-top:15px">Karma: 0</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_772">
+										<a href="../msg772/index.html#msg772" rel="nofollow">Re: Ideas and Suggestions</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 27, 2012, 11:25:48 pm" style="cursor:default">Late July, 2012</span></div>
+									<div id="msg_772_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_772"><div class="quoteheader"><div class="topslice_quote"><a href="../msg766/index.html#msg766">Quote from: cremyjr on <span title=" 27, 2012, 10:47:29 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg763/index.html#msg763">Quote from: Mahenny on <span title=" 27, 2012, 10:17:55 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg761/index.html#msg761">Quote from: cremyjr on <span title=" 27, 2012, 09:44:12 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg757/index.html#msg757">Quote from: Mahenny on <span title=" 27, 2012, 09:13:01 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_alternate_quote">Ahh.. It was never explained properly in the game that the ejecting person was a &quot;android&quot;. that doesn&#039;t mean there can&#039;t be v2.0 android&nbsp; that perhaps moves slow but has a bigger gun for example and a recharging shield.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>no dude, ur not getting it. just becuase you put negative effects doesnt balance it out. even though it will &quot;move slow&quot; a regen sheild AND bigger gun? do you know how hard it is to kill an andoid flying? much less without lag! stop trying to make androids strongber, that&#039;s not there purpose. if anything i saw make them weaker.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br />I never said make them immortal. it was simply a idea that you don&#039;t have to agree with. First, you would play test it to see if it could be done fairly. Isn&#039;t that the point of beta testing? You seem to get offended when someone has a idea other than making them weaker. My thoughts were once the shield takes a direct rocket hit or sustained chain gun fire for a few seconds the shield would drop &amp; only re activate once the android had time to regenerate it. Perhaps they would move slow &amp; not fly like their smaller cousins. Only hop maybe. As for the android problem in general. It may be just a targeting issue that can be reworked. I&#039;ve had androids in my sights &amp; still miss them with my chain gun(fully unloading a mag) but maybe thats a game mechanics problem. that can be resolved. Maybe the scope can be reworked to zoom in further to hit the pesky androids better or they should take more damage with sustained fire.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>i didnt say u said anything like that. i dont think anybody said i was offended. you&#039;re the only person who&#039;s put an idea for making them stronger. and again, thats my whole point. they WERNT made to even stand a chance against cars. they&#039;re already OP in many situations. giving them an advantage much less a vehicle is WAAY out of bounds.&quot; I&#039;ve had androids in my sights &amp; still miss them with my chain gun(fully unloading a mag) but maybe thats a game mechanics problem.&quot; this is wut i mean, theyre so hard to kill as it is. why make them even stronger?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />&nbsp;I wasn&#039;t the only person to suggest a change. The first part of this thread was about android armor. I think they could cut the life of androids in half which would solve some problems in fair play. they do have have limits on their jet pack &amp; touching them with your car kills them so its not completely unfair but the weapon accuracy with cars vs. androids could be redone. Maybe add a ejection function that could be damaged when trying to escape your vehicle(critical systems damage) A chance you blow yourself up instead of ejecting. The Android could also just be a graphic on the hoverbike with all damage going to the hoverbike. The damage I suggested probably would be more realistic with a chance of hitting the driver or the hoverbike or both with an explosive weapon. Saying giving the androids a vehicle is unfair is odd since they already pilot the cars. How is that different? It just seems like it since the android would be visible but supposedly their in the cars anyway..</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_772">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg780"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_780_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_780">
+										<a href="../msg780/index.html#msg780" rel="nofollow">Re: Ideas and Suggestions</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 28, 2012, 11:11:08 am" style="cursor:default">Late July, 2012</span></div>
+									<div id="msg_780_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_780"><div class="quoteheader"><div class="topslice_quote"><a href="../msg772/index.html#msg772">Quote from: Mahenny on <span title=" 27, 2012, 11:25:48 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg766/index.html#msg766">Quote from: cremyjr on <span title=" 27, 2012, 10:47:29 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg763/index.html#msg763">Quote from: Mahenny on <span title=" 27, 2012, 10:17:55 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg761/index.html#msg761">Quote from: cremyjr on <span title=" 27, 2012, 09:44:12 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg757/index.html#msg757">Quote from: Mahenny on <span title=" 27, 2012, 09:13:01 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_standard_quote">Ahh.. It was never explained properly in the game that the ejecting person was a &quot;android&quot;. that doesn&#039;t mean there can&#039;t be v2.0 android&nbsp; that perhaps moves slow but has a bigger gun for example and a recharging shield.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>no dude, ur not getting it. just becuase you put negative effects doesnt balance it out. even though it will &quot;move slow&quot; a regen sheild AND bigger gun? do you know how hard it is to kill an andoid flying? much less without lag! stop trying to make androids strongber, that&#039;s not there purpose. if anything i saw make them weaker.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br />I never said make them immortal. it was simply a idea that you don&#039;t have to agree with. First, you would play test it to see if it could be done fairly. Isn&#039;t that the point of beta testing? You seem to get offended when someone has a idea other than making them weaker. My thoughts were once the shield takes a direct rocket hit or sustained chain gun fire for a few seconds the shield would drop &amp; only re activate once the android had time to regenerate it. Perhaps they would move slow &amp; not fly like their smaller cousins. Only hop maybe. As for the android problem in general. It may be just a targeting issue that can be reworked. I&#039;ve had androids in my sights &amp; still miss them with my chain gun(fully unloading a mag) but maybe thats a game mechanics problem. that can be resolved. Maybe the scope can be reworked to zoom in further to hit the pesky androids better or they should take more damage with sustained fire.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>i didnt say u said anything like that. i dont think anybody said i was offended. you&#039;re the only person who&#039;s put an idea for making them stronger. and again, thats my whole point. they WERNT made to even stand a chance against cars. they&#039;re already OP in many situations. giving them an advantage much less a vehicle is WAAY out of bounds.&quot; I&#039;ve had androids in my sights &amp; still miss them with my chain gun(fully unloading a mag) but maybe thats a game mechanics problem.&quot; this is wut i mean, theyre so hard to kill as it is. why make them even stronger?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />&nbsp;I wasn&#039;t the only person to suggest a change. The first part of this thread was about android armor. I think they could cut the life of androids in half which would solve some problems in fair play. they do have have limits on their jet pack &amp; touching them with your car kills them so its not completely unfair but the weapon accuracy with cars vs. androids could be redone. Maybe add a ejection function that could be damaged when trying to escape your vehicle(critical systems damage) A chance you blow yourself up instead of ejecting. The Android could also just be a graphic on the hoverbike with all damage going to the hoverbike. The damage I suggested probably would be more realistic with a chance of hitting the driver or the hoverbike or both with an explosive weapon. Saying giving the androids a vehicle is unfair is odd since they already pilot the cars. How is that different? It just seems like it since the android would be visible but supposedly their in the cars anyway..<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>ah, i remember now. but that still doesnt make it right even though you make negatives with it. and even though that is true, tell me how much will you sucsecfully hit one? who will actually stay on the ground? nobody butguests. everybody else will fly. do you know how hard it is to hit one in air? even with sprinter and it&#039;s flying agility. im not totally getting wut ur saying with this &quot;&nbsp; Maybe add a ejection function that could be damaged when trying to escape your vehicle(critical systems damage) A chance you blow yourself up instead of ejecting.&quot; do u mean a percent chance to have a malfunction? or is it that the car would get shot in certain places that will not let you eject? and again, not every weapon is an explosive or railgun. and thats the difference, the android is in the car, being able to eject. its not just a visual, wut ur saying is that u would be able to drive even faster. its hard enough to kill them now, why would we make them be able to go WAAY faster? it&#039;s unfair. either keep it as a newvehicle or scrap it. there&#039;s no need to make androids stronger.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_780">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_780_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg788"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/Mahenny/index.html" title="View the profile of Mahenny">Mahenny</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_788_extra_info">
+								<li class="postgroup" style="display:none">Newbie</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 16</li>
+								<li class="karma" style="margin-top:15px">Karma: 0</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_788">
+										<a href="../msg788/index.html#msg788" rel="nofollow">Re: Ideas and Suggestions</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 28, 2012, 08:10:55 pm" style="cursor:default">Late July, 2012</span></div>
+									<div id="msg_788_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_788"><div class="quoteheader"><div class="topslice_quote"><a href="../msg780/index.html#msg780">Quote from: cremyjr on <span title=" 28, 2012, 11:11:08 am" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg772/index.html#msg772">Quote from: Mahenny on <span title=" 27, 2012, 11:25:48 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg766/index.html#msg766">Quote from: cremyjr on <span title=" 27, 2012, 10:47:29 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg763/index.html#msg763">Quote from: Mahenny on <span title=" 27, 2012, 10:17:55 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg761/index.html#msg761">Quote from: cremyjr on <span title=" 27, 2012, 09:44:12 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg757/index.html#msg757">Quote from: Mahenny on <span title=" 27, 2012, 09:13:01 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_alternate_quote">Ahh.. It was never explained properly in the game that the ejecting person was a &quot;android&quot;. that doesn&#039;t mean there can&#039;t be v2.0 android&nbsp; that perhaps moves slow but has a bigger gun for example and a recharging shield.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>no dude, ur not getting it. just becuase you put negative effects doesnt balance it out. even though it will &quot;move slow&quot; a regen sheild AND bigger gun? do you know how hard it is to kill an andoid flying? much less without lag! stop trying to make androids strongber, that&#039;s not there purpose. if anything i saw make them weaker.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br />I never said make them immortal. it was simply a idea that you don&#039;t have to agree with. First, you would play test it to see if it could be done fairly. Isn&#039;t that the point of beta testing? You seem to get offended when someone has a idea other than making them weaker. My thoughts were once the shield takes a direct rocket hit or sustained chain gun fire for a few seconds the shield would drop &amp; only re activate once the android had time to regenerate it. Perhaps they would move slow &amp; not fly like their smaller cousins. Only hop maybe. As for the android problem in general. It may be just a targeting issue that can be reworked. I&#039;ve had androids in my sights &amp; still miss them with my chain gun(fully unloading a mag) but maybe thats a game mechanics problem. that can be resolved. Maybe the scope can be reworked to zoom in further to hit the pesky androids better or they should take more damage with sustained fire.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>i didnt say u said anything like that. i dont think anybody said i was offended. you&#039;re the only person who&#039;s put an idea for making them stronger. and again, thats my whole point. they WERNT made to even stand a chance against cars. they&#039;re already OP in many situations. giving them an advantage much less a vehicle is WAAY out of bounds.&quot; I&#039;ve had androids in my sights &amp; still miss them with my chain gun(fully unloading a mag) but maybe thats a game mechanics problem.&quot; this is wut i mean, theyre so hard to kill as it is. why make them even stronger?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />&nbsp;I wasn&#039;t the only person to suggest a change. The first part of this thread was about android armor. I think they could cut the life of androids in half which would solve some problems in fair play. they do have have limits on their jet pack &amp; touching them with your car kills them so its not completely unfair but the weapon accuracy with cars vs. androids could be redone. Maybe add a ejection function that could be damaged when trying to escape your vehicle(critical systems damage) A chance you blow yourself up instead of ejecting. The Android could also just be a graphic on the hoverbike with all damage going to the hoverbike. The damage I suggested probably would be more realistic with a chance of hitting the driver or the hoverbike or both with an explosive weapon. Saying giving the androids a vehicle is unfair is odd since they already pilot the cars. How is that different? It just seems like it since the android would be visible but supposedly their in the cars anyway..<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>ah, i remember now. but that still doesnt make it right even though you make negatives with it. and even though that is true, tell me how much will you sucsecfully hit one? who will actually stay on the ground? nobody butguests. everybody else will fly. do you know how hard it is to hit one in air? even with sprinter and it&#039;s flying agility. im not totally getting wut ur saying with this &quot;&nbsp; Maybe add a ejection function that could be damaged when trying to escape your vehicle(critical systems damage) A chance you blow yourself up instead of ejecting.&quot; do u mean a percent chance to have a malfunction? or is it that the car would get shot in certain places that will not let you eject? and again, not every weapon is an explosive or railgun. and thats the difference, the android is in the car, being able to eject. its not just a visual, wut ur saying is that u would be able to drive even faster. its hard enough to kill them now, why would we make them be able to go WAAY faster? it&#039;s unfair. either keep it as a newvehicle or scrap it. there&#039;s no need to make androids stronger.</blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />You completely miss what I&#039;m saying in my suggestions. Think of the new Hoverbikes as a new vehicle not as a add on for androids. The androids don&#039;t have to be part of the hover bike per say any more than they do in a car except on ejection.&nbsp; I also said I agree that androids could be nerfed on life &amp; that targeting them could be made a lot better. My other idea would be to have critical damage( on less than 5% life there&#039;s a chance ejection systems,drive train or weapons are damaged) for any vehicle that prohibits ejecting,driving properly or changing weapons, but that&#039;s not all that important, it&#039;s just a thought of adding something small to the game.<br />&nbsp;Ok.. so maybe there could be some map add ons that you could select not allowing hoverbikes on certain maps or androids from ejecting or even flight as I mentioned for the Death Race maps. It probably would be hard hitting them if they were faster than cars but they would have 1/2&nbsp; the life of a car with less armor. A more armored hoverbike would fly slower for sure.<br /></div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_788">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg793"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_793_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_793">
+										<a href="../msg793/index.html#msg793" rel="nofollow">Re: Ideas and Suggestions</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 28, 2012, 08:50:26 pm" style="cursor:default">Late July, 2012</span></div>
+									<div id="msg_793_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_793"><div class="quoteheader"><div class="topslice_quote"><a href="../msg788/index.html#msg788">Quote from: Mahenny on <span title=" 28, 2012, 08:10:55 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg780/index.html#msg780">Quote from: cremyjr on <span title=" 28, 2012, 11:11:08 am" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg772/index.html#msg772">Quote from: Mahenny on <span title=" 27, 2012, 11:25:48 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg766/index.html#msg766">Quote from: cremyjr on <span title=" 27, 2012, 10:47:29 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg763/index.html#msg763">Quote from: Mahenny on <span title=" 27, 2012, 10:17:55 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg761/index.html#msg761">Quote from: cremyjr on <span title=" 27, 2012, 09:44:12 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg757/index.html#msg757">Quote from: Mahenny on <span title=" 27, 2012, 09:13:01 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_standard_quote">Ahh.. It was never explained properly in the game that the ejecting person was a &quot;android&quot;. that doesn&#039;t mean there can&#039;t be v2.0 android&nbsp; that perhaps moves slow but has a bigger gun for example and a recharging shield.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>no dude, ur not getting it. just becuase you put negative effects doesnt balance it out. even though it will &quot;move slow&quot; a regen sheild AND bigger gun? do you know how hard it is to kill an andoid flying? much less without lag! stop trying to make androids strongber, that&#039;s not there purpose. if anything i saw make them weaker.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br />I never said make them immortal. it was simply a idea that you don&#039;t have to agree with. First, you would play test it to see if it could be done fairly. Isn&#039;t that the point of beta testing? You seem to get offended when someone has a idea other than making them weaker. My thoughts were once the shield takes a direct rocket hit or sustained chain gun fire for a few seconds the shield would drop &amp; only re activate once the android had time to regenerate it. Perhaps they would move slow &amp; not fly like their smaller cousins. Only hop maybe. As for the android problem in general. It may be just a targeting issue that can be reworked. I&#039;ve had androids in my sights &amp; still miss them with my chain gun(fully unloading a mag) but maybe thats a game mechanics problem. that can be resolved. Maybe the scope can be reworked to zoom in further to hit the pesky androids better or they should take more damage with sustained fire.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>i didnt say u said anything like that. i dont think anybody said i was offended. you&#039;re the only person who&#039;s put an idea for making them stronger. and again, thats my whole point. they WERNT made to even stand a chance against cars. they&#039;re already OP in many situations. giving them an advantage much less a vehicle is WAAY out of bounds.&quot; I&#039;ve had androids in my sights &amp; still miss them with my chain gun(fully unloading a mag) but maybe thats a game mechanics problem.&quot; this is wut i mean, theyre so hard to kill as it is. why make them even stronger?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />&nbsp;I wasn&#039;t the only person to suggest a change. The first part of this thread was about android armor. I think they could cut the life of androids in half which would solve some problems in fair play. they do have have limits on their jet pack &amp; touching them with your car kills them so its not completely unfair but the weapon accuracy with cars vs. androids could be redone. Maybe add a ejection function that could be damaged when trying to escape your vehicle(critical systems damage) A chance you blow yourself up instead of ejecting. The Android could also just be a graphic on the hoverbike with all damage going to the hoverbike. The damage I suggested probably would be more realistic with a chance of hitting the driver or the hoverbike or both with an explosive weapon. Saying giving the androids a vehicle is unfair is odd since they already pilot the cars. How is that different? It just seems like it since the android would be visible but supposedly their in the cars anyway..<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>ah, i remember now. but that still doesnt make it right even though you make negatives with it. and even though that is true, tell me how much will you sucsecfully hit one? who will actually stay on the ground? nobody butguests. everybody else will fly. do you know how hard it is to hit one in air? even with sprinter and it&#039;s flying agility. im not totally getting wut ur saying with this &quot;&nbsp; Maybe add a ejection function that could be damaged when trying to escape your vehicle(critical systems damage) A chance you blow yourself up instead of ejecting.&quot; do u mean a percent chance to have a malfunction? or is it that the car would get shot in certain places that will not let you eject? and again, not every weapon is an explosive or railgun. and thats the difference, the android is in the car, being able to eject. its not just a visual, wut ur saying is that u would be able to drive even faster. its hard enough to kill them now, why would we make them be able to go WAAY faster? it&#039;s unfair. either keep it as a newvehicle or scrap it. there&#039;s no need to make androids stronger.</blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />You completely miss what I&#039;m saying in my suggestions. Think of the new Hoverbikes as a new vehicle not as a add on for androids. The androids don&#039;t have to be part of the hover bike per say any more than they do in a car except on ejection.&nbsp; I also said I agree that androids could be nerfed on life &amp; that targeting them could be made a lot better. My other idea would be to have critical damage( on less than 5% life there&#039;s a chance ejection systems,drive train or weapons are damaged) for any vehicle that prohibits ejecting,driving properly or changing weapons, but that&#039;s not all that important, it&#039;s just a thought of adding something small to the game.<br />&nbsp;Ok.. so maybe there could be some map add ons that you could select not allowing hoverbikes on certain maps or androids from ejecting or even flight as I mentioned for the Death Race maps. It probably would be hard hitting them if they were faster than cars but they would have 1/2&nbsp; the life of a car with less armor. A more armored hoverbike would fly slower for sure.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div> ah! i see. well if thats wut u mean, then the android inside would have to be a hologram and not have to do anything with the bike itself. on ur other idea, it sounds very firmiliar. somebody had an idea like that. i cant remember wut or who but i know it was an idea. now with the map options, im not to sure y u&#039;r excluding hover bikes itself. if its a vehicle it will be able to go on any server. there&#039;s already an option for no androids. no flight. maaybe. idk how that would effect glider though O.o and this &quot;&nbsp; It probably would be hard hitting them if they were faster than cars but they would have 1/2&nbsp; the life of a car with less armor. A more armored hoverbike would fly slower for sure.&quot; what exactly are the stats for this car? it has to be equal. and its a vehicle, it cant have half life and less armour. if u buy heavy armour for sprinter. its the same amount of life as if u equipped it for racer. the only armour that slows down is heavy armour. </div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_793">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_793_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg794"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/Mahenny/index.html" title="View the profile of Mahenny">Mahenny</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_794_extra_info">
+								<li class="postgroup" style="display:none">Newbie</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 16</li>
+								<li class="karma" style="margin-top:15px">Karma: 0</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_794">
+										<a href="../msg794/index.html#msg794" rel="nofollow">Re: Ideas and Suggestions</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 28, 2012, 09:33:34 pm" style="cursor:default">Late July, 2012</span></div>
+									<div id="msg_794_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_794"><br />&nbsp;I just thought that some people might hate hover bikes because of the speed factor so excluding them could be a option.&nbsp; Not sure how the stats would work. Maybe full life but less armor. Speed might make up for it.&nbsp; They could have a turbo option- a charge meter that can get them to top speed or a little faster for a few seconds. I could seeing the hover bikes as having half the armor as a car or less if its the fastest model.<br />&nbsp;Some new exclusive weapons could be added to the bikes since they can&#039;t use the largest weapons, such as a gatling laser or mini missiles or seeker mines.&nbsp; The gatling laser &amp; mini missiles would do less damage but fire faster. A lance option would be cool for the bikes-sort of the blade armor equivalent for the car.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_794">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg802"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/FatCatAttack/index.html" title="View the profile of FatCatAttack">FatCatAttack</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_802_extra_info">
+								<li class="postgroup" style="display:none">Sr. Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 254</li>
+								<li class="karma" style="margin-top:15px">Karma: 30</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_802">
+										<a href="../msg802/index.html#msg802" rel="nofollow">Re: Ideas and Suggestions</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 29, 2012, 05:33:04 am" style="cursor:default">Late July, 2012</span></div>
+									<div id="msg_802_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_802">The bike in my opinion actually seems rather balanced on paper. The thing most people are forgetting about the android&#039;s speed is not it&#039;s actual speed, but it&#039;s acceleration, being able to change directions almost instantly to dodge bullets (unlike the car). The bike would not have that advantage. The weapon ideas are nice like missile pods and mounted chainguns but most would have the disadvantage of being only front firing, so a bike would have to use it&#039;s superior agility to line up with it&#039;s target and the car would have to use it&#039;s 360 weapon systems to shoot down a hoverbike before it can line up and deal damage. There would also be a rather clear and large weak spot on the bike (the rider) and it would be rather vulnerable to regular androids.<br /><br />Even if it is overpowered, it can always be an alternative to the car with the ability to eject (though the ejecting android is bound to have taken damage).</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_802">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_802_signature"><span style="text-shadow: orange 1px 1px 1px">Fan Fic Project</span><br /><br /><a href="../../../off-topic/fatcatattack's-fan-fic-project/msg2020/index-topicseen.html#new" class="bbc_link" target="_blank">http://forum.carbontechsoftware.com/off-topic/fatcatattack%27s-fan-fic-project/msg2020/?topicseen#new</a><br /><br />Please, come visit.</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg806"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_806_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_806">
+										<a href="../msg806/index.html#msg806" rel="nofollow">Re: Ideas and Suggestions</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 29, 2012, 04:23:08 pm" style="cursor:default">Late July, 2012</span></div>
+									<div id="msg_806_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_806"><div class="quoteheader"><div class="topslice_quote"><a href="../msg794/index.html#msg794">Quote from: Mahenny on <span title=" 28, 2012, 09:33:34 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><br />&nbsp;I just thought that some people might hate hover bikes because of the speed factor so excluding them could be a option.&nbsp; Not sure how the stats would work. Maybe full life but less armor. Speed might make up for it.&nbsp; They could have a turbo option- a charge meter that can get them to top speed or a little faster for a few seconds. I could seeing the hover bikes as having half the armor as a car or less if its the fastest model.<br />&nbsp;Some new exclusive weapons could be added to the bikes since they can&#039;t use the largest weapons, such as a gatling laser or mini missiles or seeker mines.&nbsp; The gatling laser &amp; mini missiles would do less damage but fire faster. A lance option would be cool for the bikes-sort of the blade armor equivalent for the car.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>ok, so since ur not sure of the stats. ask urself. wut would u like? very fast right? so will that be high top speed? or do you want high accel? or both? well we have CC(combat car) which has equal everything. sprinter with lots of top speed and flying agility, bad accel, and regular handling. racer with lots of accel and handling, bad top speed and regular flying agility. i think the hover bike should have high top speed and handling, but bad handling and flying agility. and this right here <strong><em>&quot; Maybe full life but less armor. Speed might make up for it.&nbsp; They could have a turbo option- a charge meter that can get them to top speed or a little faster for a few seconds. I could seeing the hover bikes as having half the armor as a car or less if its the fastest model.&quot;</em></strong> first, there&#039;s an item called temp. boost that does that. and also, dude ur not getting it. its a VEHICLE. it cant have &quot;less Armour&quot; if i can use heavy armour for racer, i can use it with this. also, it prob wont be the fastest. there&#039;s also another vehicle coming out, a muscle car. if i remember correct it will also be very fast (as muscle cars are). so...</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_806">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_806_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg807"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_807_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_807">
+										<a href="../msg807/index.html#msg807" rel="nofollow">Re: Ideas and Suggestions</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 29, 2012, 04:25:34 pm" style="cursor:default">Late July, 2012</span></div>
+									<div id="msg_807_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_807"><div class="quoteheader"><div class="topslice_quote"><a href="../msg802/index.html#msg802">Quote from: FatCatAttack on <span title=" 29, 2012, 05:33:04 am" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_standard_quote">The bike in my opinion actually seems rather balanced on paper. The thing most people are forgetting about the android&#039;s speed is not it&#039;s actual speed, but it&#039;s acceleration, being able to change directions almost instantly to dodge bullets (unlike the car). The bike would not have that advantage. The weapon ideas are nice like missile pods and mounted chainguns but most would have the disadvantage of being only front firing, so a bike would have to use it&#039;s superior agility to line up with it&#039;s target and the car would have to use it&#039;s 360 weapon systems to shoot down a hoverbike before it can line up and deal damage. There would also be a rather clear and large weak spot on the bike (the rider) and it would be rather vulnerable to regular androids.<br /><br />Even if it is overpowered, it can always be an alternative to the car with the ability to eject (though the ejecting android is bound to have taken damage).<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>actually FCA, i think he means the hoverbike to be a vehicle like the racer and sprinter. not an add-on for androids. mehenny, correct me if i&#039;m wrong. but the android in this pic will only be a hologram like thing on the bike and would have nothing to do with it.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_807">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_807_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg843"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/Mahenny/index.html" title="View the profile of Mahenny">Mahenny</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_843_extra_info">
+								<li class="postgroup" style="display:none">Newbie</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 16</li>
+								<li class="karma" style="margin-top:15px">Karma: 0</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_843">
+										<a href="../msg843/index.html#msg843" rel="nofollow">Re: Ideas and Suggestions</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 30, 2012, 08:12:21 pm" style="cursor:default">Late July, 2012</span></div>
+									<div id="msg_843_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_843"><div class="quoteheader"><div class="topslice_quote"><a href="../msg806/index.html#msg806">Quote from: cremyjr on <span title=" 29, 2012, 04:23:08 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg794/index.html#msg794">Quote from: Mahenny on <span title=" 28, 2012, 09:33:34 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><br />&nbsp;I just thought that some people might hate hover bikes because of the speed factor so excluding them could be a option.&nbsp; Not sure how the stats would work. Maybe full life but less armor. Speed might make up for it.&nbsp; They could have a turbo option- a charge meter that can get them to top speed or a little faster for a few seconds. I could seeing the hover bikes as having half the armor as a car or less if its the fastest model.<br />&nbsp;Some new exclusive weapons could be added to the bikes since they can&#039;t use the largest weapons, such as a gatling laser or mini missiles or seeker mines.&nbsp; The gatling laser &amp; mini missiles would do less damage but fire faster. A lance option would be cool for the bikes-sort of the blade armor equivalent for the car.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>ok, so since ur not sure of the stats. ask urself. wut would u like? very fast right? so will that be high top speed? or do you want high accel? or both? well we have CC(combat car) which has equal everything. sprinter with lots of top speed and flying agility, bad accel, and regular handling. racer with lots of accel and handling, bad top speed and regular flying agility. i think the hover bike should have high top speed and handling, but bad handling and flying agility. and this right here <strong><em>&quot; Maybe full life but less armor. Speed might make up for it.&nbsp; They could have a turbo option- a charge meter that can get them to top speed or a little faster for a few seconds. I could seeing the hover bikes as having half the armor as a car or less if its the fastest model.&quot;</em></strong> first, there&#039;s an item called temp. boost that does that. and also, dude ur not getting it. its a VEHICLE. it cant have &quot;less Armour&quot; if i can use heavy armour for racer, i can use it with this. also, it prob wont be the fastest. there&#039;s also another vehicle coming out, a muscle car. if i remember correct it will also be very fast (as muscle cars are). so...<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br />&nbsp;Well, there are several cars so why not have several hover bikes? So the baseline model should only be a little faster than the baseline car model but with better handling, quicker turning &amp; better acceleration. I&#039;m not sure why it couldn&#039;t have a initial lower armor value than a car since its half the size. Maybe at higher levels the difference wouldn&#039;t be that noticeable but the idea is that they are smaller &amp; quicker so they wouldn&#039;t lug heavy armor unless it was a top of the line model with a powerful engine to compensate for the weight. maybe you could just do a engine upgrade for each model with cash for the store. As you buy armor for the hover bike it would tell you what the weight would effect on your bike such as -15% acceleration for ultra blast tech armor,-10% turning or similar. A high end engine may compensate with +33% acceleration. Maybe a body mod could be added to help turning( +mod%). It may over complicate but its just a idea so you have to balance your hoverbike out. I don&#039;t think they should have &quot;bad&quot; flying agility. There supposed to be maneuvarable. Maybe just put a limit on the height they fly compared to cars. several hundred feet or so. </div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_843">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg844"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/Mahenny/index.html" title="View the profile of Mahenny">Mahenny</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_844_extra_info">
+								<li class="postgroup" style="display:none">Newbie</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 16</li>
+								<li class="karma" style="margin-top:15px">Karma: 0</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_844">
+										<a href="../msg844/index.html#msg844" rel="nofollow">Re: Ideas and Suggestions</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 30, 2012, 08:13:16 pm" style="cursor:default">Late July, 2012</span></div>
+									<div id="msg_844_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_844"><div class="quoteheader"><div class="topslice_quote"><a href="../msg807/index.html#msg807">Quote from: cremyjr on <span title=" 29, 2012, 04:25:34 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg802/index.html#msg802">Quote from: FatCatAttack on <span title=" 29, 2012, 05:33:04 am" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_alternate_quote">The bike in my opinion actually seems rather balanced on paper. The thing most people are forgetting about the android&#039;s speed is not it&#039;s actual speed, but it&#039;s acceleration, being able to change directions almost instantly to dodge bullets (unlike the car). The bike would not have that advantage. The weapon ideas are nice like missile pods and mounted chainguns but most would have the disadvantage of being only front firing, so a bike would have to use it&#039;s superior agility to line up with it&#039;s target and the car would have to use it&#039;s 360 weapon systems to shoot down a hoverbike before it can line up and deal damage. There would also be a rather clear and large weak spot on the bike (the rider) and it would be rather vulnerable to regular androids.<br /><br />Even if it is overpowered, it can always be an alternative to the car with the ability to eject (though the ejecting android is bound to have taken damage).<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>actually FCA, i think he means the hoverbike to be a vehicle like the racer and sprinter. not an add-on for androids. mehenny, correct me if i&#039;m wrong. but the android in this pic will only be a hologram like thing on the bike and would have nothing to do with it.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />&nbsp;Yeahh. your right. it is just a hologram/graphic. You could even have hoverbikes enclosed without the visual of a pilot would be fine for some models.&nbsp; I hadn&#039;t thought of only front firing weapons but it does make sense.. guess it would change your tactics a bit.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_844">
+								<em>Last edited  <span title=" 30, 2012, 08:18:25 pm" style="cursor:default">Late July, 2012</span> by Mahenny</em>
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg845"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_845_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_845">
+										<a href="../msg845/index.html#msg845" rel="nofollow">Re: Ideas and Suggestions</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 30, 2012, 08:57:12 pm" style="cursor:default">Late July, 2012</span></div>
+									<div id="msg_845_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_845"><div class="quoteheader"><div class="topslice_quote"><a href="../msg844/index.html#msg844">Quote from: Mahenny on <span title=" 30, 2012, 08:13:16 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg807/index.html#msg807">Quote from: cremyjr on <span title=" 29, 2012, 04:25:34 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg802/index.html#msg802">Quote from: FatCatAttack on <span title=" 29, 2012, 05:33:04 am" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_standard_quote">The bike in my opinion actually seems rather balanced on paper. The thing most people are forgetting about the android&#039;s speed is not it&#039;s actual speed, but it&#039;s acceleration, being able to change directions almost instantly to dodge bullets (unlike the car). The bike would not have that advantage. The weapon ideas are nice like missile pods and mounted chainguns but most would have the disadvantage of being only front firing, so a bike would have to use it&#039;s superior agility to line up with it&#039;s target and the car would have to use it&#039;s 360 weapon systems to shoot down a hoverbike before it can line up and deal damage. There would also be a rather clear and large weak spot on the bike (the rider) and it would be rather vulnerable to regular androids.<br /><br />Even if it is overpowered, it can always be an alternative to the car with the ability to eject (though the ejecting android is bound to have taken damage).<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>actually FCA, i think he means the hoverbike to be a vehicle like the racer and sprinter. not an add-on for androids. mehenny, correct me if i&#039;m wrong. but the android in this pic will only be a hologram like thing on the bike and would have nothing to do with it.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />&nbsp;Yeahh. your right. it is just a hologram/graphic. You could even have hoverbikes enclosed without the visual of a pilot would be fine for some models.&nbsp; I hadn&#039;t thought of only front firing weapons but it does make sense.. guess it would change your tactics a bit.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>well mabye there could be a longer front side. mabye a bigger egine of where it gets it major accel and top speed.the weapon would be monter on the hood there. also, this is futuristic. mabye it can have a tron like shape? mabye even some neon on it?! just a bit brighter, otherwise it would be like neon kit. in tron, the bikes are more of a square bullet with smoother edges around (i think? just search up images from the movie or the TV series) that way, if you scope, you can see all around cuz the &quot;driver&quot; wont be in the way. that ok with u maheeny?</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_845">
+								<em>Last edited  <span title=" 30, 2012, 09:00:22 pm" style="cursor:default">Late July, 2012</span> by cremyjr</em>
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_845_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg846"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/Mahenny/index.html" title="View the profile of Mahenny">Mahenny</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_846_extra_info">
+								<li class="postgroup" style="display:none">Newbie</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 16</li>
+								<li class="karma" style="margin-top:15px">Karma: 0</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_846">
+										<a href="../msg846/index.html#msg846" rel="nofollow">Re: Ideas and Suggestions</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 30, 2012, 10:24:27 pm" style="cursor:default">Late July, 2012</span></div>
+									<div id="msg_846_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_846"><br /><br />Yep. they should be long &amp; sleek =D<br />I think with or without the visual of a driver would be fine. I don&#039;t think its going to effect game play either way.<br />I do like the tron style body kits . <br />&nbsp;When you scope you change views anyway so I don&#039;t think it would matter unless the bikes had a different aiming system. As mentioned above if they had front or nose mounted weapons then you wouldn&#039;t be able to aim your weapon unless you moved your bike but possibly some weapons could be mounted underneath. Opposite of a car which would make strafing easier. I can see them having a fixed aimer for the nose mounted weapons.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_846">
+								<em>Last edited  <span title=" 30, 2012, 10:28:16 pm" style="cursor:default">Late July, 2012</span> by Mahenny</em>
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg877"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_877_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_877">
+										<a href="../msg877/index.html#msg877" rel="nofollow">Re: Ideas and Suggestions</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 31, 2012, 02:00:03 pm" style="cursor:default">Late July, 2012</span></div>
+									<div id="msg_877_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_877"><div class="quoteheader"><div class="topslice_quote"><a href="../msg846/index.html#msg846">Quote from: Mahenny on <span title=" 30, 2012, 10:24:27 pm" style="cursor:default">Late July, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><br /><br />Yep. they should be long &amp; sleek =D<br />I think with or without the visual of a driver would be fine. I don&#039;t think its going to effect game play either way.<br />I do like the tron style body kits . <br />&nbsp;When you scope you change views anyway so I don&#039;t think it would matter unless the bikes had a different aiming system. As mentioned above if they had front or nose mounted weapons then you wouldn&#039;t be able to aim your weapon unless you moved your bike but possibly some weapons could be mounted underneath. Opposite of a car which would make strafing easier. I can see them having a fixed aimer for the nose mounted weapons.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>welll since it&#039;s a vehicle that wouldnt be fair. with some tron models, the driver is in the middle you could say, there&#039;s like this hood like thing on the top covering the rider. the weapons would be mounted on there so you would be able to scope and move the weapon around.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_877">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_877_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg1190"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/epicness604/index.html" title="View the profile of epicness604">epicness604</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_1190_extra_info">
+								<li class="postgroup" style="display:none">Jr. Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/epicness604/index.html">
+										<img class="avatar" src="../../../avatar_48_1391732094-action=dlattach-attach=528-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 81</li>
+								<li class="karma" style="margin-top:15px">Karma: 5</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/clip.gif" alt="" />
+									</div>
+									<h5 id="subject_1190">
+										<a href="../msg1190/index.html#msg1190" rel="nofollow">Re: Ideas and Suggestions</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 15, 2012, 12:47:23 pm" style="cursor:default">Mid-August, 2012</span></div>
+									<div id="msg_1190_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1190">i had an (unoriginal) idea for flyers how about a hovercraft with a bottom mounted gun like this ship(theres attachment)that could hover above the ground high enough so the gun could shoot without problem and that could rise and fall faster than cars and could spin like drones but with less speed and accel than the cars it could be like the drones in movement but slower and more stable near the ground. <br />opinions?</div>
+							</div>
+							<div id="msg_1190_footer" class="attachments smalltext">
+								<div style="overflow: auto;">
+										<a href="../index-action=dlattach-attach=93-image.html" id="link_93" onclick="return expandThumb(93);"><img src="../../../HOVERCRAFT_concept_design_by_anasrist.jpg_thumb-action=dlattach-topic=33.0-attach=94-image.jpeg" alt="" id="thumb_93" /></a><br />
+										<a href="../index-action=dlattach-attach=93.html"><img src="../../../Themes/carbonate202b/images/icons/clip.gif" align="middle" alt="*" />&nbsp;HOVERCRAFT_concept_design_by_anasrist.jpg</a> 
+										(274.96 kB, 1263x747 - viewed 150 times.)<br />
+								</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_1190">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_1190_signature">never say no to panda cheese</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg1191"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/monthygreg/index.html" title="View the profile of monthygreg">monthygreg</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_1191_extra_info">
+								<li class="postgroup" style="display:none">Sr. Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/monthygreg/index.html">
+										<img class="avatar" src="../../../avatar_11_1352158351-action=dlattach-attach=264-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 265</li>
+								<li class="karma" style="margin-top:15px">Karma: 12</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_1191">
+										<a href="../msg1191/index.html#msg1191" rel="nofollow">Re: Ideas and Suggestions</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 15, 2012, 12:53:01 pm" style="cursor:default">Mid-August, 2012</span></div>
+									<div id="msg_1191_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1191">how would you aim if your point of view is above your car?<br /><br />would be kinda (i mean alot)&nbsp; awkward, dont you think?</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_1191">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_1191_signature">Sincerely, Mod of nothing&nbsp; Monthygreg<br /><br />Have a nice day!</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg1192"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/epicness604/index.html" title="View the profile of epicness604">epicness604</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_1192_extra_info">
+								<li class="postgroup" style="display:none">Jr. Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/epicness604/index.html">
+										<img class="avatar" src="../../../avatar_48_1391732094-action=dlattach-attach=528-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 81</li>
+								<li class="karma" style="margin-top:15px">Karma: 5</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_1192">
+										<a href="../msg1192/index.html#msg1192" rel="nofollow">Re: Ideas and Suggestions</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 15, 2012, 12:55:20 pm" style="cursor:default">Mid-August, 2012</span></div>
+									<div id="msg_1192_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1192"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1191/index.html#msg1191">Quote from: monthygreg on <span title=" 15, 2012, 12:53:01 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_standard_quote">how would you aim if your point of view is above your car?<br /><br />would be kinda (i mean alot)&nbsp; awkward, dont you think?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>didnt think about that..........</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_1192">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_1192_signature">never say no to panda cheese</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg1193"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/epicness604/index.html" title="View the profile of epicness604">epicness604</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_1193_extra_info">
+								<li class="postgroup" style="display:none">Jr. Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/epicness604/index.html">
+										<img class="avatar" src="../../../avatar_48_1391732094-action=dlattach-attach=528-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 81</li>
+								<li class="karma" style="margin-top:15px">Karma: 5</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_1193">
+										<a href="../msg1193/index.html#msg1193" rel="nofollow">Re: Ideas and Suggestions</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 15, 2012, 01:00:57 pm" style="cursor:default">Mid-August, 2012</span></div>
+									<div id="msg_1193_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1193">maybe change the point of view or put weapon on top to make it work</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_1193">
+								<em>Last edited  <span title=" 15, 2012, 01:02:30 pm" style="cursor:default">Mid-August, 2012</span> by epicness604</em>
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_1193_signature">never say no to panda cheese</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				</form>
+			</div>
+			<a id="lastPost"></a>
+			<div class="pagesection">
+				
+				<div class="pagelinks floatleft"><span style="margin-right:20px;color:#747474">Page 2 of 5</span><span class="nonselectedPage"><a class="navPages" href="../index.html"><<</a> </span><span class="nonselectedPage"><a class="navPages" href="../index.html">1</a> </span><span class="selectedPage">2</span> <span class="nonselectedPage"><a class="navPages" href="../40/index.html">3</a> </span><span style="font-weight: bold;" onclick="expandPages(this, 'http://forum.carbontechsoftware.com/index.php?topic=33.%1$d', 60, 80, 20);" onmouseover="this.style.cursor='pointer';"> ... </span><span class="nonselectedPage"><a class="navPages" href="../80/index.html">5</a> </span><span class="nonselectedPage"><a class="navPages" href="../40/index.html">>></a> </span></div>
+				<div class="nextlinks_bottom"><a href="../index-prev_next=prev.html#new">&laquo; previous</a> <a href="../index-prev_next=next.html#new">next &raquo;</a></div>
+			</div>
+			<div id="moderationbuttons"></div>
+			<div class="plainbox" id="display_jump_to">&nbsp;</div>
+		<br class="clear" />
+			<form action="http://forum.carbontechsoftware.com/spellcheck/" method="post" accept-charset="UTF-8" name="spell_form" id="spell_form" target="spellWindow"><input type="hidden" name="spellstring" value="" /></form>
+				<script type="text/javascript" src="../../../Themes/default/scripts/spellcheck.js"></script>
+				<script type="text/javascript" src="../../../Themes/default/scripts/topic.js"></script>
+				<script type="text/javascript"><!-- // --><![CDATA[
+					if ('XMLHttpRequest' in window)
+					{
+						var oQuickModify = new QuickModify({
+							sScriptUrl: smf_scripturl,
+							bShowModify: true,
+							iTopicId: 33,
+							sTemplateBodyEdit: '\n\t\t\t\t\t\t\t\t<div id="quick_edit_body_container" style="width: 90%">\n\t\t\t\t\t\t\t\t\t<div id="error_box" style="padding: 4px;" class="error"><' + '/div>\n\t\t\t\t\t\t\t\t\t<textarea class="editor" name="message" rows="12" style="width: 100%; margin-bottom: 10px;" tabindex="1">%body%<' + '/textarea><br />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="f432f3090a" value="477e586f5a9953a0dd3608a1ea7e9270" />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="topic" value="33" />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="msg" value="%msg_id%" />\n\t\t\t\t\t\t\t\t\t<div class="righttext">\n\t\t\t\t\t\t\t\t\t\t<input type="submit" name="post" value="Save" tabindex="2" onclick="return oQuickModify.modifySave(\'477e586f5a9953a0dd3608a1ea7e9270\', \'f432f3090a\');" accesskey="s" class="button_submit" />&nbsp;&nbsp;<input type="button" value="Spell Check (popups must be enabled)" tabindex="3" onclick="oEditorHandle_message.spellCheckStart();" class="button_submit" />&nbsp;&nbsp;<input type="submit" name="cancel" value="Cancel" tabindex="4" onclick="return oQuickModify.modifyCancel();" class="button_submit" />\n\t\t\t\t\t\t\t\t\t<' + '/div>\n\t\t\t\t\t\t\t\t<' + '/div>',
+							sTemplateSubjectEdit: '<input type="text" style="width: 90%;" name="subject" value="%subject%" size="80" maxlength="80" tabindex="5" class="input_text" />',
+							sTemplateBodyNormal: '%body%',
+							sTemplateSubjectNormal: '<a hr'+'ef="http://forum.carbontechsoftware.com/index.php'+'?topic=33.msg%msg_id%#msg%msg_id%" rel="nofollow">%subject%<' + '/a>',
+							sTemplateTopSubject: 'Topic: %subject% &nbsp;(Read 8314 times)',
+							sErrorBorderStyle: '1px solid red'
+						});
+
+						aJumpTo[aJumpTo.length] = new JumpTo({
+							sContainerId: "display_jump_to",
+							sJumpToTemplate: "<label class=\"smalltext\" for=\"%select_id%\">Jump to:<" + "/label> %dropdown_list%",
+							iCurBoardId: 3,
+							iCurBoardChildLevel: 0,
+							sCurBoardName: "Feedback &amp; Ideas",
+							sBoardChildLevelIndicator: "==",
+							sBoardPrefix: "=> ",
+							sCatSeparator: "-----------------------------",
+							sCatPrefix: "",
+							sGoButtonLabel: "go"
+						});
+
+						aIconLists[aIconLists.length] = new IconList({
+							sBackReference: "aIconLists[" + aIconLists.length + "]",
+							sIconIdPrefix: "msg_icon_",
+							sScriptUrl: smf_scripturl,
+							bShowModify: true,
+							iBoardId: 3,
+							iTopicId: 33,
+							sSessionId: "477e586f5a9953a0dd3608a1ea7e9270",
+							sSessionVar: "f432f3090a",
+							sLabelIconList: "Message icon",
+							sBoxBackground: "transparent",
+							sBoxBackgroundHover: "#ffffff",
+							iBoxBorderWidthHover: 1,
+							sBoxBorderColorHover: "#adadad" ,
+							sContainerBackground: "#ffffff",
+							sContainerBorder: "1px solid #adadad",
+							sItemBorder: "1px solid #ffffff",
+							sItemBorderHover: "1px dotted gray",
+							sItemBackground: "transparent",
+							sItemBackgroundHover: "#e0e0f0"
+						});
+					}
+				// ]]></script>
+		<form name="spell_form" id="spell_form" method="post" accept-charset="UTF-8" target="spellWindow" action="http://forum.carbontechsoftware.com/spellcheck/">
+			<input type="hidden" name="spellstring" value="" />
+		</form>
+			<script type="text/javascript"><!-- // --><![CDATA[
+				var verificationpostHandle = new smfCaptcha("http://forum.carbontechsoftware.com/index.php?action=verificationcode;vid=post;rand=b82a3c92cb949d1c6c946f1a74bb66e6", "post", 1);
+			// ]]></script>
+	</div>
+	</div></div>
+	<div id="footersection"><div style="width: 985px;margin: auto;">
+			<span class="floatright"><a href="http://www.simplemachines.org/">© Simple Machines (SMF 2.0.2)</a> - Forum designed by CarbonTech & <a href="http://www.blocweb.net">Bloc</a>
+			</span></div>
+	</div></div></div><script type="text/javascript">
+var sc_project=6755287; 
+var sc_invisible=1; 
+var sc_security="c689b4fd"; 
+</script>
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script>
+<noscript><div class="statcounter"><a title="tumblr page
+counter" href="http://statcounter.com/tumblr/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/6755287/0/c689b4fd/1/"
+alt="tumblr page counter"></a></div></noscript>
+</body></html>

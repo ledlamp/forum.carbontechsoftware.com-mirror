@@ -1,0 +1,567 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<link rel="stylesheet" type="text/css" href="../../../Themes/carbonate202b/css/index-fin20.css" />
+	<link rel="stylesheet" type="text/css" href="../../../Themes/carbonate202b/css/index_carbon-fin20.css" />
+	<script type="text/javascript" src="../../../Themes/default/scripts/script-fin20.js"></script>
+	<script type="text/javascript" src="../../../Themes/carbonate202b/scripts/theme-fin20.js"></script>
+	<script type="text/javascript"><!-- // --><![CDATA[
+		var smf_theme_url = "http://forum.carbontechsoftware.com/Themes/carbonate202b";
+		var smf_default_theme_url = "http://forum.carbontechsoftware.com/Themes/default";
+		var smf_images_url = "http://forum.carbontechsoftware.com/Themes/carbonate202b/images";
+		var smf_scripturl = "http://forum.carbontechsoftware.com/index.php";
+		var smf_iso_case_folding = false;
+		var smf_charset = "UTF-8";
+		var ajax_notification_text = "Loading...";
+		var ajax_notification_cancel_text = "Cancel";
+	// ]]></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="description" content="Forum Rules" />
+	<title>Forum Rules</title><link rel="shortcut icon" type="image/x-icon" href="http://lh3.googleusercontent.com/-GOPf21qQXSY/TzawG0qVPlI/AAAAAAAAAoA/-VQrE780LzQ/s16/CCLogoRound.png" /><link rel="icon" href="http://lh3.googleusercontent.com/-GOPf21qQXSY/TzawG0qVPlI/AAAAAAAAAoA/-VQrE780LzQ/s16/CCLogoRound.png" type="image/x-icon" />
+	<meta name="robots" content="noindex" />
+	<link rel="canonical" href="../index.html" />
+	<link rel="help" href="../../../help/index.html" />
+	<link rel="search" href="../../../search/index.html" />
+	<link rel="contents" href="../../../index.php.html" />
+	<link rel="alternate" type="application/rss+xml" title="Carbon Combat - RSS" href="../../../.xml/index-type=rss.html" />
+	<link rel="prev" href="../index-prev_next=prev.html" />
+	<link rel="next" href="../index-prev_next=next.html" />
+	<link rel="index" href="../../index.html" /><!-- nCode Image Resizer -->
+	<script type="text/javascript" src="../../../Themes/default/ncode_imageresizer.js"></script>
+	<script language="JavaScript" type="text/javascript"><!-- // -->
+	NcodeImageResizer.BBURL = "http://forum.carbontechsoftware.com/Themes/carbonate202b/images";
+	NcodeImageResizer.MODE = "enlarge";
+	NcodeImageResizer.MAXWIDTH = "720";
+	NcodeImageResizer.MAXHEIGHT = "400";
+	vbphrase = new Array();
+	vbphrase['ncode_imageresizer_warning_small'] = 'Click this bar to view the full image.';
+	vbphrase['ncode_imageresizer_warning_filesize'] = 'This image has been resized. Click this bar to view the full image. The original image is sized %1$sx%2$s and weighs %3$sKB.';
+	vbphrase['ncode_imageresizer_warning_no_filesize'] = 'This image has been resized. Click this bar to view the full image. The original image is sized %1$sx%2$s.';
+	vbphrase['ncode_imageresizer_warning_fullsize'] = 'Click this bar to view the small image.';
+	// ]]></script>
+	<link rel="stylesheet" type="text/css" id="editor_css" href="../../../Themes/default/css/editor.css" />
+		<script type="text/javascript"><!-- // --><![CDATA[
+			var smf_smileys_url = 'http://forum.carbontechsoftware.com/Smileys/akyhne';
+			var oEditorStrings= {
+				wont_work: 'Your browser does not support Rich Text editing.',
+				func_disabled: 'Your browser does not support this function.',
+				prompt_text_email: 'Please enter the email address.',
+				prompt_text_ftp: 'Please enter the ftp address.',
+				prompt_text_url: 'Please enter the URL you wish to link to.',
+				prompt_text_img: 'Enter image location'
+			}
+		// ]]></script>
+		<script type="text/javascript" src="../../../Themes/default/scripts/editor-fin20.js"></script>
+		<script type="text/javascript" src="../../../Themes/default/scripts/spellcheck.js"></script>
+		<script type="text/javascript"><!-- // --><![CDATA[
+		function spellCheckDone()
+		{
+			for (i = 0; i < smf_editorArray.length; i++)
+				setTimeout("smf_editorArray[" + i + "].spellCheckEnd()", 150);
+		}
+		// ]]></script>
+		<script type="text/javascript" src="../../../Themes/default/scripts/captcha.js"></script>
+	<style type="text/css">#main_menu,
+		#admin_menu
+		{
+			width: 985px
+		}
+	</style>
+	
+	
+	<script language="javascript" type="text/javascript">
+	<!--
+	
+	// MOD Title: Simple Image Upload
+	// MOD Author: Sium < admin@postimage.org > (N/A) http://www.postimage.org/
+	// MOD Version: 1.3.0
+	
+	var postimage_lang="english";
+	var postimage_add_text="Upload and insert an image";
+	var postimage_textarea_ignore_name=/username_list|search/i;
+	
+	function imgFunction() {
+		alert("After uploading you can...\n\n• Drag & drop the image into the post editor\n• Copy the direct link & add an image\n• Copy & paste the HTML code\n• Copy & paste the BBCode");
+	}
+	
+	function postimage_insert()
+	{
+		var postimage_area=document.getElementsByTagName("TEXTAREA");
+
+		for(var postimage_i=0;postimage_i<postimage_area.length;postimage_i++)
+		{
+			if(!postimage_area[postimage_i].name.match(postimage_textarea_ignore_name))
+			{
+				var postimage_new_div=document.createElement("div");
+				postimage_new_div.id = "smileyBox_message";
+				postimage_new_div.style.marginBottom = "5px";
+				postimage_new_div.style.display = "block";
+				postimage_new_div.innerHTML="<a href=\"javascript:void(0);\" onclick=\"imgFunction();imgWindow=window.open('http://imgur.com/?noFlash', 'imgWindow', 'resizable=no,width=1015,height=550,scrollbars=no');\"><b>>> "+postimage_add_text+"</b></a>";
+				postimage_area[postimage_i].parentNode.insertBefore(postimage_new_div,postimage_area[postimage_i]);
+			}
+		}
+	}
+	
+	window.onload=postimage_insert;
+	//-->
+	</script>
+	
+	
+	
+</head>
+<body>
+<div id="wrapper"><div id="headerlogo"></div>
+	<div id="subheader"><div style="width: 985px; margin:auto;background-color:#000">
+	<div id="uppertop">
+		<div class="middletext" style="float:right;height:auto;line-height:16px">Ten after 8:00 pm, June 16th, 2015</div>
+		<script type="text/javascript" src="../../../Themes/default/scripts/sha1.js"></script>
+		<form id="guest_form" action="http://forum.carbontechsoftware.com/login2/" method="post" accept-charset="UTF-8"  onsubmit="hashLoginPassword(this, '477e586f5a9953a0dd3608a1ea7e9270');">
+			Welcome, <strong>Guest</strong>. Please <a href="../../../login/index.html">login</a> or <a href="../../../register/index.html">register</a>.&nbsp;
+	</div>
+	<div id="top_section" style="clear: both;">
+		<div id="main_menu">
+			<div class="menuback">
+			<div class="menuback2">
+			<ul class="dropmenu" id="menu_nav">
+				<li id="button_home" class="toplevel">
+					<a class="active firstlevel" href="../../../index.php.html">
+						<span class="last firstlevel">Home</span>
+					</a>
+				</li>
+				<li id="button_search" class="toplevel">
+					<a class="firstlevel" href="../../../search/index.html">
+						<span class="firstlevel">Search</span>
+					</a>
+					<ul>
+						<li>
+							<a href="../../../search/index.html">
+								<span>Search Forum Topics</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li id="button_login" class="toplevel">
+					<a class="firstlevel" href="../../../login/index.html">
+						<span class="firstlevel">Login</span>
+					</a>
+				</li>
+				<li id="button_register" class="toplevel">
+					<a class="firstlevel" href="../../../register/index.html">
+						<span class="firstlevel">Register</span>
+					</a>
+				</li>
+				<li id="button_chat" class="toplevel">
+					<a class="firstlevel" href="javascript:void(0)"onclick="window.open('/chatRoom.html','POPUP','width=700,height=720,location=0,menubar=0,toolbar=0,scrollbars=0,status=0,');">
+						<span class="firstlevel">Chat</span>
+					</a>
+				</li>
+				<li id="button_play" class="toplevel">
+					<a class="firstlevel" href="http://play.carbontechsoftware.com/"target="_blank');">
+						<span class="last firstlevel"><div style="color:#FFEFAE">Play</div></span>
+					</a>
+				</li>
+			</ul>
+			</div>
+			</div>
+		</div><script src="../../../adjustMenubar.js"></script>
+		<br class="clear" />
+		</div>
+	</div></div>
+	<div id="mainsection"><div style="width: 985px;margin: auto;margin-bottom:0;padding:15px 0">
+		<div id="innermain">	
+	<div class="navigate_section">
+		<ul>
+			<li>
+				<a href="../../../index.php.html"><span>Carbon Combat</span></a> &#187;
+			</li>
+			<li>
+				<a href="../../../index.php.html#c1"><span>General</span></a> &#187;
+			</li>
+			<li>
+				<a href="../../index.html"><span>Feedback &amp; Ideas</span></a> &#187;
+			</li>
+			<li class="last">
+				<a href="../index.html"><span>Forum Rules</span></a>
+			</li>
+		</ul>
+	</div>
+			<a id="top"></a>
+			<a id="msg65"></a>
+			<div id="poll">
+				<div class="cat_bar">
+					<h3 class="catbg">
+						<span class="ie6_header floatleft"><img src="../../../Themes/carbonate202b/images/topic/normal_poll.gif.png" alt="" class="icon" /> Poll</span>
+					</h3>
+				</div>
+				<div class="windowbg">
+					<span class="topslice"><span></span></span>
+					<div class="content" id="poll_options">
+						<h4 id="pollquestion">
+							During migration season here, what should be done about the current forum rules?
+						</h4>
+					<dl class="options">
+						<dt class="middletext">Keep them as-is.</dt>
+						<dd class="middletext statsbar">
+							<div class="bar" style="width: 120.55px;"><div style="width: 116.55px;"></div></div>
+							<span class="percentage">1 (33.3%)</span>
+						</dd>
+						<dt class="middletext">Keep, but add a few things here and there.</dt>
+						<dd class="middletext statsbar">
+							<div class="bar" style="width: 237.45px;"><div style="width: 233.45px;"></div></div>
+							<span class="percentage">2 (66.7%)</span>
+						</dd>
+						<dt class="middletext">Keep, but change and revise some portions.</dt>
+						<dd class="middletext statsbar">
+							
+							<span class="percentage">0 (0%)</span>
+						</dd>
+						<dt class="middletext">Remove major portions and simplify.</dt>
+						<dd class="middletext statsbar">
+							
+							<span class="percentage">0 (0%)</span>
+						</dd>
+						<dt class="middletext">Rewrite from the ground-up.</dt>
+						<dd class="middletext statsbar">
+							
+							<span class="percentage">0 (0%)</span>
+						</dd>
+					</dl>
+						<p><strong>Total Members Voted:</strong> 3</p>
+						<p><strong>Voting closed:</strong> <span title=" 14, 2012, 01:42:03 am" style="cursor:default">Mid-July, 2012</span></p>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+			</div>
+			<div id="pollmoderation">
+			</div>
+			<div class="pagesection">
+				<div class="nextlinks"><a href="../index-prev_next=prev.html#new">&laquo; previous</a> <a href="../index-prev_next=next.html#new">next &raquo;</a></div>
+				<div class="pagelinks floatleft"><span style="margin-right:20px;color:#747474">Page 1 of 1</span><span class="selectedPage">1</span> </div>
+			</div>
+			<div id="forumposts">
+				<div class="cat_bar">
+					<h3 class="catbg">
+						<img src="../../../Themes/carbonate202b/images/topic/normal_post.gif.png" align="bottom" alt="" />
+						<span id="author">Author</span>
+						Topic: Forum Rules &nbsp;(Read 958 times)
+					</h3>
+				</div>
+				<form action="http://forum.carbontechsoftware.com/feedback-ideas/forum-rules/?action=quickmod2" method="post" accept-charset="UTF-8" name="quickModForm" id="quickModForm" style="margin: 0;" onsubmit="return oQuickModify.bInEditMode ? oQuickModify.modifySave('477e586f5a9953a0dd3608a1ea7e9270', 'f432f3090a') : false">
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/techietotoro/index.html" title="View the profile of techietotoro">techietotoro</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_65_extra_info">
+								<li class="membergroup">Global Moderator</li>
+								<li class="postgroup" style="display:none">Newbie</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/techietotoro/index.html">
+										<img class="avatar" src="../../../avatar_19_1342645139-action=dlattach-attach=44-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 13</li>
+								<li class="karma" style="margin-top:15px">Karma: 2</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_65">
+										<a href="../msg65/index.html#msg65" rel="nofollow">Forum Rules</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 07, 2012, 01:42:03 am" style="cursor:default">Early July, 2012</span></div>
+									<div id="msg_65_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_65"><span style="font-family: verdana;" class="bbc_font"><br />This post lays down the much needed brickwork for a foundation of the Carbon Combat forum. Below you should be able to find rules about posting to the forum and commenting, tips, etiquette guidelines, plus the do&#039;s and do nots. Additionally, a set of moderator guidelines are included so everyone is confident in moderator actions. This list is also malleable and modifiable, and suggestions are appreciated.<br />&nbsp;<br /><strong><span style="font-size: 1.2em;" class="bbc_size">Totoro&#039;s Three Tips:</span></strong></span><div style="text-align: left;"><ul class="bbc_list"><li><span style="font-family: verdana;" class="bbc_font">Did somebody already post about it? If so, don&#039;t do it.</span></li><li><span style="font-family: verdana;" class="bbc_font">Will other people be interested in what you have to say? If not, don&#039;t post it.</span></li><li><span style="font-family: verdana;" class="bbc_font">Does it make you feel proud about it? If not, other people will not like it.</span></li><li>[/l][/l]</li></ul></div><span style="font-family: verdana;" class="bbc_font"><br />Do all three steps check out? Go ahead and post!<br />&nbsp;<br />FORUM RULES<br />&nbsp;<br /></span><div style="text-align: left;"><span style="font-family: verdana;" class="bbc_font">[/l]<br />&nbsp;&nbsp;&nbsp;</span><ul class="bbc_list"><li><span style="font-family: verdana;" class="bbc_font">Post only things directly related to Carbon Combat and the Carbon Combat community.</span></li><li><span style="font-family: verdana;" class="bbc_font"><strong>Posts must be written in English, with best possible spelling and grammar.</strong> It&#039;s OK if you have issues: just do your best.</span></li><li><span style="font-family: verdana;" class="bbc_font">Do you want to <strong>comment</strong> on a post? Be sure to use the &quot;Reply to Document&quot; button for replying to a post, and &quot;Reply to Comment&quot; to reply to an individual comment. This ensures everything is organized in nice, threaded commentaries.</span></li><li><span style="font-family: verdana;" class="bbc_font">Want to ask a <strong>question</strong>? First, read the <span class="bbc_u"><span style="color: rgb(51, 51, 51);" class="bbc_color"><a href="http://plexpedia.com/view-10224" class="bbc_link" target="_blank">FAQ</a></span></span> before posting. Then, search (upper right hand corner of this page) for keywords related to your question to find if it has been answered before. Try to post questions at the <span class="bbc_u">[/color]<span style="color: rgb(51, 51, 51);" class="bbc_color"><a href="http://plexpedia.com/view-11364" class="bbc_link" target="_blank">questions and responses thread</a></span></span></span>. If the question is complex and merits discussion, make an individual post.[/font]</li><li><span style="font-family: verdana;" class="bbc_font">Want to talk about a <strong>bug or glitch</strong>? First, <span class="bbc_u">[/color]<span style="color: rgb(51, 51, 51);" class="bbc_color"><a href="http://plexpedia.com/view-9816" class="bbc_link" target="_blank">Report a Bug</a></span></span></span> before posting about it. If you need additional help, go ahead and post![/font]</li><li><span style="font-family: verdana;" class="bbc_font">Have an <strong>idea or suggestion</strong>? If it is simple, go ahead and comment on <span class="bbc_u">[/color]<span style="color: rgb(51, 51, 51);" class="bbc_color"><a href="http://plexpedia.com/view-9818" class="bbc_link" target="_blank">ideas and suggestions</a></span></span></span>. If it is more complex, you may go ahead and post, provided there is enough content to justify an individual post.[/font]</li><li><span style="font-family: verdana;" class="bbc_font">Want to make something to be included in the game? You can use the in-game map editor to make your own worlds! Do you have this really awesome 3D model that you can&#039;t wait to see implemented into Carbon Combat? Sorry, it probably will not, as the game creator doesn&#039;t have that much time on his hands!</span></li><li><span style="font-family: verdana;" class="bbc_font">Want to <strong>flame</strong> or <strong>insult</strong> somebody? Do not post personal posts of any type, especially those that maliciously target other users.</span></li><li><span style="font-family: verdana;" class="bbc_font">No posts without merit. No posts lacking content. No posts with profanity, advertisement, personal agendas, offensive/inappropriate material, or malicious intent. Avoid writing posts containing strong or inappropriate language.</span></li><li><span style="font-family: verdana;" class="bbc_font">Reviving old and irrelevant posts will result in said posts being promptly resolved. If a post is important to the forum but &#039;dead,&#039; it will not qualify as irrelevant, and thus will remain active.</span></li><li><span style="font-family: verdana;" class="bbc_font">[/l]<br />&nbsp;<br />Moderator Guidelines<br /></span><div style="text-align: left;"><span style="font-family: verdana;" class="bbc_font">[/l]<br />&nbsp;&nbsp;&nbsp;</span><ul class="bbc_list"><li><span style="font-family: verdana;" class="bbc_font">If a post seriously breaks the above set of rules, it will be removed without notice.</span></li><li><span style="font-family: verdana;" class="bbc_font">If a post is dangerous, has malicious intent, contains profanity, advertisement, personal agendas, offensive material, or is in bad taste, it will be removed and the responsible user may be banned.</span></li><li><span style="font-family: verdana;" class="bbc_font">If a post contains minor infractions upon the rules, the moderators will issue a warning.</span></li><li><span style="font-family: verdana;" class="bbc_font">If a user repeatedly breaks the rules posting, the infringing posts may be removed without notice.</span></li><li><span style="font-family: verdana;" class="bbc_font">The moderators will act in their best taste to do their job skillfully and effectively. The moderators and the administrator, of course, reserve the right to employ their powers wherever and whenever they see fit.</span></li><li><span style="font-family: verdana;" class="bbc_font">If a post is irrelevant to the current state of Carbon Combat, it will be resolved, hidden, or removed without notice.</span></li><li><span style="font-family: verdana;" class="bbc_font">[/l]<br />&nbsp;<br />&nbsp;<br />Lastly...<br />...and most importantly...<br />HAVE FUN!<br />&nbsp;<br />Edit 1: Grammatical change, per FatCatAttack<br />Edit 2 (March 13): Added line, &quot;Avoid writing posts containing strong or inappropriate language.&quot; Added this change log.<br />Edit 3 (April 2): Added rule about commenting. It is now a rule to use the reply to comment button when replying to comments.<br />Edit 4 (June 29, 2012): Added a rule and a moderator guideline regarding necro-ing old posts. Changed the title to &quot;FORUM ETIQUETTE&quot; to create a looser connotation regarding these rules.</span><br /></li></ul></div></li></ul></div></div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_65">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg66"></a><a id="new"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/TheCyberMan/index.html" title="View the profile of TheCyberMan">TheCyberMan</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_66_extra_info">
+								<li class="membergroup">Global Moderator</li>
+								<li class="postgroup" style="display:none">Jr. Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /></li>
+								<li class="postcount">Posts: 91</li>
+								<li class="karma" style="margin-top:15px">Karma: 18</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_66">
+										<a href="index.html#msg66" rel="nofollow">Re: Forum Rules</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 07, 2012, 01:44:00 am" style="cursor:default">Early July, 2012</span></div>
+									<div id="msg_66_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_66">Totoro, I have rewritten the rules already.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_66">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg68"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/techietotoro/index.html" title="View the profile of techietotoro">techietotoro</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_68_extra_info">
+								<li class="membergroup">Global Moderator</li>
+								<li class="postgroup" style="display:none">Newbie</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/techietotoro/index.html">
+										<img class="avatar" src="../../../avatar_19_1342645139-action=dlattach-attach=44-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 13</li>
+								<li class="karma" style="margin-top:15px">Karma: 2</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_68">
+										<a href="../msg68/index.html#msg68" rel="nofollow">Re: Forum Rules</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 07, 2012, 01:48:39 am" style="cursor:default">Early July, 2012</span></div>
+									<div id="msg_68_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_68">Oh goody, can we see them?</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_68">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg69"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/TheCyberMan/index.html" title="View the profile of TheCyberMan">TheCyberMan</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_69_extra_info">
+								<li class="membergroup">Global Moderator</li>
+								<li class="postgroup" style="display:none">Jr. Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /></li>
+								<li class="postcount">Posts: 91</li>
+								<li class="karma" style="margin-top:15px">Karma: 18</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_69">
+										<a href="../msg69/index.html#msg69" rel="nofollow">Re: Forum Rules</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 07, 2012, 01:52:10 am" style="cursor:default">Early July, 2012</span></div>
+									<div id="msg_69_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_69"><div class="quoteheader"><div class="topslice_quote"><a href="../msg68/index.html#msg68">Quote from: techietotoro on <span title=" 07, 2012, 01:48:39 am" style="cursor:default">Early July, 2012</span></a></div></div><blockquote class="bbc_standard_quote">Oh goody, can we see them?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>I was just talking to CT about posting the rough draft when I saw you made this thread <img src="../../../Smileys/akyhne/tongue.gif" alt="&#58;P" title="Tongue" class="smiley" /> You can view the Global Forum Rules and Etiquette here: <a href="../../../announcements/global-forum-rules-and-etiquette/new/index.html#new" class="bbc_link" target="_blank">http://forum.carbontechsoftware.com/index.php?topic=12.new#new</a></div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_69">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg71"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/techietotoro/index.html" title="View the profile of techietotoro">techietotoro</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_71_extra_info">
+								<li class="membergroup">Global Moderator</li>
+								<li class="postgroup" style="display:none">Newbie</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/techietotoro/index.html">
+										<img class="avatar" src="../../../avatar_19_1342645139-action=dlattach-attach=44-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 13</li>
+								<li class="karma" style="margin-top:15px">Karma: 2</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_71">
+										<a href="../msg71/index.html#msg71" rel="nofollow">Re: Forum Rules</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 07, 2012, 01:56:10 am" style="cursor:default">Early July, 2012</span></div>
+									<div id="msg_71_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_71">Very nice, very nice... I&#039;ll keep the poll to see what people think about this set.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_71">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				</form>
+			</div>
+			<a id="lastPost"></a>
+			<div class="pagesection">
+				
+				<div class="pagelinks floatleft"><span style="margin-right:20px;color:#747474">Page 1 of 1</span><span class="selectedPage">1</span> </div>
+				<div class="nextlinks_bottom"><a href="../index-prev_next=prev.html#new">&laquo; previous</a> <a href="../index-prev_next=next.html#new">next &raquo;</a></div>
+			</div>
+			<div id="moderationbuttons"></div>
+			<div class="plainbox" id="display_jump_to">&nbsp;</div>
+		<br class="clear" />
+			<form action="http://forum.carbontechsoftware.com/spellcheck/" method="post" accept-charset="UTF-8" name="spell_form" id="spell_form" target="spellWindow"><input type="hidden" name="spellstring" value="" /></form>
+				<script type="text/javascript" src="../../../Themes/default/scripts/spellcheck.js"></script>
+				<script type="text/javascript" src="../../../Themes/default/scripts/topic.js"></script>
+				<script type="text/javascript"><!-- // --><![CDATA[
+					if ('XMLHttpRequest' in window)
+					{
+						var oQuickModify = new QuickModify({
+							sScriptUrl: smf_scripturl,
+							bShowModify: true,
+							iTopicId: 11,
+							sTemplateBodyEdit: '\n\t\t\t\t\t\t\t\t<div id="quick_edit_body_container" style="width: 90%">\n\t\t\t\t\t\t\t\t\t<div id="error_box" style="padding: 4px;" class="error"><' + '/div>\n\t\t\t\t\t\t\t\t\t<textarea class="editor" name="message" rows="12" style="width: 100%; margin-bottom: 10px;" tabindex="1">%body%<' + '/textarea><br />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="f432f3090a" value="477e586f5a9953a0dd3608a1ea7e9270" />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="topic" value="11" />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="msg" value="%msg_id%" />\n\t\t\t\t\t\t\t\t\t<div class="righttext">\n\t\t\t\t\t\t\t\t\t\t<input type="submit" name="post" value="Save" tabindex="2" onclick="return oQuickModify.modifySave(\'477e586f5a9953a0dd3608a1ea7e9270\', \'f432f3090a\');" accesskey="s" class="button_submit" />&nbsp;&nbsp;<input type="button" value="Spell Check (popups must be enabled)" tabindex="3" onclick="oEditorHandle_message.spellCheckStart();" class="button_submit" />&nbsp;&nbsp;<input type="submit" name="cancel" value="Cancel" tabindex="4" onclick="return oQuickModify.modifyCancel();" class="button_submit" />\n\t\t\t\t\t\t\t\t\t<' + '/div>\n\t\t\t\t\t\t\t\t<' + '/div>',
+							sTemplateSubjectEdit: '<input type="text" style="width: 90%;" name="subject" value="%subject%" size="80" maxlength="80" tabindex="5" class="input_text" />',
+							sTemplateBodyNormal: '%body%',
+							sTemplateSubjectNormal: '<a hr'+'ef="http://forum.carbontechsoftware.com/index.php'+'?topic=11.msg%msg_id%#msg%msg_id%" rel="nofollow">%subject%<' + '/a>',
+							sTemplateTopSubject: 'Topic: %subject% &nbsp;(Read 958 times)',
+							sErrorBorderStyle: '1px solid red'
+						});
+
+						aJumpTo[aJumpTo.length] = new JumpTo({
+							sContainerId: "display_jump_to",
+							sJumpToTemplate: "<label class=\"smalltext\" for=\"%select_id%\">Jump to:<" + "/label> %dropdown_list%",
+							iCurBoardId: 3,
+							iCurBoardChildLevel: 0,
+							sCurBoardName: "Feedback &amp; Ideas",
+							sBoardChildLevelIndicator: "==",
+							sBoardPrefix: "=> ",
+							sCatSeparator: "-----------------------------",
+							sCatPrefix: "",
+							sGoButtonLabel: "go"
+						});
+
+						aIconLists[aIconLists.length] = new IconList({
+							sBackReference: "aIconLists[" + aIconLists.length + "]",
+							sIconIdPrefix: "msg_icon_",
+							sScriptUrl: smf_scripturl,
+							bShowModify: true,
+							iBoardId: 3,
+							iTopicId: 11,
+							sSessionId: "477e586f5a9953a0dd3608a1ea7e9270",
+							sSessionVar: "f432f3090a",
+							sLabelIconList: "Message icon",
+							sBoxBackground: "transparent",
+							sBoxBackgroundHover: "#ffffff",
+							iBoxBorderWidthHover: 1,
+							sBoxBorderColorHover: "#adadad" ,
+							sContainerBackground: "#ffffff",
+							sContainerBorder: "1px solid #adadad",
+							sItemBorder: "1px solid #ffffff",
+							sItemBorderHover: "1px dotted gray",
+							sItemBackground: "transparent",
+							sItemBackgroundHover: "#e0e0f0"
+						});
+					}
+				// ]]></script>
+		<form name="spell_form" id="spell_form" method="post" accept-charset="UTF-8" target="spellWindow" action="http://forum.carbontechsoftware.com/spellcheck/">
+			<input type="hidden" name="spellstring" value="" />
+		</form>
+			<script type="text/javascript"><!-- // --><![CDATA[
+				var verificationpostHandle = new smfCaptcha("http://forum.carbontechsoftware.com/index.php?action=verificationcode;vid=post;rand=2f36f6c21ff475f32237dc59796c8a52", "post", 1);
+			// ]]></script>
+	</div>
+	</div></div>
+	<div id="footersection"><div style="width: 985px;margin: auto;">
+			<span class="floatright"><a href="http://www.simplemachines.org/">© Simple Machines (SMF 2.0.2)</a> - Forum designed by CarbonTech & <a href="http://www.blocweb.net">Bloc</a>
+			</span></div>
+	</div></div></div><script type="text/javascript">
+var sc_project=6755287; 
+var sc_invisible=1; 
+var sc_security="c689b4fd"; 
+</script>
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script>
+<noscript><div class="statcounter"><a title="tumblr page
+counter" href="http://statcounter.com/tumblr/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/6755287/0/c689b4fd/1/"
+alt="tumblr page counter"></a></div></noscript>
+</body></html>

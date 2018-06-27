@@ -1,0 +1,1239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<link rel="stylesheet" type="text/css" href="../../../Themes/carbonate202b/css/index-fin20.css" />
+	<link rel="stylesheet" type="text/css" href="../../../Themes/carbonate202b/css/index_carbon-fin20.css" />
+	<script type="text/javascript" src="../../../Themes/default/scripts/script-fin20.js"></script>
+	<script type="text/javascript" src="../../../Themes/carbonate202b/scripts/theme-fin20.js"></script>
+	<script type="text/javascript"><!-- // --><![CDATA[
+		var smf_theme_url = "http://forum.carbontechsoftware.com/Themes/carbonate202b";
+		var smf_default_theme_url = "http://forum.carbontechsoftware.com/Themes/default";
+		var smf_images_url = "http://forum.carbontechsoftware.com/Themes/carbonate202b/images";
+		var smf_scripturl = "http://forum.carbontechsoftware.com/index.php";
+		var smf_iso_case_folding = false;
+		var smf_charset = "UTF-8";
+		var ajax_notification_text = "Loading...";
+		var ajax_notification_cancel_text = "Cancel";
+	// ]]></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="description" content="Damage HUD" />
+	<title>Damage HUD</title><link rel="shortcut icon" type="image/x-icon" href="http://lh3.googleusercontent.com/-GOPf21qQXSY/TzawG0qVPlI/AAAAAAAAAoA/-VQrE780LzQ/s16/CCLogoRound.png" /><link rel="icon" href="http://lh3.googleusercontent.com/-GOPf21qQXSY/TzawG0qVPlI/AAAAAAAAAoA/-VQrE780LzQ/s16/CCLogoRound.png" type="image/x-icon" />
+	<meta name="robots" content="noindex" />
+	<link rel="canonical" href="../index.html" />
+	<link rel="help" href="../../../help/index.html" />
+	<link rel="search" href="../../../search/index.html" />
+	<link rel="contents" href="../../../index.php.html" />
+	<link rel="alternate" type="application/rss+xml" title="Carbon Combat - RSS" href="../../../.xml/index-type=rss.html" />
+	<link rel="prev" href="../index-prev_next=prev.html" />
+	<link rel="next" href="../index-prev_next=next.html" />
+	<link rel="index" href="../../index.html" /><!-- nCode Image Resizer -->
+	<script type="text/javascript" src="../../../Themes/default/ncode_imageresizer.js"></script>
+	<script language="JavaScript" type="text/javascript"><!-- // -->
+	NcodeImageResizer.BBURL = "http://forum.carbontechsoftware.com/Themes/carbonate202b/images";
+	NcodeImageResizer.MODE = "enlarge";
+	NcodeImageResizer.MAXWIDTH = "720";
+	NcodeImageResizer.MAXHEIGHT = "400";
+	vbphrase = new Array();
+	vbphrase['ncode_imageresizer_warning_small'] = 'Click this bar to view the full image.';
+	vbphrase['ncode_imageresizer_warning_filesize'] = 'This image has been resized. Click this bar to view the full image. The original image is sized %1$sx%2$s and weighs %3$sKB.';
+	vbphrase['ncode_imageresizer_warning_no_filesize'] = 'This image has been resized. Click this bar to view the full image. The original image is sized %1$sx%2$s.';
+	vbphrase['ncode_imageresizer_warning_fullsize'] = 'Click this bar to view the small image.';
+	// ]]></script>
+	<link rel="stylesheet" type="text/css" id="editor_css" href="../../../Themes/default/css/editor.css" />
+		<script type="text/javascript"><!-- // --><![CDATA[
+			var smf_smileys_url = 'http://forum.carbontechsoftware.com/Smileys/akyhne';
+			var oEditorStrings= {
+				wont_work: 'Your browser does not support Rich Text editing.',
+				func_disabled: 'Your browser does not support this function.',
+				prompt_text_email: 'Please enter the email address.',
+				prompt_text_ftp: 'Please enter the ftp address.',
+				prompt_text_url: 'Please enter the URL you wish to link to.',
+				prompt_text_img: 'Enter image location'
+			}
+		// ]]></script>
+		<script type="text/javascript" src="../../../Themes/default/scripts/editor-fin20.js"></script>
+		<script type="text/javascript" src="../../../Themes/default/scripts/spellcheck.js"></script>
+		<script type="text/javascript"><!-- // --><![CDATA[
+		function spellCheckDone()
+		{
+			for (i = 0; i < smf_editorArray.length; i++)
+				setTimeout("smf_editorArray[" + i + "].spellCheckEnd()", 150);
+		}
+		// ]]></script>
+		<script type="text/javascript" src="../../../Themes/default/scripts/captcha.js"></script>
+	<style type="text/css">#main_menu,
+		#admin_menu
+		{
+			width: 985px
+		}
+	</style>
+	
+	
+	<script language="javascript" type="text/javascript">
+	<!--
+	
+	// MOD Title: Simple Image Upload
+	// MOD Author: Sium < admin@postimage.org > (N/A) http://www.postimage.org/
+	// MOD Version: 1.3.0
+	
+	var postimage_lang="english";
+	var postimage_add_text="Upload and insert an image";
+	var postimage_textarea_ignore_name=/username_list|search/i;
+	
+	function imgFunction() {
+		alert("After uploading you can...\n\n• Drag & drop the image into the post editor\n• Copy the direct link & add an image\n• Copy & paste the HTML code\n• Copy & paste the BBCode");
+	}
+	
+	function postimage_insert()
+	{
+		var postimage_area=document.getElementsByTagName("TEXTAREA");
+
+		for(var postimage_i=0;postimage_i<postimage_area.length;postimage_i++)
+		{
+			if(!postimage_area[postimage_i].name.match(postimage_textarea_ignore_name))
+			{
+				var postimage_new_div=document.createElement("div");
+				postimage_new_div.id = "smileyBox_message";
+				postimage_new_div.style.marginBottom = "5px";
+				postimage_new_div.style.display = "block";
+				postimage_new_div.innerHTML="<a href=\"javascript:void(0);\" onclick=\"imgFunction();imgWindow=window.open('http://imgur.com/?noFlash', 'imgWindow', 'resizable=no,width=1015,height=550,scrollbars=no');\"><b>>> "+postimage_add_text+"</b></a>";
+				postimage_area[postimage_i].parentNode.insertBefore(postimage_new_div,postimage_area[postimage_i]);
+			}
+		}
+	}
+	
+	window.onload=postimage_insert;
+	//-->
+	</script>
+	
+	
+	
+</head>
+<body>
+<div id="wrapper"><div id="headerlogo"></div>
+	<div id="subheader"><div style="width: 985px; margin:auto;background-color:#000">
+	<div id="uppertop">
+		<div class="middletext" style="float:right;height:auto;line-height:16px">Quarter past 8:00 pm, June 16th, 2015</div>
+		<script type="text/javascript" src="../../../Themes/default/scripts/sha1.js"></script>
+		<form id="guest_form" action="http://forum.carbontechsoftware.com/login2/" method="post" accept-charset="UTF-8"  onsubmit="hashLoginPassword(this, '477e586f5a9953a0dd3608a1ea7e9270');">
+			Welcome, <strong>Guest</strong>. Please <a href="../../../login/index.html">login</a> or <a href="../../../register/index.html">register</a>.&nbsp;
+	</div>
+	<div id="top_section" style="clear: both;">
+		<div id="main_menu">
+			<div class="menuback">
+			<div class="menuback2">
+			<ul class="dropmenu" id="menu_nav">
+				<li id="button_home" class="toplevel">
+					<a class="active firstlevel" href="../../../index.php.html">
+						<span class="last firstlevel">Home</span>
+					</a>
+				</li>
+				<li id="button_search" class="toplevel">
+					<a class="firstlevel" href="../../../search/index.html">
+						<span class="firstlevel">Search</span>
+					</a>
+					<ul>
+						<li>
+							<a href="../../../search/index.html">
+								<span>Search Forum Topics</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li id="button_login" class="toplevel">
+					<a class="firstlevel" href="../../../login/index.html">
+						<span class="firstlevel">Login</span>
+					</a>
+				</li>
+				<li id="button_register" class="toplevel">
+					<a class="firstlevel" href="../../../register/index.html">
+						<span class="firstlevel">Register</span>
+					</a>
+				</li>
+				<li id="button_chat" class="toplevel">
+					<a class="firstlevel" href="javascript:void(0)"onclick="window.open('/chatRoom.html','POPUP','width=700,height=720,location=0,menubar=0,toolbar=0,scrollbars=0,status=0,');">
+						<span class="firstlevel">Chat</span>
+					</a>
+				</li>
+				<li id="button_play" class="toplevel">
+					<a class="firstlevel" href="http://play.carbontechsoftware.com/"target="_blank');">
+						<span class="last firstlevel"><div style="color:#FFEFAE">Play</div></span>
+					</a>
+				</li>
+			</ul>
+			</div>
+			</div>
+		</div><script src="../../../adjustMenubar.js"></script>
+		<br class="clear" />
+		</div>
+	</div></div>
+	<div id="mainsection"><div style="width: 985px;margin: auto;margin-bottom:0;padding:15px 0">
+		<div id="innermain">	
+	<div class="navigate_section">
+		<ul>
+			<li>
+				<a href="../../../index.php.html"><span>Carbon Combat</span></a> &#187;
+			</li>
+			<li>
+				<a href="../../../index.php.html#c1"><span>General</span></a> &#187;
+			</li>
+			<li>
+				<a href="../../index.html"><span>Feedback &amp; Ideas</span></a> &#187;
+			</li>
+			<li class="last">
+				<a href="../index.html"><span>Damage HUD</span></a>
+			</li>
+		</ul>
+	</div>
+			<a id="top"></a>
+			<a id="msg6235"></a>
+			<div id="poll">
+				<div class="cat_bar">
+					<h3 class="catbg">
+						<span class="ie6_header floatleft"><img src="../../../Themes/carbonate202b/images/topic/normal_poll.gif.png" alt="" class="icon" /> Poll</span>
+					</h3>
+				</div>
+				<div class="windowbg">
+					<span class="topslice"><span></span></span>
+					<div class="content" id="poll_options">
+						<h4 id="pollquestion">
+							Would you like to see this implemented?
+						</h4>
+					<dl class="options">
+						<dt class="middletext">Yes.</dt>
+						<dd class="middletext statsbar">
+							<div class="bar" style="width: 249px;"><div style="width: 245px;"></div></div>
+							<span class="percentage">7 (70%)</span>
+						</dd>
+						<dt class="middletext">No. (Explain why in comments)</dt>
+						<dd class="middletext statsbar">
+							<div class="bar" style="width: 74px;"><div style="width: 70px;"></div></div>
+							<span class="percentage">2 (20%)</span>
+						</dd>
+						<dt class="middletext">No, I think it's OP. (Explain why in comments)</dt>
+						<dd class="middletext statsbar">
+							
+							<span class="percentage">0 (0%)</span>
+						</dd>
+						<dt class="middletext">Sure, I'm fine with it but just wouldn't buy it.</dt>
+						<dd class="middletext statsbar">
+							<div class="bar" style="width: 39px;"><div style="width: 35px;"></div></div>
+							<span class="percentage">1 (10%)</span>
+						</dd>
+						<dt class="middletext">I need more information. (Specifics in comments)</dt>
+						<dd class="middletext statsbar">
+							
+							<span class="percentage">0 (0%)</span>
+						</dd>
+						<dt class="middletext">I don't understand something. (Say what in comments)</dt>
+						<dd class="middletext statsbar">
+							
+							<span class="percentage">0 (0%)</span>
+						</dd>
+					</dl>
+						<p><strong>Total Members Voted:</strong> 10</p>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+			</div>
+			<div id="pollmoderation">
+			</div>
+			<div class="pagesection">
+				<div class="nextlinks"><a href="../index-prev_next=prev.html#new">&laquo; previous</a> <a href="../index-prev_next=next.html#new">next &raquo;</a></div>
+				<div class="pagelinks floatleft"><span style="margin-right:20px;color:#747474">Page 1 of 3</span><span class="selectedPage">1</span> <span class="nonselectedPage"><a class="navPages" href="../20/index.html">2</a> </span><span class="nonselectedPage"><a class="navPages" href="../40/index.html">3</a> </span><span class="nonselectedPage"><a class="navPages" href="../20/index.html">>></a> </span></div>
+			</div>
+			<div id="forumposts">
+				<div class="cat_bar">
+					<h3 class="catbg">
+						<img src="../../../Themes/carbonate202b/images/topic/veryhot_post.gif.png" align="bottom" alt="" />
+						<span id="author">Author</span>
+						Topic: Damage HUD &nbsp;(Read 3439 times)
+					</h3>
+				</div>
+				<form action="http://forum.carbontechsoftware.com/feedback-ideas/damage-hud/?action=quickmod2" method="post" accept-charset="UTF-8" name="quickModForm" id="quickModForm" style="margin: 0;" onsubmit="return oQuickModify.bInEditMode ? oQuickModify.modifySave('477e586f5a9953a0dd3608a1ea7e9270', 'f432f3090a') : false">
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_6235_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_6235">
+										<a href="../msg6235/index.html#msg6235" rel="nofollow">Damage HUD</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 21, 2013, 04:27:44 pm" style="cursor:default">Late June, 2013</span></div>
+									<div id="msg_6235_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_6235">It&#039;s not actually a HUD, but I&#039;m not really sure what it&#039;s called <img src="../../../Smileys/akyhne/tongue.gif" alt="&#58;P" title="Tongue" class="smiley" /><br />Anyways, it&#039;s in most games and has a red arc that shows the general direction in which you were just attacked. This would not work with ninja for balancing reasons. And I said general because if you get shot from the bottom left or top left it will still be registered as though you got hit to the left.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_6235">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_6235_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg6236"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/U2M/index.html" title="View the profile of U2M">U2M</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_6236_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/U2M/index.html">
+										<img class="avatar" src="../../../avatar_24_1356310894-action=dlattach-attach=425-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 630</li>
+								<li class="karma" style="margin-top:15px">Karma: 32</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_6236">
+										<a href="../msg6236/index.html#msg6236" rel="nofollow">Re: Damage HUD</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 21, 2013, 06:52:17 pm" style="cursor:default">Late June, 2013</span></div>
+									<div id="msg_6236_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_6236">I won&#039;t lie, I thought about this about a month ago <img src="../../../Smileys/akyhne/tongue.gif" alt="&#58;P" title="Tongue" class="smiley" /> I agree. Lets do it.<br /><br />I Believe it is called a &quot;hit marker.&quot;<br /></div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_6236">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_6236_signature">&quot;We are made wise not by the recollection of our past, but by the responsibility for our future.&quot;</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg6238"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_6238_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_6238">
+										<a href="../msg6238/index.html#msg6238" rel="nofollow">Re: Damage HUD</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 21, 2013, 07:35:47 pm" style="cursor:default">Late June, 2013</span></div>
+									<div id="msg_6238_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_6238"><div class="quoteheader"><div class="topslice_quote"><a href="../msg6236/index.html#msg6236">Quote from: U2M on <span title=" 21, 2013, 06:52:17 pm" style="cursor:default">Late June, 2013</span></a></div></div><blockquote class="bbc_standard_quote">I won&#039;t lie, I thought about this about a month ago <img src="../../../Smileys/akyhne/tongue.gif" alt="&#58;P" title="Tongue" class="smiley" /> I agree. Lets do it.<br /><br />I Believe it is called a &quot;hit marker.&quot;<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>Lol, that makes more sense. XD</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_6238">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_6238_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg6241"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/tarcor/index.html" title="View the profile of tarcor">tarcor</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_6241_extra_info">
+								<li class="postgroup" style="display:none">Full Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 102</li>
+								<li class="karma" style="margin-top:15px">Karma: 15</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_6241">
+										<a href="../msg6241/index.html#msg6241" rel="nofollow">Re: Damage HUD</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 21, 2013, 11:10:32 pm" style="cursor:default">Late June, 2013</span></div>
+									<div id="msg_6241_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_6241">I like it but i think it would be too confusing if you got shot from behind or above. would register the same either way.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_6241">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_6241_signature">Plain sight snipers. We always win.<br /><img src="http://i42.tinypic.com/2vmiq6q.jpg" alt="" width="150" height="100" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg6242"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_6242_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_6242">
+										<a href="../msg6242/index.html#msg6242" rel="nofollow">Re: Damage HUD</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 21, 2013, 11:38:46 pm" style="cursor:default">Late June, 2013</span></div>
+									<div id="msg_6242_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_6242"><div class="quoteheader"><div class="topslice_quote"><a href="../msg6241/index.html#msg6241">Quote from: tarcor on <span title=" 21, 2013, 11:10:32 pm" style="cursor:default">Late June, 2013</span></a></div></div><blockquote class="bbc_standard_quote">I like it but i think it would be too confusing if you got shot from behind or above. would register the same either way.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>That&#039;s for balancing reasons. It&#039;ll take out the whole idea of stealth (long range rail for instance) to say exactly where the enemy is.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_6242">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_6242_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg6243"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/Kemalakkus/index.html" title="View the profile of Kemalakkus">Kemalakkus</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_6243_extra_info">
+								<li class="postgroup" style="display:none">Full Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/Kemalakkus/index.html">
+										<img class="avatar" src="../../../avatar_185_1371312484-action=dlattach-attach=494-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 103</li>
+								<li class="karma" style="margin-top:15px">Karma: 5</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_6243">
+										<a href="../msg6243/index.html#msg6243" rel="nofollow">Re: Damage HUD</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 22, 2013, 01:18:03 am" style="cursor:default">Late June, 2013</span></div>
+									<div id="msg_6243_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_6243"><span style="font-family: Trebuchet MS;" class="bbc_font"><span style="font-size: 14px;" class="bbc_size">&quot;Sure, I&#039;m fine with it but just wouldn&#039;t buy it.&quot; This option shouldn&#039;t be there, it won&#039;t be there to buy, yeah?</span></span></div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_6243">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_6243_signature">&quot;To finish first, you must first finish.&quot;<br /><br /><img src="http://i.imgur.com/8GZgMM8.png" alt="" width="250" height="100" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg6246"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_6246_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_6246">
+										<a href="../msg6246/index.html#msg6246" rel="nofollow">Re: Damage HUD</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 22, 2013, 08:17:17 am" style="cursor:default">Late June, 2013</span></div>
+									<div id="msg_6246_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_6246"><div class="quoteheader"><div class="topslice_quote"><a href="../msg6243/index.html#msg6243">Quote from: Kemalakkus on <span title=" 22, 2013, 01:18:03 am" style="cursor:default">Late June, 2013</span></a></div></div><blockquote class="bbc_standard_quote"><span style="font-family: trebuchet ms;" class="bbc_font"><span style="font-size: 14px;" class="bbc_size">&quot;Sure, I&#039;m fine with it but just wouldn&#039;t buy it.&quot; This option shouldn&#039;t be there, it won&#039;t be there to buy, yeah?</span></span><br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>You&#039;re right, I just auto-fill all my polls <img src="../../../Smileys/akyhne/tongue.gif" alt="&#58;P" title="Tongue" class="smiley" /></div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_6246">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_6246_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg6249"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/Kemalakkus/index.html" title="View the profile of Kemalakkus">Kemalakkus</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_6249_extra_info">
+								<li class="postgroup" style="display:none">Full Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/Kemalakkus/index.html">
+										<img class="avatar" src="../../../avatar_185_1371312484-action=dlattach-attach=494-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 103</li>
+								<li class="karma" style="margin-top:15px">Karma: 5</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_6249">
+										<a href="../msg6249/index.html#msg6249" rel="nofollow">Re: Damage HUD</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 22, 2013, 08:55:34 am" style="cursor:default">Late June, 2013</span></div>
+									<div id="msg_6249_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_6249"><div class="quoteheader"><div class="topslice_quote"><a href="../msg6246/index.html#msg6246">Quote from: cremyjr on <span title=" 22, 2013, 08:17:17 am" style="cursor:default">Late June, 2013</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg6243/index.html#msg6243">Quote from: Kemalakkus on <span title=" 22, 2013, 01:18:03 am" style="cursor:default">Late June, 2013</span></a></div></div><blockquote class="bbc_alternate_quote"><span style="font-family: trebuchet ms;" class="bbc_font"><span style="font-size: 14px;" class="bbc_size">&quot;Sure, I&#039;m fine with it but just wouldn&#039;t buy it.&quot; This option shouldn&#039;t be there, it won&#039;t be there to buy, yeah?</span></span><br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>You&#039;re right, I just auto-fill all my polls <img src="../../../Smileys/akyhne/tongue.gif" alt="&#58;P" title="Tongue" class="smiley" /> <br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>Me too but I noticed it&#039;s wrong before I opened my topic, Aftermarket Shop.<br /><br /><br />I did this wrong only one time but corrected it.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_6249">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_6249_signature">&quot;To finish first, you must first finish.&quot;<br /><br /><img src="http://i.imgur.com/8GZgMM8.png" alt="" width="250" height="100" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg6250"></a><a id="new"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_6250_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_6250">
+										<a href="index.html#msg6250" rel="nofollow">Re: Damage HUD</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 22, 2013, 09:21:51 am" style="cursor:default">Late June, 2013</span></div>
+									<div id="msg_6250_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_6250"><div class="quoteheader"><div class="topslice_quote"><a href="../msg6249/index.html#msg6249">Quote from: Kemalakkus on <span title=" 22, 2013, 08:55:34 am" style="cursor:default">Late June, 2013</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg6246/index.html#msg6246">Quote from: cremyjr on <span title=" 22, 2013, 08:17:17 am" style="cursor:default">Late June, 2013</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg6243/index.html#msg6243">Quote from: Kemalakkus on <span title=" 22, 2013, 01:18:03 am" style="cursor:default">Late June, 2013</span></a></div></div><blockquote class="bbc_standard_quote"><span style="font-family: trebuchet ms;" class="bbc_font"><span style="font-size: 14px;" class="bbc_size">&quot;Sure, I&#039;m fine with it but just wouldn&#039;t buy it.&quot; This option shouldn&#039;t be there, it won&#039;t be there to buy, yeah?</span></span><br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>You&#039;re right, I just auto-fill all my polls <img src="../../../Smileys/akyhne/tongue.gif" alt="&#58;P" title="Tongue" class="smiley" /> <br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>Me too but I noticed it&#039;s wrong before I opened my topic, Aftermarket Shop.<br /><br /><br />I did this wrong only one time but corrected it.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>Oh...Kays... Anyways?</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_6250">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_6250_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg6251"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_6251_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_6251">
+										<a href="../msg6251/index.html#msg6251" rel="nofollow">Re: Damage HUD</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 22, 2013, 09:22:24 am" style="cursor:default">Late June, 2013</span></div>
+									<div id="msg_6251_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_6251">Somebody voted no but didn&#039;t say anything- You have to explain, your vote will not be counted.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_6251">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_6251_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg6252"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/Kemalakkus/index.html" title="View the profile of Kemalakkus">Kemalakkus</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_6252_extra_info">
+								<li class="postgroup" style="display:none">Full Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/Kemalakkus/index.html">
+										<img class="avatar" src="../../../avatar_185_1371312484-action=dlattach-attach=494-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 103</li>
+								<li class="karma" style="margin-top:15px">Karma: 5</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_6252">
+										<a href="../msg6252/index.html#msg6252" rel="nofollow">Re: Damage HUD</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 22, 2013, 09:33:47 am" style="cursor:default">Late June, 2013</span></div>
+									<div id="msg_6252_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_6252"><div class="quoteheader"><div class="topslice_quote"><a href="../msg6251/index.html#msg6251">Quote from: cremyjr on <span title=" 22, 2013, 09:22:24 am" style="cursor:default">Late June, 2013</span></a></div></div><blockquote class="bbc_standard_quote">Somebody voted no but didn&#039;t say anything- You have to explain, your vote will not be counted.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>I voted yes <img src="../../../Smileys/akyhne/smiley.gif" alt="&#58;&#41;" title="Smiley" class="smiley" /> So not me <img src="../../../Smileys/akyhne/tongue.gif" alt="&#58;P" title="Tongue" class="smiley" /></div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_6252">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_6252_signature">&quot;To finish first, you must first finish.&quot;<br /><br /><img src="http://i.imgur.com/8GZgMM8.png" alt="" width="250" height="100" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg6255"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/BlazingBird/index.html" title="View the profile of BlazingBird">BlazingBird</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_6255_extra_info">
+								<li class="postgroup" style="display:none">Full Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/BlazingBird/index.html">
+										<img class="avatar" src="../../../avatar_68_1346524374-action=dlattach-attach=126-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 226</li>
+								<li class="karma" style="margin-top:15px">Karma: 10</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_6255">
+										<a href="../msg6255/index.html#msg6255" rel="nofollow">Re: Damage HUD</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 22, 2013, 11:39:35 am" style="cursor:default">Late June, 2013</span></div>
+									<div id="msg_6255_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_6255"><ul class="bbc_list"><li><span style="font-family: arial;" class="bbc_font"><span style="font-size: small;" class="bbc_size">90% of the time you are looking straight at the person when they are shooting you. The radar does a pretty good job of telling you where your enemies are.</span></span></li><li><span style="font-family: arial;" class="bbc_font"><span style="font-size: small;" class="bbc_size">Missiles will hit you from any angle because they glitch so damn often.</span></span></li><li><span style="font-family: arial;" class="bbc_font"><span style="font-size: small;" class="bbc_size">The direction your car gets flung is normally pretty telling of which direction you got hit.</span></span></li></ul><span style="font-family: arial;" class="bbc_font"><span style="font-size: small;" class="bbc_size">Why do people who vote <em>&quot;Yes&quot; </em>not have to explain? Why can&#039;t I vote <em>&quot;No&quot;</em> and not have to justify it? I think it&#039;s a bad idea.</span></span></div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_6255">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg6257"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_6257_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_6257">
+										<a href="../msg6257/index.html#msg6257" rel="nofollow">Re: Damage HUD</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 22, 2013, 12:03:42 pm" style="cursor:default">Late June, 2013</span></div>
+									<div id="msg_6257_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_6257"><div class="quoteheader"><div class="topslice_quote"><a href="../msg6255/index.html#msg6255">Quote from: BlazingBird on <span title=" 22, 2013, 11:39:35 am" style="cursor:default">Late June, 2013</span></a></div></div><blockquote class="bbc_standard_quote"><ul class="bbc_list"><li><span style="font-family: arial;" class="bbc_font"><span style="font-size: small;" class="bbc_size">90% of the time you are looking straight at the person when they are shooting you. The radar does a pretty good job of telling you where your enemies are.</span></span></li><li><span style="font-family: arial;" class="bbc_font"><span style="font-size: small;" class="bbc_size">Missiles will hit you from any angle because they glitch so damn often.</span></span></li><li><span style="font-family: arial;" class="bbc_font"><span style="font-size: small;" class="bbc_size">The direction your car gets flung is normally pretty telling of which direction you got hit.</span></span></li></ul><span style="font-family: arial;" class="bbc_font"><span style="font-size: small;" class="bbc_size">Why do people who vote <em>&quot;Yes&quot; </em>not have to explain? Why can&#039;t I vote <em>&quot;No&quot;</em> and not have to justify it? I think it&#039;s a bad idea.</span></span><br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>This is not a system to pinpoint &quot;who&quot; shot you. It&#039;s just something to show you the general direction, which the radar does not do. And which is why the missiles really have nothing to do with it. And the only time you get &quot;flung&quot; is with lasers, rockets, ect.<br />And because it&#039;s common sense? Why should you explain to me why you like it? And because, you must not like it for a reason, in which I can look at and see what you think is wrong with it.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_6257">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_6257_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg6260"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/BlazingBird/index.html" title="View the profile of BlazingBird">BlazingBird</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_6260_extra_info">
+								<li class="postgroup" style="display:none">Full Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/BlazingBird/index.html">
+										<img class="avatar" src="../../../avatar_68_1346524374-action=dlattach-attach=126-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 226</li>
+								<li class="karma" style="margin-top:15px">Karma: 10</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_6260">
+										<a href="../msg6260/index.html#msg6260" rel="nofollow">Re: Damage HUD</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 23, 2013, 10:46:47 am" style="cursor:default">Late June, 2013</span></div>
+									<div id="msg_6260_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_6260"><ul class="bbc_list"><li><span style="font-family: arial;" class="bbc_font"><span style="font-size: small;" class="bbc_size">The radar does pretty much tell you what way the attacks are coming from - you just look at the dots.</span></span></li><li><span style="font-family: arial;" class="bbc_font"><span style="font-size: small;" class="bbc_size">Missiles have everything to do with it; they are probably the most commonly used weapon in Carbon Combat. Missiles hit from any angle because they often glitch and spin around you.</span></span></li><li><span style="font-family: arial;" class="bbc_font"><span style="font-size: small;" class="bbc_size">Every form of attack flings your car. You have played the game right?</span></span></li><li><span style="font-family: arial;" class="bbc_font"><span style="font-size: small;" class="bbc_size">It&#039;s not common sense. You&#039;re making the easier option for people to say <em>&quot;Yes&quot;</em> than to say <em>&quot;No&quot;</em> so more people will either vote <em>&quot;Yes&quot;</em> or simply not vote. It gives false results.</span></span></li></ul><span style="font-family: arial;" class="bbc_font"><span style="font-size: small;" class="bbc_size">Overall, it&#039;s a bad idea that is already obsolete because we can already see the bullet holes, explosions and lasers. We don&#039;t need this. Obviously you&#039;re going to just dismiss all these points in a single sentence because you blindly defend your bad ideas.</span></span></div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_6260">
+								<em>Last edited  <span title=" 23, 2013, 10:50:21 am" style="cursor:default">Late June, 2013</span> by BlazingBird</em>
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg6262"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_6262_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_6262">
+										<a href="../msg6262/index.html#msg6262" rel="nofollow">Re: Damage HUD</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 23, 2013, 11:09:35 am" style="cursor:default">Late June, 2013</span></div>
+									<div id="msg_6262_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_6262"><div class="quoteheader"><div class="topslice_quote"><a href="../msg6260/index.html#msg6260">Quote from: BlazingBird on <span title=" 23, 2013, 10:46:47 am" style="cursor:default">Late June, 2013</span></a></div></div><blockquote class="bbc_standard_quote"><ul class="bbc_list"><li><span style="font-family: arial;" class="bbc_font"><span style="font-size: small;" class="bbc_size">The radar does pretty much tell you what way the attacks are coming from - you just look at the dots.</span></span></li><li><span style="font-family: arial;" class="bbc_font"><span style="font-size: small;" class="bbc_size">Missiles have everything to do with it; they are probably the most commonly used weapon in Carbon Combat. Missiles hit from any angle because they often glitch and spin around you.</span></span></li><li><span style="font-family: arial;" class="bbc_font"><span style="font-size: small;" class="bbc_size">Every form of attack flings your car. You have played the game right?</span></span></li><li><span style="font-family: arial;" class="bbc_font"><span style="font-size: small;" class="bbc_size">It&#039;s not common sense. You&#039;re making the easier option for people to say <em>&quot;Yes&quot;</em> than to say <em>&quot;No&quot;</em> so more people will either vote <em>&quot;Yes&quot;</em> or simply not vote. It gives false results.</span></span></li></ul><span style="font-family: arial;" class="bbc_font"><span style="font-size: small;" class="bbc_size">Overall, it&#039;s a bad idea that is already obsolete because we can already see the bullet holes, explosions and lasers. We don&#039;t need this. Obviously you&#039;re going to just dismiss all these points in a single sentence because you blindly defend your bad ideas.</span></span><br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>And when you have more than one opponent? Which is almost all the time? <img src="../../../Smileys/akyhne/tongue.gif" alt="&#58;P" title="Tongue" class="smiley" /><br />Note how that&#039;s a glitch, it can easily be fixed. And besides, it&#039;s not supposed to be a perfect marker, which is why it only tells you the general direction.<br />The only things that fling a car is &quot;rockets, laser, and rail (slightly).<br />I think it *is* common sense to want to know why somebody doesn&#039;t like your idea. Then you can change/talk about it. It&#039;s not hard to type why you don&#039;t like something, unless you have no reason.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_6262">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_6262_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg6263"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/tarcor/index.html" title="View the profile of tarcor">tarcor</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_6263_extra_info">
+								<li class="postgroup" style="display:none">Full Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 102</li>
+								<li class="karma" style="margin-top:15px">Karma: 15</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_6263">
+										<a href="../msg6263/index.html#msg6263" rel="nofollow">Re: Damage HUD</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 23, 2013, 11:11:03 am" style="cursor:default">Late June, 2013</span></div>
+									<div id="msg_6263_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_6263">No, I agree with you on all those points. Especially that all of your points will probably be dismissed even though they are very insightful observations.<br />Natty, please close this thread; it&#039;s getting out of hand and off topic.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_6263">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_6263_signature">Plain sight snipers. We always win.<br /><img src="http://i42.tinypic.com/2vmiq6q.jpg" alt="" width="150" height="100" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg6265"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_6265_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_6265">
+										<a href="../msg6265/index.html#msg6265" rel="nofollow">Re: Damage HUD</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 23, 2013, 11:25:41 am" style="cursor:default">Late June, 2013</span></div>
+									<div id="msg_6265_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_6265"><div class="quoteheader"><div class="topslice_quote"><a href="../msg6263/index.html#msg6263">Quote from: tarcor on <span title=" 23, 2013, 11:11:03 am" style="cursor:default">Late June, 2013</span></a></div></div><blockquote class="bbc_standard_quote">No, I agree with you on all those points. Especially that all of your points will probably be dismissed even though they are very insightful observations.<br />Natty, please close this thread; it&#039;s getting out of hand and off topic.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>You can&#039;t ask a mod to close my thread -__- Not to mention it&#039;s not off-topic at all, nor is it &quot;out of hand&quot; -__-</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_6265">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_6265_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg6286"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/U2M/index.html" title="View the profile of U2M">U2M</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_6286_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/U2M/index.html">
+										<img class="avatar" src="../../../avatar_24_1356310894-action=dlattach-attach=425-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 630</li>
+								<li class="karma" style="margin-top:15px">Karma: 32</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_6286">
+										<a href="../msg6286/index.html#msg6286" rel="nofollow">Re: Damage HUD</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 28, 2013, 08:58:04 am" style="cursor:default">Late June, 2013</span></div>
+									<div id="msg_6286_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_6286">Got a point&nbsp; there cremy <img src="../../../Smileys/akyhne/tongue.gif" alt="&#58;P" title="Tongue" class="smiley" /><br /><br /><br />Anyhow, some say this is a bad idea. However what about considering the pros instead of cons. Blazing only stated the cons becaus he&nbsp; does not agree. But what about those who do agree. No explanation has been made for the pros of ths addition. <br /><br /><br />Personally, I would not mind having a system that shows me where to shoot at. Though I may already kknow wherethe attack is coming from, this system will ensure where my attacker is at.This is my reason to having this installed. Hopefully, one ofthe many to come <img src="../../../Smileys/akyhne/smiley.gif" alt="&#58;&#41;" title="Smiley" class="smiley" /></div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_6286">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_6286_signature">&quot;We are made wise not by the recollection of our past, but by the responsibility for our future.&quot;</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg6287"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/BlazingBird/index.html" title="View the profile of BlazingBird">BlazingBird</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_6287_extra_info">
+								<li class="postgroup" style="display:none">Full Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/BlazingBird/index.html">
+										<img class="avatar" src="../../../avatar_68_1346524374-action=dlattach-attach=126-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 226</li>
+								<li class="karma" style="margin-top:15px">Karma: 10</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_6287">
+										<a href="../msg6287/index.html#msg6287" rel="nofollow">Re: Damage HUD</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 30, 2013, 03:32:27 am" style="cursor:default">Late June, 2013</span></div>
+									<div id="msg_6287_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_6287"><div class="quoteheader"><div class="topslice_quote"><a href="../msg6286/index.html#msg6286">Quote from: U2M on <span title=" 28, 2013, 08:58:04 am" style="cursor:default">Late June, 2013</span></a></div></div><blockquote class="bbc_standard_quote">Got a point&nbsp; there cremy <img src="../../../Smileys/akyhne/tongue.gif" alt="&#58;P" title="Tongue" class="smiley" /> <br /><br /><br />Anyhow, some say this is a bad idea. However what about considering the pros instead of cons. Blazing only stated the cons becaus he&nbsp; does not agree. But what about those who do agree. No explanation has been made for the pros of ths addition. <br /><br /><br />Personally, I <strong>would not mind</strong> having a system that shows me where to shoot at. Though <strong>I may already kknow wherethe attack is coming from</strong>, this system will <strong>ensure where my attacker is at</strong>.This is my reason to having this installed. Hopefully, one ofthe many to come <img src="../../../Smileys/akyhne/smiley.gif" alt="&#58;&#41;" title="Smiley" class="smiley" /> <br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><span style="font-family: arial;" class="bbc_font"><span style="font-size: small;" class="bbc_size">I&#039;ll reiterate:</span></span><br /><ul class="bbc_list"><li><span style="font-family: arial;" class="bbc_font"><span style="font-size: small;" class="bbc_size">It&#039;s obsolete - even if they&#039;ve just joined as a guest, thanks to how the car is flung, people instinctively know where they are being hit from. Not to mention that you can pretty much tell from the radar.</span></span></li><li><span style="font-family: arial;" class="bbc_font"><span style="font-size: small;" class="bbc_size">It&#039;s distracting - when you get low health, a red vignette pretty much makes everything impossible to see. Carbon Tech, if to implement this, would go for something equally if not more a hindrance.</span></span></li><li><span style="font-family: arial;" class="bbc_font"><span style="font-size: small;" class="bbc_size">It&#039;s misleading - homing missiles curve to their target, even get glitched, which will throw up a seemingly random angle where noone will be.</span></span></li><li><span style="font-family: arial;" class="bbc_font"><span style="font-size: small;" class="bbc_size">It&#039;s messy - in bigger servers, you going to be attacked by multiple people. This not only lends itself to being distracting, but also makes the screen a big mess of arrows / pointers.</span></span></li></ul><span style="font-family: arial;" class="bbc_font"><span style="font-size: small;" class="bbc_size">And now for the <em>&#039;pros&#039;</em>:</span></span><br /><ul class="bbc_list"><li><span style="font-family: arial;" class="bbc_font"><span style="font-size: small;" class="bbc_size">It will uhhh... <em>&quot;ensure where my attacker is at...&quot; </em>and... uhhh... <em>&quot;I would not mind...&quot;</em></span></span></li></ul><span style="font-family: arial;" class="bbc_font"><span style="font-size: small;" class="bbc_size">So essentially, we think this is a good idea because it confirms what we already know and that noone would really mind it? You think that the pros and cons are still balanced?</span></span></div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_6287">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg6289"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_6289_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_6289">
+										<a href="../msg6289/index.html#msg6289" rel="nofollow">Re: Damage HUD</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 30, 2013, 11:34:02 am" style="cursor:default">Late June, 2013</span></div>
+									<div id="msg_6289_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_6289">Well that would mostly be on a 1 V 1 basis. Not to mention this isn&#039;t supposed to replace anything, just a nice add-on to help.<br />I don&#039;t like the red screen either, I think it should be an option on the menu. But this wouldn&#039;t mess with your vision as it would be pretty transparent. Maybe you can even change the color so it won&#039;t be red.<br />Again, not supposed to be perfect. Even though that bug might not be fixed as of now, it&#039;s not to tell where the person is- Just merely where you car was hit.<br />^ To the transparency again. Plus it would be (like most other games) A simple arc. Maybe even varying in size depending on damage? Or the quantity?</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_6289">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_6289_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				</form>
+			</div>
+			<a id="lastPost"></a>
+			<div class="pagesection">
+				
+				<div class="pagelinks floatleft"><span style="margin-right:20px;color:#747474">Page 1 of 3</span><span class="selectedPage">1</span> <span class="nonselectedPage"><a class="navPages" href="../20/index.html">2</a> </span><span class="nonselectedPage"><a class="navPages" href="../40/index.html">3</a> </span><span class="nonselectedPage"><a class="navPages" href="../20/index.html">>></a> </span></div>
+				<div class="nextlinks_bottom"><a href="../index-prev_next=prev.html#new">&laquo; previous</a> <a href="../index-prev_next=next.html#new">next &raquo;</a></div>
+			</div>
+			<div id="moderationbuttons"></div>
+			<div class="plainbox" id="display_jump_to">&nbsp;</div>
+		<br class="clear" />
+			<form action="http://forum.carbontechsoftware.com/spellcheck/" method="post" accept-charset="UTF-8" name="spell_form" id="spell_form" target="spellWindow"><input type="hidden" name="spellstring" value="" /></form>
+				<script type="text/javascript" src="../../../Themes/default/scripts/spellcheck.js"></script>
+				<script type="text/javascript" src="../../../Themes/default/scripts/topic.js"></script>
+				<script type="text/javascript"><!-- // --><![CDATA[
+					if ('XMLHttpRequest' in window)
+					{
+						var oQuickModify = new QuickModify({
+							sScriptUrl: smf_scripturl,
+							bShowModify: true,
+							iTopicId: 516,
+							sTemplateBodyEdit: '\n\t\t\t\t\t\t\t\t<div id="quick_edit_body_container" style="width: 90%">\n\t\t\t\t\t\t\t\t\t<div id="error_box" style="padding: 4px;" class="error"><' + '/div>\n\t\t\t\t\t\t\t\t\t<textarea class="editor" name="message" rows="12" style="width: 100%; margin-bottom: 10px;" tabindex="1">%body%<' + '/textarea><br />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="f432f3090a" value="477e586f5a9953a0dd3608a1ea7e9270" />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="topic" value="516" />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="msg" value="%msg_id%" />\n\t\t\t\t\t\t\t\t\t<div class="righttext">\n\t\t\t\t\t\t\t\t\t\t<input type="submit" name="post" value="Save" tabindex="2" onclick="return oQuickModify.modifySave(\'477e586f5a9953a0dd3608a1ea7e9270\', \'f432f3090a\');" accesskey="s" class="button_submit" />&nbsp;&nbsp;<input type="button" value="Spell Check (popups must be enabled)" tabindex="3" onclick="oEditorHandle_message.spellCheckStart();" class="button_submit" />&nbsp;&nbsp;<input type="submit" name="cancel" value="Cancel" tabindex="4" onclick="return oQuickModify.modifyCancel();" class="button_submit" />\n\t\t\t\t\t\t\t\t\t<' + '/div>\n\t\t\t\t\t\t\t\t<' + '/div>',
+							sTemplateSubjectEdit: '<input type="text" style="width: 90%;" name="subject" value="%subject%" size="80" maxlength="80" tabindex="5" class="input_text" />',
+							sTemplateBodyNormal: '%body%',
+							sTemplateSubjectNormal: '<a hr'+'ef="http://forum.carbontechsoftware.com/index.php'+'?topic=516.msg%msg_id%#msg%msg_id%" rel="nofollow">%subject%<' + '/a>',
+							sTemplateTopSubject: 'Topic: %subject% &nbsp;(Read 3439 times)',
+							sErrorBorderStyle: '1px solid red'
+						});
+
+						aJumpTo[aJumpTo.length] = new JumpTo({
+							sContainerId: "display_jump_to",
+							sJumpToTemplate: "<label class=\"smalltext\" for=\"%select_id%\">Jump to:<" + "/label> %dropdown_list%",
+							iCurBoardId: 3,
+							iCurBoardChildLevel: 0,
+							sCurBoardName: "Feedback &amp; Ideas",
+							sBoardChildLevelIndicator: "==",
+							sBoardPrefix: "=> ",
+							sCatSeparator: "-----------------------------",
+							sCatPrefix: "",
+							sGoButtonLabel: "go"
+						});
+
+						aIconLists[aIconLists.length] = new IconList({
+							sBackReference: "aIconLists[" + aIconLists.length + "]",
+							sIconIdPrefix: "msg_icon_",
+							sScriptUrl: smf_scripturl,
+							bShowModify: true,
+							iBoardId: 3,
+							iTopicId: 516,
+							sSessionId: "477e586f5a9953a0dd3608a1ea7e9270",
+							sSessionVar: "f432f3090a",
+							sLabelIconList: "Message icon",
+							sBoxBackground: "transparent",
+							sBoxBackgroundHover: "#ffffff",
+							iBoxBorderWidthHover: 1,
+							sBoxBorderColorHover: "#adadad" ,
+							sContainerBackground: "#ffffff",
+							sContainerBorder: "1px solid #adadad",
+							sItemBorder: "1px solid #ffffff",
+							sItemBorderHover: "1px dotted gray",
+							sItemBackground: "transparent",
+							sItemBackgroundHover: "#e0e0f0"
+						});
+					}
+				// ]]></script>
+		<form name="spell_form" id="spell_form" method="post" accept-charset="UTF-8" target="spellWindow" action="http://forum.carbontechsoftware.com/spellcheck/">
+			<input type="hidden" name="spellstring" value="" />
+		</form>
+			<script type="text/javascript"><!-- // --><![CDATA[
+				var verificationpostHandle = new smfCaptcha("http://forum.carbontechsoftware.com/index.php?action=verificationcode;vid=post;rand=343245ee623c315ffb19fa3cdefbc8a0", "post", 1);
+			// ]]></script>
+	</div>
+	</div></div>
+	<div id="footersection"><div style="width: 985px;margin: auto;">
+			<span class="floatright"><a href="http://www.simplemachines.org/">© Simple Machines (SMF 2.0.2)</a> - Forum designed by CarbonTech & <a href="http://www.blocweb.net">Bloc</a>
+			</span></div>
+	</div></div></div><script type="text/javascript">
+var sc_project=6755287; 
+var sc_invisible=1; 
+var sc_security="c689b4fd"; 
+</script>
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script>
+<noscript><div class="statcounter"><a title="tumblr page
+counter" href="http://statcounter.com/tumblr/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/6755287/0/c689b4fd/1/"
+alt="tumblr page counter"></a></div></noscript>
+</body></html>

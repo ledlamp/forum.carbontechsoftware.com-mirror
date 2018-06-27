@@ -1,0 +1,1209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<link rel="stylesheet" type="text/css" href="../../../Themes/carbonate202b/css/index-fin20.css" />
+	<link rel="stylesheet" type="text/css" href="../../../Themes/carbonate202b/css/index_carbon-fin20.css" />
+	<script type="text/javascript" src="../../../Themes/default/scripts/script-fin20.js"></script>
+	<script type="text/javascript" src="../../../Themes/carbonate202b/scripts/theme-fin20.js"></script>
+	<script type="text/javascript"><!-- // --><![CDATA[
+		var smf_theme_url = "http://forum.carbontechsoftware.com/Themes/carbonate202b";
+		var smf_default_theme_url = "http://forum.carbontechsoftware.com/Themes/default";
+		var smf_images_url = "http://forum.carbontechsoftware.com/Themes/carbonate202b/images";
+		var smf_scripturl = "http://forum.carbontechsoftware.com/index.php";
+		var smf_iso_case_folding = false;
+		var smf_charset = "UTF-8";
+		var ajax_notification_text = "Loading...";
+		var ajax_notification_cancel_text = "Cancel";
+	// ]]></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="description" content="A fresh take...and it doesn't look good." />
+	<title>A fresh take...and it doesn't look good.</title><link rel="shortcut icon" type="image/x-icon" href="http://lh3.googleusercontent.com/-GOPf21qQXSY/TzawG0qVPlI/AAAAAAAAAoA/-VQrE780LzQ/s16/CCLogoRound.png" /><link rel="icon" href="http://lh3.googleusercontent.com/-GOPf21qQXSY/TzawG0qVPlI/AAAAAAAAAoA/-VQrE780LzQ/s16/CCLogoRound.png" type="image/x-icon" />
+	<meta name="robots" content="noindex" />
+	<link rel="canonical" href="../index.html" />
+	<link rel="help" href="../../../help/index.html" />
+	<link rel="search" href="../../../search/index.html" />
+	<link rel="contents" href="../../../index.php.html" />
+	<link rel="alternate" type="application/rss+xml" title="Carbon Combat - RSS" href="../../../.xml/index-type=rss.html" />
+	<link rel="prev" href="../index-prev_next=prev.html" />
+	<link rel="next" href="../index-prev_next=next.html" />
+	<link rel="index" href="../../index.html" /><!-- nCode Image Resizer -->
+	<script type="text/javascript" src="../../../Themes/default/ncode_imageresizer.js"></script>
+	<script language="JavaScript" type="text/javascript"><!-- // -->
+	NcodeImageResizer.BBURL = "http://forum.carbontechsoftware.com/Themes/carbonate202b/images";
+	NcodeImageResizer.MODE = "enlarge";
+	NcodeImageResizer.MAXWIDTH = "720";
+	NcodeImageResizer.MAXHEIGHT = "400";
+	vbphrase = new Array();
+	vbphrase['ncode_imageresizer_warning_small'] = 'Click this bar to view the full image.';
+	vbphrase['ncode_imageresizer_warning_filesize'] = 'This image has been resized. Click this bar to view the full image. The original image is sized %1$sx%2$s and weighs %3$sKB.';
+	vbphrase['ncode_imageresizer_warning_no_filesize'] = 'This image has been resized. Click this bar to view the full image. The original image is sized %1$sx%2$s.';
+	vbphrase['ncode_imageresizer_warning_fullsize'] = 'Click this bar to view the small image.';
+	// ]]></script>
+	<link rel="stylesheet" type="text/css" id="editor_css" href="../../../Themes/default/css/editor.css" />
+		<script type="text/javascript"><!-- // --><![CDATA[
+			var smf_smileys_url = 'http://forum.carbontechsoftware.com/Smileys/akyhne';
+			var oEditorStrings= {
+				wont_work: 'Your browser does not support Rich Text editing.',
+				func_disabled: 'Your browser does not support this function.',
+				prompt_text_email: 'Please enter the email address.',
+				prompt_text_ftp: 'Please enter the ftp address.',
+				prompt_text_url: 'Please enter the URL you wish to link to.',
+				prompt_text_img: 'Enter image location'
+			}
+		// ]]></script>
+		<script type="text/javascript" src="../../../Themes/default/scripts/editor-fin20.js"></script>
+		<script type="text/javascript" src="../../../Themes/default/scripts/spellcheck.js"></script>
+		<script type="text/javascript"><!-- // --><![CDATA[
+		function spellCheckDone()
+		{
+			for (i = 0; i < smf_editorArray.length; i++)
+				setTimeout("smf_editorArray[" + i + "].spellCheckEnd()", 150);
+		}
+		// ]]></script>
+		<script type="text/javascript" src="../../../Themes/default/scripts/captcha.js"></script>
+	<style type="text/css">#main_menu,
+		#admin_menu
+		{
+			width: 985px
+		}
+	</style>
+	
+	
+	<script language="javascript" type="text/javascript">
+	<!--
+	
+	// MOD Title: Simple Image Upload
+	// MOD Author: Sium < admin@postimage.org > (N/A) http://www.postimage.org/
+	// MOD Version: 1.3.0
+	
+	var postimage_lang="english";
+	var postimage_add_text="Upload and insert an image";
+	var postimage_textarea_ignore_name=/username_list|search/i;
+	
+	function imgFunction() {
+		alert("After uploading you can...\n\n• Drag & drop the image into the post editor\n• Copy the direct link & add an image\n• Copy & paste the HTML code\n• Copy & paste the BBCode");
+	}
+	
+	function postimage_insert()
+	{
+		var postimage_area=document.getElementsByTagName("TEXTAREA");
+
+		for(var postimage_i=0;postimage_i<postimage_area.length;postimage_i++)
+		{
+			if(!postimage_area[postimage_i].name.match(postimage_textarea_ignore_name))
+			{
+				var postimage_new_div=document.createElement("div");
+				postimage_new_div.id = "smileyBox_message";
+				postimage_new_div.style.marginBottom = "5px";
+				postimage_new_div.style.display = "block";
+				postimage_new_div.innerHTML="<a href=\"javascript:void(0);\" onclick=\"imgFunction();imgWindow=window.open('http://imgur.com/?noFlash', 'imgWindow', 'resizable=no,width=1015,height=550,scrollbars=no');\"><b>>> "+postimage_add_text+"</b></a>";
+				postimage_area[postimage_i].parentNode.insertBefore(postimage_new_div,postimage_area[postimage_i]);
+			}
+		}
+	}
+	
+	window.onload=postimage_insert;
+	//-->
+	</script>
+	
+	
+	
+</head>
+<body>
+<div id="wrapper"><div id="headerlogo"></div>
+	<div id="subheader"><div style="width: 985px; margin:auto;background-color:#000">
+	<div id="uppertop">
+		<div class="middletext" style="float:right;height:auto;line-height:16px">Quarter past 8:00 pm, June 16th, 2015</div>
+		<script type="text/javascript" src="../../../Themes/default/scripts/sha1.js"></script>
+		<form id="guest_form" action="http://forum.carbontechsoftware.com/login2/" method="post" accept-charset="UTF-8"  onsubmit="hashLoginPassword(this, '477e586f5a9953a0dd3608a1ea7e9270');">
+			Welcome, <strong>Guest</strong>. Please <a href="../../../login/index.html">login</a> or <a href="../../../register/index.html">register</a>.&nbsp;
+	</div>
+	<div id="top_section" style="clear: both;">
+		<div id="main_menu">
+			<div class="menuback">
+			<div class="menuback2">
+			<ul class="dropmenu" id="menu_nav">
+				<li id="button_home" class="toplevel">
+					<a class="active firstlevel" href="../../../index.php.html">
+						<span class="last firstlevel">Home</span>
+					</a>
+				</li>
+				<li id="button_search" class="toplevel">
+					<a class="firstlevel" href="../../../search/index.html">
+						<span class="firstlevel">Search</span>
+					</a>
+					<ul>
+						<li>
+							<a href="../../../search/index.html">
+								<span>Search Forum Topics</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li id="button_login" class="toplevel">
+					<a class="firstlevel" href="../../../login/index.html">
+						<span class="firstlevel">Login</span>
+					</a>
+				</li>
+				<li id="button_register" class="toplevel">
+					<a class="firstlevel" href="../../../register/index.html">
+						<span class="firstlevel">Register</span>
+					</a>
+				</li>
+				<li id="button_chat" class="toplevel">
+					<a class="firstlevel" href="javascript:void(0)"onclick="window.open('/chatRoom.html','POPUP','width=700,height=720,location=0,menubar=0,toolbar=0,scrollbars=0,status=0,');">
+						<span class="firstlevel">Chat</span>
+					</a>
+				</li>
+				<li id="button_play" class="toplevel">
+					<a class="firstlevel" href="http://play.carbontechsoftware.com/"target="_blank');">
+						<span class="last firstlevel"><div style="color:#FFEFAE">Play</div></span>
+					</a>
+				</li>
+			</ul>
+			</div>
+			</div>
+		</div><script src="../../../adjustMenubar.js"></script>
+		<br class="clear" />
+		</div>
+	</div></div>
+	<div id="mainsection"><div style="width: 985px;margin: auto;margin-bottom:0;padding:15px 0">
+		<div id="innermain">	
+	<div class="navigate_section">
+		<ul>
+			<li>
+				<a href="../../../index.php.html"><span>Carbon Combat</span></a> &#187;
+			</li>
+			<li>
+				<a href="../../../index.php.html#c1"><span>General</span></a> &#187;
+			</li>
+			<li>
+				<a href="../../index.html"><span>Feedback &amp; Ideas</span></a> &#187;
+			</li>
+			<li class="last">
+				<a href="../index.html"><span>A fresh take...and it doesn't look good.</span></a>
+			</li>
+		</ul>
+	</div>
+			<a id="top"></a>
+			<a id="msg2071"></a>
+			<div class="pagesection">
+				<div class="nextlinks"><a href="../index-prev_next=prev.html#new">&laquo; previous</a> <a href="../index-prev_next=next.html#new">next &raquo;</a></div>
+				<div class="pagelinks floatleft"><span style="margin-right:20px;color:#747474">Page 1 of 2</span><span class="selectedPage">1</span> <span class="nonselectedPage"><a class="navPages" href="../20/index.html">2</a> </span><span class="nonselectedPage"><a class="navPages" href="../20/index.html">>></a> </span></div>
+			</div>
+			<div id="forumposts">
+				<div class="cat_bar">
+					<h3 class="catbg">
+						<img src="../../../Themes/carbonate202b/images/topic/veryhot_post.gif.png" align="bottom" alt="" />
+						<span id="author">Author</span>
+						Topic: A fresh take...and it doesn't look good. &nbsp;(Read 2134 times)
+					</h3>
+				</div>
+				<form action="http://forum.carbontechsoftware.com/feedback-ideas/a-fresh-take-and-it-doesn't-look-good/?action=quickmod2" method="post" accept-charset="UTF-8" name="quickModForm" id="quickModForm" style="margin: 0;" onsubmit="return oQuickModify.bInEditMode ? oQuickModify.modifySave('477e586f5a9953a0dd3608a1ea7e9270', 'f432f3090a') : false">
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/FatCatAttack/index.html" title="View the profile of FatCatAttack">FatCatAttack</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_2071_extra_info">
+								<li class="postgroup" style="display:none">Sr. Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 254</li>
+								<li class="karma" style="margin-top:15px">Karma: 30</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_2071">
+										<a href="../msg2071/index.html#msg2071" rel="nofollow">A fresh take...and it doesn't look good.</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 27, 2012, 01:19:22 pm" style="cursor:default">Late September, 2012</span></div>
+									<div id="msg_2071_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_2071"><span style="font-size: 1.35em;" class="bbc_size">Let me start this off with an announcement: I&#039;m back!</span><br /><br /><span style="font-size: 1em;" class="bbc_size">Yup, I now have access to a laptop that can run CC properly. Well, the keyboard is broken in an odd way (It types but the alphabet and number keys doesn&#039;t work in games so I have to custom map the controls to exclude the alphabet and number keys, which leaves me with my right hand on the arrow keys and using CTRL to fly, with a trackpad at my left hand and an on-screen keyboard at the bottom of the screen used for flipping my car and going on foot. Try it, it doesn&#039;t help) but it does run CC so I am able to play. If anyone needs training...go somewhere else, I&#039;m not good. I need training, someone please help me.<br /><br /></span><span style="font-size: 1.45em;" class="bbc_size">So anyways...<br /></span><span style="font-size: 1em;" class="bbc_size"><br />As a new player in terms of equipment and car control I saw a different side of CC today. And it sucks bad. Let me go over the full list of problems: (note that below &quot;pro&quot; refers to players with a full set of fully upgraded equipment and average skill)<br /></span><ul class="bbc_list"><li><span style="font-size: 1.35em;" class="bbc_size">Completely incapable of competing with those who own armor &amp; weapons.</span><span style="font-size: 1em;" class="bbc_size">Any player</span><span style="font-size: 1em;" class="bbc_size"> with the simplest understanding of the game could destroy any pro in newb gear when</span> they are decked out with fully upgrade weapons &amp; armor. Even if I manage to make a dent in a player&#039;s health, there is always a health powerup (which does so much more for their health bar than mine) or even worse, ninja regenerating armor. Of course this scenario never happens in survival mode, but no one plays it since non-CTF maps for some reason can&#039;t host it and bots never host survival games.</li><li><span style="font-size: 1.35em;" class="bbc_size">High equipment prices. </span><span style="font-size: 1em;" class="bbc_size">If I played an hour a day in standard 10 minute back-to-back rounds, I would be able to at best make the credit cap (already a rather optimistic estimate) of 700 for 6 matches</span>, for 4200 credits a day. It takes about 40000 to buy and fully upgrade a shotgun &amp; sniper rifle, 15000 for a vehicle, about 18500 to buy and fully upgrade ninja regenerating armor, and about 17000 to buy and fully upgrade a temporary shield, that&#039;s a total of 90500 credits to fully deck out your equipment to pro level. Now divide that by 4200 credits an hour, and it takes you a little over 21.5 hours to deck out your equipment, not including the fact that you don&#039;t always make the credit cap and that several pro players have back-up equipment in case their loadout isn&#039;t working. 21 and a half hours of slugging through the newb and mid-level ranks. We simply don&#039;t have enough content for anyone to spend that amount of time playing this game. Don&#039;t get me started on how long it would take you to buy out the shop.</li><li><span style="font-size: 1.35em;" class="bbc_size">Lack of balance with equipment. </span><span style="font-size: 1em;" class="bbc_size">I&#039;m pretty sure we could track when the last flamethrower kill was in years. There is also the factor of the shotgun which is hard to obtain for newbs </span>is a complete domination weapon which makes the rest of the weapons obsolete. There is also the factor of mines being completely useless and only being a cash trap for inexperienced of curious players, and the fact that armor offers no noticeable movement penalty making heavier and more exotic armors better than light armor in every way.</li><li><span style="font-size: 1.35em;" class="bbc_size">And of course, the n00b tactics.</span> <span style="font-size: 1em;" class="bbc_size">Despite </span>our best attempts, there is still a good deal of ways to piss off a better opponent. The most obvious is /respawn to prevent them from gaining a kill and credits they deserve; it hurts their team, but a true n00b doesn&#039;t care about that. The shotgun has given way to the new way to spray &amp; pray over long distances, doing considerable damage. Matches between two decked-out players now comes down to jousting matches with the shotgun, eliminating most if not all pro tactics of before.</li></ul><span style="font-size: 1em;" class="bbc_size">I realize that these are problems we have accepted in the community, which makes it even worse. There is no movement to try and balance the game out, and if anything there is movement against just that with new and more powerful equipment coming out at higher prices (the shock armor to help snipers counteract the tactic of shaking their aim making them more dominant, the new vehicles which offer significant movement advantages over standard cars and most obvious the shotgun are some more recent examples). I have some ideas that could help the newb at least go 1.0 KD if they are skillful enough, but I know not all of them are popular (the last two ones). So let me start off with some simpler, more agreeable ideas:</span><ul class="bbc_list"><li><span style="font-size: 1.35em;" class="bbc_size">Equipment needs to be balanced. </span>What comes to mind as the standard OP weapon is the shotgun. The rest of the equipment is debatable and so I won&#039;t mention it, but come on, have you seen the amount of players using the shotgun? Ever wonder why?</li><li><span style="font-size: 1.35em;" class="bbc_size">Survival mode is available on all maps and is a possible game type bots play in.</span> Survival has become unpopular with pro players since they lose their equipment advantage, so they never host it themselves. It evens the battleground of a survival match a bit, but the fact is there are none. We need to give new players the option of playing survival mode instead of hosting a survival match and waiting around for half an hour before quitting.</li><li><span style="font-size: 1.35em;" class="bbc_size">Equipment needs to be cheaper. </span><span style="font-size: 1em;" class="bbc_size">I&#039;m not saying make it so you can buy out the shop in an hour, but </span>the rate at which you can buy equipment now is ridiculous. Item prices need to go down, especially for the more powerful weapons.</li><li><span style="font-size: 1.35em;" class="bbc_size">Upgrades need to go. </span><span style="font-size: 1em;" class="bbc_size">Yes, let&#039;s get rid of upgrades, make everything start at level 20 when you buy it. It is such an obvious system of players with more money being more powerful than players with less money, even if they rent out equipment.</span></li></ul>Well, that&#039;s about it. I might add a poll later if something comes up in a debate, but I got what I wanted said out there.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_2071">
+								<em>Last edited  <span title=" 28, 2012, 02:05:55 pm" style="cursor:default">Late September, 2012</span> by FatCatAttack</em>
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_2071_signature"><span style="text-shadow: orange 1px 1px 1px">Fan Fic Project</span><br /><br /><a href="../../../off-topic/fatcatattack's-fan-fic-project/msg2020/index-topicseen.html#new" class="bbc_link" target="_blank">http://forum.carbontechsoftware.com/off-topic/fatcatattack%27s-fan-fic-project/msg2020/?topicseen#new</a><br /><br />Please, come visit.</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg2073"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/Lamp/index.html" title="View the profile of Lamp">Lamp</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_2073_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/Lamp/index.html">
+										<img class="avatar" src="http://i.imgur.com/Qp9OniQ.png" width="100" height="100" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 956</li>
+								<li class="karma" style="margin-top:15px">Karma: 22</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_2073">
+										<a href="../msg2073/index.html#msg2073" rel="nofollow">Re: A fresh take...and it doesn't look good.</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 27, 2012, 02:36:16 pm" style="cursor:default">Late September, 2012</span></div>
+									<div id="msg_2073_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_2073">Me totally agree!!!!<br />One reason why I like survival. But I can&#039;t play with anyone because they all hate survival.<br />I was dying cuz of XD and friends and I was sooooo mad I said they were noobs.<br /><br /><br />And so I made another account that I use sometimes to enjoy defaults!<br /><br /><br />P.S. You&#039;re a good writer!</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_2073">
+								<em>Last edited  <span title=" 27, 2012, 02:38:32 pm" style="cursor:default">Late September, 2012</span> by Lamp</em>
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_2073_signature"><img src="http://bit.do/4u2h" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg2074"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_2074_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_2074">
+										<a href="../msg2074/index.html#msg2074" rel="nofollow">Re: A fresh take...and it doesn't look good.</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 27, 2012, 02:54:13 pm" style="cursor:default">Late September, 2012</span></div>
+									<div id="msg_2074_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_2074">OOOOKAY!!! took me bout 5 mins to read but hey, i agree with ALMOST evrything you said. first, with the mine things, i think the real reason we dont use them is becuase theyre so easy to detect if you have a good eye. so lets face it, we need to make it more realistic in the sense that real mines are very hard to detect and if i&#039;m correct are underground so you cant see them anyway. with the rocket launcher no no nope. i thought we all agreed the rocket luancher was too OP? when you say &quot;the armours have to have penalties&quot; what do you mean? doesnt heavy armour already slices your top speed by, what, 15-20 mph? what&#039;s the point of it being the most durable armour if it has to be weak in other areas too? (not sure if you get what i mean, i dont know any other way to put it atm). and if all the weapons are the same in terms of strenth what&#039;s the point of having more powerfull one like rail and laser if it will be the same power as a nade? i do agree that we really dont like survival. i just dont play becuase of the fact that, even though it&#039;ll take 15 minutes for somebody to come and i could get really good stuff, its boring not having our stuff! when i say this i mean, all you can get is weapons and armour, wich btw are all always level 1. what about the bodykits wich we payed for? or the vehicles that make the game so cool? and last but not least, NO. keep upgrades, yes its true that players with more money will be more&nbsp; stronger! isnt that our reward? dont forget we all started out with CC, rocket, and plasma blaster. we all wer very good and killed more people. in return we got more creds. creds are our reward for being good at the game, in return we buy better gear and weapons, so we can &quot;survive&quot;. how can this game be a place were new comers are as strong as the vets? im not saying we should be wiping them out though, i do agree that they should at LEAST be able to score ONE lucky kill if they&#039;re GOOD. </div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_2074">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_2074_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg2076"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/Lamp/index.html" title="View the profile of Lamp">Lamp</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_2076_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/Lamp/index.html">
+										<img class="avatar" src="http://i.imgur.com/Qp9OniQ.png" width="100" height="100" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 956</li>
+								<li class="karma" style="margin-top:15px">Karma: 22</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_2076">
+										<a href="../msg2076/index.html#msg2076" rel="nofollow">Re: A fresh take...and it doesn't look good.</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 27, 2012, 04:23:22 pm" style="cursor:default">Late September, 2012</span></div>
+									<div id="msg_2076_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_2076">Tip: Try to avoid dying. If you die, you lose your level.<br /><br /><br />This is especially for FCA:<br />Get Heavy Armor and make it level 20. Use health pickups.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_2076">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_2076_signature"><img src="http://bit.do/4u2h" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg2078"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_2078_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_2078">
+										<a href="../msg2078/index.html#msg2078" rel="nofollow">Re: A fresh take...and it doesn't look good.</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 27, 2012, 04:53:15 pm" style="cursor:default">Late September, 2012</span></div>
+									<div id="msg_2078_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_2078"><div class="quoteheader"><div class="topslice_quote"><a href="../msg2076/index.html#msg2076">Quote from: Lamp on <span title=" 27, 2012, 04:23:22 pm" style="cursor:default">Late September, 2012</span></a></div></div><blockquote class="bbc_standard_quote">Tip: Try to avoid dying. If you die, you lose your level.<br /><br /><br />This is especially for FCA:<br />Get Heavy Armor and make it level 20. Use health pickups.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>lamp, hes been here for howmany years? lol, i think he knows that.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_2078">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_2078_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg2079"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/Lamp/index.html" title="View the profile of Lamp">Lamp</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_2079_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/Lamp/index.html">
+										<img class="avatar" src="http://i.imgur.com/Qp9OniQ.png" width="100" height="100" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 956</li>
+								<li class="karma" style="margin-top:15px">Karma: 22</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_2079">
+										<a href="../msg2079/index.html#msg2079" rel="nofollow">Re: A fresh take...and it doesn't look good.</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 27, 2012, 04:53:48 pm" style="cursor:default">Late September, 2012</span></div>
+									<div id="msg_2079_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_2079">So why isn&#039;t he doing that?</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_2079">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_2079_signature"><img src="http://bit.do/4u2h" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg2083"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_2083_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_2083">
+										<a href="../msg2083/index.html#msg2083" rel="nofollow">Re: A fresh take...and it doesn't look good.</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 27, 2012, 05:03:09 pm" style="cursor:default">Late September, 2012</span></div>
+									<div id="msg_2083_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_2083"><div class="quoteheader"><div class="topslice_quote"><a href="../msg2079/index.html#msg2079">Quote from: Lamp on <span title=" 27, 2012, 04:53:48 pm" style="cursor:default">Late September, 2012</span></a></div></div><blockquote class="bbc_standard_quote">So why isn&#039;t he doing that?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>he never said he wasnt. look at the whole post dude. hes trying to talk about balancing within the store and the gameplay.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_2083">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_2083_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg2087"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/Lamp/index.html" title="View the profile of Lamp">Lamp</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_2087_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/Lamp/index.html">
+										<img class="avatar" src="http://i.imgur.com/Qp9OniQ.png" width="100" height="100" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 956</li>
+								<li class="karma" style="margin-top:15px">Karma: 22</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_2087">
+										<a href="../msg2087/index.html#msg2087" rel="nofollow">Re: A fresh take...and it doesn't look good.</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 27, 2012, 05:31:07 pm" style="cursor:default">Late September, 2012</span></div>
+									<div id="msg_2087_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_2087">I have my missle launcher and it&#039;s more fun than the shotgun (except for the lag which makes the game not fun).</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_2087">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_2087_signature"><img src="http://bit.do/4u2h" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg2099"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/rayo76/index.html" title="View the profile of rayo76">rayo76</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_2099_extra_info">
+								<li class="postgroup" style="display:none">Newbie</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/rayo76/index.html">
+										<img class="avatar" src="http://i.imgur.com/I5O1N.gif" width="100" height="100" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 27</li>
+								<li class="karma" style="margin-top:15px">Karma: 1</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_2099">
+										<a href="../msg2099/index.html#msg2099" rel="nofollow">Re: A fresh take...</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 28, 2012, 05:55:37 am" style="cursor:default">Late September, 2012</span></div>
+									<div id="msg_2099_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_2099">Very good &quot;post&quot;<br />I really like this kind of discussion<br />but do not write much<br />because I do not really understand me :-/<br /><br /><br />Saludos</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_2099">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_2099_signature">♪ ♫<a href="http://varrailhon.webs.com/CC.html" class="bbc_link" target="_blank">http://www.varrailhon.webs.com/CC.html</a>♫ ♪</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg2102"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_2102_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_2102">
+										<a href="../msg2102/index.html#msg2102" rel="nofollow">Re: A fresh take...and it doesn't look good.</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 28, 2012, 08:50:13 am" style="cursor:default">Late September, 2012</span></div>
+									<div id="msg_2102_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_2102"><div class="quoteheader"><div class="topslice_quote"><a href="../msg2087/index.html#msg2087">Quote from: Lamp on <span title=" 27, 2012, 05:31:07 pm" style="cursor:default">Late September, 2012</span></a></div></div><blockquote class="bbc_standard_quote">I have my missle launcher and it&#039;s more fun than the shotgun (except for the lag which makes the game not fun).<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div> dude its not about the &quot;funness&quot; of the weapon. in my opinion everything is fun and cool in its own way. he&#039;s not even talking about that. he&#039;s talking about the balencing of the shop and the game in itself.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_2102">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_2102_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg2104"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/U2M/index.html" title="View the profile of U2M">U2M</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_2104_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/U2M/index.html">
+										<img class="avatar" src="../../../avatar_24_1356310894-action=dlattach-attach=425-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 630</li>
+								<li class="karma" style="margin-top:15px">Karma: 32</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_2104">
+										<a href="../msg2104/index.html#msg2104" rel="nofollow">Re: A fresh take...and it doesn't look good.</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 28, 2012, 12:43:03 pm" style="cursor:default">Late September, 2012</span></div>
+									<div id="msg_2104_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_2104">Ok, Ok, guys, stop arguing over something so simple! You and Lamp sound like me and my sister! XD<br />&nbsp;<br />Anyhow, I do agree with a lot of thigs that have been said by FCA. But, as it always should be, there are somethings that not everybody agrees with. For example, the nades and flame thrower. Recently, I have gone from not going out of the air to close quarter combat. Let me tell you, i have level 11 grenades and they are AMAZIMG. Because of this, I strongly disagree with the idea of bumping up the power in any way. The same to the flames. If i look back, I have probably killed 47 people with that weapon, 25% of them had Heavy armor. It truly is a devastating weapon. No need to bump that up either. The same to a rocket launcher. Yes, they are a bit in-accurate, but if you flip over, or get stuck, you done. This has happened to me before. I had my level 20 heavy and I accidently land my car wrong and it caused it to flip. It took six level 1 rockets to kill me. Yes it is only six, but they are level one! That is way OP! I believe I have also said that I have changed my tactics. I have started to use the liberator. It is fun to use, but i do agree it should have a bigger explosion and larger radius to trip it as you said. There is one other thing I KNOW I don&#039;t really agree with and that is prices for products in the shop. WAY TOO EXPENSIVE. I can&#039;t even begin to scratch the price of the racer. It is not too hard for me to recieve credits, but it is hard to get a lot of them. I mean, upgrades are one of the things I keep playing CC. It gives me an objective everytime I play. I must get x amount of credits so I can upgrade this weapon today. They shouldn&#039;t go, but maybe should be a little less expensive. To tell you the truth, n00b tactics are really retarded and should burn in hell. As much as I hate them, they are there for players who have low self-esteme, and there are only really a hand-full of n00bs. There are more of these tactics because of the OP weapons like shotguns. What happened to the original tactics i used to face when I was in my prime? the invisibility armor? The Flying of top of a car and planting a mine (A Nattyfrank Classic). Where did they all go? <br />&nbsp;<br />Over all, I agree with most of your points, but not all.<br />&nbsp;<br />UDICTED2MARVEL</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_2104">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_2104_signature">&quot;We are made wise not by the recollection of our past, but by the responsibility for our future.&quot;</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg2106"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/XD/index.html" title="View the profile of XD">XD</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_2106_extra_info">
+								<li class="postgroup" style="display:none">Sr. Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/XD/index.html">
+										<img class="avatar" src="../../../off-topic/awesome-ninja-stars/index-action=dlattach-attach=195-image.html" width="100" height="100" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 304</li>
+								<li class="karma" style="margin-top:15px">Karma: 27</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_2106">
+										<a href="../msg2106/index.html#msg2106" rel="nofollow">Re: A fresh take...and it doesn't look good.</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 28, 2012, 01:24:26 pm" style="cursor:default">Late September, 2012</span></div>
+									<div id="msg_2106_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_2106"><br />I agree with everything you said except the rocket launcher, grenades, and flamethrower.<br />The rocket launcher can kill lvl 20 Heavy armor with 6 shots (as U2M said) and I&#039;ve had guests kill me while I was flipped many times. I even let a guy with 0 XP kill me on purpose once (not farming) so I could see how many credits I would lose and he would gain. He got about 300 XP... I wonder how many credits he got... 0_0<br />Grenades and flamethrower are balanced right now. Grenades are great weapons and are powerful.<br />I use flamethrower half of the time in Freeplay and it can kill lvl 20 heavy in around 5-7 seconds. Considering how being so close, a shotgun or rocket launcher or grenade could easily kill you, that quick and <del>painless</del> painful death makes up for it.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_2106">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg2108"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/Lamp/index.html" title="View the profile of Lamp">Lamp</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_2108_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/Lamp/index.html">
+										<img class="avatar" src="http://i.imgur.com/Qp9OniQ.png" width="100" height="100" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 956</li>
+								<li class="karma" style="margin-top:15px">Karma: 22</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_2108">
+										<a href="../msg2108/index.html#msg2108" rel="nofollow">Re: A fresh take...and it doesn't look good.</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 28, 2012, 01:55:21 pm" style="cursor:default">Late September, 2012</span></div>
+									<div id="msg_2108_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_2108">Hey FCA, here&#039;s a tip when playing with higher levels:<br />Drive in circles around them really fast. It makes it easier for you to aim with your shotgun and makes it hard for the other guy to shoot you.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_2108">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_2108_signature"><img src="http://bit.do/4u2h" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg2109"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/FatCatAttack/index.html" title="View the profile of FatCatAttack">FatCatAttack</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_2109_extra_info">
+								<li class="postgroup" style="display:none">Sr. Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 254</li>
+								<li class="karma" style="margin-top:15px">Karma: 30</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_2109">
+										<a href="../msg2109/index.html#msg2109" rel="nofollow">Re: A fresh take...and it doesn't look good.</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 28, 2012, 02:03:43 pm" style="cursor:default">Late September, 2012</span></div>
+									<div id="msg_2109_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_2109">Thanks for the feedback, after some good arguments I decided to get rid of the bump of the rocket launcher, flamerthrower and grenade launcher as for even if you guys are talking complete BS, it still stands for the fact that these weapons are debatable. However I stand by the rest of my points unless someone else has a argument I find convincing.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_2109">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_2109_signature"><span style="text-shadow: orange 1px 1px 1px">Fan Fic Project</span><br /><br /><a href="../../../off-topic/fatcatattack's-fan-fic-project/msg2020/index-topicseen.html#new" class="bbc_link" target="_blank">http://forum.carbontechsoftware.com/off-topic/fatcatattack%27s-fan-fic-project/msg2020/?topicseen#new</a><br /><br />Please, come visit.</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg2115"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/SilentShadow/index.html" title="View the profile of SilentShadow">SilentShadow</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_2115_extra_info">
+								<li class="postgroup" style="display:none">Newbie</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/SilentShadow/index.html">
+										<img class="avatar" src="http://forums.salary.sg/avatars/blackdragon.gif?dateline=1334937372" width="100" height="100" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 32</li>
+								<li class="karma" style="margin-top:15px">Karma: 2</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_2115">
+										<a href="../msg2115/index.html#msg2115" rel="nofollow">Re: A fresh take...and it doesn't look good.</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 28, 2012, 05:14:31 pm" style="cursor:default">Late September, 2012</span></div>
+									<div id="msg_2115_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_2115">Hello,<br /><br /><br />I think a better idea would be to make the original purchase slightly cheaper. Then to make, instead of 20 cheap and un-noticeable upgrades, 4 or 5 upgrades instead.<br /><br /><br />What I mean by that, is: take a level 1 Rocket Launcher. It does a certain amount of damage, and each upgrade adds a small amount of damage to the original damage. What I think should happen is to remove so many of the upgrades, and allow the equipment to be upgraded far less times, which would make the actual upgrades far more noticeable.<br /><br /><br />So instead of having a level 20 Shotgun, you have a level 5 Shotgun instead, but they&#039;re the same thing in terms of power. What balances this is to make the upgrades a bit more expensive, but overall reducing the prices of the guns altogether if we take out 15 useless upgrades.<br /><br /><br />They should also make the default gun upgrades slightly less destructive (a level 1 Rocket Launcher could kill a Level 20 Heavy Armor in a few shots). I agree with your sentiments on the power of newbie players.<br /><br /><br />And FatCatAttack, I really would have liked to see your take on the Flamethrower, as I also think this weapon is heavily out of balance. At least I believe they are, I&#039;ve never gotten a single kill with Flamethrower...it seems a hit-and-run gun but in reality it&#039;s a gun that forces you to sit still and flame at a car who is 5 meters in front of you - impossible, when the car is moving quickly as well.<br /><br /><br />If this game wants to keep more players for longer times at the current prices they have now, they should either balance the equipment, or add more equipment, because right now the current selection is heavily lacking!</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_2115">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_2115_signature"><img src="http://i50.tinypic.com/vr8sba.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg2117"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/XD/index.html" title="View the profile of XD">XD</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_2117_extra_info">
+								<li class="postgroup" style="display:none">Sr. Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/XD/index.html">
+										<img class="avatar" src="../../../off-topic/awesome-ninja-stars/index-action=dlattach-attach=195-image.html" width="100" height="100" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 304</li>
+								<li class="karma" style="margin-top:15px">Karma: 27</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_2117">
+										<a href="../msg2117/index.html#msg2117" rel="nofollow">Re: A fresh take...and it doesn't look good.</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 28, 2012, 05:22:11 pm" style="cursor:default">Late September, 2012</span></div>
+									<div id="msg_2117_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_2117">Remove the shotgun or make another dominating weapon to compete with the shotgun???</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_2117">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg2128"></a><a id="new"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/FatCatAttack/index.html" title="View the profile of FatCatAttack">FatCatAttack</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_2128_extra_info">
+								<li class="postgroup" style="display:none">Sr. Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 254</li>
+								<li class="karma" style="margin-top:15px">Karma: 30</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_2128">
+										<a href="index.html#msg2128" rel="nofollow">Re: A fresh take...and it doesn't look good.</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 28, 2012, 08:05:00 pm" style="cursor:default">Late September, 2012</span></div>
+									<div id="msg_2128_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_2128">More likely just nerf the shotgun. I suggest making a much wider spread so it works as a close-range weapon only,forcing anyone who wants to do damage at range to switch out to another weapon. The shotgun will still be a hit &amp; run gun, but it isn&#039;t an all-purpose dominator. Flamethrower I think needs faster moving flames; if a target is moving fast, then by aiming directly at them at near point-blank range they outrun the wall of flames, making the weapon only useful against stationary targets; something you won&#039;t find at close range. A skilled player with the shotgun would be able to hit with their first shot and destroy a target before it can fire back, but someone not-so-skilled might be better off using the flamethrower with it&#039;s rapid fire and miss friendly nature. However people more skilled than I am say they are able to use it to score kills, so I guess it isn&#039;t really non-debatable.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_2128">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_2128_signature"><span style="text-shadow: orange 1px 1px 1px">Fan Fic Project</span><br /><br /><a href="../../../off-topic/fatcatattack's-fan-fic-project/msg2020/index-topicseen.html#new" class="bbc_link" target="_blank">http://forum.carbontechsoftware.com/off-topic/fatcatattack%27s-fan-fic-project/msg2020/?topicseen#new</a><br /><br />Please, come visit.</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg2129"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_2129_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_2129">
+										<a href="../msg2129/index.html#msg2129" rel="nofollow">Re: A fresh take...and it doesn't look good.</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 28, 2012, 08:21:04 pm" style="cursor:default">Late September, 2012</span></div>
+									<div id="msg_2129_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_2129"><div class="quoteheader"><div class="topslice_quote"><a href="../msg2115/index.html#msg2115">Quote from: SilentShadow on <span title=" 28, 2012, 05:14:31 pm" style="cursor:default">Late September, 2012</span></a></div></div><blockquote class="bbc_standard_quote">Hello,<br /><br /><br />I think a better idea would be to make the original purchase slightly cheaper. Then to make, instead of 20 cheap and un-noticeable upgrades, 4 or 5 upgrades instead.<br /><br /><br />What I mean by that, is: take a level 1 Rocket Launcher. It does a certain amount of damage, and each upgrade adds a small amount of damage to the original damage. What I think should happen is to remove so many of the upgrades, and allow the equipment to be upgraded far less times, which would make the actual upgrades far more noticeable.<br /><br /><br />So instead of having a level 20 Shotgun, you have a level 5 Shotgun instead, but they&#039;re the same thing in terms of power. What balances this is to make the upgrades a bit more expensive, but overall reducing the prices of the guns altogether if we take out 15 useless upgrades.<br /><br /><br />They should also make the default gun upgrades slightly less destructive (a level 1 Rocket Launcher could kill a Level 20 Heavy Armor in a few shots). I agree with your sentiments on the power of newbie players.<br /><br /><br />And FatCatAttack, I really would have liked to see your take on the Flamethrower, as I also think this weapon is heavily out of balance. At least I believe they are, I&#039;ve never gotten a single kill with Flamethrower...it seems a hit-and-run gun but in reality it&#039;s a gun that forces you to sit still and flame at a car who is 5 meters in front of you - impossible, when the car is moving quickly as well.<br /><br /><br />If this game wants to keep more players for longer times at the current prices they have now, they should either balance the equipment, or add more equipment, because right now the current selection is heavily lacking!<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>i dont really agree. if you took any weapon, and shot someone to death, upgraded once and did the same thing, you would see a difference. it might be small, but there&#039;s still a difference.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_2129">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_2129_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg2132"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/epicness604/index.html" title="View the profile of epicness604">epicness604</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_2132_extra_info">
+								<li class="postgroup" style="display:none">Jr. Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/epicness604/index.html">
+										<img class="avatar" src="../../../avatar_48_1391732094-action=dlattach-attach=528-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 81</li>
+								<li class="karma" style="margin-top:15px">Karma: 5</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_2132">
+										<a href="../msg2132/index.html#msg2132" rel="nofollow">Re: A fresh take...and it doesn't look good.</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 28, 2012, 08:44:15 pm" style="cursor:default">Late September, 2012</span></div>
+									<div id="msg_2132_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_2132"><div class="quoteheader"><div class="topslice_quote"><a href="../msg2129/index.html#msg2129">Quote from: cremyjr on <span title=" 28, 2012, 08:21:04 pm" style="cursor:default">Late September, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg2115/index.html#msg2115">Quote from: SilentShadow on <span title=" 28, 2012, 05:14:31 pm" style="cursor:default">Late September, 2012</span></a></div></div><blockquote class="bbc_alternate_quote">Hello,<br /><br /><br />I think a better idea would be to make the original purchase slightly cheaper. Then to make, instead of 20 cheap and un-noticeable upgrades, 4 or 5 upgrades instead.<br /><br /><br />What I mean by that, is: take a level 1 Rocket Launcher. It does a certain amount of damage, and each upgrade adds a small amount of damage to the original damage. What I think should happen is to remove so many of the upgrades, and allow the equipment to be upgraded far less times, which would make the actual upgrades far more noticeable.<br /><br /><br />So instead of having a level 20 Shotgun, you have a level 5 Shotgun instead, but they&#039;re the same thing in terms of power. What balances this is to make the upgrades a bit more expensive, but overall reducing the prices of the guns altogether if we take out 15 useless upgrades.<br /><br /><br />They should also make the default gun upgrades slightly less destructive (a level 1 Rocket Launcher could kill a Level 20 Heavy Armor in a few shots). I agree with your sentiments on the power of newbie players.<br /><br /><br />And FatCatAttack, I really would have liked to see your take on the Flamethrower, as I also think this weapon is heavily out of balance. At least I believe they are, I&#039;ve never gotten a single kill with Flamethrower...it seems a hit-and-run gun but in reality it&#039;s a gun that forces you to sit still and flame at a car who is 5 meters in front of you - impossible, when the car is moving quickly as well.<br /><br /><br />If this game wants to keep more players for longer times at the current prices they have now, they should either balance the equipment, or add more equipment, because right now the current selection is heavily lacking!<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>i dont really agree. if you took any weapon, and shot someone to death, upgraded once and did the same thing, you would see a difference. it might be small, but there&#039;s still a difference.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>not really a big difference besides i actually like the 5 level weapon upgrade idea</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_2132">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_2132_signature">never say no to panda cheese</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg2133"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/XD/index.html" title="View the profile of XD">XD</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_2133_extra_info">
+								<li class="postgroup" style="display:none">Sr. Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/XD/index.html">
+										<img class="avatar" src="../../../off-topic/awesome-ninja-stars/index-action=dlattach-attach=195-image.html" width="100" height="100" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 304</li>
+								<li class="karma" style="margin-top:15px">Karma: 27</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_2133">
+										<a href="../msg2133/index.html#msg2133" rel="nofollow">Re: A fresh take...and it doesn't look good.</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 28, 2012, 09:03:38 pm" style="cursor:default">Late September, 2012</span></div>
+									<div id="msg_2133_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_2133"><div class="quoteheader"><div class="topslice_quote"><a href="../msg2132/index.html#msg2132">Quote from: epicness604 on <span title=" 28, 2012, 08:44:15 pm" style="cursor:default">Late September, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg2129/index.html#msg2129">Quote from: cremyjr on <span title=" 28, 2012, 08:21:04 pm" style="cursor:default">Late September, 2012</span></a></div></div><blockquote class="bbc_alternate_quote">i dont really agree. if you took any weapon, and shot someone to death, upgraded once and did the same thing, you would see a difference. it might be small, but there&#039;s still a difference.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>not really a big difference besides i actually like the 5 level weapon upgrade idea<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>I like the 5 level weapon upgrade idea too. That or make the upgrade prices the way they used to be! Right now, upgrading a weapon to lvl 20 for any weapon costs 15750 credits. THAT&#039;S FOR ONE WEAPON. Same goes for armors.<br />About what cremy said, yes you can notice the difference, but the upgrade costs so much that it&#039;s not worth it. (Shotgun is an exception here)</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_2133">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				</form>
+			</div>
+			<a id="lastPost"></a>
+			<div class="pagesection">
+				
+				<div class="pagelinks floatleft"><span style="margin-right:20px;color:#747474">Page 1 of 2</span><span class="selectedPage">1</span> <span class="nonselectedPage"><a class="navPages" href="../20/index.html">2</a> </span><span class="nonselectedPage"><a class="navPages" href="../20/index.html">>></a> </span></div>
+				<div class="nextlinks_bottom"><a href="../index-prev_next=prev.html#new">&laquo; previous</a> <a href="../index-prev_next=next.html#new">next &raquo;</a></div>
+			</div>
+			<div id="moderationbuttons"></div>
+			<div class="plainbox" id="display_jump_to">&nbsp;</div>
+		<br class="clear" />
+			<form action="http://forum.carbontechsoftware.com/spellcheck/" method="post" accept-charset="UTF-8" name="spell_form" id="spell_form" target="spellWindow"><input type="hidden" name="spellstring" value="" /></form>
+				<script type="text/javascript" src="../../../Themes/default/scripts/spellcheck.js"></script>
+				<script type="text/javascript" src="../../../Themes/default/scripts/topic.js"></script>
+				<script type="text/javascript"><!-- // --><![CDATA[
+					if ('XMLHttpRequest' in window)
+					{
+						var oQuickModify = new QuickModify({
+							sScriptUrl: smf_scripturl,
+							bShowModify: true,
+							iTopicId: 169,
+							sTemplateBodyEdit: '\n\t\t\t\t\t\t\t\t<div id="quick_edit_body_container" style="width: 90%">\n\t\t\t\t\t\t\t\t\t<div id="error_box" style="padding: 4px;" class="error"><' + '/div>\n\t\t\t\t\t\t\t\t\t<textarea class="editor" name="message" rows="12" style="width: 100%; margin-bottom: 10px;" tabindex="1">%body%<' + '/textarea><br />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="f432f3090a" value="477e586f5a9953a0dd3608a1ea7e9270" />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="topic" value="169" />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="msg" value="%msg_id%" />\n\t\t\t\t\t\t\t\t\t<div class="righttext">\n\t\t\t\t\t\t\t\t\t\t<input type="submit" name="post" value="Save" tabindex="2" onclick="return oQuickModify.modifySave(\'477e586f5a9953a0dd3608a1ea7e9270\', \'f432f3090a\');" accesskey="s" class="button_submit" />&nbsp;&nbsp;<input type="button" value="Spell Check (popups must be enabled)" tabindex="3" onclick="oEditorHandle_message.spellCheckStart();" class="button_submit" />&nbsp;&nbsp;<input type="submit" name="cancel" value="Cancel" tabindex="4" onclick="return oQuickModify.modifyCancel();" class="button_submit" />\n\t\t\t\t\t\t\t\t\t<' + '/div>\n\t\t\t\t\t\t\t\t<' + '/div>',
+							sTemplateSubjectEdit: '<input type="text" style="width: 90%;" name="subject" value="%subject%" size="80" maxlength="80" tabindex="5" class="input_text" />',
+							sTemplateBodyNormal: '%body%',
+							sTemplateSubjectNormal: '<a hr'+'ef="http://forum.carbontechsoftware.com/index.php'+'?topic=169.msg%msg_id%#msg%msg_id%" rel="nofollow">%subject%<' + '/a>',
+							sTemplateTopSubject: 'Topic: %subject% &nbsp;(Read 2134 times)',
+							sErrorBorderStyle: '1px solid red'
+						});
+
+						aJumpTo[aJumpTo.length] = new JumpTo({
+							sContainerId: "display_jump_to",
+							sJumpToTemplate: "<label class=\"smalltext\" for=\"%select_id%\">Jump to:<" + "/label> %dropdown_list%",
+							iCurBoardId: 3,
+							iCurBoardChildLevel: 0,
+							sCurBoardName: "Feedback &amp; Ideas",
+							sBoardChildLevelIndicator: "==",
+							sBoardPrefix: "=> ",
+							sCatSeparator: "-----------------------------",
+							sCatPrefix: "",
+							sGoButtonLabel: "go"
+						});
+
+						aIconLists[aIconLists.length] = new IconList({
+							sBackReference: "aIconLists[" + aIconLists.length + "]",
+							sIconIdPrefix: "msg_icon_",
+							sScriptUrl: smf_scripturl,
+							bShowModify: true,
+							iBoardId: 3,
+							iTopicId: 169,
+							sSessionId: "477e586f5a9953a0dd3608a1ea7e9270",
+							sSessionVar: "f432f3090a",
+							sLabelIconList: "Message icon",
+							sBoxBackground: "transparent",
+							sBoxBackgroundHover: "#ffffff",
+							iBoxBorderWidthHover: 1,
+							sBoxBorderColorHover: "#adadad" ,
+							sContainerBackground: "#ffffff",
+							sContainerBorder: "1px solid #adadad",
+							sItemBorder: "1px solid #ffffff",
+							sItemBorderHover: "1px dotted gray",
+							sItemBackground: "transparent",
+							sItemBackgroundHover: "#e0e0f0"
+						});
+					}
+				// ]]></script>
+		<form name="spell_form" id="spell_form" method="post" accept-charset="UTF-8" target="spellWindow" action="http://forum.carbontechsoftware.com/spellcheck/">
+			<input type="hidden" name="spellstring" value="" />
+		</form>
+			<script type="text/javascript"><!-- // --><![CDATA[
+				var verificationpostHandle = new smfCaptcha("http://forum.carbontechsoftware.com/index.php?action=verificationcode;vid=post;rand=9b44f64f431e46ecbbc1a28598d34762", "post", 1);
+			// ]]></script>
+	</div>
+	</div></div>
+	<div id="footersection"><div style="width: 985px;margin: auto;">
+			<span class="floatright"><a href="http://www.simplemachines.org/">© Simple Machines (SMF 2.0.2)</a> - Forum designed by CarbonTech & <a href="http://www.blocweb.net">Bloc</a>
+			</span></div>
+	</div></div></div><script type="text/javascript">
+var sc_project=6755287; 
+var sc_invisible=1; 
+var sc_security="c689b4fd"; 
+</script>
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script>
+<noscript><div class="statcounter"><a title="tumblr page
+counter" href="http://statcounter.com/tumblr/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/6755287/0/c689b4fd/1/"
+alt="tumblr page counter"></a></div></noscript>
+</body></html>

@@ -1,0 +1,1183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<link rel="stylesheet" type="text/css" href="../../../Themes/carbonate202b/css/index-fin20.css" />
+	<link rel="stylesheet" type="text/css" href="../../../Themes/carbonate202b/css/index_carbon-fin20.css" />
+	<script type="text/javascript" src="../../../Themes/default/scripts/script-fin20.js"></script>
+	<script type="text/javascript" src="../../../Themes/carbonate202b/scripts/theme-fin20.js"></script>
+	<script type="text/javascript"><!-- // --><![CDATA[
+		var smf_theme_url = "http://forum.carbontechsoftware.com/Themes/carbonate202b";
+		var smf_default_theme_url = "http://forum.carbontechsoftware.com/Themes/default";
+		var smf_images_url = "http://forum.carbontechsoftware.com/Themes/carbonate202b/images";
+		var smf_scripturl = "http://forum.carbontechsoftware.com/index.php";
+		var smf_iso_case_folding = false;
+		var smf_charset = "UTF-8";
+		var ajax_notification_text = "Loading...";
+		var ajax_notification_cancel_text = "Cancel";
+	// ]]></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="description" content="Targeting option" />
+	<title>Targeting option</title><link rel="shortcut icon" type="image/x-icon" href="http://lh3.googleusercontent.com/-GOPf21qQXSY/TzawG0qVPlI/AAAAAAAAAoA/-VQrE780LzQ/s16/CCLogoRound.png" /><link rel="icon" href="http://lh3.googleusercontent.com/-GOPf21qQXSY/TzawG0qVPlI/AAAAAAAAAoA/-VQrE780LzQ/s16/CCLogoRound.png" type="image/x-icon" />
+	<meta name="robots" content="noindex" />
+	<link rel="canonical" href="../index.html" />
+	<link rel="help" href="../../../help/index.html" />
+	<link rel="search" href="../../../search/index.html" />
+	<link rel="contents" href="../../../index.php.html" />
+	<link rel="alternate" type="application/rss+xml" title="Carbon Combat - RSS" href="../../../.xml/index-type=rss.html" />
+	<link rel="prev" href="../index-prev_next=prev.html" />
+	<link rel="next" href="../index-prev_next=next.html" />
+	<link rel="index" href="../../index.html" /><!-- nCode Image Resizer -->
+	<script type="text/javascript" src="../../../Themes/default/ncode_imageresizer.js"></script>
+	<script language="JavaScript" type="text/javascript"><!-- // -->
+	NcodeImageResizer.BBURL = "http://forum.carbontechsoftware.com/Themes/carbonate202b/images";
+	NcodeImageResizer.MODE = "enlarge";
+	NcodeImageResizer.MAXWIDTH = "720";
+	NcodeImageResizer.MAXHEIGHT = "400";
+	vbphrase = new Array();
+	vbphrase['ncode_imageresizer_warning_small'] = 'Click this bar to view the full image.';
+	vbphrase['ncode_imageresizer_warning_filesize'] = 'This image has been resized. Click this bar to view the full image. The original image is sized %1$sx%2$s and weighs %3$sKB.';
+	vbphrase['ncode_imageresizer_warning_no_filesize'] = 'This image has been resized. Click this bar to view the full image. The original image is sized %1$sx%2$s.';
+	vbphrase['ncode_imageresizer_warning_fullsize'] = 'Click this bar to view the small image.';
+	// ]]></script>
+	<link rel="stylesheet" type="text/css" id="editor_css" href="../../../Themes/default/css/editor.css" />
+		<script type="text/javascript"><!-- // --><![CDATA[
+			var smf_smileys_url = 'http://forum.carbontechsoftware.com/Smileys/akyhne';
+			var oEditorStrings= {
+				wont_work: 'Your browser does not support Rich Text editing.',
+				func_disabled: 'Your browser does not support this function.',
+				prompt_text_email: 'Please enter the email address.',
+				prompt_text_ftp: 'Please enter the ftp address.',
+				prompt_text_url: 'Please enter the URL you wish to link to.',
+				prompt_text_img: 'Enter image location'
+			}
+		// ]]></script>
+		<script type="text/javascript" src="../../../Themes/default/scripts/editor-fin20.js"></script>
+		<script type="text/javascript" src="../../../Themes/default/scripts/spellcheck.js"></script>
+		<script type="text/javascript"><!-- // --><![CDATA[
+		function spellCheckDone()
+		{
+			for (i = 0; i < smf_editorArray.length; i++)
+				setTimeout("smf_editorArray[" + i + "].spellCheckEnd()", 150);
+		}
+		// ]]></script>
+		<script type="text/javascript" src="../../../Themes/default/scripts/captcha.js"></script>
+	<style type="text/css">#main_menu,
+		#admin_menu
+		{
+			width: 985px
+		}
+	</style>
+	
+	
+	<script language="javascript" type="text/javascript">
+	<!--
+	
+	// MOD Title: Simple Image Upload
+	// MOD Author: Sium < admin@postimage.org > (N/A) http://www.postimage.org/
+	// MOD Version: 1.3.0
+	
+	var postimage_lang="english";
+	var postimage_add_text="Upload and insert an image";
+	var postimage_textarea_ignore_name=/username_list|search/i;
+	
+	function imgFunction() {
+		alert("After uploading you can...\n\n• Drag & drop the image into the post editor\n• Copy the direct link & add an image\n• Copy & paste the HTML code\n• Copy & paste the BBCode");
+	}
+	
+	function postimage_insert()
+	{
+		var postimage_area=document.getElementsByTagName("TEXTAREA");
+
+		for(var postimage_i=0;postimage_i<postimage_area.length;postimage_i++)
+		{
+			if(!postimage_area[postimage_i].name.match(postimage_textarea_ignore_name))
+			{
+				var postimage_new_div=document.createElement("div");
+				postimage_new_div.id = "smileyBox_message";
+				postimage_new_div.style.marginBottom = "5px";
+				postimage_new_div.style.display = "block";
+				postimage_new_div.innerHTML="<a href=\"javascript:void(0);\" onclick=\"imgFunction();imgWindow=window.open('http://imgur.com/?noFlash', 'imgWindow', 'resizable=no,width=1015,height=550,scrollbars=no');\"><b>>> "+postimage_add_text+"</b></a>";
+				postimage_area[postimage_i].parentNode.insertBefore(postimage_new_div,postimage_area[postimage_i]);
+			}
+		}
+	}
+	
+	window.onload=postimage_insert;
+	//-->
+	</script>
+	
+	
+	
+</head>
+<body>
+<div id="wrapper"><div id="headerlogo"></div>
+	<div id="subheader"><div style="width: 985px; margin:auto;background-color:#000">
+	<div id="uppertop">
+		<div class="middletext" style="float:right;height:auto;line-height:16px">Almost half past 8:00 pm, June 16th, 2015</div>
+		<script type="text/javascript" src="../../../Themes/default/scripts/sha1.js"></script>
+		<form id="guest_form" action="http://forum.carbontechsoftware.com/login2/" method="post" accept-charset="UTF-8"  onsubmit="hashLoginPassword(this, '477e586f5a9953a0dd3608a1ea7e9270');">
+			Welcome, <strong>Guest</strong>. Please <a href="../../../login/index.html">login</a> or <a href="../../../register/index.html">register</a>.&nbsp;
+	</div>
+	<div id="top_section" style="clear: both;">
+		<div id="main_menu">
+			<div class="menuback">
+			<div class="menuback2">
+			<ul class="dropmenu" id="menu_nav">
+				<li id="button_home" class="toplevel">
+					<a class="active firstlevel" href="../../../index.php.html">
+						<span class="last firstlevel">Home</span>
+					</a>
+				</li>
+				<li id="button_search" class="toplevel">
+					<a class="firstlevel" href="../../../search/index.html">
+						<span class="firstlevel">Search</span>
+					</a>
+					<ul>
+						<li>
+							<a href="../../../search/index.html">
+								<span>Search Forum Topics</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li id="button_login" class="toplevel">
+					<a class="firstlevel" href="../../../login/index.html">
+						<span class="firstlevel">Login</span>
+					</a>
+				</li>
+				<li id="button_register" class="toplevel">
+					<a class="firstlevel" href="../../../register/index.html">
+						<span class="firstlevel">Register</span>
+					</a>
+				</li>
+				<li id="button_chat" class="toplevel">
+					<a class="firstlevel" href="javascript:void(0)"onclick="window.open('/chatRoom.html','POPUP','width=700,height=720,location=0,menubar=0,toolbar=0,scrollbars=0,status=0,');">
+						<span class="firstlevel">Chat</span>
+					</a>
+				</li>
+				<li id="button_play" class="toplevel">
+					<a class="firstlevel" href="http://play.carbontechsoftware.com/"target="_blank');">
+						<span class="last firstlevel"><div style="color:#FFEFAE">Play</div></span>
+					</a>
+				</li>
+			</ul>
+			</div>
+			</div>
+		</div><script src="../../../adjustMenubar.js"></script>
+		<br class="clear" />
+		</div>
+	</div></div>
+	<div id="mainsection"><div style="width: 985px;margin: auto;margin-bottom:0;padding:15px 0">
+		<div id="innermain">	
+	<div class="navigate_section">
+		<ul>
+			<li>
+				<a href="../../../index.php.html"><span>Carbon Combat</span></a> &#187;
+			</li>
+			<li>
+				<a href="../../../index.php.html#c1"><span>General</span></a> &#187;
+			</li>
+			<li>
+				<a href="../../index.html"><span>Feedback &amp; Ideas</span></a> &#187;
+			</li>
+			<li class="last">
+				<a href="../index.html"><span>Targeting option</span></a>
+			</li>
+		</ul>
+	</div>
+			<a id="top"></a>
+			<a id="msg226"></a>
+			<div class="pagesection">
+				<div class="nextlinks"><a href="../index-prev_next=prev.html#new">&laquo; previous</a> <a href="../index-prev_next=next.html#new">next &raquo;</a></div>
+				<div class="pagelinks floatleft"><span style="margin-right:20px;color:#747474">Page 1 of 1</span><span class="selectedPage">1</span> </div>
+			</div>
+			<div id="forumposts">
+				<div class="cat_bar">
+					<h3 class="catbg">
+						<img src="../../../Themes/carbonate202b/images/topic/hot_post.gif.png" align="bottom" alt="" />
+						<span id="author">Author</span>
+						Topic: Targeting option &nbsp;(Read 1752 times)
+					</h3>
+				</div>
+				<form action="http://forum.carbontechsoftware.com/feedback-ideas/targeting-option/?action=quickmod2" method="post" accept-charset="UTF-8" name="quickModForm" id="quickModForm" style="margin: 0;" onsubmit="return oQuickModify.bInEditMode ? oQuickModify.modifySave('477e586f5a9953a0dd3608a1ea7e9270', 'f432f3090a') : false">
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/Yoshi/index.html" title="View the profile of Yoshi">Yoshi</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_226_extra_info">
+								<li class="postgroup" style="display:none">Newbie</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 45</li>
+								<li class="karma" style="margin-top:15px">Karma: 4</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_226">
+										<a href="../msg226/index.html#msg226" rel="nofollow">Targeting option</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 15, 2012, 09:26:08 pm" style="cursor:default">Mid-July, 2012</span></div>
+									<div id="msg_226_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_226">Hello peoples.<br /><br /><br />Let&#039;s say I&#039;m in a battle island Deathmatch with GTR34 and 6 others. Maybe I want to kill GTR because he gets annoying with across-the-map snipes. I would like it if there was a targeting option where I could single him out from the other 6 people so I can focus my fire on him instead of hitting some random dude who I really don&#039;t care much about.<br /><br /><br />It would simple highlight the target&#039;s vehicle locator arrow as a different color, like green. Note: Only the arrow would look different. Nothing else would change. Only one person would be targeted at a time.<br /><br /><br />It could also be used for defensive purposes instead of offensive. Let&#039;s say I want to massacre some not-so-hard-to-hit newbs on Sanctum and techietotoro is stalking me. I could use the targeting option to locate him so I can avoid him.<br /><br /><br />A possible way to turn on the targeting thing would be in the battle summary, next to the friend button, a crosshairs icon would appear. By clicking it, I could now see GTR34 and finish his remaining 30% health with my railgun, or I could run away from totoro.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_226">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_226_signature">If it doesn&#39;t work, whack it. If whacking it doesn&#39;t work, whack it again.</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg231"></a><a id="new"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/U2M/index.html" title="View the profile of U2M">U2M</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_231_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/U2M/index.html">
+										<img class="avatar" src="../../../avatar_24_1356310894-action=dlattach-attach=425-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 630</li>
+								<li class="karma" style="margin-top:15px">Karma: 32</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_231">
+										<a href="index.html#msg231" rel="nofollow">Re: Targeting option</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 15, 2012, 11:40:36 pm" style="cursor:default">Mid-July, 2012</span></div>
+									<div id="msg_231_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_231">Natty and i talked about this idea when him and i were haveing a privite match... we agreed this idea will be too overwelming for players, and they would, most likely, rage quit... But i like the idea of locating a specific player... that could be of some use...</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_231">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_231_signature">&quot;We are made wise not by the recollection of our past, but by the responsibility for our future.&quot;</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg235"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/speeddemon/index.html" title="View the profile of speeddemon">speeddemon</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_235_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/speeddemon/index.html">
+										<img class="avatar" src="http://blog.flashissue.com/wp-content/uploads/2012/04/speeddemon.png" width="100" height="100" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 654</li>
+								<li class="karma" style="margin-top:15px">Karma: 31</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_235">
+										<a href="../msg235/index.html#msg235" rel="nofollow">Re: Targeting option</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 16, 2012, 08:44:30 am" style="cursor:default">Mid-July, 2012</span></div>
+									<div id="msg_235_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_235">I like the idea a lot, it&#039;s very annoying when there&#039;s someone who you are trying to find and it takes ages to find them, maybe the player that you&#039;ve highlighted would show beneath the arrow also purple as the targeting colour perhaps? Also it would be good when you and someone else are having your own duel and to stop that player sneaking up on you.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_235">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg237"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/Yoshi/index.html" title="View the profile of Yoshi">Yoshi</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_237_extra_info">
+								<li class="postgroup" style="display:none">Newbie</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 45</li>
+								<li class="karma" style="margin-top:15px">Karma: 4</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_237">
+										<a href="../msg237/index.html#msg237" rel="nofollow">Re: Targeting option</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 16, 2012, 10:07:57 am" style="cursor:default">Mid-July, 2012</span></div>
+									<div id="msg_237_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_237">To clarify any possible confusion, it doesn&#039;t do anything but locate a specific player.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_237">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_237_signature">If it doesn&#39;t work, whack it. If whacking it doesn&#39;t work, whack it again.</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg238"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_238_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_238">
+										<a href="../msg238/index.html#msg238" rel="nofollow">Re: Targeting option</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 16, 2012, 11:18:00 am" style="cursor:default">Mid-July, 2012</span></div>
+									<div id="msg_238_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_238"><div class="quoteheader"><div class="topslice_quote"><a href="../msg237/index.html#msg237">Quote from: Yoshi on <span title=" 16, 2012, 10:07:57 am" style="cursor:default">Mid-July, 2012</span></a></div></div><blockquote class="bbc_standard_quote">To clarify any possible confusion, it doesn&#039;t do anything but locate a specific player.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>i completely agree with ur idea. BUT... i would like it to be different than at a battle summary. i think it should be &quot;tab&quot; button. that way, u can also switch targets!</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_238">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_238_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg239"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/Nattyfrank/index.html" title="View the profile of Nattyfrank">Nattyfrank</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_239_extra_info">
+								<li class="title" style="display:none">Sir</li>
+								<li class="membergroup">Global Moderator</li>
+								<li class="postgroup" style="display:none">Full Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /></li>
+								<li class="postcount">Posts: 245</li>
+								<li class="karma" style="margin-top:15px">Karma: 33</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_239">
+										<a href="../msg239/index.html#msg239" rel="nofollow">Re: Targeting option</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 16, 2012, 11:44:55 am" style="cursor:default">Mid-July, 2012</span></div>
+									<div id="msg_239_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_239"><div class="quoteheader"><div class="topslice_quote"><a href="../msg238/index.html#msg238">Quote from: cremyjr on <span title=" 16, 2012, 11:18:00 am" style="cursor:default">Mid-July, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg237/index.html#msg237">Quote from: Yoshi on <span title=" 16, 2012, 10:07:57 am" style="cursor:default">Mid-July, 2012</span></a></div></div><blockquote class="bbc_alternate_quote">To clarify any possible confusion, it doesn&#039;t do anything but locate a specific player.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>i completely agree with ur idea. BUT... i would like it to be different than at a battle summary. i think it should be &quot;tab&quot; button. that way, u can also switch targets!<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br />The tab button currently brings up the battle summary.<br /><br />I like this idea, perhaps have the arrow of the target outlined in a neon yellow?</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_239">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_239_signature">Respectfully,<br />[Mod] Nattyfrank<br /><br />Please check out the forum rules, it makes everything sooo much nicer for all of us!&nbsp; <br /><br /><br /><a href="../../../announcements/global-forum-rules-and-etiquette/index.html" class="bbc_link" target="_blank">http://forum.carbontechsoftware.com/announcements/global-forum-rules-and-etiquette/</a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg240"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_240_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_240">
+										<a href="../msg240/index.html#msg240" rel="nofollow">Re: Targeting option</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 16, 2012, 01:26:55 pm" style="cursor:default">Mid-July, 2012</span></div>
+									<div id="msg_240_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_240"><div class="quoteheader"><div class="topslice_quote"><a href="../msg239/index.html#msg239">Quote from: Nattyfrank on <span title=" 16, 2012, 11:44:55 am" style="cursor:default">Mid-July, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg238/index.html#msg238">Quote from: cremyjr on <span title=" 16, 2012, 11:18:00 am" style="cursor:default">Mid-July, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg237/index.html#msg237">Quote from: Yoshi on <span title=" 16, 2012, 10:07:57 am" style="cursor:default">Mid-July, 2012</span></a></div></div><blockquote class="bbc_standard_quote">To clarify any possible confusion, it doesn&#039;t do anything but locate a specific player.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>i completely agree with ur idea. BUT... i would like it to be different than at a battle summary. i think it should be &quot;tab&quot; button. that way, u can also switch targets!<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br />The tab button currently brings up the battle summary.<br /><br />I like this idea, perhaps have the arrow of the target outlined in a neon yellow?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>ah yes!...hm... maybe &quot;t&quot;? for target? or &quot;f&quot; ?</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_240">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_240_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg241"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/Nattyfrank/index.html" title="View the profile of Nattyfrank">Nattyfrank</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_241_extra_info">
+								<li class="title" style="display:none">Sir</li>
+								<li class="membergroup">Global Moderator</li>
+								<li class="postgroup" style="display:none">Full Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /></li>
+								<li class="postcount">Posts: 245</li>
+								<li class="karma" style="margin-top:15px">Karma: 33</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_241">
+										<a href="../msg241/index.html#msg241" rel="nofollow">Re: Targeting option</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 16, 2012, 01:55:26 pm" style="cursor:default">Mid-July, 2012</span></div>
+									<div id="msg_241_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_241"><div class="quoteheader"><div class="topslice_quote"><a href="../msg240/index.html#msg240">Quote from: cremyjr on <span title=" 16, 2012, 01:26:55 pm" style="cursor:default">Mid-July, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg239/index.html#msg239">Quote from: Nattyfrank on <span title=" 16, 2012, 11:44:55 am" style="cursor:default">Mid-July, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg238/index.html#msg238">Quote from: cremyjr on <span title=" 16, 2012, 11:18:00 am" style="cursor:default">Mid-July, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg237/index.html#msg237">Quote from: Yoshi on <span title=" 16, 2012, 10:07:57 am" style="cursor:default">Mid-July, 2012</span></a></div></div><blockquote class="bbc_alternate_quote">To clarify any possible confusion, it doesn&#039;t do anything but locate a specific player.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>i completely agree with ur idea. BUT... i would like it to be different than at a battle summary. i think it should be &quot;tab&quot; button. that way, u can also switch targets!<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br />The tab button currently brings up the battle summary.<br /><br />I like this idea, perhaps have the arrow of the target outlined in a neon yellow?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>ah yes!...hm... maybe &quot;t&quot;? for target? or &quot;f&quot; ?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br />F is for flipping, activating/deactivating glider, AND is party of the full screen command.&nbsp; Triple duty...<br /></div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_241">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_241_signature">Respectfully,<br />[Mod] Nattyfrank<br /><br />Please check out the forum rules, it makes everything sooo much nicer for all of us!&nbsp; <br /><br /><br /><a href="../../../announcements/global-forum-rules-and-etiquette/index.html" class="bbc_link" target="_blank">http://forum.carbontechsoftware.com/announcements/global-forum-rules-and-etiquette/</a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg242"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/lagging/index.html" title="View the profile of lagging">lagging</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_242_extra_info">
+								<li class="postgroup" style="display:none">Jr. Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/lagging/index.html">
+										<img class="avatar" src="http://i150.photobucket.com/albums/s102/3_pinky_3/cat_gun_ani.gif" width="100" height="100" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 71</li>
+								<li class="karma" style="margin-top:15px">Karma: 16</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_242">
+										<a href="../msg242/index.html#msg242" rel="nofollow">Re: Targeting option</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 16, 2012, 02:40:13 pm" style="cursor:default">Mid-July, 2012</span></div>
+									<div id="msg_242_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_242"><div class="quoteheader"><div class="topslice_quote"><a href="../msg241/index.html#msg241">Quote from: Nattyfrank on <span title=" 16, 2012, 01:55:26 pm" style="cursor:default">Mid-July, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg240/index.html#msg240">Quote from: cremyjr on <span title=" 16, 2012, 01:26:55 pm" style="cursor:default">Mid-July, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg239/index.html#msg239">Quote from: Nattyfrank on <span title=" 16, 2012, 11:44:55 am" style="cursor:default">Mid-July, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg238/index.html#msg238">Quote from: cremyjr on <span title=" 16, 2012, 11:18:00 am" style="cursor:default">Mid-July, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg237/index.html#msg237">Quote from: Yoshi on <span title=" 16, 2012, 10:07:57 am" style="cursor:default">Mid-July, 2012</span></a></div></div><blockquote class="bbc_standard_quote">To clarify any possible confusion, it doesn&#039;t do anything but locate a specific player.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>i completely agree with ur idea. BUT... i would like it to be different than at a battle summary. i think it should be &quot;tab&quot; button. that way, u can also switch targets!<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br />The tab button currently brings up the battle summary.<br /><br />I like this idea, perhaps have the arrow of the target outlined in a neon yellow?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>ah yes!...hm... maybe &quot;t&quot;? for target? or &quot;f&quot; ?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br />F is for flipping, activating/deactivating glider, AND is party of the full screen command.&nbsp; Triple duty...<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>OT:F shoudl be revised. is in the way very often.<br /><br />IT:<br />I think a targetting/marking function coudl be introduced but should cost 500coins/use at least and last for whe whole game. it coudl even become a premium function(1 premium credit/use and it lasts for 24 hours?).<br />It shouldn&#039;t be cheap in use, to make sure it wouldn&#039;t be over utilised to gang on players .<br /><br />This kind of tool can backfire on the community creating rivalries with very strong feelings(i have experienced something similar with an item itnroduced in another game) so it shoudl be considered very carefully.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_242">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_242_signature">CC Rocks!</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg246"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_246_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_246">
+										<a href="../msg246/index.html#msg246" rel="nofollow">Re: Targeting option</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 16, 2012, 03:10:52 pm" style="cursor:default">Mid-July, 2012</span></div>
+									<div id="msg_246_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_246"><div class="quoteheader"><div class="topslice_quote"><a href="../msg241/index.html#msg241">Quote from: Nattyfrank on <span title=" 16, 2012, 01:55:26 pm" style="cursor:default">Mid-July, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg240/index.html#msg240">Quote from: cremyjr on <span title=" 16, 2012, 01:26:55 pm" style="cursor:default">Mid-July, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg239/index.html#msg239">Quote from: Nattyfrank on <span title=" 16, 2012, 11:44:55 am" style="cursor:default">Mid-July, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg238/index.html#msg238">Quote from: cremyjr on <span title=" 16, 2012, 11:18:00 am" style="cursor:default">Mid-July, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg237/index.html#msg237">Quote from: Yoshi on <span title=" 16, 2012, 10:07:57 am" style="cursor:default">Mid-July, 2012</span></a></div></div><blockquote class="bbc_standard_quote">To clarify any possible confusion, it doesn&#039;t do anything but locate a specific player.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>i completely agree with ur idea. BUT... i would like it to be different than at a battle summary. i think it should be &quot;tab&quot; button. that way, u can also switch targets!<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br />The tab button currently brings up the battle summary.<br /><br />I like this idea, perhaps have the arrow of the target outlined in a neon yellow?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>ah yes!...hm... maybe &quot;t&quot;? for target? or &quot;f&quot; ?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br />F is for flipping, activating/deactivating glider, AND is party of the full screen command.&nbsp; Triple duty...<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>ah yes! another problem is somtimes in a game, i will go fullscreen and have probs with my glider! i sugjest mabye a dif. key too! sooo.... &quot;t&quot;?</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_246">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_246_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg247"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/Yoshi/index.html" title="View the profile of Yoshi">Yoshi</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_247_extra_info">
+								<li class="postgroup" style="display:none">Newbie</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 45</li>
+								<li class="karma" style="margin-top:15px">Karma: 4</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_247">
+										<a href="../msg247/index.html#msg247" rel="nofollow">Re: Targeting option</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 16, 2012, 03:17:10 pm" style="cursor:default">Mid-July, 2012</span></div>
+									<div id="msg_247_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_247">It can&#039;t have it&#039;s own button, because that doesn&#039;t pick out a specific person. Also, by making it cost credits wouldn&#039;t do any good. It should probably just be some yellow outline around the arrow, which makes picking your target a bit easier.<br /><br /><br />It should be activated either by a button in the battle summary or a chat command.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_247">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_247_signature">If it doesn&#39;t work, whack it. If whacking it doesn&#39;t work, whack it again.</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg254"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/U2M/index.html" title="View the profile of U2M">U2M</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_254_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/U2M/index.html">
+										<img class="avatar" src="../../../avatar_24_1356310894-action=dlattach-attach=425-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 630</li>
+								<li class="karma" style="margin-top:15px">Karma: 32</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_254">
+										<a href="../msg254/index.html#msg254" rel="nofollow">Re: Targeting option</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 16, 2012, 07:54:43 pm" style="cursor:default">Mid-July, 2012</span></div>
+									<div id="msg_254_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_254"><br /><br /><br /><br />I completely agree with the point lagging had. No offence to you Martians, but I don&#039;t want CC to end up like the Mars clan wars. I KNOW we are not talking about clans, but their communtity Had a lot of problems... <br />&nbsp;<br />Honestly, i believe we need CT&#039;s opinion on the idea... it could help change and opinion or be used as support...</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_254">
+								<em>Last edited  <span title=" 16, 2012, 07:56:35 pm" style="cursor:default">Mid-July, 2012</span> by U2M</em>
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_254_signature">&quot;We are made wise not by the recollection of our past, but by the responsibility for our future.&quot;</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg255"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_255_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_255">
+										<a href="../msg255/index.html#msg255" rel="nofollow">Re: Targeting option</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 16, 2012, 08:14:35 pm" style="cursor:default">Mid-July, 2012</span></div>
+									<div id="msg_255_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_255"><div class="quoteheader"><div class="topslice_quote"><a href="../msg254/index.html#msg254">Quote from: U2M on <span title=" 16, 2012, 07:54:43 pm" style="cursor:default">Mid-July, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><br /><br /><br /><br />I completely agree with the point lagging had. No offence to you Martians, but I don&#039;t want CC to end up like the Mars clan wars. I KNOW we are not talking about clans, but their communtity Had a lot of problems... <br />&nbsp;<br />Honestly, i believe we need CT&#039;s opinion on the idea... it could help change and opinion or be used as support...<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>thanks. very great. i&#039;ll send him the link when he&#039;s online! also yoshi, why shouldnt it have its own button? idk any current button that would be good for it <img src="../../../Smileys/akyhne/tongue.gif" alt="&#58;P" title="Tongue" class="smiley" /></div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_255">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_255_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg263"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/Yoshi/index.html" title="View the profile of Yoshi">Yoshi</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_263_extra_info">
+								<li class="postgroup" style="display:none">Newbie</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 45</li>
+								<li class="karma" style="margin-top:15px">Karma: 4</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_263">
+										<a href="../msg263/index.html#msg263" rel="nofollow">Re: Targeting option</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 17, 2012, 08:26:18 am" style="cursor:default">Mid-July, 2012</span></div>
+									<div id="msg_263_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_263"><div class="quoteheader"><div class="topslice_quote"><a href="../msg255/index.html#msg255">Quote from: cremyjr on <span title=" 16, 2012, 08:14:35 pm" style="cursor:default">Mid-July, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg254/index.html#msg254">Quote from: U2M on <span title=" 16, 2012, 07:54:43 pm" style="cursor:default">Mid-July, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><br /><br /><br /><br />I completely agree with the point lagging had. No offence to you Martians, but I don&#039;t want CC to end up like the Mars clan wars. I KNOW we are not talking about clans, but their communtity Had a lot of problems... <br />&nbsp;<br />Honestly, i believe we need CT&#039;s opinion on the idea... it could help change and opinion or be used as support...<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>thanks. very great. i&#039;ll send him the link when he&#039;s online! also yoshi, why shouldnt it have its own button? idk any current button that would be good for it <img src="../../../Smileys/akyhne/tongue.gif" alt="&#58;P" title="Tongue" class="smiley" /> <br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />&quot;<span style="font-family: Trebuchet MS;" class="bbc_font"><span style="font-size: 14px;" class="bbc_size">It can&#039;t have it&#039;s own button, because that doesn&#039;t pick out a specific person.&quot;</span></span></div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_263">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_263_signature">If it doesn&#39;t work, whack it. If whacking it doesn&#39;t work, whack it again.</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg270"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_270_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_270">
+										<a href="../msg270/index.html#msg270" rel="nofollow">Re: Targeting option</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 17, 2012, 11:01:19 am" style="cursor:default">Mid-July, 2012</span></div>
+									<div id="msg_270_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_270"><div class="quoteheader"><div class="topslice_quote"><a href="../msg263/index.html#msg263">Quote from: Yoshi on <span title=" 17, 2012, 08:26:18 am" style="cursor:default">Mid-July, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg255/index.html#msg255">Quote from: cremyjr on <span title=" 16, 2012, 08:14:35 pm" style="cursor:default">Mid-July, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg254/index.html#msg254">Quote from: U2M on <span title=" 16, 2012, 07:54:43 pm" style="cursor:default">Mid-July, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><br /><br /><br /><br />I completely agree with the point lagging had. No offence to you Martians, but I don&#039;t want CC to end up like the Mars clan wars. I KNOW we are not talking about clans, but their communtity Had a lot of problems... <br />&nbsp;<br />Honestly, i believe we need CT&#039;s opinion on the idea... it could help change and opinion or be used as support...<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>thanks. very great. i&#039;ll send him the link when he&#039;s online! also yoshi, why shouldnt it have its own button? idk any current button that would be good for it <img src="../../../Smileys/akyhne/tongue.gif" alt="&#58;P" title="Tongue" class="smiley" /> <br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />&quot;<span style="font-family: trebuchet ms;" class="bbc_font"><span style="font-size: 14px;" class="bbc_size">It can&#039;t have it&#039;s own button, because that doesn&#039;t pick out a specific person.&quot;</span></span><br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>huh? whoa there. im not picking it out for me. im saying it should be a close button. in close combat when you need to switch target, u wont have time to pull up a battle summary or somthing and switch. u need somthing close to your fingers.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_270">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_270_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg271"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/Yoshi/index.html" title="View the profile of Yoshi">Yoshi</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_271_extra_info">
+								<li class="postgroup" style="display:none">Newbie</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 45</li>
+								<li class="karma" style="margin-top:15px">Karma: 4</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_271">
+										<a href="../msg271/index.html#msg271" rel="nofollow">Re: Targeting option</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 17, 2012, 12:16:04 pm" style="cursor:default">Mid-July, 2012</span></div>
+									<div id="msg_271_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_271"><div class="quoteheader"><div class="topslice_quote"><a href="../msg270/index.html#msg270">Quote from: cremyjr on <span title=" 17, 2012, 11:01:19 am" style="cursor:default">Mid-July, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg263/index.html#msg263">Quote from: Yoshi on <span title=" 17, 2012, 08:26:18 am" style="cursor:default">Mid-July, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg255/index.html#msg255">Quote from: cremyjr on <span title=" 16, 2012, 08:14:35 pm" style="cursor:default">Mid-July, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg254/index.html#msg254">Quote from: U2M on <span title=" 16, 2012, 07:54:43 pm" style="cursor:default">Mid-July, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><br /><br /><br /><br />I completely agree with the point lagging had. No offence to you Martians, but I don&#039;t want CC to end up like the Mars clan wars. I KNOW we are not talking about clans, but their communtity Had a lot of problems... <br />&nbsp;<br />Honestly, i believe we need CT&#039;s opinion on the idea... it could help change and opinion or be used as support...<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>thanks. very great. i&#039;ll send him the link when he&#039;s online! also yoshi, why shouldnt it have its own button? idk any current button that would be good for it <img src="../../../Smileys/akyhne/tongue.gif" alt="&#58;P" title="Tongue" class="smiley" /> <br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />&quot;<span style="font-family: trebuchet ms;" class="bbc_font"><span style="font-size: 14px;" class="bbc_size">It can&#039;t have it&#039;s own button, because that doesn&#039;t pick out a specific person.&quot;</span></span><br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>huh? whoa there. im not picking it out for me. im saying it should be a close button. in close combat when you need to switch target, u wont have time to pull up a battle summary or somthing and switch. u need somthing close to your fingers.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />A button cannot choose a specific target. A button cannot choose a specific target. A button cannot choose a specific target.<br /><br /><br />This isn&#039;t a combat aid. It is used to locate 1 specific player. Whether you want to shoot at or avoid that player, it is used to locate them. Not to make you shoot at it. You can still shoot at everyone you want. In close combat, it&#039;s spray and pray. But on a large map, someone who you consider a threat or fun to shoot can easily get lost, so you want to know where they are at all times. Changing targets repeatedly defeats the purpose.<br /><br /><br />Let&#039;s say I&#039;m in a game with Lagging and some newb. Even if the newb approaches me to take the flag, I still leave it targeted at lagging so I can deal with the newb and always know where lagging is. NOTE: YOU CAN STILL KILL OTHERS. YOU DON&#039;T NEED TO CHANGE TARGETS JUST TO KILL SOMEONE ELSE.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_271">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_271_signature">If it doesn&#39;t work, whack it. If whacking it doesn&#39;t work, whack it again.</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg272"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/speeddemon/index.html" title="View the profile of speeddemon">speeddemon</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_272_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/speeddemon/index.html">
+										<img class="avatar" src="http://blog.flashissue.com/wp-content/uploads/2012/04/speeddemon.png" width="100" height="100" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 654</li>
+								<li class="karma" style="margin-top:15px">Karma: 31</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_272">
+										<a href="../msg272/index.html#msg272" rel="nofollow">Re: Targeting option</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 17, 2012, 12:22:47 pm" style="cursor:default">Mid-July, 2012</span></div>
+									<div id="msg_272_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_272">I think the buttons should be q and e, they would cycle targets in alphabetical, game position(1st,2nd) or rank(xp)+ It shouldn&#039;t be something you can buy because all the higher level players can afford it but the lower level players can&#039;t and this would decrease the fairness of lower to higher level fights, maybe it can be a default thing but in the store you can upgrade its range.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_272">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg274"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_274_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_274">
+										<a href="../msg274/index.html#msg274" rel="nofollow">Re: Targeting option</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 17, 2012, 01:30:39 pm" style="cursor:default">Mid-July, 2012</span></div>
+									<div id="msg_274_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_274"><div class="quoteheader"><div class="topslice_quote"><a href="../msg271/index.html#msg271">Quote from: Yoshi on <span title=" 17, 2012, 12:16:04 pm" style="cursor:default">Mid-July, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg270/index.html#msg270">Quote from: cremyjr on <span title=" 17, 2012, 11:01:19 am" style="cursor:default">Mid-July, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg263/index.html#msg263">Quote from: Yoshi on <span title=" 17, 2012, 08:26:18 am" style="cursor:default">Mid-July, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg255/index.html#msg255">Quote from: cremyjr on <span title=" 16, 2012, 08:14:35 pm" style="cursor:default">Mid-July, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg254/index.html#msg254">Quote from: U2M on <span title=" 16, 2012, 07:54:43 pm" style="cursor:default">Mid-July, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><br /><br /><br /><br />I completely agree with the point lagging had. No offence to you Martians, but I don&#039;t want CC to end up like the Mars clan wars. I KNOW we are not talking about clans, but their communtity Had a lot of problems... <br />&nbsp;<br />Honestly, i believe we need CT&#039;s opinion on the idea... it could help change and opinion or be used as support...<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>thanks. very great. i&#039;ll send him the link when he&#039;s online! also yoshi, why shouldnt it have its own button? idk any current button that would be good for it <img src="../../../Smileys/akyhne/tongue.gif" alt="&#58;P" title="Tongue" class="smiley" /> <br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />&quot;<span style="font-family: trebuchet ms;" class="bbc_font"><span style="font-size: 14px;" class="bbc_size">It can&#039;t have it&#039;s own button, because that doesn&#039;t pick out a specific person.&quot;</span></span><br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>huh? whoa there. im not picking it out for me. im saying it should be a close button. in close combat when you need to switch target, u wont have time to pull up a battle summary or somthing and switch. u need somthing close to your fingers.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />A button cannot choose a specific target. A button cannot choose a specific target. A button cannot choose a specific target.<br /><br /><br />This isn&#039;t a combat aid. It is used to locate 1 specific player. Whether you want to shoot at or avoid that player, it is used to locate them. Not to make you shoot at it. You can still shoot at everyone you want. In close combat, it&#039;s spray and pray. But on a large map, someone who you consider a threat or fun to shoot can easily get lost, so you want to know where they are at all times. Changing targets repeatedly defeats the purpose.<br /><br /><br />Let&#039;s say I&#039;m in a game with Lagging and some newb. Even if the newb approaches me to take the flag, I still leave it targeted at lagging so I can deal with the newb and always know where lagging is. NOTE: YOU CAN STILL KILL OTHERS. YOU DON&#039;T NEED TO CHANGE TARGETS JUST TO KILL SOMEONE ELSE.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>im not saying that. ok look.. i know wut u mean but, its not cool to just target one person. if im with lagging and a newb like u, i can dealwith the newb but lagging becomes idle. so he&#039;s not a threat anymore, so i switch targets to keep my focus on the newb.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_274">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_274_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg313"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/lagging/index.html" title="View the profile of lagging">lagging</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_313_extra_info">
+								<li class="postgroup" style="display:none">Jr. Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/lagging/index.html">
+										<img class="avatar" src="http://i150.photobucket.com/albums/s102/3_pinky_3/cat_gun_ani.gif" width="100" height="100" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 71</li>
+								<li class="karma" style="margin-top:15px">Karma: 16</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_313">
+										<a href="../msg313/index.html#msg313" rel="nofollow">Re: Targeting option</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 18, 2012, 04:58:07 am" style="cursor:default">Mid-July, 2012</span></div>
+									<div id="msg_313_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_313">guys, i have the feeling you are overcomplicating things, for what concearns practicalities. <br />&nbsp;<br />&nbsp;A button could be assigned, and it would mark the car at which you have your crosshair pointed. <br />&nbsp;<br />&nbsp;I keep thinking this should be a &#039;paid service&#039; to make it used less often. <br />&nbsp;I dislike not the use in an ideal world, but the use that i expect most players would make of it, in the same way as many rage quit and seek for vengeance or affirmation all of the time. <br />&nbsp;Also, if you have a sworn enemy, atm he&#039;s in exactly your same situation, he sees everyone on the map -including&nbsp; you- in the same way on his screen. The marking you guys are proposing would change this for the worse. <br />&nbsp;<br />&nbsp;I don&#039;t like the idea, as it draws on the worse side of competing, it can etremise rivalries and generally make the game less fun and more nasty. <br />&nbsp;I&#039;m only one voice from the community tho</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_313">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_313_signature">CC Rocks!</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg6626"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_6626_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_6626">
+										<a href="../msg6626/index.html#msg6626" rel="nofollow">Re: Targeting option</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 29, 2013, 04:40:27 pm" style="cursor:default">Late August, 2013</span></div>
+									<div id="msg_6626_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_6626">*BUMP!* Lols, agreed lagging (even though you&#039;ll prob. never see this post. Where&#039;d yah&#039; go buddy? :C )<br />1. I think you *should* pay for it.<br />2. I think there should be an &quot;action&quot; button. F would be for going fullscreen (I&#039;m tired of it messing with the glider), maybe E? (I haven&#039;t played in a while so Idk if it&#039;s being used.). Something other than M (that&#039;s for items)<br />3. I noticed nobody asked an important question. How will this work in battle. It&#039;ll be OP to just press a button and be told where your enemy is. I think when you press whatever button/command to target, it should only be when you have them in your sights. And it will only target them for a while (only if they leave). Also, would it be too much if the target you have is displayed to all your teammates?</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_6626">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_6626_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				</form>
+			</div>
+			<a id="lastPost"></a>
+			<div class="pagesection">
+				
+				<div class="pagelinks floatleft"><span style="margin-right:20px;color:#747474">Page 1 of 1</span><span class="selectedPage">1</span> </div>
+				<div class="nextlinks_bottom"><a href="../index-prev_next=prev.html#new">&laquo; previous</a> <a href="../index-prev_next=next.html#new">next &raquo;</a></div>
+			</div>
+			<div id="moderationbuttons"></div>
+			<div class="plainbox" id="display_jump_to">&nbsp;</div>
+		<br class="clear" />
+			<form action="http://forum.carbontechsoftware.com/spellcheck/" method="post" accept-charset="UTF-8" name="spell_form" id="spell_form" target="spellWindow"><input type="hidden" name="spellstring" value="" /></form>
+				<script type="text/javascript" src="../../../Themes/default/scripts/spellcheck.js"></script>
+				<script type="text/javascript" src="../../../Themes/default/scripts/topic.js"></script>
+				<script type="text/javascript"><!-- // --><![CDATA[
+					if ('XMLHttpRequest' in window)
+					{
+						var oQuickModify = new QuickModify({
+							sScriptUrl: smf_scripturl,
+							bShowModify: true,
+							iTopicId: 38,
+							sTemplateBodyEdit: '\n\t\t\t\t\t\t\t\t<div id="quick_edit_body_container" style="width: 90%">\n\t\t\t\t\t\t\t\t\t<div id="error_box" style="padding: 4px;" class="error"><' + '/div>\n\t\t\t\t\t\t\t\t\t<textarea class="editor" name="message" rows="12" style="width: 100%; margin-bottom: 10px;" tabindex="1">%body%<' + '/textarea><br />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="f432f3090a" value="477e586f5a9953a0dd3608a1ea7e9270" />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="topic" value="38" />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="msg" value="%msg_id%" />\n\t\t\t\t\t\t\t\t\t<div class="righttext">\n\t\t\t\t\t\t\t\t\t\t<input type="submit" name="post" value="Save" tabindex="2" onclick="return oQuickModify.modifySave(\'477e586f5a9953a0dd3608a1ea7e9270\', \'f432f3090a\');" accesskey="s" class="button_submit" />&nbsp;&nbsp;<input type="button" value="Spell Check (popups must be enabled)" tabindex="3" onclick="oEditorHandle_message.spellCheckStart();" class="button_submit" />&nbsp;&nbsp;<input type="submit" name="cancel" value="Cancel" tabindex="4" onclick="return oQuickModify.modifyCancel();" class="button_submit" />\n\t\t\t\t\t\t\t\t\t<' + '/div>\n\t\t\t\t\t\t\t\t<' + '/div>',
+							sTemplateSubjectEdit: '<input type="text" style="width: 90%;" name="subject" value="%subject%" size="80" maxlength="80" tabindex="5" class="input_text" />',
+							sTemplateBodyNormal: '%body%',
+							sTemplateSubjectNormal: '<a hr'+'ef="http://forum.carbontechsoftware.com/index.php'+'?topic=38.msg%msg_id%#msg%msg_id%" rel="nofollow">%subject%<' + '/a>',
+							sTemplateTopSubject: 'Topic: %subject% &nbsp;(Read 1752 times)',
+							sErrorBorderStyle: '1px solid red'
+						});
+
+						aJumpTo[aJumpTo.length] = new JumpTo({
+							sContainerId: "display_jump_to",
+							sJumpToTemplate: "<label class=\"smalltext\" for=\"%select_id%\">Jump to:<" + "/label> %dropdown_list%",
+							iCurBoardId: 3,
+							iCurBoardChildLevel: 0,
+							sCurBoardName: "Feedback &amp; Ideas",
+							sBoardChildLevelIndicator: "==",
+							sBoardPrefix: "=> ",
+							sCatSeparator: "-----------------------------",
+							sCatPrefix: "",
+							sGoButtonLabel: "go"
+						});
+
+						aIconLists[aIconLists.length] = new IconList({
+							sBackReference: "aIconLists[" + aIconLists.length + "]",
+							sIconIdPrefix: "msg_icon_",
+							sScriptUrl: smf_scripturl,
+							bShowModify: true,
+							iBoardId: 3,
+							iTopicId: 38,
+							sSessionId: "477e586f5a9953a0dd3608a1ea7e9270",
+							sSessionVar: "f432f3090a",
+							sLabelIconList: "Message icon",
+							sBoxBackground: "transparent",
+							sBoxBackgroundHover: "#ffffff",
+							iBoxBorderWidthHover: 1,
+							sBoxBorderColorHover: "#adadad" ,
+							sContainerBackground: "#ffffff",
+							sContainerBorder: "1px solid #adadad",
+							sItemBorder: "1px solid #ffffff",
+							sItemBorderHover: "1px dotted gray",
+							sItemBackground: "transparent",
+							sItemBackgroundHover: "#e0e0f0"
+						});
+					}
+				// ]]></script>
+		<form name="spell_form" id="spell_form" method="post" accept-charset="UTF-8" target="spellWindow" action="http://forum.carbontechsoftware.com/spellcheck/">
+			<input type="hidden" name="spellstring" value="" />
+		</form>
+			<script type="text/javascript"><!-- // --><![CDATA[
+				var verificationpostHandle = new smfCaptcha("http://forum.carbontechsoftware.com/index.php?action=verificationcode;vid=post;rand=43962345163cc6fc50a510d512f625ec", "post", 1);
+			// ]]></script>
+	</div>
+	</div></div>
+	<div id="footersection"><div style="width: 985px;margin: auto;">
+			<span class="floatright"><a href="http://www.simplemachines.org/">© Simple Machines (SMF 2.0.2)</a> - Forum designed by CarbonTech & <a href="http://www.blocweb.net">Bloc</a>
+			</span></div>
+	</div></div></div><script type="text/javascript">
+var sc_project=6755287; 
+var sc_invisible=1; 
+var sc_security="c689b4fd"; 
+</script>
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script>
+<noscript><div class="statcounter"><a title="tumblr page
+counter" href="http://statcounter.com/tumblr/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/6755287/0/c689b4fd/1/"
+alt="tumblr page counter"></a></div></noscript>
+</body></html>

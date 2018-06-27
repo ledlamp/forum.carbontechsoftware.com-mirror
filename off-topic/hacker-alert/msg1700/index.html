@@ -1,0 +1,1247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<link rel="stylesheet" type="text/css" href="../../../Themes/carbonate202b/css/index-fin20.css" />
+	<link rel="stylesheet" type="text/css" href="../../../Themes/carbonate202b/css/index_carbon-fin20.css" />
+	<script type="text/javascript" src="../../../Themes/default/scripts/script-fin20.js"></script>
+	<script type="text/javascript" src="../../../Themes/carbonate202b/scripts/theme-fin20.js"></script>
+	<script type="text/javascript"><!-- // --><![CDATA[
+		var smf_theme_url = "http://forum.carbontechsoftware.com/Themes/carbonate202b";
+		var smf_default_theme_url = "http://forum.carbontechsoftware.com/Themes/default";
+		var smf_images_url = "http://forum.carbontechsoftware.com/Themes/carbonate202b/images";
+		var smf_scripturl = "http://forum.carbontechsoftware.com/index.php";
+		var smf_iso_case_folding = false;
+		var smf_charset = "UTF-8";
+		var ajax_notification_text = "Loading...";
+		var ajax_notification_cancel_text = "Cancel";
+	// ]]></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="description" content="HACKER ALERT" />
+	<title>HACKER ALERT</title><link rel="shortcut icon" type="image/x-icon" href="http://lh3.googleusercontent.com/-GOPf21qQXSY/TzawG0qVPlI/AAAAAAAAAoA/-VQrE780LzQ/s16/CCLogoRound.png" /><link rel="icon" href="http://lh3.googleusercontent.com/-GOPf21qQXSY/TzawG0qVPlI/AAAAAAAAAoA/-VQrE780LzQ/s16/CCLogoRound.png" type="image/x-icon" />
+	<meta name="robots" content="noindex" />
+	<link rel="canonical" href="../index.html" />
+	<link rel="help" href="../../../help/index.html" />
+	<link rel="search" href="../../../search/index.html" />
+	<link rel="contents" href="../../../index.php.html" />
+	<link rel="alternate" type="application/rss+xml" title="Carbon Combat - RSS" href="../../../.xml/index-type=rss.html" />
+	<link rel="prev" href="../index-prev_next=prev.html" />
+	<link rel="next" href="../index-prev_next=next.html" />
+	<link rel="index" href="../../index.html" /><!-- nCode Image Resizer -->
+	<script type="text/javascript" src="../../../Themes/default/ncode_imageresizer.js"></script>
+	<script language="JavaScript" type="text/javascript"><!-- // -->
+	NcodeImageResizer.BBURL = "http://forum.carbontechsoftware.com/Themes/carbonate202b/images";
+	NcodeImageResizer.MODE = "enlarge";
+	NcodeImageResizer.MAXWIDTH = "720";
+	NcodeImageResizer.MAXHEIGHT = "400";
+	vbphrase = new Array();
+	vbphrase['ncode_imageresizer_warning_small'] = 'Click this bar to view the full image.';
+	vbphrase['ncode_imageresizer_warning_filesize'] = 'This image has been resized. Click this bar to view the full image. The original image is sized %1$sx%2$s and weighs %3$sKB.';
+	vbphrase['ncode_imageresizer_warning_no_filesize'] = 'This image has been resized. Click this bar to view the full image. The original image is sized %1$sx%2$s.';
+	vbphrase['ncode_imageresizer_warning_fullsize'] = 'Click this bar to view the small image.';
+	// ]]></script>
+	<link rel="stylesheet" type="text/css" id="editor_css" href="../../../Themes/default/css/editor.css" />
+		<script type="text/javascript"><!-- // --><![CDATA[
+			var smf_smileys_url = 'http://forum.carbontechsoftware.com/Smileys/akyhne';
+			var oEditorStrings= {
+				wont_work: 'Your browser does not support Rich Text editing.',
+				func_disabled: 'Your browser does not support this function.',
+				prompt_text_email: 'Please enter the email address.',
+				prompt_text_ftp: 'Please enter the ftp address.',
+				prompt_text_url: 'Please enter the URL you wish to link to.',
+				prompt_text_img: 'Enter image location'
+			}
+		// ]]></script>
+		<script type="text/javascript" src="../../../Themes/default/scripts/editor-fin20.js"></script>
+		<script type="text/javascript" src="../../../Themes/default/scripts/spellcheck.js"></script>
+		<script type="text/javascript"><!-- // --><![CDATA[
+		function spellCheckDone()
+		{
+			for (i = 0; i < smf_editorArray.length; i++)
+				setTimeout("smf_editorArray[" + i + "].spellCheckEnd()", 150);
+		}
+		// ]]></script>
+		<script type="text/javascript" src="../../../Themes/default/scripts/captcha.js"></script>
+	<style type="text/css">#main_menu,
+		#admin_menu
+		{
+			width: 985px
+		}
+	</style>
+	
+	
+	<script language="javascript" type="text/javascript">
+	<!--
+	
+	// MOD Title: Simple Image Upload
+	// MOD Author: Sium < admin@postimage.org > (N/A) http://www.postimage.org/
+	// MOD Version: 1.3.0
+	
+	var postimage_lang="english";
+	var postimage_add_text="Upload and insert an image";
+	var postimage_textarea_ignore_name=/username_list|search/i;
+	
+	function imgFunction() {
+		alert("After uploading you can...\n\n• Drag & drop the image into the post editor\n• Copy the direct link & add an image\n• Copy & paste the HTML code\n• Copy & paste the BBCode");
+	}
+	
+	function postimage_insert()
+	{
+		var postimage_area=document.getElementsByTagName("TEXTAREA");
+
+		for(var postimage_i=0;postimage_i<postimage_area.length;postimage_i++)
+		{
+			if(!postimage_area[postimage_i].name.match(postimage_textarea_ignore_name))
+			{
+				var postimage_new_div=document.createElement("div");
+				postimage_new_div.id = "smileyBox_message";
+				postimage_new_div.style.marginBottom = "5px";
+				postimage_new_div.style.display = "block";
+				postimage_new_div.innerHTML="<a href=\"javascript:void(0);\" onclick=\"imgFunction();imgWindow=window.open('http://imgur.com/?noFlash', 'imgWindow', 'resizable=no,width=1015,height=550,scrollbars=no');\"><b>>> "+postimage_add_text+"</b></a>";
+				postimage_area[postimage_i].parentNode.insertBefore(postimage_new_div,postimage_area[postimage_i]);
+			}
+		}
+	}
+	
+	window.onload=postimage_insert;
+	//-->
+	</script>
+	
+	
+	
+</head>
+<body>
+<div id="wrapper"><div id="headerlogo"></div>
+	<div id="subheader"><div style="width: 985px; margin:auto;background-color:#000">
+	<div id="uppertop">
+		<div class="middletext" style="float:right;height:auto;line-height:16px">Twenty past 8:00 pm, June 16th, 2015</div>
+		<script type="text/javascript" src="../../../Themes/default/scripts/sha1.js"></script>
+		<form id="guest_form" action="http://forum.carbontechsoftware.com/login2/" method="post" accept-charset="UTF-8"  onsubmit="hashLoginPassword(this, '477e586f5a9953a0dd3608a1ea7e9270');">
+			Welcome, <strong>Guest</strong>. Please <a href="../../../login/index.html">login</a> or <a href="../../../register/index.html">register</a>.&nbsp;
+	</div>
+	<div id="top_section" style="clear: both;">
+		<div id="main_menu">
+			<div class="menuback">
+			<div class="menuback2">
+			<ul class="dropmenu" id="menu_nav">
+				<li id="button_home" class="toplevel">
+					<a class="active firstlevel" href="../../../index.php.html">
+						<span class="last firstlevel">Home</span>
+					</a>
+				</li>
+				<li id="button_search" class="toplevel">
+					<a class="firstlevel" href="../../../search/index.html">
+						<span class="firstlevel">Search</span>
+					</a>
+					<ul>
+						<li>
+							<a href="../../../search/index.html">
+								<span>Search Forum Topics</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li id="button_login" class="toplevel">
+					<a class="firstlevel" href="../../../login/index.html">
+						<span class="firstlevel">Login</span>
+					</a>
+				</li>
+				<li id="button_register" class="toplevel">
+					<a class="firstlevel" href="../../../register/index.html">
+						<span class="firstlevel">Register</span>
+					</a>
+				</li>
+				<li id="button_chat" class="toplevel">
+					<a class="firstlevel" href="javascript:void(0)"onclick="window.open('/chatRoom.html','POPUP','width=700,height=720,location=0,menubar=0,toolbar=0,scrollbars=0,status=0,');">
+						<span class="firstlevel">Chat</span>
+					</a>
+				</li>
+				<li id="button_play" class="toplevel">
+					<a class="firstlevel" href="http://play.carbontechsoftware.com/"target="_blank');">
+						<span class="last firstlevel"><div style="color:#FFEFAE">Play</div></span>
+					</a>
+				</li>
+			</ul>
+			</div>
+			</div>
+		</div><script src="../../../adjustMenubar.js"></script>
+		<br class="clear" />
+		</div>
+	</div></div>
+	<div id="mainsection"><div style="width: 985px;margin: auto;margin-bottom:0;padding:15px 0">
+		<div id="innermain">	
+	<div class="navigate_section">
+		<ul>
+			<li>
+				<a href="../../../index.php.html"><span>Carbon Combat</span></a> &#187;
+			</li>
+			<li>
+				<a href="../../../index.php.html#c1"><span>General</span></a> &#187;
+			</li>
+			<li>
+				<a href="../../index.html"><span>Off Topic</span></a> &#187;
+			</li>
+			<li class="last">
+				<a href="../index.html"><span>HACKER ALERT</span></a>
+			</li>
+		</ul>
+	</div>
+			<a id="top"></a>
+			<a id="msg1669"></a>
+			<div id="poll">
+				<div class="cat_bar">
+					<h3 class="catbg">
+						<span class="ie6_header floatleft"><img src="../../../Themes/carbonate202b/images/topic/normal_poll.gif.png" alt="" class="icon" /> Poll</span>
+					</h3>
+				</div>
+				<div class="windowbg">
+					<span class="topslice"><span></span></span>
+					<div class="content" id="poll_options">
+						<h4 id="pollquestion">
+							Did all your prem creds just disappear?
+						</h4>
+					<dl class="options">
+						<dt class="middletext">Yes <img src="../../../Smileys/akyhne/sad.gif" alt="&#58;&#40;" title="Sad" class="smiley" /></dt>
+						<dd class="middletext statsbar">
+						</dd>
+						<dt class="middletext">nope <img src="../../../Smileys/akyhne/wink.gif" alt=";&#41;" title="Wink" class="smiley" /></dt>
+						<dd class="middletext statsbar">
+						</dd>
+						<dt class="middletext">Never had any</dt>
+						<dd class="middletext statsbar">
+						</dd>
+					</dl>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+			</div>
+			<div id="pollmoderation">
+			</div>
+			<div class="pagesection">
+				<div class="nextlinks"><a href="../index-prev_next=prev.html#new">&laquo; previous</a> <a href="../index-prev_next=next.html#new">next &raquo;</a></div>
+				<div class="pagelinks floatleft"><span style="margin-right:20px;color:#747474">Page 1 of 2</span><span class="selectedPage">1</span> <span class="nonselectedPage"><a class="navPages" href="../20/index.html">2</a> </span><span class="nonselectedPage"><a class="navPages" href="../20/index.html">>></a> </span></div>
+			</div>
+			<div id="forumposts">
+				<div class="cat_bar">
+					<h3 class="catbg">
+						<img src="../../../Themes/carbonate202b/images/topic/hot_post.gif.png" align="bottom" alt="" />
+						<span id="author">Author</span>
+						Topic: HACKER ALERT &nbsp;(Read 2361 times)
+					</h3>
+				</div>
+				<form action="http://forum.carbontechsoftware.com/off-topic/hacker-alert/?action=quickmod2" method="post" accept-charset="UTF-8" name="quickModForm" id="quickModForm" style="margin: 0;" onsubmit="return oQuickModify.bInEditMode ? oQuickModify.modifySave('477e586f5a9953a0dd3608a1ea7e9270', 'f432f3090a') : false">
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/monthygreg/index.html" title="View the profile of monthygreg">monthygreg</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_1669_extra_info">
+								<li class="postgroup" style="display:none">Sr. Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/monthygreg/index.html">
+										<img class="avatar" src="../../../avatar_11_1352158351-action=dlattach-attach=264-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 265</li>
+								<li class="karma" style="margin-top:15px">Karma: 12</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_1669">
+										<a href="../msg1669/index.html#msg1669" rel="nofollow">HACKER ALERT</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 08, 2012, 10:11:13 am" style="cursor:default">Early September, 2012</span></div>
+									<div id="msg_1669_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1669">A PLAYER HAS HACKED MY ACCOUNT AND HAS TOOK ALL MY PREM CREDS!!!<br /><br /><br />I used to have 2500 prem creds, now i have none!!!<br /><br /><br />I have no clue what is going on...<br /><br /><br />I have also lost 5k in regular creds.<br /><br /><br />Who is behind all of this!?!</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_1669">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_1669_signature">Sincerely, Mod of nothing&nbsp; Monthygreg<br /><br />Have a nice day!</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg1671"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_1671_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_1671">
+										<a href="../msg1671/index.html#msg1671" rel="nofollow">Re: HACKER ALERT</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 08, 2012, 10:16:18 am" style="cursor:default">Early September, 2012</span></div>
+									<div id="msg_1671_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1671"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1669/index.html#msg1669">Quote from: monthygreg on <span title=" 08, 2012, 10:11:13 am" style="cursor:default">Early September, 2012</span></a></div></div><blockquote class="bbc_standard_quote">A PLAYER HAS HACKED MY ACCOUNT AND HAS TOOK ALL MY PREM CREDS!!!<br /><br /><br />I used to have 2500 prem creds, now i have none!!!<br /><br /><br />I have no clue what is going on...<br /><br /><br />I have also lost 5k in regular creds.<br /><br /><br />Who is behind all of this!?!<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>..... this hacker shiz is getting out of hand -___- im gonna check my acount now. i swear if they so much as took one of my creds....<br />EDIT: YOO WTF?! all my prem creds are gone too! i also lost a few thousand creds! if i find out who did this.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_1671">
+								<em>Last edited  <span title=" 08, 2012, 10:18:23 am" style="cursor:default">Early September, 2012</span> by cremyjr</em>
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_1671_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg1672"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_1672_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/clip.gif" alt="" />
+									</div>
+									<h5 id="subject_1672">
+										<a href="../msg1672/index.html#msg1672" rel="nofollow">Re: HACKER ALERT</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 08, 2012, 10:26:19 am" style="cursor:default">Early September, 2012</span></div>
+									<div id="msg_1672_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1672">look, i ws checking the game lists right after. guess who i found. coincidence? i dont think so.</div>
+							</div>
+							<div id="msg_1672_footer" class="attachments smalltext">
+								<div style="overflow: auto;">
+										<a href="../index-action=dlattach-attach=142-image.html" id="link_142" onclick="return expandThumb(142);"><img src="../../../Untitled.jpg_thumb-action=dlattach-topic=146.0-attach=143-image.jpeg" alt="" id="thumb_142" /></a><br />
+										<a href="../index-action=dlattach-attach=142.html"><img src="../../../Themes/carbonate202b/images/icons/clip.gif" align="middle" alt="*" />&nbsp;Untitled.jpg</a> 
+										(150.74 kB, 1366x768 - viewed 231 times.)<br />
+								</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_1672">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_1672_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg1673"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/U2M/index.html" title="View the profile of U2M">U2M</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_1673_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/U2M/index.html">
+										<img class="avatar" src="../../../avatar_24_1356310894-action=dlattach-attach=425-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 630</li>
+								<li class="karma" style="margin-top:15px">Karma: 32</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_1673">
+										<a href="../msg1673/index.html#msg1673" rel="nofollow">Re: HACKER ALERT</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 08, 2012, 11:14:40 am" style="cursor:default">Early September, 2012</span></div>
+									<div id="msg_1673_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1673">Hmmm... I wonder if the hacker could have gotten my stuff... considering &quot;techicaly&quot; I don&#039;t exist, remember?</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_1673">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_1673_signature">&quot;We are made wise not by the recollection of our past, but by the responsibility for our future.&quot;</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg1678"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/BlazingBird/index.html" title="View the profile of BlazingBird">BlazingBird</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_1678_extra_info">
+								<li class="postgroup" style="display:none">Full Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/BlazingBird/index.html">
+										<img class="avatar" src="../../../avatar_68_1346524374-action=dlattach-attach=126-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 226</li>
+								<li class="karma" style="margin-top:15px">Karma: 10</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_1678">
+										<a href="../msg1678/index.html#msg1678" rel="nofollow">Re: HACKER ALERT</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 08, 2012, 12:10:35 pm" style="cursor:default">Early September, 2012</span></div>
+									<div id="msg_1678_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1678">Have you two made accounts on both Kongregate and CC website?</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_1678">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg1679"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/monthygreg/index.html" title="View the profile of monthygreg">monthygreg</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_1679_extra_info">
+								<li class="postgroup" style="display:none">Sr. Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/monthygreg/index.html">
+										<img class="avatar" src="../../../avatar_11_1352158351-action=dlattach-attach=264-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 265</li>
+								<li class="karma" style="margin-top:15px">Karma: 12</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_1679">
+										<a href="../msg1679/index.html#msg1679" rel="nofollow">Re: HACKER ALERT</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 08, 2012, 12:11:16 pm" style="cursor:default">Early September, 2012</span></div>
+									<div id="msg_1679_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1679">it might be CT,&nbsp; i like my prem creds at 2506 not 0.<br />If its not ct, i will get my friend to hack your computer so whenever you click your mouse your computer will shut down.<br />(he did it to me as a prank) and he is unabel to be hacked or any of that shiz.<br /><br /><br />EDIT: blazing, i can not take you serious with that pic <img src="../../../Smileys/akyhne/tongue.gif" alt="&#58;P" title="Tongue" class="smiley" /></div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_1679">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_1679_signature">Sincerely, Mod of nothing&nbsp; Monthygreg<br /><br />Have a nice day!</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg1681"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/BlazingBird/index.html" title="View the profile of BlazingBird">BlazingBird</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_1681_extra_info">
+								<li class="postgroup" style="display:none">Full Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/BlazingBird/index.html">
+										<img class="avatar" src="../../../avatar_68_1346524374-action=dlattach-attach=126-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 226</li>
+								<li class="karma" style="margin-top:15px">Karma: 10</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_1681">
+										<a href="../msg1681/index.html#msg1681" rel="nofollow">Re: HACKER ALERT</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 08, 2012, 12:23:22 pm" style="cursor:default">Early September, 2012</span></div>
+									<div id="msg_1681_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1681">CT wouldn&#039;t reduce people&#039;s premium credits - why would he? There is a known exploit that involves the two websites - have you registered on Kongregate and CC?<br /><em>[EDIT]: In response to Cremyjr&#039;s accusation of Hacker2, looking at his profile, I find it highly unlikely - although it has no data available on when he last logged in - glitch / exploit?</em></div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_1681">
+								<em>Last edited  <span title=" 08, 2012, 12:25:06 pm" style="cursor:default">Early September, 2012</span> by BlazingBird</em>
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg1682"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/TheCyberMan/index.html" title="View the profile of TheCyberMan">TheCyberMan</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_1682_extra_info">
+								<li class="membergroup">Global Moderator</li>
+								<li class="postgroup" style="display:none">Jr. Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /></li>
+								<li class="postcount">Posts: 91</li>
+								<li class="karma" style="margin-top:15px">Karma: 18</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_1682">
+										<a href="../msg1682/index.html#msg1682" rel="nofollow">Re: HACKER ALERT</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 08, 2012, 12:25:25 pm" style="cursor:default">Early September, 2012</span></div>
+									<div id="msg_1682_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1682">My premium credits vanished a long time ago.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_1682">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg1685"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/BlazingBird/index.html" title="View the profile of BlazingBird">BlazingBird</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_1685_extra_info">
+								<li class="postgroup" style="display:none">Full Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/BlazingBird/index.html">
+										<img class="avatar" src="../../../avatar_68_1346524374-action=dlattach-attach=126-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 226</li>
+								<li class="karma" style="margin-top:15px">Karma: 10</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_1685">
+										<a href="../msg1685/index.html#msg1685" rel="nofollow">Re: HACKER ALERT</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 08, 2012, 12:38:28 pm" style="cursor:default">Early September, 2012</span></div>
+									<div id="msg_1685_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1685"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1682/index.html#msg1682">Quote from: TheCyberMan on <span title=" 08, 2012, 12:25:25 pm" style="cursor:default">Early September, 2012</span></a></div></div><blockquote class="bbc_standard_quote">My premium credits vanished a long time ago.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>Since this exploit has been around for quite awhile, this would support my current theory. If any administrators or mods don&#039;t know what I&#039;m talking about, feel free to PM me.<br /><em>[EDIT]: Also, clean up the poll, having two answers that are the same can mess up how the results look on the bar chart. </em></div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_1685">
+								<em>Last edited  <span title=" 08, 2012, 12:43:49 pm" style="cursor:default">Early September, 2012</span> by BlazingBird</em>
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg1686"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/monthygreg/index.html" title="View the profile of monthygreg">monthygreg</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_1686_extra_info">
+								<li class="postgroup" style="display:none">Sr. Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/monthygreg/index.html">
+										<img class="avatar" src="../../../avatar_11_1352158351-action=dlattach-attach=264-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 265</li>
+								<li class="karma" style="margin-top:15px">Karma: 12</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_1686">
+										<a href="../msg1686/index.html#msg1686" rel="nofollow">Re: HACKER ALERT</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 08, 2012, 01:10:27 pm" style="cursor:default">Early September, 2012</span></div>
+									<div id="msg_1686_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1686">Yes but i have not logged in to kong forever...</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_1686">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_1686_signature">Sincerely, Mod of nothing&nbsp; Monthygreg<br /><br />Have a nice day!</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg1691"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/XD/index.html" title="View the profile of XD">XD</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_1691_extra_info">
+								<li class="postgroup" style="display:none">Sr. Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/XD/index.html">
+										<img class="avatar" src="../../awesome-ninja-stars/index-action=dlattach-attach=195-image.html" width="100" height="100" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 304</li>
+								<li class="karma" style="margin-top:15px">Karma: 27</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_1691">
+										<a href="../msg1691/index.html#msg1691" rel="nofollow">Re: HACKER ALERT</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 08, 2012, 02:01:05 pm" style="cursor:default">Early September, 2012</span></div>
+									<div id="msg_1691_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1691"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1682/index.html#msg1682">Quote from: TheCyberMan on <span title=" 08, 2012, 12:25:25 pm" style="cursor:default">Early September, 2012</span></a></div></div><blockquote class="bbc_standard_quote">My premium credits vanished a long time ago.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>I second that. <img src="../../../Smileys/akyhne/sad.gif" alt="&#58;&#40;" title="Sad" class="smiley" /> <br />The above is reason why I don&#039;t bother buying/doing offers to get premium credits.<br /><div class="quoteheader"><div class="topslice_quote"><a href="../msg1681/index.html#msg1681">Quote from: BlazingBird on <span title=" 08, 2012, 12:23:22 pm" style="cursor:default">Early September, 2012</span></a></div></div><blockquote class="bbc_standard_quote">CT wouldn&#039;t reduce people&#039;s premium credits - why would he? There is a known exploit that involves the two websites - have you registered on Kongregate and CC?<br /><em>[EDIT]: In response to Cremyjr&#039;s accusation of Hacker2, looking at his profile, I find it highly unlikely - although it has no data available on when he last logged in - glitch / exploit?</em><br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>I&#039;m assuming the exploit is the fact that if you play from kongregate you can have your account taken if somebody registers on the official play page with your username and a different password (and vice versa. This can be blocked if you sign up with same username but different password on the play page you&#039;re not using. This won&#039;t change your other password).<br /><div class="quoteheader"><div class="topslice_quote"><a href="../msg1669/index.html#msg1669">Quote from: monthygreg on <span title=" 08, 2012, 10:11:13 am" style="cursor:default">Early September, 2012</span></a></div></div><blockquote class="bbc_standard_quote">...I have also lost 5k in regular creds...<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>They better not have taken my credits... Gonna check right now.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_1691">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg1696"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_1696_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_1696">
+										<a href="../msg1696/index.html#msg1696" rel="nofollow">Re: HACKER ALERT</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 08, 2012, 03:11:31 pm" style="cursor:default">Early September, 2012</span></div>
+									<div id="msg_1696_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1696"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1691/index.html#msg1691">Quote from: XD on <span title=" 08, 2012, 02:01:05 pm" style="cursor:default">Early September, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1682/index.html#msg1682">Quote from: TheCyberMan on <span title=" 08, 2012, 12:25:25 pm" style="cursor:default">Early September, 2012</span></a></div></div><blockquote class="bbc_alternate_quote">My premium credits vanished a long time ago.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>I second that. <img src="../../../Smileys/akyhne/sad.gif" alt="&#58;&#40;" title="Sad" class="smiley" /> <br />The above is reason why I don&#039;t bother buying/doing offers to get premium credits.<br /><div class="quoteheader"><div class="topslice_quote"><a href="../msg1681/index.html#msg1681">Quote from: BlazingBird on <span title=" 08, 2012, 12:23:22 pm" style="cursor:default">Early September, 2012</span></a></div></div><blockquote class="bbc_alternate_quote">CT wouldn&#039;t reduce people&#039;s premium credits - why would he? There is a known exploit that involves the two websites - have you registered on Kongregate and CC?<br /><em>[EDIT]: In response to Cremyjr&#039;s accusation of Hacker2, looking at his profile, I find it highly unlikely - although it has no data available on when he last logged in - glitch / exploit?</em><br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>I&#039;m assuming the exploit is the fact that if you play from kongregate you can have your account taken if somebody registers on the official play page with your username and a different password (and vice versa. This can be blocked if you sign up with same username but different password on the play page you&#039;re not using. This won&#039;t change your other password).<br /><div class="quoteheader"><div class="topslice_quote"><a href="../msg1669/index.html#msg1669">Quote from: monthygreg on <span title=" 08, 2012, 10:11:13 am" style="cursor:default">Early September, 2012</span></a></div></div><blockquote class="bbc_alternate_quote">...I have also lost 5k in regular creds...<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>They better not have taken my credits... Gonna check right now.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>honestly. i think it IS a hacker. this couldnt be the case even if it was true. see becuase remember i registerd on the official site then learned it was on kong too? so that couldnt have happened.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_1696">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_1696_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg1697"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/monthygreg/index.html" title="View the profile of monthygreg">monthygreg</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_1697_extra_info">
+								<li class="postgroup" style="display:none">Sr. Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/monthygreg/index.html">
+										<img class="avatar" src="../../../avatar_11_1352158351-action=dlattach-attach=264-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 265</li>
+								<li class="karma" style="margin-top:15px">Karma: 12</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_1697">
+										<a href="../msg1697/index.html#msg1697" rel="nofollow">Re: HACKER ALERT</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 08, 2012, 04:19:40 pm" style="cursor:default">Early September, 2012</span></div>
+									<div id="msg_1697_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1697">even if it is a hacker, i still want my prem creds back...</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_1697">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_1697_signature">Sincerely, Mod of nothing&nbsp; Monthygreg<br /><br />Have a nice day!</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg1700"></a><a id="new"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/U2M/index.html" title="View the profile of U2M">U2M</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_1700_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/U2M/index.html">
+										<img class="avatar" src="../../../avatar_24_1356310894-action=dlattach-attach=425-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 630</li>
+								<li class="karma" style="margin-top:15px">Karma: 32</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_1700">
+										<a href="index.html#msg1700" rel="nofollow">Re: HACKER ALERT</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 08, 2012, 08:10:57 pm" style="cursor:default">Early September, 2012</span></div>
+									<div id="msg_1700_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1700">I have a suggestion, but it may pose no assistance. <br />&nbsp;<br />Just press the &quot;~&quot; key... Maybe something seen there could help with this problem... But I believe that the &quot;hacker&quot; must be apart of the forum. Why would he/she only target specific people of the thousands that play CC... The people who say they have been hacked seem pretty well-known. Who&#039;s next?</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_1700">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_1700_signature">&quot;We are made wise not by the recollection of our past, but by the responsibility for our future.&quot;</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg1706"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/Lamp/index.html" title="View the profile of Lamp">Lamp</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_1706_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/Lamp/index.html">
+										<img class="avatar" src="http://i.imgur.com/Qp9OniQ.png" width="100" height="100" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 956</li>
+								<li class="karma" style="margin-top:15px">Karma: 22</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_1706">
+										<a href="../msg1706/index.html#msg1706" rel="nofollow">Re: HACKER ALERT</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 08, 2012, 10:41:15 pm" style="cursor:default">Early September, 2012</span></div>
+									<div id="msg_1706_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1706">I voted No and then remembered.<br /><br /><br /><span style="font-size: 2em;" class="bbc_size">I HAD 820 PREMIUM CREDITS AND THEY ALL DISAPPEARED.</span><br /><span style="font-size: 1.35em;" class="bbc_size">This was a while ago, almost a month ago. I didn&#039;t realize it. I more mad at losing my world because CC crashed when I was making a nice world.</span><br /><br /><span style="font-size: 1.35em;" class="bbc_size">Please reinstall the poll enabling users allowed to change vote.</span></div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_1706">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_1706_signature"><img src="http://bit.do/4u2h" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg1709"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/BlazingBird/index.html" title="View the profile of BlazingBird">BlazingBird</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_1709_extra_info">
+								<li class="postgroup" style="display:none">Full Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/BlazingBird/index.html">
+										<img class="avatar" src="../../../avatar_68_1346524374-action=dlattach-attach=126-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 226</li>
+								<li class="karma" style="margin-top:15px">Karma: 10</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_1709">
+										<a href="../msg1709/index.html#msg1709" rel="nofollow">Re: HACKER ALERT</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 09, 2012, 05:22:12 am" style="cursor:default">Early September, 2012</span></div>
+									<div id="msg_1709_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1709">U2M, I don&#039;t think it was just the &#039;well known&#039; people, it&#039;s just that there is only a small group of Carbon Combat players who currently talk / post on the forum. Chances are, if it&#039;s happening to alot of people, it could be the game.<br />Awhile back on Kongregate someone said that the way Carbon Combat adds money up isn&#039;t foolproof and sometimes loses half your money <span style="color: red;" class="bbc_color">* </span><span style="color: black;" class="bbc_color">perhaps this is the problem?<br />* <span style="font-size: 0.7em;" class="bbc_size">It was in the top comments section awhile back - not sure if it&#039;s still there.</span><br /></span></div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_1709">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg1714"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/monthygreg/index.html" title="View the profile of monthygreg">monthygreg</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_1714_extra_info">
+								<li class="postgroup" style="display:none">Sr. Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/monthygreg/index.html">
+										<img class="avatar" src="../../../avatar_11_1352158351-action=dlattach-attach=264-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 265</li>
+								<li class="karma" style="margin-top:15px">Karma: 12</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_1714">
+										<a href="../msg1714/index.html#msg1714" rel="nofollow">Re: HACKER ALERT</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 09, 2012, 09:25:29 am" style="cursor:default">Early September, 2012</span></div>
+									<div id="msg_1714_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1714">Is it possible for CT to add our creds back?<br />It does matter to me, but i don&#039;t want to rush him, i don&#039;t care if it comes back in a week or so, i just don&#039;t want to pay more...</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_1714">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_1714_signature">Sincerely, Mod of nothing&nbsp; Monthygreg<br /><br />Have a nice day!</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg1715"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_1715_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_1715">
+										<a href="../msg1715/index.html#msg1715" rel="nofollow">Re: HACKER ALERT</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 09, 2012, 09:28:00 am" style="cursor:default">Early September, 2012</span></div>
+									<div id="msg_1715_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1715"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1706/index.html#msg1706">Quote from: Lamp on <span title=" 08, 2012, 10:41:15 pm" style="cursor:default">Early September, 2012</span></a></div></div><blockquote class="bbc_standard_quote">I voted No and then remembered.<br /><br /><br /><span style="font-size: 2em;" class="bbc_size">I HAD 820 PREMIUM CREDITS AND THEY ALL DISAPPEARED.</span><br /><span style="font-size: 1.35em;" class="bbc_size">This was a while ago, almost a month ago. I didn&#039;t realize it. I more mad at losing my world because CC crashed when I was making a nice world.</span><br /><br /><span style="font-size: 1.35em;" class="bbc_size">Please reinstall the poll enabling users allowed to change vote.</span><br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>wait wait wait. you had prem creds?</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_1715">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_1715_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg1731"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/Joshua/index.html" title="View the profile of Joshua">Joshua</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_1731_extra_info">
+								<li class="postgroup" style="display:none">Newbie</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 5</li>
+								<li class="karma" style="margin-top:15px">Karma: 2</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_1731">
+										<a href="../msg1731/index.html#msg1731" rel="nofollow">Re: HACKER ALERT</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 09, 2012, 06:55:12 pm" style="cursor:default">Early September, 2012</span></div>
+									<div id="msg_1731_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1731">Well, well, well... I can understand how you guys felt after what had happened to me earlier (Eugene, EUGENE, JOSHUA &amp; virtual521816).<br /><br /><br />During that time, people were acting nonchalant about my predicament and even poked some fun about it.&nbsp; Now that it is snaking into other players,&nbsp; it has suddenly raised some eyebrows.<br /><br /><br />I couldn&#039;t change my passwords so I gave them away but some criticized that it will cause some complications.&nbsp; What complications?<br /><br /><br />It satisfies me that others can also use my hacked accounts so that everyone knows that it wasn&#039;t me playing, in case the bogus player are rude to others.&nbsp; Catch my drift now?<br /><br /><br />Regards.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_1731">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg1735"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/Fuckfest/index.html" title="View the profile of Fuckfest">Fuckfest</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_1735_extra_info">
+								<li class="postgroup" style="display:none">Newbie</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 12</li>
+								<li class="karma" style="margin-top:15px">Karma: 1</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_1735">
+										<a href="../msg1735/index.html#msg1735" rel="nofollow">Re: HACKER ALERT</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 09, 2012, 07:22:27 pm" style="cursor:default">Early September, 2012</span></div>
+									<div id="msg_1735_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1735">Do we know that it is &quot;for sure&quot; a hacker? It could be just a bug in the game. In any case, if it is a hacker I&#039;m sure our premium credits will be refunded after version 3.0 comes out. In the meantime don&#039;t buy any more credits on this game as it is insecure. Nothing much else to do, unless someone has information on this hacker. </div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_1735">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				</form>
+			</div>
+			<a id="lastPost"></a>
+			<div class="pagesection">
+				
+				<div class="pagelinks floatleft"><span style="margin-right:20px;color:#747474">Page 1 of 2</span><span class="selectedPage">1</span> <span class="nonselectedPage"><a class="navPages" href="../20/index.html">2</a> </span><span class="nonselectedPage"><a class="navPages" href="../20/index.html">>></a> </span></div>
+				<div class="nextlinks_bottom"><a href="../index-prev_next=prev.html#new">&laquo; previous</a> <a href="../index-prev_next=next.html#new">next &raquo;</a></div>
+			</div>
+			<div id="moderationbuttons"></div>
+			<div class="plainbox" id="display_jump_to">&nbsp;</div>
+		<br class="clear" />
+			<form action="http://forum.carbontechsoftware.com/spellcheck/" method="post" accept-charset="UTF-8" name="spell_form" id="spell_form" target="spellWindow"><input type="hidden" name="spellstring" value="" /></form>
+				<script type="text/javascript" src="../../../Themes/default/scripts/spellcheck.js"></script>
+				<script type="text/javascript" src="../../../Themes/default/scripts/topic.js"></script>
+				<script type="text/javascript"><!-- // --><![CDATA[
+					if ('XMLHttpRequest' in window)
+					{
+						var oQuickModify = new QuickModify({
+							sScriptUrl: smf_scripturl,
+							bShowModify: true,
+							iTopicId: 146,
+							sTemplateBodyEdit: '\n\t\t\t\t\t\t\t\t<div id="quick_edit_body_container" style="width: 90%">\n\t\t\t\t\t\t\t\t\t<div id="error_box" style="padding: 4px;" class="error"><' + '/div>\n\t\t\t\t\t\t\t\t\t<textarea class="editor" name="message" rows="12" style="width: 100%; margin-bottom: 10px;" tabindex="1">%body%<' + '/textarea><br />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="f432f3090a" value="477e586f5a9953a0dd3608a1ea7e9270" />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="topic" value="146" />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="msg" value="%msg_id%" />\n\t\t\t\t\t\t\t\t\t<div class="righttext">\n\t\t\t\t\t\t\t\t\t\t<input type="submit" name="post" value="Save" tabindex="2" onclick="return oQuickModify.modifySave(\'477e586f5a9953a0dd3608a1ea7e9270\', \'f432f3090a\');" accesskey="s" class="button_submit" />&nbsp;&nbsp;<input type="button" value="Spell Check (popups must be enabled)" tabindex="3" onclick="oEditorHandle_message.spellCheckStart();" class="button_submit" />&nbsp;&nbsp;<input type="submit" name="cancel" value="Cancel" tabindex="4" onclick="return oQuickModify.modifyCancel();" class="button_submit" />\n\t\t\t\t\t\t\t\t\t<' + '/div>\n\t\t\t\t\t\t\t\t<' + '/div>',
+							sTemplateSubjectEdit: '<input type="text" style="width: 90%;" name="subject" value="%subject%" size="80" maxlength="80" tabindex="5" class="input_text" />',
+							sTemplateBodyNormal: '%body%',
+							sTemplateSubjectNormal: '<a hr'+'ef="http://forum.carbontechsoftware.com/index.php'+'?topic=146.msg%msg_id%#msg%msg_id%" rel="nofollow">%subject%<' + '/a>',
+							sTemplateTopSubject: 'Topic: %subject% &nbsp;(Read 2361 times)',
+							sErrorBorderStyle: '1px solid red'
+						});
+
+						aJumpTo[aJumpTo.length] = new JumpTo({
+							sContainerId: "display_jump_to",
+							sJumpToTemplate: "<label class=\"smalltext\" for=\"%select_id%\">Jump to:<" + "/label> %dropdown_list%",
+							iCurBoardId: 1,
+							iCurBoardChildLevel: 0,
+							sCurBoardName: "Off Topic",
+							sBoardChildLevelIndicator: "==",
+							sBoardPrefix: "=> ",
+							sCatSeparator: "-----------------------------",
+							sCatPrefix: "",
+							sGoButtonLabel: "go"
+						});
+
+						aIconLists[aIconLists.length] = new IconList({
+							sBackReference: "aIconLists[" + aIconLists.length + "]",
+							sIconIdPrefix: "msg_icon_",
+							sScriptUrl: smf_scripturl,
+							bShowModify: true,
+							iBoardId: 1,
+							iTopicId: 146,
+							sSessionId: "477e586f5a9953a0dd3608a1ea7e9270",
+							sSessionVar: "f432f3090a",
+							sLabelIconList: "Message icon",
+							sBoxBackground: "transparent",
+							sBoxBackgroundHover: "#ffffff",
+							iBoxBorderWidthHover: 1,
+							sBoxBorderColorHover: "#adadad" ,
+							sContainerBackground: "#ffffff",
+							sContainerBorder: "1px solid #adadad",
+							sItemBorder: "1px solid #ffffff",
+							sItemBorderHover: "1px dotted gray",
+							sItemBackground: "transparent",
+							sItemBackgroundHover: "#e0e0f0"
+						});
+					}
+				// ]]></script>
+		<form name="spell_form" id="spell_form" method="post" accept-charset="UTF-8" target="spellWindow" action="http://forum.carbontechsoftware.com/spellcheck/">
+			<input type="hidden" name="spellstring" value="" />
+		</form>
+			<script type="text/javascript"><!-- // --><![CDATA[
+				var verificationpostHandle = new smfCaptcha("http://forum.carbontechsoftware.com/index.php?action=verificationcode;vid=post;rand=f90cb78f96cbd8019447b012267322e1", "post", 1);
+			// ]]></script>
+	</div>
+	</div></div>
+	<div id="footersection"><div style="width: 985px;margin: auto;">
+			<span class="floatright"><a href="http://www.simplemachines.org/">© Simple Machines (SMF 2.0.2)</a> - Forum designed by CarbonTech & <a href="http://www.blocweb.net">Bloc</a>
+			</span></div>
+	</div></div></div><script type="text/javascript">
+var sc_project=6755287; 
+var sc_invisible=1; 
+var sc_security="c689b4fd"; 
+</script>
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script>
+<noscript><div class="statcounter"><a title="tumblr page
+counter" href="http://statcounter.com/tumblr/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/6755287/0/c689b4fd/1/"
+alt="tumblr page counter"></a></div></noscript>
+</body></html>

@@ -1,0 +1,1213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<link rel="stylesheet" type="text/css" href="../../../Themes/carbonate202b/css/index-fin20.css" />
+	<link rel="stylesheet" type="text/css" href="../../../Themes/carbonate202b/css/index_carbon-fin20.css" />
+	<script type="text/javascript" src="../../../Themes/default/scripts/script-fin20.js"></script>
+	<script type="text/javascript" src="../../../Themes/carbonate202b/scripts/theme-fin20.js"></script>
+	<script type="text/javascript"><!-- // --><![CDATA[
+		var smf_theme_url = "http://forum.carbontechsoftware.com/Themes/carbonate202b";
+		var smf_default_theme_url = "http://forum.carbontechsoftware.com/Themes/default";
+		var smf_images_url = "http://forum.carbontechsoftware.com/Themes/carbonate202b/images";
+		var smf_scripturl = "http://forum.carbontechsoftware.com/index.php";
+		var smf_iso_case_folding = false;
+		var smf_charset = "UTF-8";
+		var ajax_notification_text = "Loading...";
+		var ajax_notification_cancel_text = "Cancel";
+	// ]]></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="description" content="Ideas and Suggestions" />
+	<title>Ideas and Suggestions</title><link rel="shortcut icon" type="image/x-icon" href="http://lh3.googleusercontent.com/-GOPf21qQXSY/TzawG0qVPlI/AAAAAAAAAoA/-VQrE780LzQ/s16/CCLogoRound.png" /><link rel="icon" href="http://lh3.googleusercontent.com/-GOPf21qQXSY/TzawG0qVPlI/AAAAAAAAAoA/-VQrE780LzQ/s16/CCLogoRound.png" type="image/x-icon" />
+	<meta name="robots" content="noindex" />
+	<link rel="canonical" href="../60/index.html" />
+	<link rel="help" href="../../../help/index.html" />
+	<link rel="search" href="../../../search/index.html" />
+	<link rel="contents" href="../../../index.php.html" />
+	<link rel="alternate" type="application/rss+xml" title="Carbon Combat - RSS" href="../../../.xml/index-type=rss.html" />
+	<link rel="prev" href="../index-prev_next=prev.html" />
+	<link rel="next" href="../index-prev_next=next.html" />
+	<link rel="index" href="../../index.html" /><!-- nCode Image Resizer -->
+	<script type="text/javascript" src="../../../Themes/default/ncode_imageresizer.js"></script>
+	<script language="JavaScript" type="text/javascript"><!-- // -->
+	NcodeImageResizer.BBURL = "http://forum.carbontechsoftware.com/Themes/carbonate202b/images";
+	NcodeImageResizer.MODE = "enlarge";
+	NcodeImageResizer.MAXWIDTH = "720";
+	NcodeImageResizer.MAXHEIGHT = "400";
+	vbphrase = new Array();
+	vbphrase['ncode_imageresizer_warning_small'] = 'Click this bar to view the full image.';
+	vbphrase['ncode_imageresizer_warning_filesize'] = 'This image has been resized. Click this bar to view the full image. The original image is sized %1$sx%2$s and weighs %3$sKB.';
+	vbphrase['ncode_imageresizer_warning_no_filesize'] = 'This image has been resized. Click this bar to view the full image. The original image is sized %1$sx%2$s.';
+	vbphrase['ncode_imageresizer_warning_fullsize'] = 'Click this bar to view the small image.';
+	// ]]></script>
+	<link rel="stylesheet" type="text/css" id="editor_css" href="../../../Themes/default/css/editor.css" />
+		<script type="text/javascript"><!-- // --><![CDATA[
+			var smf_smileys_url = 'http://forum.carbontechsoftware.com/Smileys/akyhne';
+			var oEditorStrings= {
+				wont_work: 'Your browser does not support Rich Text editing.',
+				func_disabled: 'Your browser does not support this function.',
+				prompt_text_email: 'Please enter the email address.',
+				prompt_text_ftp: 'Please enter the ftp address.',
+				prompt_text_url: 'Please enter the URL you wish to link to.',
+				prompt_text_img: 'Enter image location'
+			}
+		// ]]></script>
+		<script type="text/javascript" src="../../../Themes/default/scripts/editor-fin20.js"></script>
+		<script type="text/javascript" src="../../../Themes/default/scripts/spellcheck.js"></script>
+		<script type="text/javascript"><!-- // --><![CDATA[
+		function spellCheckDone()
+		{
+			for (i = 0; i < smf_editorArray.length; i++)
+				setTimeout("smf_editorArray[" + i + "].spellCheckEnd()", 150);
+		}
+		// ]]></script>
+		<script type="text/javascript" src="../../../Themes/default/scripts/captcha.js"></script>
+	<style type="text/css">#main_menu,
+		#admin_menu
+		{
+			width: 985px
+		}
+	</style>
+	
+	
+	<script language="javascript" type="text/javascript">
+	<!--
+	
+	// MOD Title: Simple Image Upload
+	// MOD Author: Sium < admin@postimage.org > (N/A) http://www.postimage.org/
+	// MOD Version: 1.3.0
+	
+	var postimage_lang="english";
+	var postimage_add_text="Upload and insert an image";
+	var postimage_textarea_ignore_name=/username_list|search/i;
+	
+	function imgFunction() {
+		alert("After uploading you can...\n\n• Drag & drop the image into the post editor\n• Copy the direct link & add an image\n• Copy & paste the HTML code\n• Copy & paste the BBCode");
+	}
+	
+	function postimage_insert()
+	{
+		var postimage_area=document.getElementsByTagName("TEXTAREA");
+
+		for(var postimage_i=0;postimage_i<postimage_area.length;postimage_i++)
+		{
+			if(!postimage_area[postimage_i].name.match(postimage_textarea_ignore_name))
+			{
+				var postimage_new_div=document.createElement("div");
+				postimage_new_div.id = "smileyBox_message";
+				postimage_new_div.style.marginBottom = "5px";
+				postimage_new_div.style.display = "block";
+				postimage_new_div.innerHTML="<a href=\"javascript:void(0);\" onclick=\"imgFunction();imgWindow=window.open('http://imgur.com/?noFlash', 'imgWindow', 'resizable=no,width=1015,height=550,scrollbars=no');\"><b>>> "+postimage_add_text+"</b></a>";
+				postimage_area[postimage_i].parentNode.insertBefore(postimage_new_div,postimage_area[postimage_i]);
+			}
+		}
+	}
+	
+	window.onload=postimage_insert;
+	//-->
+	</script>
+	
+	
+	
+</head>
+<body>
+<div id="wrapper"><div id="headerlogo"></div>
+	<div id="subheader"><div style="width: 985px; margin:auto;background-color:#000">
+	<div id="uppertop">
+		<div class="middletext" style="float:right;height:auto;line-height:16px">Twenty to 9:00 pm, June 16th, 2015</div>
+		<script type="text/javascript" src="../../../Themes/default/scripts/sha1.js"></script>
+		<form id="guest_form" action="http://forum.carbontechsoftware.com/login2/" method="post" accept-charset="UTF-8"  onsubmit="hashLoginPassword(this, '477e586f5a9953a0dd3608a1ea7e9270');">
+			Welcome, <strong>Guest</strong>. Please <a href="../../../login/index.html">login</a> or <a href="../../../register/index.html">register</a>.&nbsp;
+	</div>
+	<div id="top_section" style="clear: both;">
+		<div id="main_menu">
+			<div class="menuback">
+			<div class="menuback2">
+			<ul class="dropmenu" id="menu_nav">
+				<li id="button_home" class="toplevel">
+					<a class="active firstlevel" href="../../../index.php.html">
+						<span class="last firstlevel">Home</span>
+					</a>
+				</li>
+				<li id="button_search" class="toplevel">
+					<a class="firstlevel" href="../../../search/index.html">
+						<span class="firstlevel">Search</span>
+					</a>
+					<ul>
+						<li>
+							<a href="../../../search/index.html">
+								<span>Search Forum Topics</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li id="button_login" class="toplevel">
+					<a class="firstlevel" href="../../../login/index.html">
+						<span class="firstlevel">Login</span>
+					</a>
+				</li>
+				<li id="button_register" class="toplevel">
+					<a class="firstlevel" href="../../../register/index.html">
+						<span class="firstlevel">Register</span>
+					</a>
+				</li>
+				<li id="button_chat" class="toplevel">
+					<a class="firstlevel" href="javascript:void(0)"onclick="window.open('/chatRoom.html','POPUP','width=700,height=720,location=0,menubar=0,toolbar=0,scrollbars=0,status=0,');">
+						<span class="firstlevel">Chat</span>
+					</a>
+				</li>
+				<li id="button_play" class="toplevel">
+					<a class="firstlevel" href="http://play.carbontechsoftware.com/"target="_blank');">
+						<span class="last firstlevel"><div style="color:#FFEFAE">Play</div></span>
+					</a>
+				</li>
+			</ul>
+			</div>
+			</div>
+		</div><script src="../../../adjustMenubar.js"></script>
+		<br class="clear" />
+		</div>
+	</div></div>
+	<div id="mainsection"><div style="width: 985px;margin: auto;margin-bottom:0;padding:15px 0">
+		<div id="innermain">	
+	<div class="navigate_section">
+		<ul>
+			<li>
+				<a href="../../../index.php.html"><span>Carbon Combat</span></a> &#187;
+			</li>
+			<li>
+				<a href="../../../index.php.html#c1"><span>General</span></a> &#187;
+			</li>
+			<li>
+				<a href="../../index.html"><span>Feedback &amp; Ideas</span></a> &#187;
+			</li>
+			<li class="last">
+				<a href="../index.html"><span>Ideas and Suggestions</span></a>
+			</li>
+		</ul>
+	</div>
+			<a id="top"></a>
+			<a id="msg1314"></a>
+			<div class="pagesection">
+				<div class="nextlinks"><a href="../index-prev_next=prev.html#new">&laquo; previous</a> <a href="../index-prev_next=next.html#new">next &raquo;</a></div>
+				<div class="pagelinks floatleft"><span style="margin-right:20px;color:#747474">Page 4 of 5</span><span class="nonselectedPage"><a class="navPages" href="../40/index.html"><<</a> </span><span class="nonselectedPage"><a class="navPages" href="../index.html">1</a> </span><span style="font-weight: bold;" onclick="expandPages(this, 'http://forum.carbontechsoftware.com/index.php'+'?topic=33.%1$d', 20, 40, 20);" onmouseover="this.style.cursor = 'pointer';"> ... </span><span class="nonselectedPage"><a class="navPages" href="../40/index.html">3</a> </span><span class="selectedPage">4</span> <span class="nonselectedPage"><a class="navPages" href="../80/index.html">5</a> </span><span class="nonselectedPage"><a class="navPages" href="../80/index.html">>></a> </span></div>
+			</div>
+			<div id="forumposts">
+				<div class="cat_bar">
+					<h3 class="catbg">
+						<img src="../../../Themes/carbonate202b/images/topic/veryhot_post_locked.gif.png" align="bottom" alt="" />
+						<span id="author">Author</span>
+						Topic: Ideas and Suggestions &nbsp;(Read 8317 times)
+					</h3>
+				</div>
+				<form action="http://forum.carbontechsoftware.com/feedback-ideas/ideas-and-suggestions/60/?action=quickmod2" method="post" accept-charset="UTF-8" name="quickModForm" id="quickModForm" style="margin: 0;" onsubmit="return oQuickModify.bInEditMode ? oQuickModify.modifySave('477e586f5a9953a0dd3608a1ea7e9270', 'f432f3090a') : false">
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/Lamp/index.html" title="View the profile of Lamp">Lamp</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_1314_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/Lamp/index.html">
+										<img class="avatar" src="http://i.imgur.com/Qp9OniQ.png" width="100" height="100" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 956</li>
+								<li class="karma" style="margin-top:15px">Karma: 22</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_1314">
+										<a href="../msg1314/index.html#msg1314" rel="nofollow">Re: Ideas and Suggestions</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 17, 2012, 06:53:19 pm" style="cursor:default">Mid-August, 2012</span></div>
+									<div id="msg_1314_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1314"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1309/index.html#msg1309">Quote from: NathanielHoward on <span title=" 17, 2012, 03:08:23 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_standard_quote">Can i be a Modterator?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />Well first you need to contribute well to the site, you also gotta be a good player in CC. Ask Nattyfrank.<br /><br /><br />P.S. Is your username your real name? I don&#039;t recommend that, make up some name. I recommend makign up a name realted to things you like or like to do.<br /><br /><br />Look at my name. You can probably guess what i like. <img src="../../../Smileys/akyhne/tongue.gif" alt="&#58;P" title="Tongue" class="smiley" /></div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_1314">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_1314_signature"><img src="http://bit.do/4u2h" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg1315"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_1315_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_1315">
+										<a href="../msg1315/index.html#msg1315" rel="nofollow">Re: Ideas and Suggestions</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 17, 2012, 06:57:56 pm" style="cursor:default">Mid-August, 2012</span></div>
+									<div id="msg_1315_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1315"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1314/index.html#msg1314">Quote from: Lamp on <span title=" 17, 2012, 06:53:19 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1309/index.html#msg1309">Quote from: NathanielHoward on <span title=" 17, 2012, 03:08:23 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_alternate_quote">Can i be a Modterator?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />Well first you need to contribute well to the site, you also gotta be a good player in CC. Ask Nattyfrank.<br /><br /><br />P.S. Is your username your real name? I don&#039;t recommend that, make up some name. I recommend makign up a name realted to things you like or like to do.<br /><br /><br />Look at my name. You can probably guess what i like. <img src="../../../Smileys/akyhne/tongue.gif" alt="&#58;P" title="Tongue" class="smiley" /> <br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>actually, you ask CT. and... lamps.. oookay? thats why i&#039;m worried about you....</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_1315">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_1315_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg1317"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/Lamp/index.html" title="View the profile of Lamp">Lamp</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_1317_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/Lamp/index.html">
+										<img class="avatar" src="http://i.imgur.com/Qp9OniQ.png" width="100" height="100" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 956</li>
+								<li class="karma" style="margin-top:15px">Karma: 22</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_1317">
+										<a href="../msg1317/index.html#msg1317" rel="nofollow">Re: Ideas and Suggestions</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 17, 2012, 07:35:41 pm" style="cursor:default">Mid-August, 2012</span></div>
+									<div id="msg_1317_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1317"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1315/index.html#msg1315">Quote from: cremyjr on <span title=" 17, 2012, 06:57:56 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1314/index.html#msg1314">Quote from: Lamp on <span title=" 17, 2012, 06:53:19 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1309/index.html#msg1309">Quote from: NathanielHoward on <span title=" 17, 2012, 03:08:23 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_standard_quote">Can i be a Modterator?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />Well first you need to contribute well to the site, you also gotta be a good player in CC. Ask Nattyfrank.<br /><br /><br />P.S. Is your username your real name? I don&#039;t recommend that, make up some name. I recommend makign up a name realted to things you like or like to do.<br /><br /><br />Look at my name. You can probably guess what i like. <img src="../../../Smileys/akyhne/tongue.gif" alt="&#58;P" title="Tongue" class="smiley" /> <br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>actually, you ask CT. and... lamps.. oookay? thats why i&#039;m worried about you....<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />I like more than one thing, </div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_1317">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_1317_signature"><img src="http://bit.do/4u2h" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg1322"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/monthygreg/index.html" title="View the profile of monthygreg">monthygreg</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_1322_extra_info">
+								<li class="postgroup" style="display:none">Sr. Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/monthygreg/index.html">
+										<img class="avatar" src="../../../avatar_11_1352158351-action=dlattach-attach=264-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 265</li>
+								<li class="karma" style="margin-top:15px">Karma: 12</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_1322">
+										<a href="../msg1322/index.html#msg1322" rel="nofollow">Re: Ideas and Suggestions</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 17, 2012, 09:57:18 pm" style="cursor:default">Mid-August, 2012</span></div>
+									<div id="msg_1322_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1322">I HAVE AN IDEA!!! *as you all gasp*&nbsp; How about on the shop before you buy a weapon you can test it, it would be a button beside buy, so newbs can, well you know... TEST IT.&nbsp; &nbsp; heh i cant beleve you did not know i was going to say that.<br />just going to put it out there that last comment i just made was not directly at cremyjr <img src="../../../Smileys/akyhne/wink.gif" alt=";&#41;" title="Wink" class="smiley" /></div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_1322">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_1322_signature">Sincerely, Mod of nothing&nbsp; Monthygreg<br /><br />Have a nice day!</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg1329"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/Lamp/index.html" title="View the profile of Lamp">Lamp</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_1329_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/Lamp/index.html">
+										<img class="avatar" src="http://i.imgur.com/Qp9OniQ.png" width="100" height="100" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 956</li>
+								<li class="karma" style="margin-top:15px">Karma: 22</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_1329">
+										<a href="../msg1329/index.html#msg1329" rel="nofollow">Re: Ideas and Suggestions</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 17, 2012, 11:02:32 pm" style="cursor:default">Mid-August, 2012</span></div>
+									<div id="msg_1329_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1329"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1322/index.html#msg1322">Quote from: monthygreg on <span title=" 17, 2012, 09:57:18 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_standard_quote">I HAVE AN IDEA!!! *as you all gasp*&nbsp; How about on the shop before you buy a weapon you can test it, it would be a button beside buy, so newbs can, well you know... TEST IT.&nbsp; &nbsp; heh i cant beleve you did not know i was going to say that.<br />just going to put it out there that last comment i just made was not directly at cremyjr <img src="../../../Smileys/akyhne/wink.gif" alt=";&#41;" title="Wink" class="smiley" /> <br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />It&#039;s called renting for one day.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_1329">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_1329_signature"><img src="http://bit.do/4u2h" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg1336"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/monthygreg/index.html" title="View the profile of monthygreg">monthygreg</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_1336_extra_info">
+								<li class="postgroup" style="display:none">Sr. Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/monthygreg/index.html">
+										<img class="avatar" src="../../../avatar_11_1352158351-action=dlattach-attach=264-type=avatar.jpeg" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 265</li>
+								<li class="karma" style="margin-top:15px">Karma: 12</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_1336">
+										<a href="../msg1336/index.html#msg1336" rel="nofollow">Re: Ideas and Suggestions</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 18, 2012, 07:44:56 am" style="cursor:default">Mid-August, 2012</span></div>
+									<div id="msg_1336_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1336">you do know for noobs thats alot of creds, just a simple two minute test or so.&nbsp; </div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_1336">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_1336_signature">Sincerely, Mod of nothing&nbsp; Monthygreg<br /><br />Have a nice day!</div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg1348"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/Nattyfrank/index.html" title="View the profile of Nattyfrank">Nattyfrank</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_1348_extra_info">
+								<li class="title" style="display:none">Sir</li>
+								<li class="membergroup">Global Moderator</li>
+								<li class="postgroup" style="display:none">Full Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/stargmod.gif" alt="*" /></li>
+								<li class="postcount">Posts: 245</li>
+								<li class="karma" style="margin-top:15px">Karma: 33</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_1348">
+										<a href="../msg1348/index.html#msg1348" rel="nofollow">Re: Ideas and Suggestions</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 18, 2012, 03:44:24 pm" style="cursor:default">Mid-August, 2012</span></div>
+									<div id="msg_1348_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1348">If they go into survival mode, there is a chance they can get the weapon from a pick-up.&nbsp; Also, some of the more popular weapons are placed on various maps as spawns.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_1348">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_1348_signature">Respectfully,<br />[Mod] Nattyfrank<br /><br />Please check out the forum rules, it makes everything sooo much nicer for all of us!&nbsp; <br /><br /><br /><a href="../../../announcements/global-forum-rules-and-etiquette/index.html" class="bbc_link" target="_blank">http://forum.carbontechsoftware.com/announcements/global-forum-rules-and-etiquette/</a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg1365"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_1365_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_1365">
+										<a href="../msg1365/index.html#msg1365" rel="nofollow">Re: Ideas and Suggestions</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 19, 2012, 01:04:53 pm" style="cursor:default">Mid-August, 2012</span></div>
+									<div id="msg_1365_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1365"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1336/index.html#msg1336">Quote from: monthygreg on <span title=" 18, 2012, 07:44:56 am" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_standard_quote">you do know for noobs thats alot of creds, just a simple two minute test or so. <br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>i know wut u mean. lamp and natty, just listen to this. i have the solution. it sounds alot like freeplay... it would be called somthing like &quot;testing&quot; default map battle island. you can choose and customize all the items in the shop. you can have a list to choose what level you want the piece of gear. then, you can try them. gets its?</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_1365">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_1365_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg1371"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/Lamp/index.html" title="View the profile of Lamp">Lamp</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_1371_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/Lamp/index.html">
+										<img class="avatar" src="http://i.imgur.com/Qp9OniQ.png" width="100" height="100" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 956</li>
+								<li class="karma" style="margin-top:15px">Karma: 22</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_1371">
+										<a href="../msg1371/index.html#msg1371" rel="nofollow">Re: Ideas and Suggestions</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 19, 2012, 09:20:56 pm" style="cursor:default">Mid-August, 2012</span></div>
+									<div id="msg_1371_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1371"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1365/index.html#msg1365">Quote from: cremyjr on <span title=" 19, 2012, 01:04:53 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1336/index.html#msg1336">Quote from: monthygreg on <span title=" 18, 2012, 07:44:56 am" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_alternate_quote">you do know for noobs thats alot of creds, just a simple two minute test or so. <br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>i know wut u mean. lamp and natty, just listen to this. i have the solution. it sounds alot like freeplay... it would be called somthing like &quot;testing&quot; default map battle island. you can choose and customize all the items in the shop. you can have a list to choose what level you want the piece of gear. then, you can try them. gets its?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />I just got an idea from that. How bout we have a button in the World Creator to quickly test it.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_1371">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_1371_signature"><img src="http://bit.do/4u2h" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg1372"></a><a id="new"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/Lamp/index.html" title="View the profile of Lamp">Lamp</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_1372_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/Lamp/index.html">
+										<img class="avatar" src="http://i.imgur.com/Qp9OniQ.png" width="100" height="100" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 956</li>
+								<li class="karma" style="margin-top:15px">Karma: 22</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_1372">
+										<a href="index.html#msg1372" rel="nofollow">Re: Ideas and Suggestions</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 19, 2012, 09:22:03 pm" style="cursor:default">Mid-August, 2012</span></div>
+									<div id="msg_1372_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1372"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1348/index.html#msg1348">Quote from: Nattyfrank on <span title=" 18, 2012, 03:44:24 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_standard_quote">If they go into survival mode, there is a chance they can get the weapon from a pick-up.&nbsp; Also, some of the more popular weapons are placed on various maps as spawns.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />They do have weapon pickups around that lasts about 30 seconds i think.<br /><br /><br />Oh btw, look in the waterfall (hint hint achievement!).</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_1372">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_1372_signature"><img src="http://bit.do/4u2h" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg1377"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_1377_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_1377">
+										<a href="../msg1377/index.html#msg1377" rel="nofollow">Re: Ideas and Suggestions</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 20, 2012, 02:08:46 pm" style="cursor:default">Mid-August, 2012</span></div>
+									<div id="msg_1377_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1377"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1371/index.html#msg1371">Quote from: Lamp on <span title=" 19, 2012, 09:20:56 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1365/index.html#msg1365">Quote from: cremyjr on <span title=" 19, 2012, 01:04:53 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1336/index.html#msg1336">Quote from: monthygreg on <span title=" 18, 2012, 07:44:56 am" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_standard_quote">you do know for noobs thats alot of creds, just a simple two minute test or so. <br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>i know wut u mean. lamp and natty, just listen to this. i have the solution. it sounds alot like freeplay... it would be called somthing like &quot;testing&quot; default map battle island. you can choose and customize all the items in the shop. you can have a list to choose what level you want the piece of gear. then, you can try them. gets its?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />I just got an idea from that. How bout we have a button in the World Creator to quickly test it.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>ah! that WOULD be nice. especially seeing as how you cant modify the world after you finish.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_1377">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_1377_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg1380"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/Lamp/index.html" title="View the profile of Lamp">Lamp</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_1380_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/Lamp/index.html">
+										<img class="avatar" src="http://i.imgur.com/Qp9OniQ.png" width="100" height="100" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 956</li>
+								<li class="karma" style="margin-top:15px">Karma: 22</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_1380">
+										<a href="../msg1380/index.html#msg1380" rel="nofollow">Re: Ideas and Suggestions</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 20, 2012, 02:11:17 pm" style="cursor:default">Mid-August, 2012</span></div>
+									<div id="msg_1380_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1380"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1377/index.html#msg1377">Quote from: cremyjr on <span title=" 20, 2012, 02:08:46 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1371/index.html#msg1371">Quote from: Lamp on <span title=" 19, 2012, 09:20:56 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1365/index.html#msg1365">Quote from: cremyjr on <span title=" 19, 2012, 01:04:53 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1336/index.html#msg1336">Quote from: monthygreg on <span title=" 18, 2012, 07:44:56 am" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_alternate_quote">you do know for noobs thats alot of creds, just a simple two minute test or so. <br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>i know wut u mean. lamp and natty, just listen to this. i have the solution. it sounds alot like freeplay... it would be called somthing like &quot;testing&quot; default map battle island. you can choose and customize all the items in the shop. you can have a list to choose what level you want the piece of gear. then, you can try them. gets its?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />I just got an idea from that. How bout we have a button in the World Creator to quickly test it.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>ah! that WOULD be nice. especially seeing as how you cant modify the world after you finish.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />Yes you can. Keep the link and after you play it, go to world creator, open menu, click &quot;Load World&quot;, and put in the link.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_1380">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_1380_signature"><img src="http://bit.do/4u2h" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg1385"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_1385_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_1385">
+										<a href="../msg1385/index.html#msg1385" rel="nofollow">Re: Ideas and Suggestions</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 20, 2012, 02:20:40 pm" style="cursor:default">Mid-August, 2012</span></div>
+									<div id="msg_1385_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1385"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1380/index.html#msg1380">Quote from: Lamp on <span title=" 20, 2012, 02:11:17 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1377/index.html#msg1377">Quote from: cremyjr on <span title=" 20, 2012, 02:08:46 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1371/index.html#msg1371">Quote from: Lamp on <span title=" 19, 2012, 09:20:56 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1365/index.html#msg1365">Quote from: cremyjr on <span title=" 19, 2012, 01:04:53 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1336/index.html#msg1336">Quote from: monthygreg on <span title=" 18, 2012, 07:44:56 am" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_standard_quote">you do know for noobs thats alot of creds, just a simple two minute test or so. <br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>i know wut u mean. lamp and natty, just listen to this. i have the solution. it sounds alot like freeplay... it would be called somthing like &quot;testing&quot; default map battle island. you can choose and customize all the items in the shop. you can have a list to choose what level you want the piece of gear. then, you can try them. gets its?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />I just got an idea from that. How bout we have a button in the World Creator to quickly test it.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>ah! that WOULD be nice. especially seeing as how you cant modify the world after you finish.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />Yes you can. Keep the link and after you play it, go to world creator, open menu, click &quot;Load World&quot;, and put in the link.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>last timke i checked you couldnt</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_1385">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_1385_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg1388"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/Lamp/index.html" title="View the profile of Lamp">Lamp</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_1388_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/Lamp/index.html">
+										<img class="avatar" src="http://i.imgur.com/Qp9OniQ.png" width="100" height="100" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 956</li>
+								<li class="karma" style="margin-top:15px">Karma: 22</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_1388">
+										<a href="../msg1388/index.html#msg1388" rel="nofollow">Re: Ideas and Suggestions</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 20, 2012, 04:01:23 pm" style="cursor:default">Mid-August, 2012</span></div>
+									<div id="msg_1388_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1388"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1385/index.html#msg1385">Quote from: cremyjr on <span title=" 20, 2012, 02:20:40 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1380/index.html#msg1380">Quote from: Lamp on <span title=" 20, 2012, 02:11:17 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1377/index.html#msg1377">Quote from: cremyjr on <span title=" 20, 2012, 02:08:46 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1371/index.html#msg1371">Quote from: Lamp on <span title=" 19, 2012, 09:20:56 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1365/index.html#msg1365">Quote from: cremyjr on <span title=" 19, 2012, 01:04:53 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1336/index.html#msg1336">Quote from: monthygreg on <span title=" 18, 2012, 07:44:56 am" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_alternate_quote">you do know for noobs thats alot of creds, just a simple two minute test or so. <br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>i know wut u mean. lamp and natty, just listen to this. i have the solution. it sounds alot like freeplay... it would be called somthing like &quot;testing&quot; default map battle island. you can choose and customize all the items in the shop. you can have a list to choose what level you want the piece of gear. then, you can try them. gets its?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />I just got an idea from that. How bout we have a button in the World Creator to quickly test it.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>ah! that WOULD be nice. especially seeing as how you cant modify the world after you finish.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />Yes you can. Keep the link and after you play it, go to world creator, open menu, click &quot;Load World&quot;, and put in the link.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>last timke i checked you couldnt<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />When was that?</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_1388">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_1388_signature"><img src="http://bit.do/4u2h" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg1395"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_1395_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_1395">
+										<a href="../msg1395/index.html#msg1395" rel="nofollow">Re: Ideas and Suggestions</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 20, 2012, 06:05:46 pm" style="cursor:default">Mid-August, 2012</span></div>
+									<div id="msg_1395_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1395"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1388/index.html#msg1388">Quote from: Lamp on <span title=" 20, 2012, 04:01:23 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1385/index.html#msg1385">Quote from: cremyjr on <span title=" 20, 2012, 02:20:40 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1380/index.html#msg1380">Quote from: Lamp on <span title=" 20, 2012, 02:11:17 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1377/index.html#msg1377">Quote from: cremyjr on <span title=" 20, 2012, 02:08:46 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1371/index.html#msg1371">Quote from: Lamp on <span title=" 19, 2012, 09:20:56 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1365/index.html#msg1365">Quote from: cremyjr on <span title=" 19, 2012, 01:04:53 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1336/index.html#msg1336">Quote from: monthygreg on <span title=" 18, 2012, 07:44:56 am" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_standard_quote">you do know for noobs thats alot of creds, just a simple two minute test or so. <br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>i know wut u mean. lamp and natty, just listen to this. i have the solution. it sounds alot like freeplay... it would be called somthing like &quot;testing&quot; default map battle island. you can choose and customize all the items in the shop. you can have a list to choose what level you want the piece of gear. then, you can try them. gets its?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />I just got an idea from that. How bout we have a button in the World Creator to quickly test it.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>ah! that WOULD be nice. especially seeing as how you cant modify the world after you finish.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />Yes you can. Keep the link and after you play it, go to world creator, open menu, click &quot;Load World&quot;, and put in the link.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>last timke i checked you couldnt<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />When was that?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>wut?</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_1395">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_1395_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg1402"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/Lamp/index.html" title="View the profile of Lamp">Lamp</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_1402_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/Lamp/index.html">
+										<img class="avatar" src="http://i.imgur.com/Qp9OniQ.png" width="100" height="100" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 956</li>
+								<li class="karma" style="margin-top:15px">Karma: 22</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_1402">
+										<a href="../msg1402/index.html#msg1402" rel="nofollow">Re: Ideas and Suggestions</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 20, 2012, 06:19:26 pm" style="cursor:default">Mid-August, 2012</span></div>
+									<div id="msg_1402_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1402"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1395/index.html#msg1395">Quote from: cremyjr on <span title=" 20, 2012, 06:05:46 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1388/index.html#msg1388">Quote from: Lamp on <span title=" 20, 2012, 04:01:23 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1385/index.html#msg1385">Quote from: cremyjr on <span title=" 20, 2012, 02:20:40 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1380/index.html#msg1380">Quote from: Lamp on <span title=" 20, 2012, 02:11:17 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1377/index.html#msg1377">Quote from: cremyjr on <span title=" 20, 2012, 02:08:46 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1371/index.html#msg1371">Quote from: Lamp on <span title=" 19, 2012, 09:20:56 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1365/index.html#msg1365">Quote from: cremyjr on <span title=" 19, 2012, 01:04:53 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1336/index.html#msg1336">Quote from: monthygreg on <span title=" 18, 2012, 07:44:56 am" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_alternate_quote">you do know for noobs thats alot of creds, just a simple two minute test or so. <br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>i know wut u mean. lamp and natty, just listen to this. i have the solution. it sounds alot like freeplay... it would be called somthing like &quot;testing&quot; default map battle island. you can choose and customize all the items in the shop. you can have a list to choose what level you want the piece of gear. then, you can try them. gets its?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />I just got an idea from that. How bout we have a button in the World Creator to quickly test it.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>ah! that WOULD be nice. especially seeing as how you cant modify the world after you finish.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />Yes you can. Keep the link and after you play it, go to world creator, open menu, click &quot;Load World&quot;, and put in the link.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>last timke i checked you couldnt<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />When was that?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>wut?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />The last time you checked.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_1402">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_1402_signature"><img src="http://bit.do/4u2h" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg1407"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_1407_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_1407">
+										<a href="../msg1407/index.html#msg1407" rel="nofollow">Re: Ideas and Suggestions</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 20, 2012, 06:30:29 pm" style="cursor:default">Mid-August, 2012</span></div>
+									<div id="msg_1407_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1407"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1402/index.html#msg1402">Quote from: Lamp on <span title=" 20, 2012, 06:19:26 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1395/index.html#msg1395">Quote from: cremyjr on <span title=" 20, 2012, 06:05:46 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1388/index.html#msg1388">Quote from: Lamp on <span title=" 20, 2012, 04:01:23 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1385/index.html#msg1385">Quote from: cremyjr on <span title=" 20, 2012, 02:20:40 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1380/index.html#msg1380">Quote from: Lamp on <span title=" 20, 2012, 02:11:17 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1377/index.html#msg1377">Quote from: cremyjr on <span title=" 20, 2012, 02:08:46 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1371/index.html#msg1371">Quote from: Lamp on <span title=" 19, 2012, 09:20:56 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1365/index.html#msg1365">Quote from: cremyjr on <span title=" 19, 2012, 01:04:53 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1336/index.html#msg1336">Quote from: monthygreg on <span title=" 18, 2012, 07:44:56 am" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_standard_quote">you do know for noobs thats alot of creds, just a simple two minute test or so. <br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>i know wut u mean. lamp and natty, just listen to this. i have the solution. it sounds alot like freeplay... it would be called somthing like &quot;testing&quot; default map battle island. you can choose and customize all the items in the shop. you can have a list to choose what level you want the piece of gear. then, you can try them. gets its?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />I just got an idea from that. How bout we have a button in the World Creator to quickly test it.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>ah! that WOULD be nice. especially seeing as how you cant modify the world after you finish.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />Yes you can. Keep the link and after you play it, go to world creator, open menu, click &quot;Load World&quot;, and put in the link.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>last timke i checked you couldnt<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />When was that?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>wut?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />The last time you checked.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>my what?</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_1407">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_1407_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg1410"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/Lamp/index.html" title="View the profile of Lamp">Lamp</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_1410_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/Lamp/index.html">
+										<img class="avatar" src="http://i.imgur.com/Qp9OniQ.png" width="100" height="100" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 956</li>
+								<li class="karma" style="margin-top:15px">Karma: 22</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_1410">
+										<a href="../msg1410/index.html#msg1410" rel="nofollow">Re: Ideas and Suggestions</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 20, 2012, 07:24:40 pm" style="cursor:default">Mid-August, 2012</span></div>
+									<div id="msg_1410_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1410"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1407/index.html#msg1407">Quote from: cremyjr on <span title=" 20, 2012, 06:30:29 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1402/index.html#msg1402">Quote from: Lamp on <span title=" 20, 2012, 06:19:26 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1395/index.html#msg1395">Quote from: cremyjr on <span title=" 20, 2012, 06:05:46 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1388/index.html#msg1388">Quote from: Lamp on <span title=" 20, 2012, 04:01:23 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1385/index.html#msg1385">Quote from: cremyjr on <span title=" 20, 2012, 02:20:40 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1380/index.html#msg1380">Quote from: Lamp on <span title=" 20, 2012, 02:11:17 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1377/index.html#msg1377">Quote from: cremyjr on <span title=" 20, 2012, 02:08:46 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1371/index.html#msg1371">Quote from: Lamp on <span title=" 19, 2012, 09:20:56 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1365/index.html#msg1365">Quote from: cremyjr on <span title=" 19, 2012, 01:04:53 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1336/index.html#msg1336">Quote from: monthygreg on <span title=" 18, 2012, 07:44:56 am" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_alternate_quote">you do know for noobs thats alot of creds, just a simple two minute test or so. <br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>i know wut u mean. lamp and natty, just listen to this. i have the solution. it sounds alot like freeplay... it would be called somthing like &quot;testing&quot; default map battle island. you can choose and customize all the items in the shop. you can have a list to choose what level you want the piece of gear. then, you can try them. gets its?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />I just got an idea from that. How bout we have a button in the World Creator to quickly test it.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>ah! that WOULD be nice. especially seeing as how you cant modify the world after you finish.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />Yes you can. Keep the link and after you play it, go to world creator, open menu, click &quot;Load World&quot;, and put in the link.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>last timke i checked you couldnt<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />When was that?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>wut?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />The last time you checked.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>my what?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />The last time you checked the World Creator.<br /><div class="quoteheader"><div class="topslice_quote">Reply With Quote</div></div><blockquote class="bbc_standard_quote">last timke i checked you couldnt</blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>When was the last time you checked?</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_1410">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_1410_signature"><img src="http://bit.do/4u2h" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg1411"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/cremyjr/index.html" title="View the profile of cremyjr">cremyjr</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_1411_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="postcount">Posts: 1375</li>
+								<li class="karma" style="margin-top:15px">Karma: 58</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_1411">
+										<a href="../msg1411/index.html#msg1411" rel="nofollow">Re: Ideas and Suggestions</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 20, 2012, 07:40:23 pm" style="cursor:default">Mid-August, 2012</span></div>
+									<div id="msg_1411_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1411"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1410/index.html#msg1410">Quote from: Lamp on <span title=" 20, 2012, 07:24:40 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1407/index.html#msg1407">Quote from: cremyjr on <span title=" 20, 2012, 06:30:29 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1402/index.html#msg1402">Quote from: Lamp on <span title=" 20, 2012, 06:19:26 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1395/index.html#msg1395">Quote from: cremyjr on <span title=" 20, 2012, 06:05:46 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1388/index.html#msg1388">Quote from: Lamp on <span title=" 20, 2012, 04:01:23 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1385/index.html#msg1385">Quote from: cremyjr on <span title=" 20, 2012, 02:20:40 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1380/index.html#msg1380">Quote from: Lamp on <span title=" 20, 2012, 02:11:17 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1377/index.html#msg1377">Quote from: cremyjr on <span title=" 20, 2012, 02:08:46 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1371/index.html#msg1371">Quote from: Lamp on <span title=" 19, 2012, 09:20:56 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1365/index.html#msg1365">Quote from: cremyjr on <span title=" 19, 2012, 01:04:53 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1336/index.html#msg1336">Quote from: monthygreg on <span title=" 18, 2012, 07:44:56 am" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_standard_quote">you do know for noobs thats alot of creds, just a simple two minute test or so. <br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>i know wut u mean. lamp and natty, just listen to this. i have the solution. it sounds alot like freeplay... it would be called somthing like &quot;testing&quot; default map battle island. you can choose and customize all the items in the shop. you can have a list to choose what level you want the piece of gear. then, you can try them. gets its?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />I just got an idea from that. How bout we have a button in the World Creator to quickly test it.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>ah! that WOULD be nice. especially seeing as how you cant modify the world after you finish.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />Yes you can. Keep the link and after you play it, go to world creator, open menu, click &quot;Load World&quot;, and put in the link.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>last timke i checked you couldnt<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />When was that?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>wut?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />The last time you checked.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>my what?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />The last time you checked the World Creator.<br /><div class="quoteheader"><div class="topslice_quote">Reply With Quote</div></div><blockquote class="bbc_alternate_quote">last timke i checked you couldnt</blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>When was the last time you checked?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>checked my world? i dont have a world. what world? i like maps. theyre fun.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_1411">
+								<em>Last edited  <span title=" 20, 2012, 07:42:07 pm" style="cursor:default">Mid-August, 2012</span> by cremyjr</em>
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_1411_signature"><a href="http://postimage.org/" class="bbc_link" target="_blank"><img src="http://s8.postimage.org/85q8cbo2p/tumblr_l9la5h_Qn7f1qdyygpo1_500.png" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></a></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				<a id="msg1412"></a>
+				<div class="windowbg2">
+					<span class="topslice"><span></span></span>
+					<div class="post_wrapper">
+						<div class="poster">
+							<h4>
+								<img src="../../../Themes/carbonate202b/images/useroff.gif" alt="Offline" />
+								<a href="../../../profile/Lamp/index.html" title="View the profile of Lamp">Lamp</a>
+							</h4>
+							<ul class="reset smalltext" id="msg_1412_extra_info">
+								<li class="postgroup" style="display:none">Hero Member</li>
+								<li class="stars" style="display:none"><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /><img src="../../../Themes/carbonate202b/images/star.gif" alt="*" /></li>
+								<li class="avatar">
+									<a href="../../../profile/Lamp/index.html">
+										<img class="avatar" src="http://i.imgur.com/Qp9OniQ.png" width="100" height="100" alt="" />
+									</a>
+								</li>
+								<li class="postcount">Posts: 956</li>
+								<li class="karma" style="margin-top:15px">Karma: 22</li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="flow_hidden">
+								<div class="keyinfo">
+									<div class="messageicon">
+										<img src="../../../Themes/carbonate202b/images/post/xx.gif" alt="" />
+									</div>
+									<h5 id="subject_1412">
+										<a href="../msg1412/index.html#msg1412" rel="nofollow">Re: Ideas and Suggestions</a>
+									</h5>
+									<div class="smalltext">posted <span title=" 20, 2012, 08:03:15 pm" style="cursor:default">Mid-August, 2012</span></div>
+									<div id="msg_1412_quick_mod"></div>
+								</div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1412"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1411/index.html#msg1411">Quote from: cremyjr on <span title=" 20, 2012, 07:40:23 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1410/index.html#msg1410">Quote from: Lamp on <span title=" 20, 2012, 07:24:40 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1407/index.html#msg1407">Quote from: cremyjr on <span title=" 20, 2012, 06:30:29 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1402/index.html#msg1402">Quote from: Lamp on <span title=" 20, 2012, 06:19:26 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1395/index.html#msg1395">Quote from: cremyjr on <span title=" 20, 2012, 06:05:46 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1388/index.html#msg1388">Quote from: Lamp on <span title=" 20, 2012, 04:01:23 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1385/index.html#msg1385">Quote from: cremyjr on <span title=" 20, 2012, 02:20:40 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1380/index.html#msg1380">Quote from: Lamp on <span title=" 20, 2012, 02:11:17 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1377/index.html#msg1377">Quote from: cremyjr on <span title=" 20, 2012, 02:08:46 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1371/index.html#msg1371">Quote from: Lamp on <span title=" 19, 2012, 09:20:56 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_alternate_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1365/index.html#msg1365">Quote from: cremyjr on <span title=" 19, 2012, 01:04:53 pm" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_standard_quote"><div class="quoteheader"><div class="topslice_quote"><a href="../msg1336/index.html#msg1336">Quote from: monthygreg on <span title=" 18, 2012, 07:44:56 am" style="cursor:default">Mid-August, 2012</span></a></div></div><blockquote class="bbc_alternate_quote">you do know for noobs thats alot of creds, just a simple two minute test or so. <br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>i know wut u mean. lamp and natty, just listen to this. i have the solution. it sounds alot like freeplay... it would be called somthing like &quot;testing&quot; default map battle island. you can choose and customize all the items in the shop. you can have a list to choose what level you want the piece of gear. then, you can try them. gets its?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />I just got an idea from that. How bout we have a button in the World Creator to quickly test it.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>ah! that WOULD be nice. especially seeing as how you cant modify the world after you finish.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />Yes you can. Keep the link and after you play it, go to world creator, open menu, click &quot;Load World&quot;, and put in the link.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>last timke i checked you couldnt<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />When was that?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>wut?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />The last time you checked.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>my what?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />The last time you checked the World Creator.<br /><div class="quoteheader"><div class="topslice_quote">Reply With Quote</div></div><blockquote class="bbc_standard_quote">last timke i checked you couldnt</blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>When was the last time you checked?<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div>checked my world? i dont have a world. what world? i like maps. theyre fun.<br /></blockquote><div class="quotefooter"><div class="botslice_quote"></div></div><br /><br />Check the World Creator.</div>
+							</div>
+						</div></div>
+						<div class="moderatorbar">
+							<div class="smalltext modified" id="modified_1412">
+							<div class="smalltext reportlinks" style="font-size:12px;width:723px">
+							</div>
+							<div class="signature" id="msg_1412_signature"><img src="http://bit.do/4u2h" alt="" border="0" onload="NcodeImageResizer.createOn(this);" class="bbc_img" /></div>
+						</div>
+					</div>
+					<span class="botslice"><span></span></span>
+				</div>
+				<hr class="post_separator" />
+				</form>
+			</div>
+			<a id="lastPost"></a>
+			<div class="pagesection">
+				
+				<div class="pagelinks floatleft"><span style="margin-right:20px;color:#747474">Page 4 of 5</span><span class="nonselectedPage"><a class="navPages" href="../40/index.html"><<</a> </span><span class="nonselectedPage"><a class="navPages" href="../index.html">1</a> </span><span style="font-weight: bold;" onclick="expandPages(this, 'http://forum.carbontechsoftware.com/index.php'+'?topic=33.%1$d', 20, 40, 20);" onmouseover="this.style.cursor = 'pointer';"> ... </span><span class="nonselectedPage"><a class="navPages" href="../40/index.html">3</a> </span><span class="selectedPage">4</span> <span class="nonselectedPage"><a class="navPages" href="../80/index.html">5</a> </span><span class="nonselectedPage"><a class="navPages" href="../80/index.html">>></a> </span></div>
+				<div class="nextlinks_bottom"><a href="../index-prev_next=prev.html#new">&laquo; previous</a> <a href="../index-prev_next=next.html#new">next &raquo;</a></div>
+			</div>
+			<div id="moderationbuttons"></div>
+			<div class="plainbox" id="display_jump_to">&nbsp;</div>
+		<br class="clear" />
+			<form action="http://forum.carbontechsoftware.com/spellcheck/" method="post" accept-charset="UTF-8" name="spell_form" id="spell_form" target="spellWindow"><input type="hidden" name="spellstring" value="" /></form>
+				<script type="text/javascript" src="../../../Themes/default/scripts/spellcheck.js"></script>
+				<script type="text/javascript" src="../../../Themes/default/scripts/topic.js"></script>
+				<script type="text/javascript"><!-- // --><![CDATA[
+					if ('XMLHttpRequest' in window)
+					{
+						var oQuickModify = new QuickModify({
+							sScriptUrl: smf_scripturl,
+							bShowModify: true,
+							iTopicId: 33,
+							sTemplateBodyEdit: '\n\t\t\t\t\t\t\t\t<div id="quick_edit_body_container" style="width: 90%">\n\t\t\t\t\t\t\t\t\t<div id="error_box" style="padding: 4px;" class="error"><' + '/div>\n\t\t\t\t\t\t\t\t\t<textarea class="editor" name="message" rows="12" style="width: 100%; margin-bottom: 10px;" tabindex="1">%body%<' + '/textarea><br />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="f432f3090a" value="477e586f5a9953a0dd3608a1ea7e9270" />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="topic" value="33" />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="msg" value="%msg_id%" />\n\t\t\t\t\t\t\t\t\t<div class="righttext">\n\t\t\t\t\t\t\t\t\t\t<input type="submit" name="post" value="Save" tabindex="2" onclick="return oQuickModify.modifySave(\'477e586f5a9953a0dd3608a1ea7e9270\', \'f432f3090a\');" accesskey="s" class="button_submit" />&nbsp;&nbsp;<input type="button" value="Spell Check (popups must be enabled)" tabindex="3" onclick="oEditorHandle_message.spellCheckStart();" class="button_submit" />&nbsp;&nbsp;<input type="submit" name="cancel" value="Cancel" tabindex="4" onclick="return oQuickModify.modifyCancel();" class="button_submit" />\n\t\t\t\t\t\t\t\t\t<' + '/div>\n\t\t\t\t\t\t\t\t<' + '/div>',
+							sTemplateSubjectEdit: '<input type="text" style="width: 90%;" name="subject" value="%subject%" size="80" maxlength="80" tabindex="5" class="input_text" />',
+							sTemplateBodyNormal: '%body%',
+							sTemplateSubjectNormal: '<a hr'+'ef="http://forum.carbontechsoftware.com/index.php'+'?topic=33.msg%msg_id%#msg%msg_id%" rel="nofollow">%subject%<' + '/a>',
+							sTemplateTopSubject: 'Topic: %subject% &nbsp;(Read 8317 times)',
+							sErrorBorderStyle: '1px solid red'
+						});
+
+						aJumpTo[aJumpTo.length] = new JumpTo({
+							sContainerId: "display_jump_to",
+							sJumpToTemplate: "<label class=\"smalltext\" for=\"%select_id%\">Jump to:<" + "/label> %dropdown_list%",
+							iCurBoardId: 3,
+							iCurBoardChildLevel: 0,
+							sCurBoardName: "Feedback &amp; Ideas",
+							sBoardChildLevelIndicator: "==",
+							sBoardPrefix: "=> ",
+							sCatSeparator: "-----------------------------",
+							sCatPrefix: "",
+							sGoButtonLabel: "go"
+						});
+
+						aIconLists[aIconLists.length] = new IconList({
+							sBackReference: "aIconLists[" + aIconLists.length + "]",
+							sIconIdPrefix: "msg_icon_",
+							sScriptUrl: smf_scripturl,
+							bShowModify: true,
+							iBoardId: 3,
+							iTopicId: 33,
+							sSessionId: "477e586f5a9953a0dd3608a1ea7e9270",
+							sSessionVar: "f432f3090a",
+							sLabelIconList: "Message icon",
+							sBoxBackground: "transparent",
+							sBoxBackgroundHover: "#ffffff",
+							iBoxBorderWidthHover: 1,
+							sBoxBorderColorHover: "#adadad" ,
+							sContainerBackground: "#ffffff",
+							sContainerBorder: "1px solid #adadad",
+							sItemBorder: "1px solid #ffffff",
+							sItemBorderHover: "1px dotted gray",
+							sItemBackground: "transparent",
+							sItemBackgroundHover: "#e0e0f0"
+						});
+					}
+				// ]]></script>
+		<form name="spell_form" id="spell_form" method="post" accept-charset="UTF-8" target="spellWindow" action="http://forum.carbontechsoftware.com/spellcheck/">
+			<input type="hidden" name="spellstring" value="" />
+		</form>
+			<script type="text/javascript"><!-- // --><![CDATA[
+				var verificationpostHandle = new smfCaptcha("http://forum.carbontechsoftware.com/index.php?action=verificationcode;vid=post;rand=0c96f72f1edd1d7dc5c2c1f6e91c46ef", "post", 1);
+			// ]]></script>
+	</div>
+	</div></div>
+	<div id="footersection"><div style="width: 985px;margin: auto;">
+			<span class="floatright"><a href="http://www.simplemachines.org/">© Simple Machines (SMF 2.0.2)</a> - Forum designed by CarbonTech & <a href="http://www.blocweb.net">Bloc</a>
+			</span></div>
+	</div></div></div><script type="text/javascript">
+var sc_project=6755287; 
+var sc_invisible=1; 
+var sc_security="c689b4fd"; 
+</script>
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script>
+<noscript><div class="statcounter"><a title="tumblr page
+counter" href="http://statcounter.com/tumblr/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/6755287/0/c689b4fd/1/"
+alt="tumblr page counter"></a></div></noscript>
+</body></html>
